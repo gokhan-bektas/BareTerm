@@ -1,0 +1,13 @@
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/kernel.h:959:19:k_mutex_init	16	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/kernel.h:975:19:k_mutex_lock	24	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/kernel.h:992:19:k_mutex_unlock	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/libc/picolibc/locks.c:29:6:__retarget_lock_init_recursive	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/libc/picolibc/locks.c:45:6:__retarget_lock_init	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/libc/picolibc/locks.c:51:6:__retarget_lock_close_recursive	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/libc/picolibc/locks.c:62:6:__retarget_lock_close	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/libc/picolibc/locks.c:68:6:__retarget_lock_acquire_recursive	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/libc/picolibc/locks.c:75:6:__retarget_lock_acquire	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/libc/picolibc/locks.c:81:5:__retarget_lock_try_acquire_recursive	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/libc/picolibc/locks.c:88:5:__retarget_lock_try_acquire	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/libc/picolibc/locks.c:94:6:__retarget_lock_release_recursive	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/libc/picolibc/locks.c:101:6:__retarget_lock_release	16	static

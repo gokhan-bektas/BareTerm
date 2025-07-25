@@ -1,0 +1,2 @@
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/SYS/mxc_lock.c:27:5:MXC_GetLock	40	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/SYS/mxc_lock.c:45:6:MXC_FreeLock	16	static

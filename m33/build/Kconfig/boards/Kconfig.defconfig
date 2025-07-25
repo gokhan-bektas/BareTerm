@@ -1,0 +1,2 @@
+# Load Zephyr board defconfig descriptions.
+osource "C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/boards/adi/max32657evkit/Kconfig.defconfig"

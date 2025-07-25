@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+  {
+    "label": "CFS: flash (CMSIS-DAP)",
+    "type": "shell",
+    "command": "C:/analog/cfs/1.1.0/Tools/openocd/bin/openocd.exe",
+    "args": [
+      "-s", "C:/analog/cfs/1.1.0/Tools/openocd/scripts",
+      "-f", "interface/cmsis-dap.cfg",
+      "-f", "target/max32657_setup.cfg", 
+      "-c", "set ALLOW_LOW_PWR_DBG 1",
+      "-c", "program build/zephyr/zephyr.elf verify reset exit"
+    ],
+    "options": {
+      "cwd": "${workspaceFolder}"
+    },
+    "problemMatcher": [],
+    "group": "build"
+  }
+
+  ]
+}

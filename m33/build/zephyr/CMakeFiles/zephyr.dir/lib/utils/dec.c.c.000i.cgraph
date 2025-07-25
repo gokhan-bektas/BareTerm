@@ -1,0 +1,177 @@
+Trivially needed symbols: u8_to_dec/12
+
+
+Initial Symbol table:
+
+u8_to_dec/12 (u8_to_dec) @0000000006cdae38
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @0000000001d89da0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+mem_xor_128/11 (mem_xor_128) @0000000006cda9d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+mem_xor_32/10 (mem_xor_32) @0000000006cda8c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+mem_xor_n/9 (mem_xor_n) @0000000006cda7a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sign_extend_64/8 (sign_extend_64) @0000000006cda690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sign_extend/7 (sign_extend) @0000000006cda578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+bin2bcd/6 (bin2bcd) @0000000006cda460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+bcd2bin/5 (bcd2bin) @0000000006cda348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+byteswp/4 (byteswp) @0000000006cda230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+bytecpy/3 (bytecpy) @0000000006cda118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+arithmetic_shift_right/2 (arithmetic_shift_right) @0000000006cda000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+is_null_no_warn/1 (is_null_no_warn) @00000000066c8e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+is_power_of_two/0 (is_power_of_two) @00000000066c8d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+
+Removing unused symbols: mem_xor_128/11 mem_xor_32/10 mem_xor_n/9 sign_extend_64/8 sign_extend/7 bin2bcd/6 bcd2bin/5 byteswp/4 bytecpy/3 arithmetic_shift_right/2 is_null_no_warn/1 is_power_of_two/0
+
+Reclaimed Symbol table:
+
+u8_to_dec/12 (u8_to_dec) @0000000006cdae38
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+
+
+Initial Symbol table:
+
+u8_to_dec/12 (u8_to_dec) @0000000006cdae38
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+u8_to_dec/12 (u8_to_dec) @0000000006cdae38
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+u8_to_dec/12 (u8_to_dec) @0000000006cdae38
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Trivially needed variables:
+Removing variables:
+
+Final Symbol table:
+
+u8_to_dec/12 (u8_to_dec) @0000000006cdae38
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.u8_to_dec (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 

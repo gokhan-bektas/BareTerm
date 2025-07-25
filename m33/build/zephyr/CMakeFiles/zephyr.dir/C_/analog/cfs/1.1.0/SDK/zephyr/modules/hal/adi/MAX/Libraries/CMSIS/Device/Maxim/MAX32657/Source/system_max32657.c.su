@@ -1,0 +1,11 @@
+c:\analog\cfs\1.1.0\sdk\zephyr\modules\hal\adi\max\source\max32657\partition_max32657.h:22:6:TZ_SAU_Setup	4	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/CMSIS/Device/Maxim/MAX32657/Source/system_max32657.c:52:12:_getpid	4	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/CMSIS/Device/Maxim/MAX32657/Source/system_max32657.c:57:12:_kill	4	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/CMSIS/Device/Maxim/MAX32657/Source/system_max32657.c:62:13:SystemCoreClockUpdate	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/CMSIS/Device/Maxim/MAX32657/Source/system_max32657.c:109:12:PreInit	4	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/CMSIS/Device/Maxim/MAX32657/Source/system_max32657.c:122:13:PinInit	4	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/CMSIS/Device/Maxim/MAX32657/Source/system_max32657.c:127:12:PeripheralInit	4	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/CMSIS/Device/Maxim/MAX32657/Source/system_max32657.c:134:12:Board_Init	4	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/CMSIS/Device/Maxim/MAX32657/Source/system_max32657.c:141:13:PalSysInit	4	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/CMSIS/Device/Maxim/MAX32657/Source/system_max32657.c:150:13:SystemInit	8	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/CMSIS/Device/Maxim/MAX32657/Source/system_max32657.c:218:12:NonSecure_Init	32	static

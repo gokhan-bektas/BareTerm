@@ -1,0 +1,4 @@
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/fatal.c:21:13:esf_dump	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/fatal.c:69:6:z_arm_fatal_error	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/fatal.c:106:6:z_do_kernel_oops	40	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/fatal.c:159:20:arch_syscall_oops	56	static

@@ -1,0 +1,16 @@
+c:\analog\cfs\1.1.0\tools\zephyr-sdk\arm-zephyr-eabi\picolibc\include\ctype.h:253:22:__ctype_lookup	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/cbprintf_complete.c:318:15:extract_decimal	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/cbprintf_complete.c:339:27:extract_flags	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/cbprintf_complete.c:388:27:extract_width	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/cbprintf_complete.c:420:27:extract_prec	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/cbprintf_complete.c:453:27:extract_length	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/cbprintf_complete.c:513:27:extract_specifier	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/cbprintf_complete.c:643:27:extract_conversion	32	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/cbprintf_complete.c:704:13:_ldiv5	184	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/cbprintf_complete.c:738:13:_ldiv10	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/cbprintf_complete.c:747:13:_get_digit	56	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/cbprintf_complete.c:763:22:conversion_radix	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/cbprintf_complete.c:790:14:encode_uint	56	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/cbprintf_complete.c:869:14:encode_float	200	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/cbprintf_complete.c:1348:12:outs	40	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/cbprintf_complete.c:1369:5:z_cbvprintf_impl	312	static

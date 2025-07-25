@@ -1,0 +1,41 @@
+# Available runners configured by board.cmake.
+runners:
+- openocd
+- jlink
+
+# Default flash runner if --runner is not given.
+flash-runner: openocd
+
+# Default debug runner if --runner is not given.
+debug-runner: openocd
+
+# Common runner configuration values.
+config:
+  board_dir: C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/boards/adi/max32657evkit
+  # Build outputs:
+  elf_file: zephyr.elf
+  hex_file: zephyr.hex
+  bin_file: zephyr.bin
+  # Host tools:
+  gdb: C:/analog/cfs/1.1.0/Tools/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb.exe
+  openocd: C:/analog/cfs/1.1.0/Tools/openocd/bin/openocd.exe
+  openocd_search:
+    - C:\Program Files/OpenOCD/share/openocd/scripts
+
+# Runner specific arguments
+args:
+  openocd:
+    - --cmd-load
+    - flash write_image erase
+    - --cmd-verify
+    - verify_image
+    - --cmd-pre-init
+    - source [find interface/jlink.cfg]
+    - --cmd-pre-init
+    - source [find target/max32657.cfg]
+    - --target-handle=_CHIPNAME.cpu
+    - --cmd-erase=max32xxx mass_erase 0
+  jlink:
+    - --dt-flash=y
+    - --device=MAX32657
+    - --reset-after-load

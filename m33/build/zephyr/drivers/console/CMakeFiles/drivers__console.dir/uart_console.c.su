@@ -1,0 +1,9 @@
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/device.h:49:20:device_is_ready	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/drivers/uart/uart_internal.h:182:20:z_impl_uart_poll_out	24	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/uart.h:97:20:uart_poll_out	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/pm/device_runtime.h:192:19:pm_device_runtime_get	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/pm/device_runtime.h:204:19:pm_device_runtime_put_async	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/drivers/console/uart_console.c:80:12:console_out	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/drivers/console/uart_console.c:578:6:uart_register_input	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/drivers/console/uart_console.c:591:13:uart_console_hook_install	8	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/drivers/console/uart_console.c:606:12:uart_console_init	8	static

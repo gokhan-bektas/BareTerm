@@ -1,0 +1,17 @@
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/cmse/arm_core_cmse.c:10:5:arm_cmse_mpu_region_get	32	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/cmse/arm_core_cmse.c:21:12:arm_cmse_addr_read_write_ok	48	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/cmse/arm_core_cmse.c:33:5:arm_cmse_addr_read_ok	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/cmse/arm_core_cmse.c:38:5:arm_cmse_addr_readwrite_ok	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/cmse/arm_core_cmse.c:43:12:arm_cmse_addr_range_read_write_ok	32	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/cmse/arm_core_cmse.c:62:5:arm_cmse_addr_range_read_ok	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/cmse/arm_core_cmse.c:67:5:arm_cmse_addr_range_readwrite_ok	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/cmse/arm_core_cmse.c:74:5:arm_cmse_mpu_nonsecure_region_get	32	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/cmse/arm_core_cmse.c:85:5:arm_cmse_sau_region_get	32	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/cmse/arm_core_cmse.c:96:5:arm_cmse_idau_region_get	32	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/cmse/arm_core_cmse.c:107:5:arm_cmse_addr_is_secure	32	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/cmse/arm_core_cmse.c:114:12:arm_cmse_addr_nonsecure_read_write_ok	48	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/cmse/arm_core_cmse.c:126:5:arm_cmse_addr_nonsecure_read_ok	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/cmse/arm_core_cmse.c:131:5:arm_cmse_addr_nonsecure_readwrite_ok	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/cmse/arm_core_cmse.c:136:12:arm_cmse_addr_range_nonsecure_read_write_ok	32	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/cmse/arm_core_cmse.c:156:5:arm_cmse_addr_range_nonsecure_read_ok	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/cmse/arm_core_cmse.c:161:5:arm_cmse_addr_range_nonsecure_readwrite_ok	24	static

@@ -1,0 +1,4 @@
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/ICC/icc_reva.c:36:12:MXC_ICC_Ready	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/ICC/icc_reva.c:41:5:MXC_ICC_RevA_ID	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/ICC/icc_reva.c:62:6:MXC_ICC_RevA_Enable	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/ICC/icc_reva.c:75:6:MXC_ICC_RevA_Disable	16	static

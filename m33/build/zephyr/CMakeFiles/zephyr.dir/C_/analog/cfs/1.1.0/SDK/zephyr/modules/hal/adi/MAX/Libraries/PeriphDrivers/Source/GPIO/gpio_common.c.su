@@ -1,0 +1,5 @@
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/GPIO/gpio_common.c:35:5:MXC_GPIO_Common_Init	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/GPIO/gpio_common.c:53:6:MXC_GPIO_Common_RegisterCallback	32	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/GPIO/gpio_common.c:73:6:MXC_GPIO_Common_Handler	32	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/GPIO/gpio_common.c:99:6:MXC_GPIO_Common_SetConfigLock	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/GPIO/gpio_common.c:104:24:MXC_GPIO_Common_GetConfigLock	4	static

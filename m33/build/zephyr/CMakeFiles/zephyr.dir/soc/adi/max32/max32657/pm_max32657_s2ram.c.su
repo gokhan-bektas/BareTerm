@@ -1,0 +1,3 @@
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/soc/adi/max32/max32657/pm_max32657_s2ram.c:19:9:pm_get_s2ram_retention_mask	4	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/soc/adi/max32/max32657/pm_max32657_s2ram.c:24:29:pm_s2ram_mark_set	0	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/soc/adi/max32/max32657/pm_max32657_s2ram.c:36:29:pm_s2ram_mark_check_and_clear	0	static

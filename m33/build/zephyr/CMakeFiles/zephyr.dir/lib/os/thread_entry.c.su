@@ -1,0 +1,4 @@
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/kernel.h:662:23:k_current_get	8	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/kernel.h:208:23:k_sched_current_thread_query	8	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/kernel.h:223:20:k_thread_abort	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/thread_entry.c:35:20:z_thread_entry	24	static

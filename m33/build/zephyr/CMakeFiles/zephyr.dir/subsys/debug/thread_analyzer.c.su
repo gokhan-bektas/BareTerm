@@ -1,0 +1,8 @@
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/kernel/thread_stack.h:286:21:K_KERNEL_STACK_BUFFER	16	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/kernel.h:92:19:k_thread_stack_space_get	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/subsys/debug/thread_analyzer.c:39:13:thread_print_cb	48	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/subsys/debug/thread_analyzer.c:92:13:thread_analyze_cb	168	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/subsys/debug/thread_analyzer.c:172:13:isr_stack	48	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/subsys/debug/thread_analyzer.c:189:13:isr_stacks	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/subsys/debug/thread_analyzer.c:198:6:thread_analyzer_run	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/subsys/debug/thread_analyzer.c:225:6:thread_analyzer_print	16	static

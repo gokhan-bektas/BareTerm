@@ -1,0 +1,9 @@
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/kernel.h:3339:28:z_impl_k_sem_count_get	16	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/kernel.h:1074:19:k_sem_init	24	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/kernel.h:1092:19:k_sem_take	24	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/kernel.h:1109:20:k_sem_give	16	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/kernel.h:1143:28:k_sem_count_get	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/sem.c:108:5:sys_sem_init	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/sem.c:116:5:sys_sem_give	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/sem.c:123:5:sys_sem_take	32	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/sem.c:135:14:sys_sem_count_get	16	static

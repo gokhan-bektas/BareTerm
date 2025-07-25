@@ -1,0 +1,17 @@
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/sys/dlist.h:202:20:sys_dlist_init	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/sys/dlist.h:219:20:sys_dnode_init	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/sys/dlist.h:274:20:sys_dlist_is_empty	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/sys/dlist.h:302:28:sys_dlist_peek_head	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/sys/dlist.h:527:20:sys_dlist_remove	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/sys/internal/kobject_internal.h:92:20:k_object_init	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/include/timeout_q.h:52:20:z_abort_thread_timeout	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/include/kthread.h:153:20:z_mark_thread_as_not_pending	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/include/ksched.h:159:20:unpend_thread_no_timeout	32	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/include/wait_q.h:47:20:z_waitq_init	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/mem_slab.c:104:12:create_free_list	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/mem_slab.c:132:12:init_mem_slab_obj_core_list	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/mem_slab.c:171:5:k_mem_slab_init	32	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/mem_slab.c:207:13:slab_ptr_is_good	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/mem_slab.c:221:5:k_mem_slab_alloc	88	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/mem_slab.c:270:6:k_mem_slab_free	120	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/mem_slab.c:302:5:k_mem_slab_runtime_stats_get	64	static

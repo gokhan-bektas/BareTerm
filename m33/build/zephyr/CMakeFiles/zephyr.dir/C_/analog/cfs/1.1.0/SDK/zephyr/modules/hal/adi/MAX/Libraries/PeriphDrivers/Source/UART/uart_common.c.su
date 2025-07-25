@@ -1,0 +1,2 @@
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/UART/uart_common.c:24:5:MXC_UART_Common_ReadCharacter	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/UART/uart_common.c:33:5:MXC_UART_Common_WriteCharacter	16	static

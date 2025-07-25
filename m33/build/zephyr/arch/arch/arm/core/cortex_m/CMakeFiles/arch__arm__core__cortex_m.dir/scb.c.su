@@ -1,0 +1,5 @@
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/cmsis/CMSIS/Core/Include/core_cm33.h:2711:34:__NVIC_SystemReset	4	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/cmsis/CMSIS/Core/Include/mpu_armv8.h:225:22:ARM_MPU_ClrRegionEx	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/cmsis/CMSIS/Core/Include/mpu_armv8.h:234:22:ARM_MPU_ClrRegion	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/scb.c:38:13:sys_arch_reboot	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/scb.c:54:6:z_arm_clear_arm_mpu_config	16	static

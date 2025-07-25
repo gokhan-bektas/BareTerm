@@ -1,0 +1,5 @@
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/libc-hooks.h:74:19:zephyr_fputc	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/libc/picolibc/stdio.c:11:5:z_impl_zephyr_fputc	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/libc/picolibc/stdio.c:25:12:picolibc_put	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/libc/picolibc/stdio.c:44:6:__stdout_hook_install	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/libc/picolibc/stdio.c:50:6:__stdin_hook_install	16	static

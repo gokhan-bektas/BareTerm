@@ -1,0 +1,3 @@
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/arch/arm/misc.h:24:24:arch_k_cycle_get_32	8	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/kernel.h:1927:24:k_cycle_get_32	8	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/busy_wait.c:12:6:z_impl_k_busy_wait	32	static

@@ -1,0 +1,4210 @@
+Trivially needed symbols: MXC_DMA_DoTransfer/238 MXC_DMA_MemCpy/237 MXC_DMA_Handler/236 MXC_DMA_GetCHRegs/235 MXC_DMA_Stop/234 MXC_DMA_Start/233 MXC_DMA_DisableInt/232 MXC_DMA_EnableInt/231 MXC_DMA_ChannelClearFlags/230 MXC_DMA_ChannelGetFlags/229 MXC_DMA_ChannelDisableInt/228 MXC_DMA_ChannelEnableInt/227 MXC_DMA_SetChannelInterruptEn/226 MXC_DMA_SetCallback/225 MXC_DMA_GetSrcReload/224 MXC_DMA_SetSrcReload/223 MXC_DMA_GetSrcDst/222 MXC_DMA_SetSrcDst/221 MXC_DMA_AdvConfigChannel/220 MXC_DMA_ConfigChannel/219 MXC_DMA_ReleaseChannel/218 MXC_DMA_AcquireChannel/217 MXC_DMA_DeInit/216 MXC_DMA_Init/215 _state/210
+
+
+Initial Symbol table:
+
+MXC_DMA_RevA_DoTransfer/262 (MXC_DMA_RevA_DoTransfer) @00000000064dfe38
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_DoTransfer/238 
+  Calls: 
+MXC_DMA_RevA_MemCpy/261 (MXC_DMA_RevA_MemCpy) @00000000064dfd20
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_MemCpy/237 
+  Calls: 
+MXC_DMA_RevA_Handler/260 (MXC_DMA_RevA_Handler) @00000000064dfc08
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_Handler/236 
+  Calls: 
+MXC_DMA_RevA_GetCHRegs/259 (MXC_DMA_RevA_GetCHRegs) @00000000064dfaf0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_GetCHRegs/235 
+  Calls: 
+MXC_DMA_RevA_Stop/258 (MXC_DMA_RevA_Stop) @00000000064df9d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_Stop/234 
+  Calls: 
+MXC_DMA_RevA_Start/257 (MXC_DMA_RevA_Start) @00000000064df8c0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_Start/233 
+  Calls: 
+MXC_DMA_RevA_DisableInt/256 (MXC_DMA_RevA_DisableInt) @00000000064df7a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_DisableInt/232 
+  Calls: 
+MXC_DMA_RevA_EnableInt/255 (MXC_DMA_RevA_EnableInt) @00000000064df690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_EnableInt/231 
+  Calls: 
+MXC_DMA_RevA_ChannelClearFlags/254 (MXC_DMA_RevA_ChannelClearFlags) @00000000064df578
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ChannelClearFlags/230 
+  Calls: 
+MXC_DMA_RevA_ChannelGetFlags/253 (MXC_DMA_RevA_ChannelGetFlags) @00000000064df460
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ChannelGetFlags/229 
+  Calls: 
+MXC_DMA_RevA_ChannelDisableInt/252 (MXC_DMA_RevA_ChannelDisableInt) @00000000064df348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ChannelDisableInt/228 
+  Calls: 
+MXC_DMA_RevA_ChannelEnableInt/251 (MXC_DMA_RevA_ChannelEnableInt) @00000000064df230
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ChannelEnableInt/227 
+  Calls: 
+MXC_DMA_RevA_SetChannelInterruptEn/250 (MXC_DMA_RevA_SetChannelInterruptEn) @00000000064df118
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_SetChannelInterruptEn/226 
+  Calls: 
+MXC_DMA_RevA_SetCallback/249 (MXC_DMA_RevA_SetCallback) @00000000064df000
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_SetCallback/225 
+  Calls: 
+MXC_DMA_RevA_GetSrcReload/248 (MXC_DMA_RevA_GetSrcReload) @00000000064b7e38
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_GetSrcReload/224 
+  Calls: 
+MXC_DMA_RevA_SetSrcReload/247 (MXC_DMA_RevA_SetSrcReload) @00000000064b7d20
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_SetSrcReload/223 
+  Calls: 
+MXC_DMA_RevA_GetSrcDst/246 (MXC_DMA_RevA_GetSrcDst) @00000000064b7c08
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_GetSrcDst/222 
+  Calls: 
+MXC_DMA_RevA_SetSrcDst/245 (MXC_DMA_RevA_SetSrcDst) @00000000064b7af0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_SetSrcDst/221 
+  Calls: 
+MXC_DMA_RevA_AdvConfigChannel/244 (MXC_DMA_RevA_AdvConfigChannel) @00000000064b79d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_AdvConfigChannel/220 
+  Calls: 
+MXC_DMA_RevA_ConfigChannel/243 (MXC_DMA_RevA_ConfigChannel) @00000000064b78c0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ConfigChannel/219 
+  Calls: 
+MXC_DMA_RevA_ReleaseChannel/242 (MXC_DMA_RevA_ReleaseChannel) @00000000064b77a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ReleaseChannel/218 
+  Calls: 
+MXC_DMA_RevA_AcquireChannel/241 (MXC_DMA_RevA_AcquireChannel) @00000000064b7690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_AcquireChannel/217 
+  Calls: 
+MXC_DMA_RevA_DeInit/240 (MXC_DMA_RevA_DeInit) @00000000064b7578
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_DeInit/216 
+  Calls: 
+MXC_DMA_RevA_Init/239 (MXC_DMA_RevA_Init) @00000000064b7460
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_Init/215 
+  Calls: 
+MXC_DMA_DoTransfer/238 (MXC_DMA_DoTransfer) @00000000064b7348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @0000000001d89da0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_DoTransfer/262 
+MXC_DMA_MemCpy/237 (MXC_DMA_MemCpy) @00000000064b7230
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000064b7348
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_MemCpy/261 
+MXC_DMA_Handler/236 (MXC_DMA_Handler) @00000000064b7118
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000064b7230
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_Handler/260 
+MXC_DMA_GetCHRegs/235 (MXC_DMA_GetCHRegs) @00000000064b7000
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000064b7118
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_GetCHRegs/259 
+MXC_DMA_Stop/234 (MXC_DMA_Stop) @00000000064b2e38
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000064b7000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_Stop/258 
+MXC_DMA_Start/233 (MXC_DMA_Start) @00000000064b2d20
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000064b2e38
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_Start/257 
+MXC_DMA_DisableInt/232 (MXC_DMA_DisableInt) @00000000064b2c08
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000064b2d20
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_DisableInt/256 
+MXC_DMA_EnableInt/231 (MXC_DMA_EnableInt) @00000000064b2af0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000064b2c08
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_EnableInt/255 
+MXC_DMA_ChannelClearFlags/230 (MXC_DMA_ChannelClearFlags) @00000000064b29d8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000064b2af0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ChannelClearFlags/254 
+MXC_DMA_ChannelGetFlags/229 (MXC_DMA_ChannelGetFlags) @00000000064b28c0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000064b29d8
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ChannelGetFlags/253 
+MXC_DMA_ChannelDisableInt/228 (MXC_DMA_ChannelDisableInt) @00000000064b27a8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000064b28c0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ChannelDisableInt/252 
+MXC_DMA_ChannelEnableInt/227 (MXC_DMA_ChannelEnableInt) @00000000064b2690
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000064b27a8
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ChannelEnableInt/251 
+MXC_DMA_SetChannelInterruptEn/226 (MXC_DMA_SetChannelInterruptEn) @00000000064b2578
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000064b2690
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_SetChannelInterruptEn/250 
+MXC_DMA_SetCallback/225 (MXC_DMA_SetCallback) @00000000064b2460
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000064b2578
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_SetCallback/249 
+MXC_DMA_GetSrcReload/224 (MXC_DMA_GetSrcReload) @00000000064b2348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000064b2460
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_GetSrcReload/248 
+MXC_DMA_SetSrcReload/223 (MXC_DMA_SetSrcReload) @00000000064b2230
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000064b2348
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_SetSrcReload/247 
+MXC_DMA_GetSrcDst/222 (MXC_DMA_GetSrcDst) @00000000064b2118
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000064b2230
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_GetSrcDst/246 
+MXC_DMA_SetSrcDst/221 (MXC_DMA_SetSrcDst) @00000000064b2000
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000064b2118
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_SetSrcDst/245 
+MXC_DMA_AdvConfigChannel/220 (MXC_DMA_AdvConfigChannel) @0000000006393e38
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000064b2000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_AdvConfigChannel/244 
+MXC_DMA_ConfigChannel/219 (MXC_DMA_ConfigChannel) @0000000006393d20
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @0000000006393e38
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ConfigChannel/243 
+MXC_DMA_ReleaseChannel/218 (MXC_DMA_ReleaseChannel) @0000000006393c08
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @0000000006393d20
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ReleaseChannel/242 
+MXC_DMA_AcquireChannel/217 (MXC_DMA_AcquireChannel) @0000000006393af0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @0000000006393c08
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_AcquireChannel/241 
+MXC_DMA_DeInit/216 (MXC_DMA_DeInit) @00000000063939d8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @0000000006393af0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_DeInit/240 
+MXC_DMA_Init/215 (MXC_DMA_Init) @00000000063938c0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000063939d8
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_Init/239 
+MXC_SYS_In_Crit_Section/214 (MXC_SYS_In_Crit_Section) @00000000063937a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SYS_Crit_Exit/213 (MXC_SYS_Crit_Exit) @0000000006393690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SYS_Crit_Enter/212 (MXC_SYS_Crit_Enter) @0000000006393578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_mxc_crit_get_state/211 (_mxc_crit_get_state) @0000000006393460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_state/210 (_state) @00000000063f1480
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  Aux: @00000000063938c0
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+cmse_nonsecure_caller/209 (cmse_nonsecure_caller) @0000000006393348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+cmse_TTAT/208 (cmse_TTAT) @0000000006393230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__cmse_TTAT_fptr/207 (__cmse_TTAT_fptr) @0000000006393118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+cmse_TTA/206 (cmse_TTA) @0000000006393000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__cmse_TTA_fptr/205 (__cmse_TTA_fptr) @0000000006381e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+cmse_TTT/204 (cmse_TTT) @0000000006381d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__cmse_TTT_fptr/203 (__cmse_TTT_fptr) @0000000006381c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+cmse_TT/202 (cmse_TT) @0000000006381af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__cmse_TT_fptr/201 (__cmse_TT_fptr) @00000000063819d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_CheckChar/200 (ITM_CheckChar) @00000000063818c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_ReceiveChar/199 (ITM_ReceiveChar) @00000000063817a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_SendChar/198 (ITM_SendChar) @0000000006381690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_SysTick_Config_NS/197 (TZ_SysTick_Config_NS) @0000000006381578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SysTick_Config/196 (SysTick_Config) @0000000006381460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_DIB_GetAuthStatus_NS/195 (TZ_DIB_GetAuthStatus_NS) @0000000006381348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+DIB_GetAuthStatus/194 (DIB_GetAuthStatus) @0000000006381230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_DCB_GetAuthCtrl_NS/193 (TZ_DCB_GetAuthCtrl_NS) @0000000006381118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_DCB_SetAuthCtrl_NS/192 (TZ_DCB_SetAuthCtrl_NS) @0000000006381000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+DCB_GetAuthCtrl/191 (DCB_GetAuthCtrl) @0000000006361e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+DCB_SetAuthCtrl/190 (DCB_SetAuthCtrl) @0000000006361d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_SAU_Disable/189 (TZ_SAU_Disable) @0000000006361c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_SAU_Enable/188 (TZ_SAU_Enable) @0000000006361af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SCB_GetFPUType/187 (SCB_GetFPUType) @00000000063619d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Load_NS/186 (ARM_MPU_Load_NS) @00000000063618c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Load/185 (ARM_MPU_Load) @00000000063617a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_LoadEx/184 (ARM_MPU_LoadEx) @0000000006361690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_OrderedMemcpy/183 (ARM_MPU_OrderedMemcpy) @0000000006361578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegion_NS/182 (ARM_MPU_SetRegion_NS) @0000000006361460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegion/181 (ARM_MPU_SetRegion) @0000000006361348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegionEx/180 (ARM_MPU_SetRegionEx) @0000000006361230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_ClrRegion_NS/179 (ARM_MPU_ClrRegion_NS) @0000000006361118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_ClrRegion/178 (ARM_MPU_ClrRegion) @0000000006361000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_ClrRegionEx/177 (ARM_MPU_ClrRegionEx) @000000000632fe38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetMemAttr_NS/176 (ARM_MPU_SetMemAttr_NS) @000000000632fd20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetMemAttr/175 (ARM_MPU_SetMemAttr) @000000000632fc08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetMemAttrEx/174 (ARM_MPU_SetMemAttrEx) @000000000632faf0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Disable_NS/173 (ARM_MPU_Disable_NS) @000000000632f9d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Enable_NS/172 (ARM_MPU_Enable_NS) @000000000632f8c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Disable/171 (ARM_MPU_Disable) @000000000632f7a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Enable/170 (ARM_MPU_Enable) @000000000632f690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_NVIC_GetPriority_NS/169 (TZ_NVIC_GetPriority_NS) @000000000632f578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_NVIC_SetPriority_NS/168 (TZ_NVIC_SetPriority_NS) @000000000632f460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_NVIC_GetActive_NS/167 (TZ_NVIC_GetActive_NS) @000000000632f348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_NVIC_ClearPendingIRQ_NS/166 (TZ_NVIC_ClearPendingIRQ_NS) @000000000632f230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_NVIC_SetPendingIRQ_NS/165 (TZ_NVIC_SetPendingIRQ_NS) @000000000632f118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_NVIC_GetPendingIRQ_NS/164 (TZ_NVIC_GetPendingIRQ_NS) @000000000632f000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_NVIC_DisableIRQ_NS/163 (TZ_NVIC_DisableIRQ_NS) @000000000630fe38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_NVIC_GetEnableIRQ_NS/162 (TZ_NVIC_GetEnableIRQ_NS) @000000000630fd20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_NVIC_EnableIRQ_NS/161 (TZ_NVIC_EnableIRQ_NS) @000000000630fc08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_NVIC_GetPriorityGrouping_NS/160 (TZ_NVIC_GetPriorityGrouping_NS) @000000000630faf0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_NVIC_SetPriorityGrouping_NS/159 (TZ_NVIC_SetPriorityGrouping_NS) @000000000630f9d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SystemReset/158 (__NVIC_SystemReset) @000000000630f8c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetVector/157 (__NVIC_GetVector) @000000000630f7a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetVector/156 (__NVIC_SetVector) @000000000630f690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_DecodePriority/155 (NVIC_DecodePriority) @000000000630f578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_EncodePriority/154 (NVIC_EncodePriority) @000000000630f460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriority/153 (__NVIC_GetPriority) @000000000630f348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriority/152 (__NVIC_SetPriority) @000000000630f230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_ClearTargetState/151 (NVIC_ClearTargetState) @000000000630f118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_SetTargetState/150 (NVIC_SetTargetState) @000000000630f000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_GetTargetState/149 (NVIC_GetTargetState) @0000000006285e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetActive/148 (__NVIC_GetActive) @0000000006285d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_ClearPendingIRQ/147 (__NVIC_ClearPendingIRQ) @0000000006285c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPendingIRQ/146 (__NVIC_SetPendingIRQ) @0000000006285af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPendingIRQ/145 (__NVIC_GetPendingIRQ) @00000000062859d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_DisableIRQ/144 (__NVIC_DisableIRQ) @00000000062858c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetEnableIRQ/143 (__NVIC_GetEnableIRQ) @00000000062857a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_EnableIRQ/142 (__NVIC_EnableIRQ) @0000000006285690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriorityGrouping/141 (__NVIC_GetPriorityGrouping) @0000000006285578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriorityGrouping/140 (__NVIC_SetPriorityGrouping) @0000000006285460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMMLA/139 (__SMMLA) @0000000006285348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB/138 (__QSUB) @0000000006285230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD/137 (__QADD) @0000000006285118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SEL/136 (__SEL) @0000000006285000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSLDX/135 (__SMLSLDX) @000000000627ae38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSLD/134 (__SMLSLD) @000000000627ad20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSDX/133 (__SMLSDX) @000000000627ac08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSD/132 (__SMLSD) @000000000627aaf0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUSDX/131 (__SMUSDX) @000000000627a9d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUSD/130 (__SMUSD) @000000000627a8c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLALDX/129 (__SMLALDX) @000000000627a7a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLALD/128 (__SMLALD) @000000000627a690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLADX/127 (__SMLADX) @000000000627a578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLAD/126 (__SMLAD) @000000000627a460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUADX/125 (__SMUADX) @000000000627a348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUAD/124 (__SMUAD) @000000000627a230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTAB16_RORn/123 (__SXTAB16_RORn) @000000000627a118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTAB16/122 (__SXTAB16) @000000000627a000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTB16_RORn/121 (__SXTB16_RORn) @000000000626ae38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTB16/120 (__SXTB16) @000000000626ad20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UXTAB16/119 (__UXTAB16) @000000000626ac08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UXTB16/118 (__UXTB16) @000000000626aaf0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USADA8/117 (__USADA8) @000000000626a9d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USAD8/116 (__USAD8) @000000000626a8c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSAX/115 (__UHSAX) @000000000626a7a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSAX/114 (__UQSAX) @000000000626a690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USAX/113 (__USAX) @000000000626a578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSAX/112 (__SHSAX) @000000000626a460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSAX/111 (__QSAX) @000000000626a348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSAX/110 (__SSAX) @000000000626a230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHASX/109 (__UHASX) @000000000626a118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQASX/108 (__UQASX) @000000000626a000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UASX/107 (__UASX) @000000000625fe38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHASX/106 (__SHASX) @000000000625fd20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QASX/105 (__QASX) @000000000625fc08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SASX/104 (__SASX) @000000000625faf0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSUB16/103 (__UHSUB16) @000000000625f9d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSUB16/102 (__UQSUB16) @000000000625f8c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USUB16/101 (__USUB16) @000000000625f7a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSUB16/100 (__SHSUB16) @000000000625f690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB16/99 (__QSUB16) @000000000625f578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSUB16/98 (__SSUB16) @000000000625f460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHADD16/97 (__UHADD16) @000000000625f348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQADD16/96 (__UQADD16) @000000000625f230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UADD16/95 (__UADD16) @000000000625f118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHADD16/94 (__SHADD16) @000000000625f000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD16/93 (__QADD16) @0000000006256e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SADD16/92 (__SADD16) @0000000006256d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSUB8/91 (__UHSUB8) @0000000006256c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSUB8/90 (__UQSUB8) @0000000006256af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USUB8/89 (__USUB8) @00000000062569d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSUB8/88 (__SHSUB8) @00000000062568c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB8/87 (__QSUB8) @00000000062567a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSUB8/86 (__SSUB8) @0000000006256690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHADD8/85 (__UHADD8) @0000000006256578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQADD8/84 (__UQADD8) @0000000006256460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UADD8/83 (__UADD8) @0000000006256348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHADD8/82 (__SHADD8) @0000000006256230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD8/81 (__QADD8) @0000000006256118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SADD8/80 (__SADD8) @0000000006256000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FPSCR/79 (__set_FPSCR) @000000000624ce38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FPSCR/78 (__get_FPSCR) @000000000624cd20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_set_MSPLIM_NS/77 (__TZ_set_MSPLIM_NS) @000000000624cc08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_MSPLIM/76 (__set_MSPLIM) @000000000624caf0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_get_MSPLIM_NS/75 (__TZ_get_MSPLIM_NS) @000000000624c9d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_MSPLIM/74 (__get_MSPLIM) @000000000624c8c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_set_PSPLIM_NS/73 (__TZ_set_PSPLIM_NS) @000000000624c7a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PSPLIM/72 (__set_PSPLIM) @000000000624c690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_get_PSPLIM_NS/71 (__TZ_get_PSPLIM_NS) @000000000624c578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PSPLIM/70 (__get_PSPLIM) @000000000624c460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_set_FAULTMASK_NS/69 (__TZ_set_FAULTMASK_NS) @000000000624c348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FAULTMASK/68 (__set_FAULTMASK) @000000000624c230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_get_FAULTMASK_NS/67 (__TZ_get_FAULTMASK_NS) @000000000624c118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FAULTMASK/66 (__get_FAULTMASK) @000000000624c000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI_MAX/65 (__set_BASEPRI_MAX) @0000000006241e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_set_BASEPRI_NS/64 (__TZ_set_BASEPRI_NS) @0000000006241d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI/63 (__set_BASEPRI) @0000000006241c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_get_BASEPRI_NS/62 (__TZ_get_BASEPRI_NS) @0000000006241af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_BASEPRI/61 (__get_BASEPRI) @00000000062419d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_fault_irq/60 (__disable_fault_irq) @00000000062418c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_fault_irq/59 (__enable_fault_irq) @00000000062417a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_set_PRIMASK_NS/58 (__TZ_set_PRIMASK_NS) @0000000006241690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PRIMASK/57 (__set_PRIMASK) @0000000006241578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_get_PRIMASK_NS/56 (__TZ_get_PRIMASK_NS) @0000000006241460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PRIMASK/55 (__get_PRIMASK) @0000000006241348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_set_SP_NS/54 (__TZ_set_SP_NS) @0000000006241230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_get_SP_NS/53 (__TZ_get_SP_NS) @0000000006241118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_set_MSP_NS/52 (__TZ_set_MSP_NS) @0000000006241000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_MSP/51 (__set_MSP) @000000000623be38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_get_MSP_NS/50 (__TZ_get_MSP_NS) @000000000623bd20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_MSP/49 (__get_MSP) @000000000623bc08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_set_PSP_NS/48 (__TZ_set_PSP_NS) @000000000623baf0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PSP/47 (__set_PSP) @000000000623b9d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_get_PSP_NS/46 (__TZ_get_PSP_NS) @000000000623b8c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PSP/45 (__get_PSP) @000000000623b7a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_xPSR/44 (__get_xPSR) @000000000623b690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_APSR/43 (__get_APSR) @000000000623b578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_IPSR/42 (__get_IPSR) @000000000623b460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_set_CONTROL_NS/41 (__TZ_set_CONTROL_NS) @000000000623b348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_CONTROL/40 (__set_CONTROL) @000000000623b230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_get_CONTROL_NS/39 (__TZ_get_CONTROL_NS) @000000000623b118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_CONTROL/38 (__get_CONTROL) @000000000623b000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_irq/37 (__disable_irq) @000000000622de38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_irq/36 (__enable_irq) @000000000622dd20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STLEX/35 (__STLEX) @000000000622dc08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STLEXH/34 (__STLEXH) @000000000622daf0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STLEXB/33 (__STLEXB) @000000000622d9d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDAEX/32 (__LDAEX) @000000000622d8c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDAEXH/31 (__LDAEXH) @000000000622d7a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDAEXB/30 (__LDAEXB) @000000000622d690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STL/29 (__STL) @000000000622d578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STLH/28 (__STLH) @000000000622d460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STLB/27 (__STLB) @000000000622d348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDA/26 (__LDA) @000000000622d230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDAH/25 (__LDAH) @000000000622d118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDAB/24 (__LDAB) @000000000622d000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRT/23 (__STRT) @000000000621fe38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRHT/22 (__STRHT) @000000000621fd20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRBT/21 (__STRBT) @000000000621fc08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRT/20 (__LDRT) @000000000621faf0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRHT/19 (__LDRHT) @000000000621f9d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRBT/18 (__LDRBT) @000000000621f8c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RRX/17 (__RRX) @000000000621f7a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLREX/16 (__CLREX) @000000000621f690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXW/15 (__STREXW) @000000000621f578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXH/14 (__STREXH) @000000000621f460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXB/13 (__STREXB) @000000000621f348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXW/12 (__LDREXW) @000000000621f230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXH/11 (__LDREXH) @000000000621f118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXB/10 (__LDREXB) @000000000621f000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLZ/9 (__CLZ) @0000000006105e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RBIT/8 (__RBIT) @0000000006105d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ROR/7 (__ROR) @0000000006105c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REVSH/6 (__REVSH) @0000000006105af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV16/5 (__REV16) @00000000061059d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV/4 (__REV) @00000000061058c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DMB/3 (__DMB) @00000000061057a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DSB/2 (__DSB) @0000000006105690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ISB/1 (__ISB) @0000000006105578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_set_STACKSEAL_S/0 (__TZ_set_STACKSEAL_S) @0000000006105460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+
+Removing unused symbols: MXC_SYS_In_Crit_Section/214 MXC_SYS_Crit_Exit/213 MXC_SYS_Crit_Enter/212 _mxc_crit_get_state/211 cmse_nonsecure_caller/209 cmse_TTAT/208 __cmse_TTAT_fptr/207 cmse_TTA/206 __cmse_TTA_fptr/205 cmse_TTT/204 __cmse_TTT_fptr/203 cmse_TT/202 __cmse_TT_fptr/201 ITM_CheckChar/200 ITM_ReceiveChar/199 ITM_SendChar/198 TZ_SysTick_Config_NS/197 SysTick_Config/196 TZ_DIB_GetAuthStatus_NS/195 DIB_GetAuthStatus/194 TZ_DCB_GetAuthCtrl_NS/193 TZ_DCB_SetAuthCtrl_NS/192 DCB_GetAuthCtrl/191 DCB_SetAuthCtrl/190 TZ_SAU_Disable/189 TZ_SAU_Enable/188 SCB_GetFPUType/187 ARM_MPU_Load_NS/186 ARM_MPU_Load/185 ARM_MPU_LoadEx/184 ARM_MPU_OrderedMemcpy/183 ARM_MPU_SetRegion_NS/182 ARM_MPU_SetRegion/181 ARM_MPU_SetRegionEx/180 ARM_MPU_ClrRegion_NS/179 ARM_MPU_ClrRegion/178 ARM_MPU_ClrRegionEx/177 ARM_MPU_SetMemAttr_NS/176 ARM_MPU_SetMemAttr/175 ARM_MPU_SetMemAttrEx/174 ARM_MPU_Disable_NS/173 ARM_MPU_Enable_NS/172 ARM_MPU_Disable/171 ARM_MPU_Enable/170 TZ_NVIC_GetPriority_NS/169 TZ_NVIC_SetPriority_NS/168 TZ_NVIC_GetActive_NS/167 TZ_NVIC_ClearPendingIRQ_NS/166 TZ_NVIC_SetPendingIRQ_NS/165 TZ_NVIC_GetPendingIRQ_NS/164 TZ_NVIC_DisableIRQ_NS/163 TZ_NVIC_GetEnableIRQ_NS/162 TZ_NVIC_EnableIRQ_NS/161 TZ_NVIC_GetPriorityGrouping_NS/160 TZ_NVIC_SetPriorityGrouping_NS/159 __NVIC_SystemReset/158 __NVIC_GetVector/157 __NVIC_SetVector/156 NVIC_DecodePriority/155 NVIC_EncodePriority/154 __NVIC_GetPriority/153 __NVIC_SetPriority/152 NVIC_ClearTargetState/151 NVIC_SetTargetState/150 NVIC_GetTargetState/149 __NVIC_GetActive/148 __NVIC_ClearPendingIRQ/147 __NVIC_SetPendingIRQ/146 __NVIC_GetPendingIRQ/145 __NVIC_DisableIRQ/144 __NVIC_GetEnableIRQ/143 __NVIC_EnableIRQ/142 __NVIC_GetPriorityGrouping/141 __NVIC_SetPriorityGrouping/140 __SMMLA/139 __QSUB/138 __QADD/137 __SEL/136 __SMLSLDX/135 __SMLSLD/134 __SMLSDX/133 __SMLSD/132 __SMUSDX/131 __SMUSD/130 __SMLALDX/129 __SMLALD/128 __SMLADX/127 __SMLAD/126 __SMUADX/125 __SMUAD/124 __SXTAB16_RORn/123 __SXTAB16/122 __SXTB16_RORn/121 __SXTB16/120 __UXTAB16/119 __UXTB16/118 __USADA8/117 __USAD8/116 __UHSAX/115 __UQSAX/114 __USAX/113 __SHSAX/112 __QSAX/111 __SSAX/110 __UHASX/109 __UQASX/108 __UASX/107 __SHASX/106 __QASX/105 __SASX/104 __UHSUB16/103 __UQSUB16/102 __USUB16/101 __SHSUB16/100 __QSUB16/99 __SSUB16/98 __UHADD16/97 __UQADD16/96 __UADD16/95 __SHADD16/94 __QADD16/93 __SADD16/92 __UHSUB8/91 __UQSUB8/90 __USUB8/89 __SHSUB8/88 __QSUB8/87 __SSUB8/86 __UHADD8/85 __UQADD8/84 __UADD8/83 __SHADD8/82 __QADD8/81 __SADD8/80 __set_FPSCR/79 __get_FPSCR/78 __TZ_set_MSPLIM_NS/77 __set_MSPLIM/76 __TZ_get_MSPLIM_NS/75 __get_MSPLIM/74 __TZ_set_PSPLIM_NS/73 __set_PSPLIM/72 __TZ_get_PSPLIM_NS/71 __get_PSPLIM/70 __TZ_set_FAULTMASK_NS/69 __set_FAULTMASK/68 __TZ_get_FAULTMASK_NS/67 __get_FAULTMASK/66 __set_BASEPRI_MAX/65 __TZ_set_BASEPRI_NS/64 __set_BASEPRI/63 __TZ_get_BASEPRI_NS/62 __get_BASEPRI/61 __disable_fault_irq/60 __enable_fault_irq/59 __TZ_set_PRIMASK_NS/58 __set_PRIMASK/57 __TZ_get_PRIMASK_NS/56 __get_PRIMASK/55 __TZ_set_SP_NS/54 __TZ_get_SP_NS/53 __TZ_set_MSP_NS/52 __set_MSP/51 __TZ_get_MSP_NS/50 __get_MSP/49 __TZ_set_PSP_NS/48 __set_PSP/47 __TZ_get_PSP_NS/46 __get_PSP/45 __get_xPSR/44 __get_APSR/43 __get_IPSR/42 __TZ_set_CONTROL_NS/41 __set_CONTROL/40 __TZ_get_CONTROL_NS/39 __get_CONTROL/38 __disable_irq/37 __enable_irq/36 __STLEX/35 __STLEXH/34 __STLEXB/33 __LDAEX/32 __LDAEXH/31 __LDAEXB/30 __STL/29 __STLH/28 __STLB/27 __LDA/26 __LDAH/25 __LDAB/24 __STRT/23 __STRHT/22 __STRBT/21 __LDRT/20 __LDRHT/19 __LDRBT/18 __RRX/17 __CLREX/16 __STREXW/15 __STREXH/14 __STREXB/13 __LDREXW/12 __LDREXH/11 __LDREXB/10 __CLZ/9 __RBIT/8 __ROR/7 __REVSH/6 __REV16/5 __REV/4 __DMB/3 __DSB/2 __ISB/1 __TZ_set_STACKSEAL_S/0
+
+Reclaimed Symbol table:
+
+MXC_DMA_RevA_DoTransfer/262 (MXC_DMA_RevA_DoTransfer) @00000000064dfe38
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_DoTransfer/238 
+  Calls: 
+MXC_DMA_RevA_MemCpy/261 (MXC_DMA_RevA_MemCpy) @00000000064dfd20
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_MemCpy/237 
+  Calls: 
+MXC_DMA_RevA_Handler/260 (MXC_DMA_RevA_Handler) @00000000064dfc08
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_Handler/236 
+  Calls: 
+MXC_DMA_RevA_GetCHRegs/259 (MXC_DMA_RevA_GetCHRegs) @00000000064dfaf0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_GetCHRegs/235 
+  Calls: 
+MXC_DMA_RevA_Stop/258 (MXC_DMA_RevA_Stop) @00000000064df9d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_Stop/234 
+  Calls: 
+MXC_DMA_RevA_Start/257 (MXC_DMA_RevA_Start) @00000000064df8c0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_Start/233 
+  Calls: 
+MXC_DMA_RevA_DisableInt/256 (MXC_DMA_RevA_DisableInt) @00000000064df7a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_DisableInt/232 
+  Calls: 
+MXC_DMA_RevA_EnableInt/255 (MXC_DMA_RevA_EnableInt) @00000000064df690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_EnableInt/231 
+  Calls: 
+MXC_DMA_RevA_ChannelClearFlags/254 (MXC_DMA_RevA_ChannelClearFlags) @00000000064df578
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ChannelClearFlags/230 
+  Calls: 
+MXC_DMA_RevA_ChannelGetFlags/253 (MXC_DMA_RevA_ChannelGetFlags) @00000000064df460
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ChannelGetFlags/229 
+  Calls: 
+MXC_DMA_RevA_ChannelDisableInt/252 (MXC_DMA_RevA_ChannelDisableInt) @00000000064df348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ChannelDisableInt/228 
+  Calls: 
+MXC_DMA_RevA_ChannelEnableInt/251 (MXC_DMA_RevA_ChannelEnableInt) @00000000064df230
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ChannelEnableInt/227 
+  Calls: 
+MXC_DMA_RevA_SetChannelInterruptEn/250 (MXC_DMA_RevA_SetChannelInterruptEn) @00000000064df118
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_SetChannelInterruptEn/226 
+  Calls: 
+MXC_DMA_RevA_SetCallback/249 (MXC_DMA_RevA_SetCallback) @00000000064df000
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_SetCallback/225 
+  Calls: 
+MXC_DMA_RevA_GetSrcReload/248 (MXC_DMA_RevA_GetSrcReload) @00000000064b7e38
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_GetSrcReload/224 
+  Calls: 
+MXC_DMA_RevA_SetSrcReload/247 (MXC_DMA_RevA_SetSrcReload) @00000000064b7d20
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_SetSrcReload/223 
+  Calls: 
+MXC_DMA_RevA_GetSrcDst/246 (MXC_DMA_RevA_GetSrcDst) @00000000064b7c08
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_GetSrcDst/222 
+  Calls: 
+MXC_DMA_RevA_SetSrcDst/245 (MXC_DMA_RevA_SetSrcDst) @00000000064b7af0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_SetSrcDst/221 
+  Calls: 
+MXC_DMA_RevA_AdvConfigChannel/244 (MXC_DMA_RevA_AdvConfigChannel) @00000000064b79d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_AdvConfigChannel/220 
+  Calls: 
+MXC_DMA_RevA_ConfigChannel/243 (MXC_DMA_RevA_ConfigChannel) @00000000064b78c0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ConfigChannel/219 
+  Calls: 
+MXC_DMA_RevA_ReleaseChannel/242 (MXC_DMA_RevA_ReleaseChannel) @00000000064b77a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ReleaseChannel/218 
+  Calls: 
+MXC_DMA_RevA_AcquireChannel/241 (MXC_DMA_RevA_AcquireChannel) @00000000064b7690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_AcquireChannel/217 
+  Calls: 
+MXC_DMA_RevA_DeInit/240 (MXC_DMA_RevA_DeInit) @00000000064b7578
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_DeInit/216 
+  Calls: 
+MXC_DMA_RevA_Init/239 (MXC_DMA_RevA_Init) @00000000064b7460
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_Init/215 
+  Calls: 
+MXC_DMA_DoTransfer/238 (MXC_DMA_DoTransfer) @00000000064b7348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_DoTransfer/262 
+MXC_DMA_MemCpy/237 (MXC_DMA_MemCpy) @00000000064b7230
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_MemCpy/261 
+MXC_DMA_Handler/236 (MXC_DMA_Handler) @00000000064b7118
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_Handler/260 
+MXC_DMA_GetCHRegs/235 (MXC_DMA_GetCHRegs) @00000000064b7000
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_GetCHRegs/259 
+MXC_DMA_Stop/234 (MXC_DMA_Stop) @00000000064b2e38
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_Stop/258 
+MXC_DMA_Start/233 (MXC_DMA_Start) @00000000064b2d20
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_Start/257 
+MXC_DMA_DisableInt/232 (MXC_DMA_DisableInt) @00000000064b2c08
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_DisableInt/256 
+MXC_DMA_EnableInt/231 (MXC_DMA_EnableInt) @00000000064b2af0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_EnableInt/255 
+MXC_DMA_ChannelClearFlags/230 (MXC_DMA_ChannelClearFlags) @00000000064b29d8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ChannelClearFlags/254 
+MXC_DMA_ChannelGetFlags/229 (MXC_DMA_ChannelGetFlags) @00000000064b28c0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ChannelGetFlags/253 
+MXC_DMA_ChannelDisableInt/228 (MXC_DMA_ChannelDisableInt) @00000000064b27a8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ChannelDisableInt/252 
+MXC_DMA_ChannelEnableInt/227 (MXC_DMA_ChannelEnableInt) @00000000064b2690
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ChannelEnableInt/251 
+MXC_DMA_SetChannelInterruptEn/226 (MXC_DMA_SetChannelInterruptEn) @00000000064b2578
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_SetChannelInterruptEn/250 
+MXC_DMA_SetCallback/225 (MXC_DMA_SetCallback) @00000000064b2460
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_SetCallback/249 
+MXC_DMA_GetSrcReload/224 (MXC_DMA_GetSrcReload) @00000000064b2348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_GetSrcReload/248 
+MXC_DMA_SetSrcReload/223 (MXC_DMA_SetSrcReload) @00000000064b2230
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_SetSrcReload/247 
+MXC_DMA_GetSrcDst/222 (MXC_DMA_GetSrcDst) @00000000064b2118
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_GetSrcDst/246 
+MXC_DMA_SetSrcDst/221 (MXC_DMA_SetSrcDst) @00000000064b2000
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_SetSrcDst/245 
+MXC_DMA_AdvConfigChannel/220 (MXC_DMA_AdvConfigChannel) @0000000006393e38
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_AdvConfigChannel/244 
+MXC_DMA_ConfigChannel/219 (MXC_DMA_ConfigChannel) @0000000006393d20
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ConfigChannel/243 
+MXC_DMA_ReleaseChannel/218 (MXC_DMA_ReleaseChannel) @0000000006393c08
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ReleaseChannel/242 
+MXC_DMA_AcquireChannel/217 (MXC_DMA_AcquireChannel) @0000000006393af0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_AcquireChannel/241 
+MXC_DMA_DeInit/216 (MXC_DMA_DeInit) @00000000063939d8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_DeInit/240 
+MXC_DMA_Init/215 (MXC_DMA_Init) @00000000063938c0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_Init/239 
+_state/210 (_state) @00000000063f1480
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+
+
+Initial Symbol table:
+
+MXC_DMA_RevA_DoTransfer/262 (MXC_DMA_RevA_DoTransfer) @00000000064dfe38
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_DoTransfer/238 
+  Calls: 
+MXC_DMA_RevA_MemCpy/261 (MXC_DMA_RevA_MemCpy) @00000000064dfd20
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_MemCpy/237 
+  Calls: 
+MXC_DMA_RevA_Handler/260 (MXC_DMA_RevA_Handler) @00000000064dfc08
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_Handler/236 
+  Calls: 
+MXC_DMA_RevA_GetCHRegs/259 (MXC_DMA_RevA_GetCHRegs) @00000000064dfaf0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_GetCHRegs/235 
+  Calls: 
+MXC_DMA_RevA_Stop/258 (MXC_DMA_RevA_Stop) @00000000064df9d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_Stop/234 
+  Calls: 
+MXC_DMA_RevA_Start/257 (MXC_DMA_RevA_Start) @00000000064df8c0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_Start/233 
+  Calls: 
+MXC_DMA_RevA_DisableInt/256 (MXC_DMA_RevA_DisableInt) @00000000064df7a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_DisableInt/232 
+  Calls: 
+MXC_DMA_RevA_EnableInt/255 (MXC_DMA_RevA_EnableInt) @00000000064df690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_EnableInt/231 
+  Calls: 
+MXC_DMA_RevA_ChannelClearFlags/254 (MXC_DMA_RevA_ChannelClearFlags) @00000000064df578
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ChannelClearFlags/230 
+  Calls: 
+MXC_DMA_RevA_ChannelGetFlags/253 (MXC_DMA_RevA_ChannelGetFlags) @00000000064df460
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ChannelGetFlags/229 
+  Calls: 
+MXC_DMA_RevA_ChannelDisableInt/252 (MXC_DMA_RevA_ChannelDisableInt) @00000000064df348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ChannelDisableInt/228 
+  Calls: 
+MXC_DMA_RevA_ChannelEnableInt/251 (MXC_DMA_RevA_ChannelEnableInt) @00000000064df230
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ChannelEnableInt/227 
+  Calls: 
+MXC_DMA_RevA_SetChannelInterruptEn/250 (MXC_DMA_RevA_SetChannelInterruptEn) @00000000064df118
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_SetChannelInterruptEn/226 
+  Calls: 
+MXC_DMA_RevA_SetCallback/249 (MXC_DMA_RevA_SetCallback) @00000000064df000
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_SetCallback/225 
+  Calls: 
+MXC_DMA_RevA_GetSrcReload/248 (MXC_DMA_RevA_GetSrcReload) @00000000064b7e38
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_GetSrcReload/224 
+  Calls: 
+MXC_DMA_RevA_SetSrcReload/247 (MXC_DMA_RevA_SetSrcReload) @00000000064b7d20
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_SetSrcReload/223 
+  Calls: 
+MXC_DMA_RevA_GetSrcDst/246 (MXC_DMA_RevA_GetSrcDst) @00000000064b7c08
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_GetSrcDst/222 
+  Calls: 
+MXC_DMA_RevA_SetSrcDst/245 (MXC_DMA_RevA_SetSrcDst) @00000000064b7af0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_SetSrcDst/221 
+  Calls: 
+MXC_DMA_RevA_AdvConfigChannel/244 (MXC_DMA_RevA_AdvConfigChannel) @00000000064b79d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_AdvConfigChannel/220 
+  Calls: 
+MXC_DMA_RevA_ConfigChannel/243 (MXC_DMA_RevA_ConfigChannel) @00000000064b78c0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ConfigChannel/219 
+  Calls: 
+MXC_DMA_RevA_ReleaseChannel/242 (MXC_DMA_RevA_ReleaseChannel) @00000000064b77a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ReleaseChannel/218 
+  Calls: 
+MXC_DMA_RevA_AcquireChannel/241 (MXC_DMA_RevA_AcquireChannel) @00000000064b7690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_AcquireChannel/217 
+  Calls: 
+MXC_DMA_RevA_DeInit/240 (MXC_DMA_RevA_DeInit) @00000000064b7578
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_DeInit/216 
+  Calls: 
+MXC_DMA_RevA_Init/239 (MXC_DMA_RevA_Init) @00000000064b7460
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_Init/215 
+  Calls: 
+MXC_DMA_DoTransfer/238 (MXC_DMA_DoTransfer) @00000000064b7348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_DoTransfer/262 
+MXC_DMA_MemCpy/237 (MXC_DMA_MemCpy) @00000000064b7230
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_MemCpy/261 
+MXC_DMA_Handler/236 (MXC_DMA_Handler) @00000000064b7118
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_Handler/260 
+MXC_DMA_GetCHRegs/235 (MXC_DMA_GetCHRegs) @00000000064b7000
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_GetCHRegs/259 
+MXC_DMA_Stop/234 (MXC_DMA_Stop) @00000000064b2e38
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_Stop/258 
+MXC_DMA_Start/233 (MXC_DMA_Start) @00000000064b2d20
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_Start/257 
+MXC_DMA_DisableInt/232 (MXC_DMA_DisableInt) @00000000064b2c08
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_DisableInt/256 
+MXC_DMA_EnableInt/231 (MXC_DMA_EnableInt) @00000000064b2af0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_EnableInt/255 
+MXC_DMA_ChannelClearFlags/230 (MXC_DMA_ChannelClearFlags) @00000000064b29d8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ChannelClearFlags/254 
+MXC_DMA_ChannelGetFlags/229 (MXC_DMA_ChannelGetFlags) @00000000064b28c0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ChannelGetFlags/253 
+MXC_DMA_ChannelDisableInt/228 (MXC_DMA_ChannelDisableInt) @00000000064b27a8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ChannelDisableInt/252 
+MXC_DMA_ChannelEnableInt/227 (MXC_DMA_ChannelEnableInt) @00000000064b2690
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ChannelEnableInt/251 
+MXC_DMA_SetChannelInterruptEn/226 (MXC_DMA_SetChannelInterruptEn) @00000000064b2578
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_SetChannelInterruptEn/250 
+MXC_DMA_SetCallback/225 (MXC_DMA_SetCallback) @00000000064b2460
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_SetCallback/249 
+MXC_DMA_GetSrcReload/224 (MXC_DMA_GetSrcReload) @00000000064b2348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_GetSrcReload/248 
+MXC_DMA_SetSrcReload/223 (MXC_DMA_SetSrcReload) @00000000064b2230
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_SetSrcReload/247 
+MXC_DMA_GetSrcDst/222 (MXC_DMA_GetSrcDst) @00000000064b2118
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_GetSrcDst/246 
+MXC_DMA_SetSrcDst/221 (MXC_DMA_SetSrcDst) @00000000064b2000
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_SetSrcDst/245 
+MXC_DMA_AdvConfigChannel/220 (MXC_DMA_AdvConfigChannel) @0000000006393e38
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_AdvConfigChannel/244 
+MXC_DMA_ConfigChannel/219 (MXC_DMA_ConfigChannel) @0000000006393d20
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ConfigChannel/243 
+MXC_DMA_ReleaseChannel/218 (MXC_DMA_ReleaseChannel) @0000000006393c08
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ReleaseChannel/242 
+MXC_DMA_AcquireChannel/217 (MXC_DMA_AcquireChannel) @0000000006393af0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_AcquireChannel/241 
+MXC_DMA_DeInit/216 (MXC_DMA_DeInit) @00000000063939d8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_DeInit/240 
+MXC_DMA_Init/215 (MXC_DMA_Init) @00000000063938c0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_Init/239 
+_state/210 (_state) @00000000063f1480
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+MXC_DMA_RevA_DoTransfer/262 (MXC_DMA_RevA_DoTransfer) @00000000064dfe38
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_DoTransfer/238 
+  Calls: 
+MXC_DMA_RevA_MemCpy/261 (MXC_DMA_RevA_MemCpy) @00000000064dfd20
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_MemCpy/237 
+  Calls: 
+MXC_DMA_RevA_Handler/260 (MXC_DMA_RevA_Handler) @00000000064dfc08
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_Handler/236 
+  Calls: 
+MXC_DMA_RevA_GetCHRegs/259 (MXC_DMA_RevA_GetCHRegs) @00000000064dfaf0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_GetCHRegs/235 
+  Calls: 
+MXC_DMA_RevA_Stop/258 (MXC_DMA_RevA_Stop) @00000000064df9d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_Stop/234 
+  Calls: 
+MXC_DMA_RevA_Start/257 (MXC_DMA_RevA_Start) @00000000064df8c0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_Start/233 
+  Calls: 
+MXC_DMA_RevA_DisableInt/256 (MXC_DMA_RevA_DisableInt) @00000000064df7a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_DisableInt/232 
+  Calls: 
+MXC_DMA_RevA_EnableInt/255 (MXC_DMA_RevA_EnableInt) @00000000064df690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_EnableInt/231 
+  Calls: 
+MXC_DMA_RevA_ChannelClearFlags/254 (MXC_DMA_RevA_ChannelClearFlags) @00000000064df578
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ChannelClearFlags/230 
+  Calls: 
+MXC_DMA_RevA_ChannelGetFlags/253 (MXC_DMA_RevA_ChannelGetFlags) @00000000064df460
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ChannelGetFlags/229 
+  Calls: 
+MXC_DMA_RevA_ChannelDisableInt/252 (MXC_DMA_RevA_ChannelDisableInt) @00000000064df348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ChannelDisableInt/228 
+  Calls: 
+MXC_DMA_RevA_ChannelEnableInt/251 (MXC_DMA_RevA_ChannelEnableInt) @00000000064df230
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ChannelEnableInt/227 
+  Calls: 
+MXC_DMA_RevA_SetChannelInterruptEn/250 (MXC_DMA_RevA_SetChannelInterruptEn) @00000000064df118
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_SetChannelInterruptEn/226 
+  Calls: 
+MXC_DMA_RevA_SetCallback/249 (MXC_DMA_RevA_SetCallback) @00000000064df000
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_SetCallback/225 
+  Calls: 
+MXC_DMA_RevA_GetSrcReload/248 (MXC_DMA_RevA_GetSrcReload) @00000000064b7e38
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_GetSrcReload/224 
+  Calls: 
+MXC_DMA_RevA_SetSrcReload/247 (MXC_DMA_RevA_SetSrcReload) @00000000064b7d20
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_SetSrcReload/223 
+  Calls: 
+MXC_DMA_RevA_GetSrcDst/246 (MXC_DMA_RevA_GetSrcDst) @00000000064b7c08
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_GetSrcDst/222 
+  Calls: 
+MXC_DMA_RevA_SetSrcDst/245 (MXC_DMA_RevA_SetSrcDst) @00000000064b7af0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_SetSrcDst/221 
+  Calls: 
+MXC_DMA_RevA_AdvConfigChannel/244 (MXC_DMA_RevA_AdvConfigChannel) @00000000064b79d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_AdvConfigChannel/220 
+  Calls: 
+MXC_DMA_RevA_ConfigChannel/243 (MXC_DMA_RevA_ConfigChannel) @00000000064b78c0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ConfigChannel/219 
+  Calls: 
+MXC_DMA_RevA_ReleaseChannel/242 (MXC_DMA_RevA_ReleaseChannel) @00000000064b77a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_ReleaseChannel/218 
+  Calls: 
+MXC_DMA_RevA_AcquireChannel/241 (MXC_DMA_RevA_AcquireChannel) @00000000064b7690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_AcquireChannel/217 
+  Calls: 
+MXC_DMA_RevA_DeInit/240 (MXC_DMA_RevA_DeInit) @00000000064b7578
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_DeInit/216 
+  Calls: 
+MXC_DMA_RevA_Init/239 (MXC_DMA_RevA_Init) @00000000064b7460
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: MXC_DMA_Init/215 
+  Calls: 
+MXC_DMA_DoTransfer/238 (MXC_DMA_DoTransfer) @00000000064b7348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_DoTransfer/262 
+MXC_DMA_MemCpy/237 (MXC_DMA_MemCpy) @00000000064b7230
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_MemCpy/261 
+MXC_DMA_Handler/236 (MXC_DMA_Handler) @00000000064b7118
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_Handler/260 
+MXC_DMA_GetCHRegs/235 (MXC_DMA_GetCHRegs) @00000000064b7000
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_GetCHRegs/259 
+MXC_DMA_Stop/234 (MXC_DMA_Stop) @00000000064b2e38
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_Stop/258 
+MXC_DMA_Start/233 (MXC_DMA_Start) @00000000064b2d20
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_Start/257 
+MXC_DMA_DisableInt/232 (MXC_DMA_DisableInt) @00000000064b2c08
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_DisableInt/256 
+MXC_DMA_EnableInt/231 (MXC_DMA_EnableInt) @00000000064b2af0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_EnableInt/255 
+MXC_DMA_ChannelClearFlags/230 (MXC_DMA_ChannelClearFlags) @00000000064b29d8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ChannelClearFlags/254 
+MXC_DMA_ChannelGetFlags/229 (MXC_DMA_ChannelGetFlags) @00000000064b28c0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ChannelGetFlags/253 
+MXC_DMA_ChannelDisableInt/228 (MXC_DMA_ChannelDisableInt) @00000000064b27a8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ChannelDisableInt/252 
+MXC_DMA_ChannelEnableInt/227 (MXC_DMA_ChannelEnableInt) @00000000064b2690
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ChannelEnableInt/251 
+MXC_DMA_SetChannelInterruptEn/226 (MXC_DMA_SetChannelInterruptEn) @00000000064b2578
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_SetChannelInterruptEn/250 
+MXC_DMA_SetCallback/225 (MXC_DMA_SetCallback) @00000000064b2460
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_SetCallback/249 
+MXC_DMA_GetSrcReload/224 (MXC_DMA_GetSrcReload) @00000000064b2348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_GetSrcReload/248 
+MXC_DMA_SetSrcReload/223 (MXC_DMA_SetSrcReload) @00000000064b2230
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_SetSrcReload/247 
+MXC_DMA_GetSrcDst/222 (MXC_DMA_GetSrcDst) @00000000064b2118
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_GetSrcDst/246 
+MXC_DMA_SetSrcDst/221 (MXC_DMA_SetSrcDst) @00000000064b2000
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_SetSrcDst/245 
+MXC_DMA_AdvConfigChannel/220 (MXC_DMA_AdvConfigChannel) @0000000006393e38
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_AdvConfigChannel/244 
+MXC_DMA_ConfigChannel/219 (MXC_DMA_ConfigChannel) @0000000006393d20
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ConfigChannel/243 
+MXC_DMA_ReleaseChannel/218 (MXC_DMA_ReleaseChannel) @0000000006393c08
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ReleaseChannel/242 
+MXC_DMA_AcquireChannel/217 (MXC_DMA_AcquireChannel) @0000000006393af0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_AcquireChannel/241 
+MXC_DMA_DeInit/216 (MXC_DMA_DeInit) @00000000063939d8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_DeInit/240 
+MXC_DMA_Init/215 (MXC_DMA_Init) @00000000063938c0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_Init/239 
+_state/210 (_state) @00000000063f1480
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+MXC_DMA_RevA_DoTransfer/262 (MXC_DMA_RevA_DoTransfer) @00000000064dfe38
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_DoTransfer/238 
+  Calls: 
+MXC_DMA_RevA_MemCpy/261 (MXC_DMA_RevA_MemCpy) @00000000064dfd20
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_MemCpy/237 
+  Calls: 
+MXC_DMA_RevA_Handler/260 (MXC_DMA_RevA_Handler) @00000000064dfc08
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_Handler/236 
+  Calls: 
+MXC_DMA_RevA_GetCHRegs/259 (MXC_DMA_RevA_GetCHRegs) @00000000064dfaf0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_GetCHRegs/235 
+  Calls: 
+MXC_DMA_RevA_Stop/258 (MXC_DMA_RevA_Stop) @00000000064df9d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_Stop/234 
+  Calls: 
+MXC_DMA_RevA_Start/257 (MXC_DMA_RevA_Start) @00000000064df8c0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_Start/233 
+  Calls: 
+MXC_DMA_RevA_DisableInt/256 (MXC_DMA_RevA_DisableInt) @00000000064df7a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_DisableInt/232 
+  Calls: 
+MXC_DMA_RevA_EnableInt/255 (MXC_DMA_RevA_EnableInt) @00000000064df690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_EnableInt/231 
+  Calls: 
+MXC_DMA_RevA_ChannelClearFlags/254 (MXC_DMA_RevA_ChannelClearFlags) @00000000064df578
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_ChannelClearFlags/230 
+  Calls: 
+MXC_DMA_RevA_ChannelGetFlags/253 (MXC_DMA_RevA_ChannelGetFlags) @00000000064df460
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_ChannelGetFlags/229 
+  Calls: 
+MXC_DMA_RevA_ChannelDisableInt/252 (MXC_DMA_RevA_ChannelDisableInt) @00000000064df348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_ChannelDisableInt/228 
+  Calls: 
+MXC_DMA_RevA_ChannelEnableInt/251 (MXC_DMA_RevA_ChannelEnableInt) @00000000064df230
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_ChannelEnableInt/227 
+  Calls: 
+MXC_DMA_RevA_SetChannelInterruptEn/250 (MXC_DMA_RevA_SetChannelInterruptEn) @00000000064df118
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_SetChannelInterruptEn/226 
+  Calls: 
+MXC_DMA_RevA_SetCallback/249 (MXC_DMA_RevA_SetCallback) @00000000064df000
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_SetCallback/225 
+  Calls: 
+MXC_DMA_RevA_GetSrcReload/248 (MXC_DMA_RevA_GetSrcReload) @00000000064b7e38
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_GetSrcReload/224 
+  Calls: 
+MXC_DMA_RevA_SetSrcReload/247 (MXC_DMA_RevA_SetSrcReload) @00000000064b7d20
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_SetSrcReload/223 
+  Calls: 
+MXC_DMA_RevA_GetSrcDst/246 (MXC_DMA_RevA_GetSrcDst) @00000000064b7c08
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_GetSrcDst/222 
+  Calls: 
+MXC_DMA_RevA_SetSrcDst/245 (MXC_DMA_RevA_SetSrcDst) @00000000064b7af0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_SetSrcDst/221 
+  Calls: 
+MXC_DMA_RevA_AdvConfigChannel/244 (MXC_DMA_RevA_AdvConfigChannel) @00000000064b79d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_AdvConfigChannel/220 
+  Calls: 
+MXC_DMA_RevA_ConfigChannel/243 (MXC_DMA_RevA_ConfigChannel) @00000000064b78c0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_ConfigChannel/219 
+  Calls: 
+MXC_DMA_RevA_ReleaseChannel/242 (MXC_DMA_RevA_ReleaseChannel) @00000000064b77a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_ReleaseChannel/218 
+  Calls: 
+MXC_DMA_RevA_AcquireChannel/241 (MXC_DMA_RevA_AcquireChannel) @00000000064b7690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_AcquireChannel/217 
+  Calls: 
+MXC_DMA_RevA_DeInit/240 (MXC_DMA_RevA_DeInit) @00000000064b7578
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_DeInit/216 
+  Calls: 
+MXC_DMA_RevA_Init/239 (MXC_DMA_RevA_Init) @00000000064b7460
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MXC_DMA_Init/215 
+  Calls: 
+MXC_DMA_DoTransfer/238 (MXC_DMA_DoTransfer) @00000000064b7348
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_DoTransfer/262 
+MXC_DMA_MemCpy/237 (MXC_DMA_MemCpy) @00000000064b7230
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_MemCpy/261 
+MXC_DMA_Handler/236 (MXC_DMA_Handler) @00000000064b7118
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_Handler/260 
+MXC_DMA_GetCHRegs/235 (MXC_DMA_GetCHRegs) @00000000064b7000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_GetCHRegs/259 
+MXC_DMA_Stop/234 (MXC_DMA_Stop) @00000000064b2e38
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_Stop/258 
+MXC_DMA_Start/233 (MXC_DMA_Start) @00000000064b2d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_Start/257 
+MXC_DMA_DisableInt/232 (MXC_DMA_DisableInt) @00000000064b2c08
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_DisableInt/256 
+MXC_DMA_EnableInt/231 (MXC_DMA_EnableInt) @00000000064b2af0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_EnableInt/255 
+MXC_DMA_ChannelClearFlags/230 (MXC_DMA_ChannelClearFlags) @00000000064b29d8
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ChannelClearFlags/254 
+MXC_DMA_ChannelGetFlags/229 (MXC_DMA_ChannelGetFlags) @00000000064b28c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ChannelGetFlags/253 
+MXC_DMA_ChannelDisableInt/228 (MXC_DMA_ChannelDisableInt) @00000000064b27a8
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ChannelDisableInt/252 
+MXC_DMA_ChannelEnableInt/227 (MXC_DMA_ChannelEnableInt) @00000000064b2690
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ChannelEnableInt/251 
+MXC_DMA_SetChannelInterruptEn/226 (MXC_DMA_SetChannelInterruptEn) @00000000064b2578
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_SetChannelInterruptEn/250 
+MXC_DMA_SetCallback/225 (MXC_DMA_SetCallback) @00000000064b2460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_SetCallback/249 
+MXC_DMA_GetSrcReload/224 (MXC_DMA_GetSrcReload) @00000000064b2348
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_GetSrcReload/248 
+MXC_DMA_SetSrcReload/223 (MXC_DMA_SetSrcReload) @00000000064b2230
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_SetSrcReload/247 
+MXC_DMA_GetSrcDst/222 (MXC_DMA_GetSrcDst) @00000000064b2118
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_GetSrcDst/246 
+MXC_DMA_SetSrcDst/221 (MXC_DMA_SetSrcDst) @00000000064b2000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_SetSrcDst/245 
+MXC_DMA_AdvConfigChannel/220 (MXC_DMA_AdvConfigChannel) @0000000006393e38
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_AdvConfigChannel/244 
+MXC_DMA_ConfigChannel/219 (MXC_DMA_ConfigChannel) @0000000006393d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ConfigChannel/243 
+MXC_DMA_ReleaseChannel/218 (MXC_DMA_ReleaseChannel) @0000000006393c08
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_ReleaseChannel/242 
+MXC_DMA_AcquireChannel/217 (MXC_DMA_AcquireChannel) @0000000006393af0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_AcquireChannel/241 
+MXC_DMA_DeInit/216 (MXC_DMA_DeInit) @00000000063939d8
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_DeInit/240 
+MXC_DMA_Init/215 (MXC_DMA_Init) @00000000063938c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: MXC_DMA_RevA_Init/239 
+_state/210 (_state) @00000000063f1480
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+Trivially needed variables: _state/210
+Removing variables:
+
+Final Symbol table:
+
+MXC_DMA_RevA_DoTransfer/262 (MXC_DMA_RevA_DoTransfer) @00000000064dfe38
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_RevA_MemCpy/261 (MXC_DMA_RevA_MemCpy) @00000000064dfd20
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_RevA_Handler/260 (MXC_DMA_RevA_Handler) @00000000064dfc08
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_RevA_GetCHRegs/259 (MXC_DMA_RevA_GetCHRegs) @00000000064dfaf0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_RevA_Stop/258 (MXC_DMA_RevA_Stop) @00000000064df9d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_RevA_Start/257 (MXC_DMA_RevA_Start) @00000000064df8c0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_RevA_DisableInt/256 (MXC_DMA_RevA_DisableInt) @00000000064df7a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_RevA_EnableInt/255 (MXC_DMA_RevA_EnableInt) @00000000064df690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_RevA_ChannelClearFlags/254 (MXC_DMA_RevA_ChannelClearFlags) @00000000064df578
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_RevA_ChannelGetFlags/253 (MXC_DMA_RevA_ChannelGetFlags) @00000000064df460
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_RevA_ChannelDisableInt/252 (MXC_DMA_RevA_ChannelDisableInt) @00000000064df348
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_RevA_ChannelEnableInt/251 (MXC_DMA_RevA_ChannelEnableInt) @00000000064df230
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_RevA_SetChannelInterruptEn/250 (MXC_DMA_RevA_SetChannelInterruptEn) @00000000064df118
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_RevA_SetCallback/249 (MXC_DMA_RevA_SetCallback) @00000000064df000
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_RevA_GetSrcReload/248 (MXC_DMA_RevA_GetSrcReload) @00000000064b7e38
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_RevA_SetSrcReload/247 (MXC_DMA_RevA_SetSrcReload) @00000000064b7d20
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_RevA_GetSrcDst/246 (MXC_DMA_RevA_GetSrcDst) @00000000064b7c08
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_RevA_SetSrcDst/245 (MXC_DMA_RevA_SetSrcDst) @00000000064b7af0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_RevA_AdvConfigChannel/244 (MXC_DMA_RevA_AdvConfigChannel) @00000000064b79d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_RevA_ConfigChannel/243 (MXC_DMA_RevA_ConfigChannel) @00000000064b78c0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_RevA_ReleaseChannel/242 (MXC_DMA_RevA_ReleaseChannel) @00000000064b77a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_RevA_AcquireChannel/241 (MXC_DMA_RevA_AcquireChannel) @00000000064b7690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_RevA_DeInit/240 (MXC_DMA_RevA_DeInit) @00000000064b7578
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_RevA_Init/239 (MXC_DMA_RevA_Init) @00000000064b7460
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_DoTransfer/238 (MXC_DMA_DoTransfer) @00000000064b7348
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_DoTransfer (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_MemCpy/237 (MXC_DMA_MemCpy) @00000000064b7230
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_MemCpy (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_Handler/236 (MXC_DMA_Handler) @00000000064b7118
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_Handler (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_GetCHRegs/235 (MXC_DMA_GetCHRegs) @00000000064b7000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_GetCHRegs (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_Stop/234 (MXC_DMA_Stop) @00000000064b2e38
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_Stop (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_Start/233 (MXC_DMA_Start) @00000000064b2d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_Start (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_DisableInt/232 (MXC_DMA_DisableInt) @00000000064b2c08
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_DisableInt (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_EnableInt/231 (MXC_DMA_EnableInt) @00000000064b2af0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_EnableInt (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_ChannelClearFlags/230 (MXC_DMA_ChannelClearFlags) @00000000064b29d8
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_ChannelClearFlags (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_ChannelGetFlags/229 (MXC_DMA_ChannelGetFlags) @00000000064b28c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_ChannelGetFlags (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_ChannelDisableInt/228 (MXC_DMA_ChannelDisableInt) @00000000064b27a8
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_ChannelDisableInt (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_ChannelEnableInt/227 (MXC_DMA_ChannelEnableInt) @00000000064b2690
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_ChannelEnableInt (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_SetChannelInterruptEn/226 (MXC_DMA_SetChannelInterruptEn) @00000000064b2578
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_SetChannelInterruptEn (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_SetCallback/225 (MXC_DMA_SetCallback) @00000000064b2460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_SetCallback (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_GetSrcReload/224 (MXC_DMA_GetSrcReload) @00000000064b2348
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_GetSrcReload (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_SetSrcReload/223 (MXC_DMA_SetSrcReload) @00000000064b2230
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_SetSrcReload (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_GetSrcDst/222 (MXC_DMA_GetSrcDst) @00000000064b2118
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_GetSrcDst (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_SetSrcDst/221 (MXC_DMA_SetSrcDst) @00000000064b2000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_SetSrcDst (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_AdvConfigChannel/220 (MXC_DMA_AdvConfigChannel) @0000000006393e38
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_AdvConfigChannel (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_ConfigChannel/219 (MXC_DMA_ConfigChannel) @0000000006393d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_ConfigChannel (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_ReleaseChannel/218 (MXC_DMA_ReleaseChannel) @0000000006393c08
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_ReleaseChannel (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_AcquireChannel/217 (MXC_DMA_AcquireChannel) @0000000006393af0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_AcquireChannel (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_DeInit/216 (MXC_DMA_DeInit) @00000000063939d8
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_DeInit (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_DMA_Init/215 (MXC_DMA_Init) @00000000063938c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.MXC_DMA_Init (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+_state/210 (_state) @00000000063f1480
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.data._state (implicit_section)
+  Aux: @0000000000000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized

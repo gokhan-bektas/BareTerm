@@ -1,0 +1,533 @@
+Trivially needed symbols: timeutil_sync_skew_to_ppb/9 timeutil_sync_local_from_ref/8 timeutil_sync_ref_from_local/7 timeutil_sync_estimate_skew/6 timeutil_sync_state_set_skew/5 timeutil_sync_state_update/4 timeutil_timegm/3 timeutil_timegm64/2 time_days_from_civil/1
+
+
+Initial Symbol table:
+
+timeutil_sync_skew_to_ppb/9 (timeutil_sync_skew_to_ppb) @00000000060e6c08
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @0000000001d89da0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_local_from_ref/8 (timeutil_sync_local_from_ref) @00000000060e6af0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000060e6c08
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_ref_from_local/7 (timeutil_sync_ref_from_local) @00000000060e69d8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000060e6af0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_estimate_skew/6 (timeutil_sync_estimate_skew) @00000000060e68c0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000060e69d8
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_state_set_skew/5 (timeutil_sync_state_set_skew) @00000000060e67a8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000060e68c0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_state_update/4 (timeutil_sync_state_update) @00000000060e6690
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000060e67a8
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_timegm/3 (timeutil_timegm) @00000000060e6578
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000060e6690
+  References: errno/0 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: timeutil_timegm64/2 
+timeutil_timegm64/2 (timeutil_timegm64) @00000000060e6460
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000060e6578
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: timeutil_timegm/3 
+  Calls: time_days_from_civil/1 
+time_days_from_civil/1 (time_days_from_civil) @00000000060e6348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  Aux: @00000000060e6460
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: timeutil_timegm64/2 
+  Calls: 
+errno/0 (errno) @0000000005dd7100
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: timeutil_timegm/3 (write) 
+  Availability: not-ready
+  Varpool flags: tls-local-exec
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+timeutil_sync_skew_to_ppb/9 (timeutil_sync_skew_to_ppb) @00000000060e6c08
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_local_from_ref/8 (timeutil_sync_local_from_ref) @00000000060e6af0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_ref_from_local/7 (timeutil_sync_ref_from_local) @00000000060e69d8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_estimate_skew/6 (timeutil_sync_estimate_skew) @00000000060e68c0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_state_set_skew/5 (timeutil_sync_state_set_skew) @00000000060e67a8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_state_update/4 (timeutil_sync_state_update) @00000000060e6690
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_timegm/3 (timeutil_timegm) @00000000060e6578
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: errno/0 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: timeutil_timegm64/2 
+timeutil_timegm64/2 (timeutil_timegm64) @00000000060e6460
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: timeutil_timegm/3 
+  Calls: time_days_from_civil/1 
+time_days_from_civil/1 (time_days_from_civil) @00000000060e6348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: timeutil_timegm64/2 
+  Calls: 
+errno/0 (errno) @0000000005dd7100
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: timeutil_timegm/3 (write) 
+  Availability: not-ready
+  Varpool flags: tls-local-exec
+
+
+Initial Symbol table:
+
+timeutil_sync_skew_to_ppb/9 (timeutil_sync_skew_to_ppb) @00000000060e6c08
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_local_from_ref/8 (timeutil_sync_local_from_ref) @00000000060e6af0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_ref_from_local/7 (timeutil_sync_ref_from_local) @00000000060e69d8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_estimate_skew/6 (timeutil_sync_estimate_skew) @00000000060e68c0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_state_set_skew/5 (timeutil_sync_state_set_skew) @00000000060e67a8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_state_update/4 (timeutil_sync_state_update) @00000000060e6690
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_timegm/3 (timeutil_timegm) @00000000060e6578
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: errno/0 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: timeutil_timegm64/2 
+timeutil_timegm64/2 (timeutil_timegm64) @00000000060e6460
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: timeutil_timegm/3 
+  Calls: time_days_from_civil/1 
+time_days_from_civil/1 (time_days_from_civil) @00000000060e6348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: timeutil_timegm64/2 
+  Calls: 
+errno/0 (errno) @0000000005dd7100
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: timeutil_timegm/3 (write) 
+  Availability: not-ready
+  Varpool flags: tls-local-exec
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+timeutil_sync_skew_to_ppb/9 (timeutil_sync_skew_to_ppb) @00000000060e6c08
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_local_from_ref/8 (timeutil_sync_local_from_ref) @00000000060e6af0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_ref_from_local/7 (timeutil_sync_ref_from_local) @00000000060e69d8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_estimate_skew/6 (timeutil_sync_estimate_skew) @00000000060e68c0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_state_set_skew/5 (timeutil_sync_state_set_skew) @00000000060e67a8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_state_update/4 (timeutil_sync_state_update) @00000000060e6690
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_timegm/3 (timeutil_timegm) @00000000060e6578
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: errno/0 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: timeutil_timegm64/2 
+timeutil_timegm64/2 (timeutil_timegm64) @00000000060e6460
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: timeutil_timegm/3 
+  Calls: time_days_from_civil/1 
+time_days_from_civil/1 (time_days_from_civil) @00000000060e6348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: timeutil_timegm64/2 
+  Calls: 
+errno/0 (errno) @0000000005dd7100
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: timeutil_timegm/3 (write) 
+  Availability: not-ready
+  Varpool flags: tls-local-exec
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+timeutil_sync_skew_to_ppb/9 (timeutil_sync_skew_to_ppb) @00000000060e6c08
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_local_from_ref/8 (timeutil_sync_local_from_ref) @00000000060e6af0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_ref_from_local/7 (timeutil_sync_ref_from_local) @00000000060e69d8
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_estimate_skew/6 (timeutil_sync_estimate_skew) @00000000060e68c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_state_set_skew/5 (timeutil_sync_state_set_skew) @00000000060e67a8
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_sync_state_update/4 (timeutil_sync_state_update) @00000000060e6690
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+timeutil_timegm/3 (timeutil_timegm) @00000000060e6578
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: errno/0 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: timeutil_timegm64/2 
+timeutil_timegm64/2 (timeutil_timegm64) @00000000060e6460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: timeutil_timegm/3 
+  Calls: time_days_from_civil/1 
+time_days_from_civil/1 (time_days_from_civil) @00000000060e6348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: timeutil_timegm64/2 
+  Calls: 
+errno/0 (errno) @0000000005dd7100
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: timeutil_timegm/3 (write) 
+  Availability: not_available
+  Varpool flags: tls-local-exec
+Trivially needed variables:
+Removing variables:
+
+Final Symbol table:
+
+timeutil_sync_skew_to_ppb/9 (timeutil_sync_skew_to_ppb) @00000000060e6c08
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.timeutil_sync_skew_to_ppb (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+timeutil_sync_local_from_ref/8 (timeutil_sync_local_from_ref) @00000000060e6af0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.timeutil_sync_local_from_ref (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+timeutil_sync_ref_from_local/7 (timeutil_sync_ref_from_local) @00000000060e69d8
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.timeutil_sync_ref_from_local (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+timeutil_sync_estimate_skew/6 (timeutil_sync_estimate_skew) @00000000060e68c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.timeutil_sync_estimate_skew (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+timeutil_sync_state_set_skew/5 (timeutil_sync_state_set_skew) @00000000060e67a8
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.timeutil_sync_state_set_skew (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+timeutil_sync_state_update/4 (timeutil_sync_state_update) @00000000060e6690
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.timeutil_sync_state_update (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+timeutil_timegm/3 (timeutil_timegm) @00000000060e6578
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.timeutil_timegm (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+timeutil_timegm64/2 (timeutil_timegm64) @00000000060e6460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.timeutil_timegm64 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+time_days_from_civil/1 (time_days_from_civil) @00000000060e6348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.text.time_days_from_civil (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+errno/0 (errno) @0000000005dd7100
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: tls-local-exec

@@ -1,0 +1,5 @@
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/thread.c:60:6:arch_new_thread	32	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/thread.c:467:13:z_arm_prepare_switch_to_main	4	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/thread.c:491:6:arch_switch_to_main_thread	40	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/thread.c:567:13:arch_irq_unlock_outlined	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/thread.c:576:21:arch_irq_lock_outlined	24	static

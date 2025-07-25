@@ -1,0 +1,17 @@
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/sys/dlist.h:202:20:sys_dlist_init	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/sys/dlist.h:219:20:sys_dnode_init	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/sys/dlist.h:274:20:sys_dlist_is_empty	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/sys/dlist.h:302:28:sys_dlist_peek_head	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/sys/dlist.h:527:20:sys_dlist_remove	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/sys/internal/kobject_internal.h:92:20:k_object_init	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/include/kernel_internal.h:108:21:z_thread_malloc	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/include/timeout_q.h:52:20:z_abort_thread_timeout	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/include/kthread.h:153:20:z_mark_thread_as_not_pending	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/include/ksched.h:159:20:unpend_thread_no_timeout	32	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/include/wait_q.h:47:20:z_waitq_init	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/include/wait_q.h:52:32:z_waitq_head	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/stack.c:27:6:k_stack_init	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/stack.c:44:9:z_impl_k_stack_alloc_init	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/stack.c:80:5:k_stack_cleanup	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/stack.c:101:5:z_impl_k_stack_push	112	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/stack.c:148:5:z_impl_k_stack_pop	104	static

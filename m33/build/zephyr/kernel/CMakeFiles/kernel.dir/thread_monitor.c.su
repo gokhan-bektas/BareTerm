@@ -1,0 +1,3 @@
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/thread_monitor.c:15:6:z_thread_monitor_exit	72	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/thread_monitor.c:38:6:k_thread_foreach	72	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/thread_monitor.c:64:6:k_thread_foreach_unlocked	112	static

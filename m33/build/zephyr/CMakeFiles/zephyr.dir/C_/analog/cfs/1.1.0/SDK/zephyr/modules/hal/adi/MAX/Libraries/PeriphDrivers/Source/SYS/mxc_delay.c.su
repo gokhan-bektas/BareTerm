@@ -1,0 +1,7 @@
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/SYS/mxc_delay.c:75:13:SysTick_Handler	8	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/SYS/mxc_delay.c:81:6:MXC_DelayHandler	8	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/SYS/mxc_delay.c:100:13:MXC_DelayInit	48	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/SYS/mxc_delay.c:140:5:MXC_DelayAsync	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/SYS/mxc_delay.c:166:5:MXC_DelayCheck	8	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/SYS/mxc_delay.c:194:6:MXC_DelayAbort	8	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/SYS/mxc_delay.c:206:5:MXC_Delay	16	static

@@ -1,0 +1,503 @@
+/dts-v1/;
+
+/ {
+	#address-cells = < 0x1 >;
+	#size-cells = < 0x1 >;
+	model = "Analog Devices MAX32657EVKIT";
+	compatible = "adi,max32657evkit";
+	chosen {
+		zephyr,entropy = &trng;
+		zephyr,flash-controller = &flc0;
+		zephyr,console = &uart0;
+		zephyr,cortex-m-idle-timer = &counter_wut1;
+		zephyr,shell-uart = &uart0;
+		zephyr,bt-c2h-uart = &uart0;
+		zephyr,bt-hci = &bt_hci_max32;
+		zephyr,sram = &secure_ram;
+		zephyr,flash = &flash0;
+		zephyr,code-partition = &slot0_partition;
+	};
+	aliases {
+		led0 = &led1;
+		sw0 = &pb1;
+		watchdog0 = &wdt0;
+	};
+	soc {
+		#address-cells = < 0x1 >;
+		#size-cells = < 0x1 >;
+		compatible = "simple-bus";
+		interrupt-parent = < &nvic >;
+		ranges;
+		nvic: interrupt-controller@e000e100 {
+			#address-cells = < 0x1 >;
+			compatible = "arm,v8m-nvic";
+			reg = < 0xe000e100 0xc00 >;
+			interrupt-controller;
+			#interrupt-cells = < 0x2 >;
+			arm,num-irq-priority-bits = < 0x3 >;
+			phandle = < 0x1 >;
+		};
+		systick: timer@e000e010 {
+			compatible = "arm,armv8m-systick";
+			reg = < 0xe000e010 0x10 >;
+		};
+		sram: sram@30000000 {
+			ranges = < 0x0 0x30000000 0x40000 >;
+			#address-cells = < 0x1 >;
+			#size-cells = < 0x1 >;
+			sram0: memory@0 {
+				compatible = "adi,adi-retained-ram", "mmio-sram";
+				reg = < 0x0 0x8000 >;
+			};
+			sram1: memory@8000 {
+				compatible = "adi,adi-retained-ram", "mmio-sram";
+				reg = < 0x8000 0x8000 >;
+			};
+			sram2: memory@10000 {
+				compatible = "adi,adi-retained-ram", "mmio-sram";
+				reg = < 0x10000 0x10000 >;
+			};
+			sram3: memory@20000 {
+				compatible = "adi,adi-retained-ram", "mmio-sram";
+				reg = < 0x20000 0x10000 >;
+			};
+			sram4: memory@30000 {
+				compatible = "adi,adi-retained-ram", "mmio-sram";
+				reg = < 0x30000 0x10000 >;
+			};
+		};
+		peripheral: peripheral@50000000 {
+			ranges = < 0x0 0x50000000 0x10000000 >;
+			#address-cells = < 0x1 >;
+			#size-cells = < 0x1 >;
+			pinctrl: pin-controller@8000 {
+				ranges = < 0x8000 0x50008000 0x1000 >;
+				compatible = "adi,max32-pinctrl";
+				#address-cells = < 0x1 >;
+				#size-cells = < 0x1 >;
+				reg = < 0x8000 0x1000 >;
+				gpio0: gpio@8000 {
+					reg = < 0x8000 0x1000 >;
+					compatible = "adi,max32-gpio";
+					gpio-controller;
+					#gpio-cells = < 0x2 >;
+					clocks = < &gcr 0x0 0x0 >;
+					interrupts = < 0xe 0x0 >;
+					status = "okay";
+					phandle = < 0xf >;
+				};
+				i3c_scl_p0_0: i3c_scl_p0_0 {
+					pinmux = < 0x1 >;
+					phandle = < 0x4 >;
+				};
+				i3c_sda_p0_1: i3c_sda_p0_1 {
+					pinmux = < 0x101 >;
+					phandle = < 0x5 >;
+				};
+				spi0_mosi_p0_2: spi0_mosi_p0_2 {
+					pinmux = < 0x201 >;
+					phandle = < 0x8 >;
+				};
+				spi0_ss0_p0_3: spi0_ss0_p0_3 {
+					pinmux = < 0x301 >;
+					phandle = < 0xb >;
+				};
+				spi0_miso_p0_4: spi0_miso_p0_4 {
+					pinmux = < 0x401 >;
+					phandle = < 0x9 >;
+				};
+				uart0_rx_p0_5: uart0_rx_p0_5 {
+					pinmux = < 0x501 >;
+					power-source = < 0x0 >;
+					bias-pull-up;
+					phandle = < 0x7 >;
+				};
+				spi0_sck_p0_6: spi0_sck_p0_6 {
+					pinmux = < 0x601 >;
+					phandle = < 0xa >;
+				};
+				uart0_tx_p0_9: uart0_tx_p0_9 {
+					pinmux = < 0x901 >;
+					power-source = < 0x0 >;
+					phandle = < 0x6 >;
+				};
+			};
+			flc0: flash_controller@29000 {
+				compatible = "adi,max32-flash-controller";
+				reg = < 0x29000 0x400 >;
+				#address-cells = < 0x1 >;
+				#size-cells = < 0x1 >;
+				status = "okay";
+				flash0: flash@1000000 {
+					compatible = "soc-nv-flash";
+					reg = < 0x1000000 0x100000 >;
+					write-block-size = < 0x10 >;
+					erase-block-size = < 0x2000 >;
+					partitions {
+						compatible = "fixed-partitions";
+						#address-cells = < 0x1 >;
+						#size-cells = < 0x1 >;
+						slot0_partition: partition@0 {
+							label = "image-0";
+							reg = < 0x0 0xac800 >;
+							read-only;
+						};
+						storage_partition: partition@f0000 {
+							label = "storage";
+							reg = < 0xf0000 0x10000 >;
+						};
+					};
+				};
+			};
+			dma1: dma@35000 {
+				compatible = "adi,max32-dma";
+				reg = < 0x35000 0x1000 >;
+				clocks = < &gcr 0x1 0x15 >;
+				interrupts = < 0x14 0x0 >, < 0x15 0x0 >, < 0x16 0x0 >, < 0x17 0x0 >;
+				dma-channels = < 0x4 >;
+				status = "disabled";
+				#dma-cells = < 0x2 >;
+			};
+			gcr: clock-controller@0 {
+				reg = < 0x0 0x400 >;
+				compatible = "adi,max32-gcr";
+				#clock-cells = < 0x2 >;
+				clocks = < &clk_ipo >;
+				sysclk-prescaler = < 0x1 >;
+				status = "okay";
+				phandle = < 0x2 >;
+			};
+			i3c0: i3c@18000 {
+				compatible = "adi,max32-i3c";
+				reg = < 0x18000 0x1000 >;
+				#address-cells = < 0x3 >;
+				#size-cells = < 0x0 >;
+				clocks = < &gcr 0x0 0xd >;
+				interrupts = < 0xa 0x0 >;
+				status = "disabled";
+				pinctrl-0 = < &i3c_scl_p0_0 &i3c_sda_p0_1 >;
+				pinctrl-names = "default";
+				i2c-scl-hz = < 0x30d40 >;
+				i3c-scl-hz = < 0xc3500 >;
+				i3c-od-scl-hz = < 0x61a80 >;
+			};
+			uart0: serial@42000 {
+				compatible = "adi,max32-uart";
+				reg = < 0x42000 0x1000 >;
+				clocks = < &gcr 0x0 0x9 >;
+				clock-source = < 0x0 >;
+				interrupts = < 0xb 0x0 >;
+				status = "okay";
+				pinctrl-0 = < &uart0_tx_p0_9 &uart0_rx_p0_5 >;
+				pinctrl-names = "default";
+				current-speed = < 0x1c200 >;
+				data-bits = < 0x8 >;
+				parity = "none";
+				stop-bits = "1";
+			};
+			wdt0: watchdog@3000 {
+				compatible = "adi,max32-watchdog";
+				reg = < 0x3000 0x400 >;
+				interrupts = < 0x1 0x0 >;
+				clocks = < &gcr 0x1 0x1b >;
+				clock-source = < 0x0 >;
+				status = "disabled";
+			};
+			trng: trng@4d000 {
+				compatible = "adi,max32-trng";
+				reg = < 0x4d000 0x1000 >;
+				clocks = < &gcr 0x1 0x2 >;
+				status = "disabled";
+			};
+			timer0: timer@10000 {
+				compatible = "adi,max32-timer";
+				reg = < 0x10000 0x1000 >;
+				interrupts = < 0x4 0x0 >;
+				status = "disabled";
+				clocks = < &gcr 0x0 0xf >;
+				clock-source = < 0x0 >;
+				prescaler = < 0x1 >;
+				pwm {
+					compatible = "adi,max32-pwm";
+					status = "disabled";
+					#pwm-cells = < 0x3 >;
+				};
+				counter {
+					compatible = "adi,max32-counter";
+					status = "disabled";
+				};
+			};
+			timer1: timer@11000 {
+				compatible = "adi,max32-timer";
+				reg = < 0x11000 0x1000 >;
+				interrupts = < 0x5 0x0 >;
+				status = "disabled";
+				clocks = < &gcr 0x0 0x10 >;
+				clock-source = < 0x0 >;
+				prescaler = < 0x1 >;
+				pwm {
+					compatible = "adi,max32-pwm";
+					status = "disabled";
+					#pwm-cells = < 0x3 >;
+				};
+				counter {
+					compatible = "adi,max32-counter";
+					status = "disabled";
+				};
+			};
+			timer2: timer@12000 {
+				compatible = "adi,max32-timer";
+				reg = < 0x12000 0x1000 >;
+				interrupts = < 0x6 0x0 >;
+				status = "disabled";
+				clocks = < &gcr 0x0 0x11 >;
+				clock-source = < 0x0 >;
+				prescaler = < 0x1 >;
+				pwm {
+					compatible = "adi,max32-pwm";
+					status = "disabled";
+					#pwm-cells = < 0x3 >;
+				};
+				counter {
+					compatible = "adi,max32-counter";
+					status = "disabled";
+				};
+			};
+			timer3: timer@13000 {
+				compatible = "adi,max32-timer";
+				reg = < 0x13000 0x1000 >;
+				interrupts = < 0x7 0x0 >;
+				status = "disabled";
+				clocks = < &gcr 0x0 0x12 >;
+				clock-source = < 0x0 >;
+				prescaler = < 0x1 >;
+				pwm {
+					compatible = "adi,max32-pwm";
+					status = "disabled";
+					#pwm-cells = < 0x3 >;
+				};
+				counter {
+					compatible = "adi,max32-counter";
+					status = "disabled";
+				};
+			};
+			timer4: timer@14000 {
+				compatible = "adi,max32-timer";
+				reg = < 0x14000 0x1000 >;
+				interrupts = < 0x8 0x0 >;
+				status = "disabled";
+				clocks = < &gcr 0x0 0x13 >;
+				clock-source = < 0x0 >;
+				prescaler = < 0x1 >;
+				pwm {
+					compatible = "adi,max32-pwm";
+					status = "disabled";
+					#pwm-cells = < 0x3 >;
+				};
+				counter {
+					compatible = "adi,max32-counter";
+					status = "disabled";
+				};
+			};
+			timer5: timer@15000 {
+				compatible = "adi,max32-timer";
+				reg = < 0x15000 0x1000 >;
+				interrupts = < 0x9 0x0 >;
+				status = "disabled";
+				clocks = < &gcr 0x0 0x14 >;
+				clock-source = < 0x0 >;
+				prescaler = < 0x1 >;
+				pwm {
+					compatible = "adi,max32-pwm";
+					status = "disabled";
+					#pwm-cells = < 0x3 >;
+				};
+				counter {
+					compatible = "adi,max32-counter";
+					status = "disabled";
+				};
+			};
+			wut0: timer@6400 {
+				compatible = "adi,max32-timer";
+				reg = < 0x6400 0x200 >;
+				interrupts = < 0x18 0x0 >;
+				status = "disabled";
+				prescaler = < 0x1 >;
+				clock-source = < 0x5 >;
+				counter {
+					compatible = "adi,max32-wut";
+					status = "disabled";
+				};
+			};
+			wut1: timer@6600 {
+				compatible = "adi,max32-timer";
+				reg = < 0x6600 0x200 >;
+				interrupts = < 0x19 0x0 >;
+				status = "disabled";
+				prescaler = < 0x1 >;
+				clock-source = < 0x5 >;
+				wakeup-source;
+				counter_wut1: counter {
+					compatible = "adi,max32-wut";
+					status = "okay";
+				};
+			};
+			rtc_counter: rtc_counter@6000 {
+				compatible = "adi,max32-rtc-counter";
+				reg = < 0x6000 0x400 >;
+				interrupts = < 0x2 0x0 >;
+				status = "disabled";
+				clock-source = < 0x5 >;
+			};
+			spi0: spi@46000 {
+				compatible = "adi,max32-spi";
+				reg = < 0x46000 0x1000 >;
+				#address-cells = < 0x1 >;
+				#size-cells = < 0x0 >;
+				clocks = < &gcr 0x0 0x6 >;
+				interrupts = < 0xc 0x0 >;
+				status = "disabled";
+				pinctrl-0 = < &spi0_mosi_p0_2 &spi0_miso_p0_4 &spi0_sck_p0_6 &spi0_ss0_p0_3 >;
+				pinctrl-names = "default";
+				max30123: max30123@0 {
+					compatible = "adi,max30123";
+					reg = < 0x0 >;
+					status = "okay";
+					spi-max-frequency = < 0x186a0 >;
+					auto-clk-div = < 0x8000 >;
+					daca-code = < 0x226 >;
+					dacb-code = < 0x1f4 >;
+					dac-enable;
+					we1-amp-enable;
+					we1-dac-mx = < 0x0 >;
+					we1-swb;
+					we1-ios-mode;
+					we1-offset-sel = < 0x1 >;
+					adc-fs-we1 = < 0x1 >;
+					ce1-amp-enable;
+					ce1-dac-mx = < 0x1 >;
+					ce1-srb;
+					m0-mode = < 0x1 >;
+					m0-i-conv-type = < 0x0 >;
+					m0-v-conv-type = < 0x1 >;
+					m0-conv-time = < 0x0 >;
+					auto;
+					convert;
+				};
+			};
+		};
+	};
+	null_ptr_detect: null_ptr_detect@0 {
+		compatible = "zephyr,memory-region";
+		reg = < 0x0 0x400 >;
+		zephyr,memory-region = "NULL_PTR_DETECT";
+		zephyr,memory-attr = < 0x400000 >;
+	};
+	cpus {
+		#address-cells = < 0x1 >;
+		#size-cells = < 0x0 >;
+		cpu0: cpu@0 {
+			compatible = "arm,cortex-m33";
+			reg = < 0x0 >;
+			#address-cells = < 0x1 >;
+			#size-cells = < 0x1 >;
+			cpu-power-states = < &idle &standby &powerdown >;
+			mpu: mpu@e000ed90 {
+				compatible = "arm,armv8m-mpu";
+				reg = < 0xe000ed90 0x40 >;
+			};
+		};
+		power-states {
+			idle: idle {
+				compatible = "zephyr,power-state";
+				power-state-name = "runtime-idle";
+				min-residency-us = < 0x32 >;
+				exit-latency-us = < 0x5 >;
+				phandle = < 0xc >;
+			};
+			standby: standby {
+				compatible = "zephyr,power-state";
+				power-state-name = "standby";
+				min-residency-us = < 0x3e8 >;
+				exit-latency-us = < 0x14 >;
+				phandle = < 0xd >;
+			};
+			backup: backup {
+				compatible = "zephyr,power-state";
+				power-state-name = "suspend-to-ram";
+				min-residency-us = < 0x1388 >;
+				exit-latency-us = < 0xfa0 >;
+			};
+			powerdown: powerdown {
+				compatible = "zephyr,power-state";
+				power-state-name = "soft-off";
+				min-residency-us = < 0x7fffffff >;
+				exit-latency-us = < 0x0 >;
+				status = "disabled";
+				phandle = < 0xe >;
+			};
+		};
+	};
+	clocks {
+		clk_ipo: clk_ipo {
+			compatible = "fixed-clock";
+			#clock-cells = < 0x0 >;
+			clock-frequency = < 0x2faf080 >;
+			status = "okay";
+			phandle = < 0x3 >;
+		};
+		clk_inro: clk_inro {
+			compatible = "fixed-clock";
+			#clock-cells = < 0x0 >;
+			clock-frequency = < 0x1f40 >;
+			status = "disabled";
+		};
+		clk_ibro: clk_ibro {
+			compatible = "fixed-clock";
+			#clock-cells = < 0x0 >;
+			clock-frequency = < 0x708000 >;
+			status = "disabled";
+		};
+		clk_ertco: clk_ertco {
+			compatible = "fixed-clock";
+			#clock-cells = < 0x0 >;
+			clock-frequency = < 0x8000 >;
+			status = "disabled";
+		};
+		clk_erfo: clk_erfo {
+			compatible = "fixed-clock";
+			#clock-cells = < 0x0 >;
+			clock-frequency = < 0x1e84800 >;
+			status = "disabled";
+		};
+	};
+	bt_hci_max32: bt_hci_max32 {
+		compatible = "adi,max32-hci";
+		status = "okay";
+		zephyr,disabling-power-states = < &standby >;
+	};
+	leds {
+		compatible = "gpio-leds";
+		led1: led_1 {
+			gpios = < &gpio0 0xd 0x0 >;
+			label = "Green LED";
+		};
+	};
+	buttons {
+		compatible = "gpio-keys";
+		pb1: pb1 {
+			gpios = < &gpio0 0xc 0x11 >;
+			label = "SW2";
+			zephyr,code = < 0xb >;
+		};
+	};
+	reserved-memory {
+		#address-cells = < 0x1 >;
+		#size-cells = < 0x1 >;
+		ranges;
+		secure_ram: partition@30000000 {
+			label = "secure-memory";
+			reg = < 0x30000000 0x40000 >;
+		};
+	};
+};

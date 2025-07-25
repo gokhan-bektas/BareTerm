@@ -1,0 +1,11 @@
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/include/kthread.h:60:19:thread_is_preemptible	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/include/kthread.h:96:20:z_is_thread_prevented_from_running	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/include/kthread.h:246:20:z_is_idle_thread_object	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/include/ksched.h:107:20:z_is_prio1_higher_than_prio2	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/include/ksched.h:112:20:z_is_prio_higher	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/timeslicing.c:25:19:slice_time	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/timeslicing.c:39:6:thread_is_sliceable	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/timeslicing.c:54:13:slice_timeout	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/timeslicing.c:68:6:z_reset_time_slice	40	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/timeslicing.c:80:6:k_sched_time_slice_set	72	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/timeslicing.c:103:6:z_time_slice	80	static

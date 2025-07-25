@@ -1,0 +1,11 @@
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/syscall.h:115:20:k_is_user_context	4	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/kernel.h:1627:20:k_str_out	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/printk.c:47:27:arch_printk_char_out	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/printk.c:58:6:__printk_hook_install	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/printk.c:63:18:__printk_get_hook	4	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/printk.c:76:13:buf_flush	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/printk.c:82:12:buf_char_out	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/printk.c:95:12:char_out	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/printk.c:101:6:vprintk	56	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/printk.c:146:6:z_impl_k_str_out	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/os/printk.c:192:6:printk	16	static

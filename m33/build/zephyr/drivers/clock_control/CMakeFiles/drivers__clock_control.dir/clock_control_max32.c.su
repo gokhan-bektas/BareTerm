@@ -1,0 +1,6 @@
+c:\analog\cfs\1.1.0\sdk\zephyr\modules\hal\adi\max\include\wrap_max32_sys.h:109:20:Wrap_MXC_SYS_SetClockDiv	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/drivers/clock_control/clock_control_max32.c:14:19:api_on	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/drivers/clock_control/clock_control_max32.c:36:19:api_off	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/drivers/clock_control/clock_control_max32.c:58:12:api_get_rate	32	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/drivers/clock_control/clock_control_max32.c:103:13:setup_fixed_clocks	8	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/drivers/clock_control/clock_control_max32.c:139:12:max32_clkctrl_init	16	static

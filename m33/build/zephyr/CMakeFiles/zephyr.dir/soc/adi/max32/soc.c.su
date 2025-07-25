@@ -1,0 +1,2 @@
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/soc/adi/max32/soc.c:33:6:z_arm_on_enter_cpu_idle	4	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/soc/adi/max32/soc.c:45:6:soc_early_init_hook	8	static

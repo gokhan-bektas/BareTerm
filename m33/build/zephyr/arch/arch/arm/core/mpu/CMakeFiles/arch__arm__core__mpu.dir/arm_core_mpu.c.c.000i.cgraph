@@ -1,0 +1,5312 @@
+Trivially needed symbols: z_arm_configure_dynamic_mpu_regions/579 z_arm_configure_static_mpu_regions/578 static_regions/577 __log_level/575 __log_current_dynamic_data/574 __log_current_const_data/573
+Trivially needed symbols: dynamic_regions/588
+
+
+Initial Symbol table:
+
+dynamic_regions/588 (dynamic_regions) @00000000078e8b80
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  Aux: @0000000001d89da0
+  References: 
+  Referring: z_arm_configure_dynamic_mpu_regions/579 (addr) 
+  Availability: not-ready
+  Varpool flags:
+arm_core_mpu_configure_dynamic_mpu_regions/587 (arm_core_mpu_configure_dynamic_mpu_regions) @00000000078eae38
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: z_arm_configure_dynamic_mpu_regions/579 
+  Calls: 
+arm_core_mpu_mark_areas_for_dynamic_regions/586 (arm_core_mpu_mark_areas_for_dynamic_regions) @00000000078ead20
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: z_arm_configure_static_mpu_regions/578 
+  Calls: 
+__kernel_ram_start/585 (__kernel_ram_start) @00000000078e8b00
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: z_arm_configure_static_mpu_regions/578 (addr) z_arm_configure_static_mpu_regions/578 (addr) 
+  Availability: not-ready
+  Varpool flags:
+arm_core_mpu_configure_static_mpu_regions/584 (arm_core_mpu_configure_static_mpu_regions) @00000000078eac08
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: z_arm_configure_static_mpu_regions/578 
+  Calls: 
+__kernel_ram_end/583 (__kernel_ram_end) @00000000078e8a80
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: z_arm_configure_static_mpu_regions/578 (addr) z_arm_configure_static_mpu_regions/578 (addr) 
+  Availability: not-ready
+  Varpool flags:
+_image_ram_start/582 (_image_ram_start) @00000000078e8a00
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: z_arm_configure_static_mpu_regions/578 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__ramfunc_size/581 (__ramfunc_size) @00000000078e8980
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: static_regions/577 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__ramfunc_start/580 (__ramfunc_start) @00000000078e8900
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: static_regions/577 (addr) 
+  Availability: not-ready
+  Varpool flags:
+z_arm_configure_dynamic_mpu_regions/579 (z_arm_configure_dynamic_mpu_regions) @00000000078eaaf0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @0000000001d89da0
+  References: dynamic_regions/588 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: arm_core_mpu_configure_dynamic_mpu_regions/587 
+z_arm_configure_static_mpu_regions/578 (z_arm_configure_static_mpu_regions) @00000000078ea9d8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @00000000078eaaf0
+  References: _image_ram_start/582 (addr) __kernel_ram_end/583 (addr) static_regions/577 (addr) __kernel_ram_start/585 (addr) __kernel_ram_end/583 (addr) __kernel_ram_start/585 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: arm_core_mpu_mark_areas_for_dynamic_regions/586 arm_core_mpu_configure_static_mpu_regions/584 
+static_regions/577 (static_regions) @00000000078e8780
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  Aux: @00000000078ea9d8
+  References: __ramfunc_start/580 (addr) __ramfunc_size/581 (addr) 
+  Referring: z_arm_configure_static_mpu_regions/578 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__compound_literal.0/576 (__compound_literal.0) @00000000078e8700
+  Type: variable definition
+  Visibility: semantic_interposition no_reorder comdat artificial
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+__log_level/575 (__log_level) @00000000078e8580
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  Aux: @00000000078e8780
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__log_current_dynamic_data/574 (__log_current_dynamic_data) @00000000078e8500
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  Aux: @00000000078e8580
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+__log_current_const_data/573 (__log_current_const_data) @00000000078e8480
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  Aux: @00000000078e8500
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+log_generic/572 (log_generic) @00000000078ea118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_log_printf_arg_checker/571 (z_log_printf_arg_checker) @00000000078ea000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+log_source_id/570 (log_source_id) @00000000078ade38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+log_dynamic_source_id/569 (log_dynamic_source_id) @00000000078add20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+log_const_source_id/568 (log_const_source_id) @00000000078adc08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_log_minimal_level_to_char/567 (z_log_minimal_level_to_char) @00000000078ad9d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_log_msg_static_create/566 (z_log_msg_static_create) @00000000078ad7a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_log_msg_simple_create_2/565 (z_log_msg_simple_create_2) @00000000078ad690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_log_msg_simple_create_1/564 (z_log_msg_simple_create_1) @00000000078ad578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_log_msg_simple_create_0/563 (z_log_msg_simple_create_0) @00000000078ad460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+log_msg_get_package/562 (log_msg_get_package) @00000000078ad348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+log_msg_get_data/561 (log_msg_get_data) @00000000078ad230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+log_msg_get_tid/560 (log_msg_get_tid) @00000000078ad118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+log_msg_get_timestamp/559 (log_msg_get_timestamp) @00000000078ad000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+log_msg_get_source/558 (log_msg_get_source) @00000000075d5e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+log_msg_get_level/557 (log_msg_get_level) @00000000075d5d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+log_msg_get_domain/556 (log_msg_get_domain) @00000000075d5c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+log_msg_generic_get_wlen/555 (log_msg_generic_get_wlen) @00000000075d5af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+log_msg_get_total_wlen/554 (log_msg_get_total_wlen) @00000000075d59d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_log_item_is_msg/553 (z_log_item_is_msg) @00000000075d58c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_log_msg_runtime_create/552 (z_log_msg_runtime_create) @00000000075d57a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+cbpprintf/551 (cbpprintf) @00000000075d5690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+cbvprintf_tagged_args/550 (cbvprintf_tagged_args) @00000000075d5578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+cbprintf_fsc_package/549 (cbprintf_fsc_package) @00000000075d5460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+cbprintf_package_copy/548 (cbprintf_package_copy) @00000000075d5348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_cbprintf_cpy/547 (z_cbprintf_cpy) @00000000075d5230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_cbprintf_wcpy/546 (z_cbprintf_wcpy) @00000000075d5118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_arm_set_fault_sp/545 (z_arm_set_fault_sp) @00000000075d5000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_arm_clear_faults/544 (z_arm_clear_faults) @0000000007634e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_arm_exc_setup/543 (z_arm_exc_setup) @0000000007634d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+arch_is_in_nested_exception/542 (arch_is_in_nested_exception) @0000000007634c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+arch_is_in_isr/541 (arch_is_in_isr) @0000000007634af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_arm_interrupt_stack_setup/540 (z_arm_interrupt_stack_setup) @00000000076349d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_float_enable/539 (k_float_enable) @00000000076348c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_float_disable/538 (k_float_disable) @00000000076347a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_str_out/537 (k_str_out) @0000000007634690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_poll_signal_raise/536 (k_poll_signal_raise) @0000000007634578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_poll_signal_check/535 (k_poll_signal_check) @0000000007634460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_poll_signal_reset/534 (k_poll_signal_reset) @0000000007634348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_poll_signal_init/533 (k_poll_signal_init) @0000000007634230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_poll/532 (k_poll) @0000000007634118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_pipe_close/531 (k_pipe_close) @0000000007634000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_pipe_reset/530 (k_pipe_reset) @0000000007626e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_pipe_read/529 (k_pipe_read) @0000000007626d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_pipe_write/528 (k_pipe_write) @0000000007626c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_pipe_buffer_flush/527 (k_pipe_buffer_flush) @0000000007626af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_pipe_flush/526 (k_pipe_flush) @00000000076269d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_pipe_write_avail/525 (k_pipe_write_avail) @00000000076268c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_pipe_read_avail/524 (k_pipe_read_avail) @00000000076267a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_pipe_get/523 (k_pipe_get) @0000000007626690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_pipe_put/522 (k_pipe_put) @0000000007626578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_pipe_alloc_init/521 (k_pipe_alloc_init) @0000000007626460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_pipe_init/520 (k_pipe_init) @0000000007626348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_msgq_num_used_get/519 (k_msgq_num_used_get) @0000000007626230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_msgq_get_attrs/518 (k_msgq_get_attrs) @0000000007626118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_msgq_num_free_get/517 (k_msgq_num_free_get) @0000000007626000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_msgq_purge/516 (k_msgq_purge) @0000000007618e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_msgq_peek_at/515 (k_msgq_peek_at) @0000000007618d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_msgq_peek/514 (k_msgq_peek) @0000000007618c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_msgq_get/513 (k_msgq_get) @0000000007618af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_msgq_put/512 (k_msgq_put) @00000000076189d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_msgq_alloc_init/511 (k_msgq_alloc_init) @00000000076188c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_sem_count_get/510 (k_sem_count_get) @00000000076187a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_sem_reset/509 (k_sem_reset) @0000000007618690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_sem_give/508 (k_sem_give) @0000000007618578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_sem_take/507 (k_sem_take) @0000000007618460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_sem_init/506 (k_sem_init) @0000000007618348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_condvar_wait/505 (k_condvar_wait) @0000000007618230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_condvar_broadcast/504 (k_condvar_broadcast) @0000000007618118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_condvar_signal/503 (k_condvar_signal) @0000000007618000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_condvar_init/502 (k_condvar_init) @000000000760be38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_mutex_unlock/501 (k_mutex_unlock) @000000000760bd20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_mutex_lock/500 (k_mutex_lock) @000000000760bc08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_mutex_init/499 (k_mutex_init) @000000000760baf0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_stack_pop/498 (k_stack_pop) @000000000760b9d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_stack_push/497 (k_stack_push) @000000000760b8c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_stack_alloc_init/496 (k_stack_alloc_init) @000000000760b7a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_event_wait_all/495 (k_event_wait_all) @000000000760b690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_event_wait/494 (k_event_wait) @000000000760b578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_event_clear/493 (k_event_clear) @000000000760b460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_event_set_masked/492 (k_event_set_masked) @000000000760b348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_event_set/491 (k_event_set) @000000000760b230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_event_post/490 (k_event_post) @000000000760b118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_event_init/489 (k_event_init) @000000000760b000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_futex_wake/488 (k_futex_wake) @00000000075fee38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_futex_wait/487 (k_futex_wait) @00000000075fed20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_queue_peek_tail/486 (k_queue_peek_tail) @00000000075fec08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_queue_peek_head/485 (k_queue_peek_head) @00000000075feaf0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_queue_is_empty/484 (k_queue_is_empty) @00000000075fe9d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_queue_get/483 (k_queue_get) @00000000075fe8c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_queue_alloc_prepend/482 (k_queue_alloc_prepend) @00000000075fe7a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_queue_alloc_append/481 (k_queue_alloc_append) @00000000075fe690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_queue_cancel_wait/480 (k_queue_cancel_wait) @00000000075fe578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_queue_init/479 (k_queue_init) @00000000075fe460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_uptime_ticks/478 (k_uptime_ticks) @00000000075fe348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_timer_user_data_get/477 (k_timer_user_data_get) @00000000075fe230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_timer_user_data_set/476 (k_timer_user_data_set) @00000000075fe118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_timer_remaining_ticks/475 (k_timer_remaining_ticks) @00000000075fe000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_timer_expires_ticks/474 (k_timer_expires_ticks) @00000000075f5e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_timer_status_sync/473 (k_timer_status_sync) @00000000075f5d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_timer_status_get/472 (k_timer_status_get) @00000000075f5c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_timer_stop/471 (k_timer_stop) @00000000075f5af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_timer_start/470 (k_timer_start) @00000000075f59d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_thread_name_copy/469 (k_thread_name_copy) @00000000075f58c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_thread_name_set/468 (k_thread_name_set) @00000000075f57a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_thread_custom_data_get/467 (k_thread_custom_data_get) @00000000075f5690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_thread_custom_data_set/466 (k_thread_custom_data_set) @00000000075f5578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_is_preempt_thread/465 (k_is_preempt_thread) @00000000075f5460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_thread_resume/464 (k_thread_resume) @00000000075f5348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_thread_suspend/463 (k_thread_suspend) @00000000075f5230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_reschedule/462 (k_reschedule) @00000000075f5118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_thread_deadline_set/461 (k_thread_deadline_set) @00000000075f5000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_thread_priority_set/460 (k_thread_priority_set) @00000000075e8e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_thread_priority_get/459 (k_thread_priority_get) @00000000075e8d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_thread_timeout_remaining_ticks/458 (k_thread_timeout_remaining_ticks) @00000000075e8c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_thread_timeout_expires_ticks/457 (k_thread_timeout_expires_ticks) @00000000075e8af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_thread_abort/456 (k_thread_abort) @00000000075e89d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_sched_current_thread_query/455 (k_sched_current_thread_query) @00000000075e88c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_wakeup/454 (k_wakeup) @00000000075e87a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_yield/453 (k_yield) @00000000075e8690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_busy_wait/452 (k_busy_wait) @00000000075e8578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_usleep/451 (k_usleep) @00000000075e8460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_sleep/450 (k_sleep) @00000000075e8348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_thread_join/449 (k_thread_join) @00000000075e8230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_thread_stack_space_get/448 (k_thread_stack_space_get) @00000000075e8118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_thread_create/447 (k_thread_create) @00000000075e8000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_thread_stack_free/446 (k_thread_stack_free) @0000000007586e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_thread_stack_alloc/445 (k_thread_stack_alloc) @0000000007586d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_cpu_atomic_idle/444 (k_cpu_atomic_idle) @0000000007586c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_cpu_idle/443 (k_cpu_idle) @0000000007586af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_mem_slab_num_free_get/442 (k_mem_slab_num_free_get) @00000000075868c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_mem_slab_max_used_get/441 (k_mem_slab_max_used_get) @00000000075867a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_mem_slab_num_used_get/440 (k_mem_slab_num_used_get) @0000000007586690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_impl_k_msgq_num_used_get/439 (z_impl_k_msgq_num_used_get) @0000000007586578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_impl_k_msgq_num_free_get/438 (z_impl_k_msgq_num_free_get) @0000000007586460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_work_user_queue_thread_get/437 (k_work_user_queue_thread_get) @0000000007586230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_work_user_submit_to_queue/436 (k_work_user_submit_to_queue) @0000000007586118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_work_user_is_pending/435 (k_work_user_is_pending) @0000000007586000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_work_user_init/434 (k_work_user_init) @0000000007548e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_work_queue_thread_get/433 (k_work_queue_thread_get) @0000000007548c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_work_delayable_remaining_get/432 (k_work_delayable_remaining_get) @0000000007548af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_work_delayable_expires_get/431 (k_work_delayable_expires_get) @00000000075489d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_work_delayable_is_pending/430 (k_work_delayable_is_pending) @00000000075488c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_work_delayable_from_work/429 (k_work_delayable_from_work) @00000000075487a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_work_is_pending/428 (k_work_is_pending) @0000000007548578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_impl_k_sem_count_get/427 (z_impl_k_sem_count_get) @0000000007548348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_event_test/426 (k_event_test) @0000000007548230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_impl_k_queue_is_empty/425 (z_impl_k_queue_is_empty) @0000000007548118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_cycle_get_64/424 (k_cycle_get_64) @0000000007548000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_cycle_get_32/423 (k_cycle_get_32) @0000000007532e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_uptime_delta/422 (k_uptime_delta) @0000000007532d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_uptime_seconds/421 (k_uptime_seconds) @0000000007532c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_uptime_get_32/420 (k_uptime_get_32) @0000000007532af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_uptime_get/419 (k_uptime_get) @00000000075329d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_impl_k_timer_user_data_get/418 (z_impl_k_timer_user_data_get) @00000000075328c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_impl_k_timer_user_data_set/417 (z_impl_k_timer_user_data_set) @00000000075327a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_timer_remaining_get/416 (k_timer_remaining_get) @0000000007532690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_impl_k_timer_remaining_ticks/415 (z_impl_k_timer_remaining_ticks) @0000000007532578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_impl_k_timer_expires_ticks/414 (z_impl_k_timer_expires_ticks) @0000000007532460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_is_pre_kernel/413 (k_is_pre_kernel) @0000000007532000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_thread_start/412 (k_thread_start) @000000000750de38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_impl_k_thread_timeout_remaining_ticks/411 (z_impl_k_thread_timeout_remaining_ticks) @000000000750dd20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_impl_k_thread_timeout_expires_ticks/410 (z_impl_k_thread_timeout_expires_ticks) @000000000750dc08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_current_get/409 (k_current_get) @000000000750daf0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_tls_current/408 (z_tls_current) @000000000751c780
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: tls-local-exec
+k_msleep/407 (k_msleep) @000000000750d9d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_thread_heap_assign/406 (k_thread_heap_assign) @000000000750d8c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_thread_foreach_unlocked_filter_by_cpu/405 (k_thread_foreach_unlocked_filter_by_cpu) @000000000750d7a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_thread_foreach_filter_by_cpu/404 (k_thread_foreach_filter_by_cpu) @000000000750d690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ring_buf_get_finish/403 (ring_buf_get_finish) @000000000750d578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ring_buf_get_claim/402 (ring_buf_get_claim) @000000000750d460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ring_buf_put_finish/401 (ring_buf_put_finish) @000000000750d230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ring_buf_put_claim/400 (ring_buf_put_claim) @000000000750d118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ring_buf_size_get/399 (ring_buf_size_get) @00000000074f9e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ring_buf_capacity_get/398 (ring_buf_capacity_get) @00000000074f9d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ring_buf_item_space_get/397 (ring_buf_item_space_get) @00000000074f9c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ring_buf_space_get/396 (ring_buf_space_get) @00000000074f9af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ring_buf_reset/395 (ring_buf_reset) @00000000074f99d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ring_buf_is_empty/394 (ring_buf_is_empty) @00000000074f98c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ring_buf_item_init/393 (ring_buf_item_init) @00000000074f97a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ring_buf_init/392 (ring_buf_init) @00000000074f9690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ring_buf_internal_reset/391 (ring_buf_internal_reset) @00000000074f9578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_object_alloc_size/390 (k_object_alloc_size) @00000000074f9460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_object_alloc/389 (k_object_alloc) @00000000074f9348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_object_release/388 (k_object_release) @00000000074f9230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_object_access_grant/387 (k_object_access_grant) @00000000074f9118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_object_free/386 (k_object_free) @00000000074f9000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_impl_k_object_alloc_size/385 (z_impl_k_object_alloc_size) @00000000074cde38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_impl_k_object_alloc/384 (z_impl_k_object_alloc) @00000000074cdd20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_object_is_valid/383 (k_object_is_valid) @00000000074cdc08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_object_access_all_grant/382 (k_object_access_all_grant) @00000000074cdaf0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_impl_k_object_release/381 (z_impl_k_object_release) @00000000074cd9d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_object_access_revoke/380 (k_object_access_revoke) @00000000074cd8c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_impl_k_object_access_grant/379 (z_impl_k_object_access_grant) @00000000074cd7a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_object_create_dynamic/378 (k_object_create_dynamic) @00000000074cd690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_object_create_dynamic_aligned/377 (k_object_create_dynamic_aligned) @00000000074cd578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_object_init/376 (k_object_init) @00000000074cd460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+K_KERNEL_STACK_BUFFER/375 (K_KERNEL_STACK_BUFFER) @00000000074cd348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_stack_ptr_align/374 (z_stack_ptr_align) @0000000007496e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+irq_disconnect_dynamic/373 (irq_disconnect_dynamic) @0000000007496d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+irq_connect_dynamic/372 (irq_connect_dynamic) @0000000007496c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_spin_release/371 (k_spin_release) @0000000007496af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_spin_unlock/370 (k_spin_unlock) @00000000074969d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_spin_trylock/369 (k_spin_trylock) @00000000074968c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_spin_lock/368 (k_spin_lock) @00000000074967a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_spinlock_validate_post/367 (z_spinlock_validate_post) @0000000007496690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_spinlock_validate_pre/366 (z_spinlock_validate_pre) @0000000007496578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+errno/365 (errno) @000000000748af80
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: tls-local-exec
+sys_timepoint_expired/364 (sys_timepoint_expired) @0000000007496460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_timepoint_cmp/363 (sys_timepoint_cmp) @0000000007496348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_write64/362 (sys_write64) @0000000007496118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_read64/361 (sys_read64) @0000000007496000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_write32/360 (sys_write32) @0000000007445e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_read32/359 (sys_read32) @0000000007445d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_write16/358 (sys_write16) @0000000007445c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_read16/357 (sys_read16) @0000000007445af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_write8/356 (sys_write8) @00000000074459d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_read8/355 (sys_read8) @00000000074458c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_bitfield_test_and_clear_bit/354 (sys_bitfield_test_and_clear_bit) @00000000074457a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_bitfield_test_and_set_bit/353 (sys_bitfield_test_and_set_bit) @0000000007445690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_test_and_clear_bit/352 (sys_test_and_clear_bit) @0000000007445578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_test_and_set_bit/351 (sys_test_and_set_bit) @0000000007445460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_bitfield_test_bit/350 (sys_bitfield_test_bit) @0000000007445348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_bitfield_clear_bit/349 (sys_bitfield_clear_bit) @0000000007445230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_bitfield_set_bit/348 (sys_bitfield_set_bit) @0000000007445118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_clear_bits/347 (sys_clear_bits) @0000000007445000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_set_bits/346 (sys_set_bits) @00000000072b1e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_test_bit/345 (sys_test_bit) @00000000072b1d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_clear_bit/344 (sys_clear_bit) @00000000072b1c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_set_bit/343 (sys_set_bit) @00000000072b1af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+arch_irq_unlocked/342 (arch_irq_unlocked) @00000000072b19d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+arch_irq_unlock/341 (arch_irq_unlock) @00000000072b18c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+arch_irq_lock/340 (arch_irq_lock) @00000000072b17a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+cmse_nonsecure_caller/339 (cmse_nonsecure_caller) @00000000072b1690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+cmse_TTAT/338 (cmse_TTAT) @00000000072b1578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__cmse_TTAT_fptr/337 (__cmse_TTAT_fptr) @00000000072b1460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+cmse_TTA/336 (cmse_TTA) @00000000072b1348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__cmse_TTA_fptr/335 (__cmse_TTA_fptr) @00000000072b1230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+cmse_TTT/334 (cmse_TTT) @00000000072b1118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__cmse_TTT_fptr/333 (__cmse_TTT_fptr) @00000000072b1000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+cmse_TT/332 (cmse_TT) @0000000007413e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__cmse_TT_fptr/331 (__cmse_TT_fptr) @0000000007413d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_CheckChar/330 (ITM_CheckChar) @0000000007413c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_ReceiveChar/329 (ITM_ReceiveChar) @0000000007413af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_SendChar/328 (ITM_SendChar) @00000000074139d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_SysTick_Config_NS/327 (TZ_SysTick_Config_NS) @00000000074138c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SysTick_Config/326 (SysTick_Config) @00000000074137a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_DIB_GetAuthStatus_NS/325 (TZ_DIB_GetAuthStatus_NS) @0000000007413690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+DIB_GetAuthStatus/324 (DIB_GetAuthStatus) @0000000007413578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_DCB_GetAuthCtrl_NS/323 (TZ_DCB_GetAuthCtrl_NS) @0000000007413460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_DCB_SetAuthCtrl_NS/322 (TZ_DCB_SetAuthCtrl_NS) @0000000007413348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+DCB_GetAuthCtrl/321 (DCB_GetAuthCtrl) @0000000007413230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+DCB_SetAuthCtrl/320 (DCB_SetAuthCtrl) @0000000007413118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_SAU_Disable/319 (TZ_SAU_Disable) @0000000007413000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_SAU_Enable/318 (TZ_SAU_Enable) @0000000007406e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SCB_GetFPUType/317 (SCB_GetFPUType) @0000000007406d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Load_NS/316 (ARM_MPU_Load_NS) @0000000007406c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Load/315 (ARM_MPU_Load) @0000000007406af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_LoadEx/314 (ARM_MPU_LoadEx) @00000000074069d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_OrderedMemcpy/313 (ARM_MPU_OrderedMemcpy) @00000000074068c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegion_NS/312 (ARM_MPU_SetRegion_NS) @00000000074067a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegion/311 (ARM_MPU_SetRegion) @0000000007406690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegionEx/310 (ARM_MPU_SetRegionEx) @0000000007406578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_ClrRegion_NS/309 (ARM_MPU_ClrRegion_NS) @0000000007406460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_ClrRegion/308 (ARM_MPU_ClrRegion) @0000000007406348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_ClrRegionEx/307 (ARM_MPU_ClrRegionEx) @0000000007406230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetMemAttr_NS/306 (ARM_MPU_SetMemAttr_NS) @0000000007406118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetMemAttr/305 (ARM_MPU_SetMemAttr) @0000000007406000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetMemAttrEx/304 (ARM_MPU_SetMemAttrEx) @00000000073f2e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Disable_NS/303 (ARM_MPU_Disable_NS) @00000000073f2d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Enable_NS/302 (ARM_MPU_Enable_NS) @00000000073f2c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Disable/301 (ARM_MPU_Disable) @00000000073f2af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Enable/300 (ARM_MPU_Enable) @00000000073f29d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_NVIC_GetPriority_NS/299 (TZ_NVIC_GetPriority_NS) @00000000073f28c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_NVIC_SetPriority_NS/298 (TZ_NVIC_SetPriority_NS) @00000000073f27a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_NVIC_GetActive_NS/297 (TZ_NVIC_GetActive_NS) @00000000073f2690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_NVIC_ClearPendingIRQ_NS/296 (TZ_NVIC_ClearPendingIRQ_NS) @00000000073f2578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_NVIC_SetPendingIRQ_NS/295 (TZ_NVIC_SetPendingIRQ_NS) @00000000073f2460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_NVIC_GetPendingIRQ_NS/294 (TZ_NVIC_GetPendingIRQ_NS) @00000000073f2348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_NVIC_DisableIRQ_NS/293 (TZ_NVIC_DisableIRQ_NS) @00000000073f2230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_NVIC_GetEnableIRQ_NS/292 (TZ_NVIC_GetEnableIRQ_NS) @00000000073f2118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_NVIC_EnableIRQ_NS/291 (TZ_NVIC_EnableIRQ_NS) @00000000073f2000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_NVIC_GetPriorityGrouping_NS/290 (TZ_NVIC_GetPriorityGrouping_NS) @00000000073e4e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+TZ_NVIC_SetPriorityGrouping_NS/289 (TZ_NVIC_SetPriorityGrouping_NS) @00000000073e4d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SystemReset/288 (__NVIC_SystemReset) @00000000073e4c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetVector/287 (__NVIC_GetVector) @00000000073e4af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetVector/286 (__NVIC_SetVector) @00000000073e49d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_DecodePriority/285 (NVIC_DecodePriority) @00000000073e48c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_EncodePriority/284 (NVIC_EncodePriority) @00000000073e47a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriority/283 (__NVIC_GetPriority) @00000000073e4690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriority/282 (__NVIC_SetPriority) @00000000073e4578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_ClearTargetState/281 (NVIC_ClearTargetState) @00000000073e4460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_SetTargetState/280 (NVIC_SetTargetState) @00000000073e4348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_GetTargetState/279 (NVIC_GetTargetState) @00000000073e4230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetActive/278 (__NVIC_GetActive) @00000000073e4118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_ClearPendingIRQ/277 (__NVIC_ClearPendingIRQ) @00000000073e4000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPendingIRQ/276 (__NVIC_SetPendingIRQ) @0000000007359e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPendingIRQ/275 (__NVIC_GetPendingIRQ) @0000000007359d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_DisableIRQ/274 (__NVIC_DisableIRQ) @0000000007359c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetEnableIRQ/273 (__NVIC_GetEnableIRQ) @0000000007359af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_EnableIRQ/272 (__NVIC_EnableIRQ) @00000000073599d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriorityGrouping/271 (__NVIC_GetPriorityGrouping) @00000000073598c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriorityGrouping/270 (__NVIC_SetPriorityGrouping) @00000000073597a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMMLA/269 (__SMMLA) @0000000007359690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB/268 (__QSUB) @0000000007359578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD/267 (__QADD) @0000000007359460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SEL/266 (__SEL) @0000000007359348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSLDX/265 (__SMLSLDX) @0000000007359230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSLD/264 (__SMLSLD) @0000000007359118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSDX/263 (__SMLSDX) @0000000007359000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSD/262 (__SMLSD) @0000000007349e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUSDX/261 (__SMUSDX) @0000000007349d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUSD/260 (__SMUSD) @0000000007349c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLALDX/259 (__SMLALDX) @0000000007349af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLALD/258 (__SMLALD) @00000000073499d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLADX/257 (__SMLADX) @00000000073498c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLAD/256 (__SMLAD) @00000000073497a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUADX/255 (__SMUADX) @0000000007349690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUAD/254 (__SMUAD) @0000000007349578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTAB16_RORn/253 (__SXTAB16_RORn) @0000000007349460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTAB16/252 (__SXTAB16) @0000000007349348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTB16_RORn/251 (__SXTB16_RORn) @0000000007349230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTB16/250 (__SXTB16) @0000000007349118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UXTAB16/249 (__UXTAB16) @0000000007349000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UXTB16/248 (__UXTB16) @000000000733de38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USADA8/247 (__USADA8) @000000000733dd20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USAD8/246 (__USAD8) @000000000733dc08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSAX/245 (__UHSAX) @000000000733daf0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSAX/244 (__UQSAX) @000000000733d9d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USAX/243 (__USAX) @000000000733d8c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSAX/242 (__SHSAX) @000000000733d7a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSAX/241 (__QSAX) @000000000733d690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSAX/240 (__SSAX) @000000000733d578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHASX/239 (__UHASX) @000000000733d460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQASX/238 (__UQASX) @000000000733d348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UASX/237 (__UASX) @000000000733d230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHASX/236 (__SHASX) @000000000733d118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QASX/235 (__QASX) @000000000733d000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SASX/234 (__SASX) @0000000007332e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSUB16/233 (__UHSUB16) @0000000007332d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSUB16/232 (__UQSUB16) @0000000007332c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USUB16/231 (__USUB16) @0000000007332af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSUB16/230 (__SHSUB16) @00000000073329d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB16/229 (__QSUB16) @00000000073328c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSUB16/228 (__SSUB16) @00000000073327a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHADD16/227 (__UHADD16) @0000000007332690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQADD16/226 (__UQADD16) @0000000007332578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UADD16/225 (__UADD16) @0000000007332460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHADD16/224 (__SHADD16) @0000000007332348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD16/223 (__QADD16) @0000000007332230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SADD16/222 (__SADD16) @0000000007332118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSUB8/221 (__UHSUB8) @0000000007332000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSUB8/220 (__UQSUB8) @0000000007328e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USUB8/219 (__USUB8) @0000000007328d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSUB8/218 (__SHSUB8) @0000000007328c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB8/217 (__QSUB8) @0000000007328af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSUB8/216 (__SSUB8) @00000000073289d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHADD8/215 (__UHADD8) @00000000073288c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQADD8/214 (__UQADD8) @00000000073287a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UADD8/213 (__UADD8) @0000000007328690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHADD8/212 (__SHADD8) @0000000007328578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD8/211 (__QADD8) @0000000007328460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SADD8/210 (__SADD8) @0000000007328348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FPSCR/209 (__set_FPSCR) @0000000007328230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FPSCR/208 (__get_FPSCR) @0000000007328118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_set_MSPLIM_NS/207 (__TZ_set_MSPLIM_NS) @0000000007328000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_MSPLIM/206 (__set_MSPLIM) @000000000731de38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_get_MSPLIM_NS/205 (__TZ_get_MSPLIM_NS) @000000000731dd20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_MSPLIM/204 (__get_MSPLIM) @000000000731dc08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_set_PSPLIM_NS/203 (__TZ_set_PSPLIM_NS) @000000000731daf0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PSPLIM/202 (__set_PSPLIM) @000000000731d9d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_get_PSPLIM_NS/201 (__TZ_get_PSPLIM_NS) @000000000731d8c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PSPLIM/200 (__get_PSPLIM) @000000000731d7a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_set_FAULTMASK_NS/199 (__TZ_set_FAULTMASK_NS) @000000000731d690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FAULTMASK/198 (__set_FAULTMASK) @000000000731d578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_get_FAULTMASK_NS/197 (__TZ_get_FAULTMASK_NS) @000000000731d460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FAULTMASK/196 (__get_FAULTMASK) @000000000731d348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI_MAX/195 (__set_BASEPRI_MAX) @000000000731d230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_set_BASEPRI_NS/194 (__TZ_set_BASEPRI_NS) @000000000731d118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI/193 (__set_BASEPRI) @000000000731d000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_get_BASEPRI_NS/192 (__TZ_get_BASEPRI_NS) @0000000007314e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_BASEPRI/191 (__get_BASEPRI) @0000000007314d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_fault_irq/190 (__disable_fault_irq) @0000000007314c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_fault_irq/189 (__enable_fault_irq) @0000000007314af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_set_PRIMASK_NS/188 (__TZ_set_PRIMASK_NS) @00000000073149d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PRIMASK/187 (__set_PRIMASK) @00000000073148c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_get_PRIMASK_NS/186 (__TZ_get_PRIMASK_NS) @00000000073147a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PRIMASK/185 (__get_PRIMASK) @0000000007314690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_set_SP_NS/184 (__TZ_set_SP_NS) @0000000007314578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_get_SP_NS/183 (__TZ_get_SP_NS) @0000000007314460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_set_MSP_NS/182 (__TZ_set_MSP_NS) @0000000007314348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_MSP/181 (__set_MSP) @0000000007314230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_get_MSP_NS/180 (__TZ_get_MSP_NS) @0000000007314118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_MSP/179 (__get_MSP) @0000000007314000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_set_PSP_NS/178 (__TZ_set_PSP_NS) @000000000730be38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PSP/177 (__set_PSP) @000000000730bd20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_get_PSP_NS/176 (__TZ_get_PSP_NS) @000000000730bc08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PSP/175 (__get_PSP) @000000000730baf0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_xPSR/174 (__get_xPSR) @000000000730b9d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_APSR/173 (__get_APSR) @000000000730b8c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_IPSR/172 (__get_IPSR) @000000000730b7a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_set_CONTROL_NS/171 (__TZ_set_CONTROL_NS) @000000000730b690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_CONTROL/170 (__set_CONTROL) @000000000730b578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_get_CONTROL_NS/169 (__TZ_get_CONTROL_NS) @000000000730b460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_CONTROL/168 (__get_CONTROL) @000000000730b348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_irq/167 (__disable_irq) @000000000730b230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_irq/166 (__enable_irq) @000000000730b118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STLEX/165 (__STLEX) @000000000730b000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STLEXH/164 (__STLEXH) @00000000072fde38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STLEXB/163 (__STLEXB) @00000000072fdd20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDAEX/162 (__LDAEX) @00000000072fdc08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDAEXH/161 (__LDAEXH) @00000000072fdaf0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDAEXB/160 (__LDAEXB) @00000000072fd9d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STL/159 (__STL) @00000000072fd8c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STLH/158 (__STLH) @00000000072fd7a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STLB/157 (__STLB) @00000000072fd690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDA/156 (__LDA) @00000000072fd578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDAH/155 (__LDAH) @00000000072fd460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDAB/154 (__LDAB) @00000000072fd348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRT/153 (__STRT) @00000000072fd230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRHT/152 (__STRHT) @00000000072fd118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRBT/151 (__STRBT) @00000000072fd000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRT/150 (__LDRT) @00000000072f1e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRHT/149 (__LDRHT) @00000000072f1d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRBT/148 (__LDRBT) @00000000072f1c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RRX/147 (__RRX) @00000000072f1af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLREX/146 (__CLREX) @00000000072f19d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXW/145 (__STREXW) @00000000072f18c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXH/144 (__STREXH) @00000000072f17a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXB/143 (__STREXB) @00000000072f1690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXW/142 (__LDREXW) @00000000072f1578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXH/141 (__LDREXH) @00000000072f1460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXB/140 (__LDREXB) @00000000072f1348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLZ/139 (__CLZ) @00000000072f1230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RBIT/138 (__RBIT) @00000000072f1118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ROR/137 (__ROR) @00000000072f1000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REVSH/136 (__REVSH) @0000000006930e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV16/135 (__REV16) @0000000006930d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV/134 (__REV) @0000000006930c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DMB/133 (__DMB) @0000000006930af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DSB/132 (__DSB) @00000000069309d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ISB/131 (__ISB) @00000000069308c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__TZ_set_STACKSEAL_S/130 (__TZ_set_STACKSEAL_S) @00000000069307a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+find_lsb_set/129 (find_lsb_set) @0000000006930578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+find_msb_set/128 (find_msb_set) @0000000006930460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+arch_nop/127 (arch_nop) @0000000006930348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+arch_k_cycle_get_64/126 (arch_k_cycle_get_64) @0000000006930230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+arch_k_cycle_get_32/125 (arch_k_cycle_get_32) @0000000006930118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+arch_isr_direct_footer/124 (arch_isr_direct_footer) @00000000071d5e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+arch_isr_direct_header/123 (arch_isr_direct_header) @00000000071d5d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+arch_num_cpus/122 (arch_num_cpus) @00000000071d5af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+arch_proc_id/121 (arch_proc_id) @00000000071d59d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+arch_curr_cpu/120 (arch_curr_cpu) @00000000071d58c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+arch_cohere_stacks/119 (arch_cohere_stacks) @00000000071d57a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+arch_mem_coherent/118 (arch_mem_coherent) @00000000071d5690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__printf_float/117 (__printf_float) @00000000071d5460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+rb_walk/116 (rb_walk) @00000000071a4e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+rb_get_max/115 (rb_get_max) @00000000071a4d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+rb_get_min/114 (rb_get_min) @00000000071a4c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_heap_validate/113 (sys_heap_validate) @00000000071a49d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_sflist_len/112 (sys_sflist_len) @00000000071a48c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_sflist_find_and_remove/111 (sys_sflist_find_and_remove) @00000000071a47a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_sflist_remove/110 (sys_sflist_remove) @00000000071a4690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_sflist_get/109 (sys_sflist_get) @00000000071a4578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_sflist_get_not_empty/108 (sys_sflist_get_not_empty) @00000000071a4460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_sflist_insert/107 (sys_sflist_insert) @00000000071a4348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_sflist_merge_sflist/106 (sys_sflist_merge_sflist) @00000000071a4230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_sflist_append_list/105 (sys_sflist_append_list) @00000000071a4118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_sflist_append/104 (sys_sflist_append) @00000000071a4000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_sflist_prepend/103 (sys_sflist_prepend) @0000000007199e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_sflist_peek_next/102 (sys_sflist_peek_next) @0000000007199d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_sflist_peek_next_no_check/101 (sys_sflist_peek_next_no_check) @0000000007199c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_sflist_is_empty/100 (sys_sflist_is_empty) @00000000071999d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_sfnode_flags_set/99 (sys_sfnode_flags_set) @00000000071997a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_sfnode_init/98 (sys_sfnode_init) @0000000007199690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_sfnode_flags_get/97 (sys_sfnode_flags_get) @0000000007199578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_sflist_peek_tail/96 (sys_sflist_peek_tail) @0000000007199460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_sflist_peek_head/95 (sys_sflist_peek_head) @0000000007199348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_sflist_tail_set/94 (z_sflist_tail_set) @0000000007199230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_sflist_head_set/93 (z_sflist_head_set) @0000000007199118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_sfnode_next_set/92 (z_sfnode_next_set) @0000000007199000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_sfnode_next_peek/91 (z_sfnode_next_peek) @0000000007185e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_sflist_init/90 (sys_sflist_init) @0000000007185d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_slist_find_and_remove/89 (sys_slist_find_and_remove) @00000000071857a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_slist_len/88 (sys_slist_len) @0000000007185690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_slist_find/87 (sys_slist_find) @0000000007185578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_slist_remove/86 (sys_slist_remove) @0000000007185460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_slist_get/85 (sys_slist_get) @0000000007185348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_slist_get_not_empty/84 (sys_slist_get_not_empty) @0000000007185230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_slist_insert/83 (sys_slist_insert) @0000000007185118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_slist_merge_slist/82 (sys_slist_merge_slist) @0000000007185000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_slist_append_list/81 (sys_slist_append_list) @000000000717ae38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_slist_append/80 (sys_slist_append) @000000000717ad20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_slist_prepend/79 (sys_slist_prepend) @000000000717ac08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_slist_peek_next/78 (sys_slist_peek_next) @000000000717aaf0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_slist_peek_next_no_check/77 (sys_slist_peek_next_no_check) @000000000717a9d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_slist_is_empty/76 (sys_slist_is_empty) @000000000717a7a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_slist_peek_tail/75 (sys_slist_peek_tail) @000000000717a578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_slist_peek_head/74 (sys_slist_peek_head) @000000000717a460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_slist_tail_set/73 (z_slist_tail_set) @000000000717a348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_slist_head_set/72 (z_slist_head_set) @000000000717a230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_snode_next_set/71 (z_snode_next_set) @000000000717a118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_snode_next_peek/70 (z_snode_next_peek) @000000000717a000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_slist_init/69 (sys_slist_init) @0000000006c1ce38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_dlist_len/68 (sys_dlist_len) @0000000006c1c8c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_dlist_get/67 (sys_dlist_get) @0000000006c1c690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_dlist_remove/66 (sys_dlist_remove) @0000000006c1c578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_dlist_dequeue/65 (sys_dlist_dequeue) @0000000006c1c460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_dlist_insert_at/64 (sys_dlist_insert_at) @0000000006c1c348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_dlist_insert/63 (sys_dlist_insert) @0000000006c1c230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_dlist_prepend/62 (sys_dlist_prepend) @0000000006c1c118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_dlist_append/61 (sys_dlist_append) @0000000006c1c000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_dlist_peek_tail/60 (sys_dlist_peek_tail) @0000000006c10e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_dlist_peek_prev/59 (sys_dlist_peek_prev) @0000000006c10d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_dlist_peek_prev_no_check/58 (sys_dlist_peek_prev_no_check) @0000000006c10c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_dlist_peek_next/57 (sys_dlist_peek_next) @0000000006c10af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_dlist_peek_next_no_check/56 (sys_dlist_peek_next_no_check) @0000000006c109d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_dlist_peek_head_not_empty/55 (sys_dlist_peek_head_not_empty) @0000000006c108c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_dlist_peek_head/54 (sys_dlist_peek_head) @0000000006c107a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_dlist_has_multiple_nodes/53 (sys_dlist_has_multiple_nodes) @0000000006c10690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_dlist_is_empty/52 (sys_dlist_is_empty) @0000000006c10578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_dlist_is_tail/51 (sys_dlist_is_tail) @0000000006c10460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_dlist_is_head/50 (sys_dlist_is_head) @0000000006c10348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_dnode_is_linked/49 (sys_dnode_is_linked) @0000000006c10230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_dnode_init/48 (sys_dnode_init) @0000000006c10118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sys_dlist_init/47 (sys_dlist_init) @0000000006c10000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+atomic_set_bit_to/46 (atomic_set_bit_to) @0000000006bfde38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+atomic_set_bit/45 (atomic_set_bit) @0000000006bfdd20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+atomic_clear_bit/44 (atomic_clear_bit) @0000000006bfdc08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+atomic_test_and_set_bit/43 (atomic_test_and_set_bit) @0000000006bfdaf0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+atomic_test_and_clear_bit/42 (atomic_test_and_clear_bit) @0000000006bfd9d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+atomic_test_bit/41 (atomic_test_bit) @0000000006bfd8c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+atomic_nand/40 (atomic_nand) @0000000006bfd578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+atomic_and/39 (atomic_and) @0000000006bfd460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+atomic_xor/38 (atomic_xor) @0000000006bfd348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+atomic_or/37 (atomic_or) @0000000006bfd230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+atomic_ptr_clear/36 (atomic_ptr_clear) @0000000006bfd118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+atomic_clear/35 (atomic_clear) @0000000006bfd000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+atomic_ptr_set/34 (atomic_ptr_set) @0000000006bb7e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+atomic_set/33 (atomic_set) @0000000006bb7d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+atomic_ptr_get/32 (atomic_ptr_get) @0000000006bb7c08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+atomic_get/31 (atomic_get) @0000000006bb7af0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+atomic_dec/30 (atomic_dec) @0000000006bb79d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+atomic_inc/29 (atomic_inc) @0000000006bb78c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+atomic_sub/28 (atomic_sub) @0000000006bb77a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+atomic_add/27 (atomic_add) @0000000006bb7690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+atomic_ptr_cas/26 (atomic_ptr_cas) @0000000006bb7578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+atomic_cas/25 (atomic_cas) @0000000006bb7460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+device_get_by_dt_nodelabel/24 (device_get_by_dt_nodelabel) @0000000006bb7348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+device_init/23 (device_init) @0000000006bb7230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+device_is_ready/22 (device_is_ready) @0000000006bb7118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+device_get_binding/21 (device_get_binding) @0000000006bb7000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_is_user_context/20 (k_is_user_context) @00000000070b2e38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+z_syscall_trap/19 (z_syscall_trap) @00000000070b2d20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+device_from_handle/18 (device_from_handle) @0000000007072348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+device_handle_get/17 (device_handle_get) @0000000007072230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_mem_unmap/16 (k_mem_unmap) @00000000070488c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_mem_map/15 (k_mem_map) @00000000070487a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_mem_virt_addr/14 (k_mem_virt_addr) @0000000007048578
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+k_mem_phys_addr/13 (k_mem_phys_addr) @0000000007048460
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+pm_state_cpu_get_all/12 (pm_state_cpu_get_all) @0000000007048348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+mem_xor_128/11 (mem_xor_128) @0000000006fe3348
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+mem_xor_32/10 (mem_xor_32) @0000000006fe3230
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+mem_xor_n/9 (mem_xor_n) @0000000006fe3118
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sign_extend_64/8 (sign_extend_64) @0000000006fe3000
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+sign_extend/7 (sign_extend) @0000000006fbde38
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+bin2bcd/6 (bin2bcd) @0000000006fbdd20
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+bcd2bin/5 (bcd2bin) @0000000006fbdc08
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+byteswp/4 (byteswp) @0000000006fbdaf0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+bytecpy/3 (bytecpy) @0000000006fbd9d8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+arithmetic_shift_right/2 (arithmetic_shift_right) @0000000006fbd8c0
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+is_null_no_warn/1 (is_null_no_warn) @0000000006fbd7a8
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+is_power_of_two/0 (is_power_of_two) @0000000006fbd690
+  Type: function definition
+  Visibility: semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+
+Removing unused symbols: __compound_literal.0/576 log_generic/572 z_log_printf_arg_checker/571 log_source_id/570 log_dynamic_source_id/569 log_const_source_id/568 z_log_minimal_level_to_char/567 z_log_msg_static_create/566 z_log_msg_simple_create_2/565 z_log_msg_simple_create_1/564 z_log_msg_simple_create_0/563 log_msg_get_package/562 log_msg_get_data/561 log_msg_get_tid/560 log_msg_get_timestamp/559 log_msg_get_source/558 log_msg_get_level/557 log_msg_get_domain/556 log_msg_generic_get_wlen/555 log_msg_get_total_wlen/554 z_log_item_is_msg/553 z_log_msg_runtime_create/552 cbpprintf/551 cbvprintf_tagged_args/550 cbprintf_fsc_package/549 cbprintf_package_copy/548 z_cbprintf_cpy/547 z_cbprintf_wcpy/546 z_arm_set_fault_sp/545 z_arm_clear_faults/544 z_arm_exc_setup/543 arch_is_in_nested_exception/542 arch_is_in_isr/541 z_arm_interrupt_stack_setup/540 k_float_enable/539 k_float_disable/538 k_str_out/537 k_poll_signal_raise/536 k_poll_signal_check/535 k_poll_signal_reset/534 k_poll_signal_init/533 k_poll/532 k_pipe_close/531 k_pipe_reset/530 k_pipe_read/529 k_pipe_write/528 k_pipe_buffer_flush/527 k_pipe_flush/526 k_pipe_write_avail/525 k_pipe_read_avail/524 k_pipe_get/523 k_pipe_put/522 k_pipe_alloc_init/521 k_pipe_init/520 k_msgq_num_used_get/519 k_msgq_get_attrs/518 k_msgq_num_free_get/517 k_msgq_purge/516 k_msgq_peek_at/515 k_msgq_peek/514 k_msgq_get/513 k_msgq_put/512 k_msgq_alloc_init/511 k_sem_count_get/510 k_sem_reset/509 k_sem_give/508 k_sem_take/507 k_sem_init/506 k_condvar_wait/505 k_condvar_broadcast/504 k_condvar_signal/503 k_condvar_init/502 k_mutex_unlock/501 k_mutex_lock/500 k_mutex_init/499 k_stack_pop/498 k_stack_push/497 k_stack_alloc_init/496 k_event_wait_all/495 k_event_wait/494 k_event_clear/493 k_event_set_masked/492 k_event_set/491 k_event_post/490 k_event_init/489 k_futex_wake/488 k_futex_wait/487 k_queue_peek_tail/486 k_queue_peek_head/485 k_queue_is_empty/484 k_queue_get/483 k_queue_alloc_prepend/482 k_queue_alloc_append/481 k_queue_cancel_wait/480 k_queue_init/479 k_uptime_ticks/478 k_timer_user_data_get/477 k_timer_user_data_set/476 k_timer_remaining_ticks/475 k_timer_expires_ticks/474 k_timer_status_sync/473 k_timer_status_get/472 k_timer_stop/471 k_timer_start/470 k_thread_name_copy/469 k_thread_name_set/468 k_thread_custom_data_get/467 k_thread_custom_data_set/466 k_is_preempt_thread/465 k_thread_resume/464 k_thread_suspend/463 k_reschedule/462 k_thread_deadline_set/461 k_thread_priority_set/460 k_thread_priority_get/459 k_thread_timeout_remaining_ticks/458 k_thread_timeout_expires_ticks/457 k_thread_abort/456 k_sched_current_thread_query/455 k_wakeup/454 k_yield/453 k_busy_wait/452 k_usleep/451 k_sleep/450 k_thread_join/449 k_thread_stack_space_get/448 k_thread_create/447 k_thread_stack_free/446 k_thread_stack_alloc/445 k_cpu_atomic_idle/444 k_cpu_idle/443 k_mem_slab_num_free_get/442 k_mem_slab_max_used_get/441 k_mem_slab_num_used_get/440 z_impl_k_msgq_num_used_get/439 z_impl_k_msgq_num_free_get/438 k_work_user_queue_thread_get/437 k_work_user_submit_to_queue/436 k_work_user_is_pending/435 k_work_user_init/434 k_work_queue_thread_get/433 k_work_delayable_remaining_get/432 k_work_delayable_expires_get/431 k_work_delayable_is_pending/430 k_work_delayable_from_work/429 k_work_is_pending/428 z_impl_k_sem_count_get/427 k_event_test/426 z_impl_k_queue_is_empty/425 k_cycle_get_64/424 k_cycle_get_32/423 k_uptime_delta/422 k_uptime_seconds/421 k_uptime_get_32/420 k_uptime_get/419 z_impl_k_timer_user_data_get/418 z_impl_k_timer_user_data_set/417 k_timer_remaining_get/416 z_impl_k_timer_remaining_ticks/415 z_impl_k_timer_expires_ticks/414 k_is_pre_kernel/413 k_thread_start/412 z_impl_k_thread_timeout_remaining_ticks/411 z_impl_k_thread_timeout_expires_ticks/410 k_current_get/409 z_tls_current/408 k_msleep/407 k_thread_heap_assign/406 k_thread_foreach_unlocked_filter_by_cpu/405 k_thread_foreach_filter_by_cpu/404 ring_buf_get_finish/403 ring_buf_get_claim/402 ring_buf_put_finish/401 ring_buf_put_claim/400 ring_buf_size_get/399 ring_buf_capacity_get/398 ring_buf_item_space_get/397 ring_buf_space_get/396 ring_buf_reset/395 ring_buf_is_empty/394 ring_buf_item_init/393 ring_buf_init/392 ring_buf_internal_reset/391 k_object_alloc_size/390 k_object_alloc/389 k_object_release/388 k_object_access_grant/387 k_object_free/386 z_impl_k_object_alloc_size/385 z_impl_k_object_alloc/384 k_object_is_valid/383 k_object_access_all_grant/382 z_impl_k_object_release/381 k_object_access_revoke/380 z_impl_k_object_access_grant/379 k_object_create_dynamic/378 k_object_create_dynamic_aligned/377 k_object_init/376 K_KERNEL_STACK_BUFFER/375 z_stack_ptr_align/374 irq_disconnect_dynamic/373 irq_connect_dynamic/372 k_spin_release/371 k_spin_unlock/370 k_spin_trylock/369 k_spin_lock/368 z_spinlock_validate_post/367 z_spinlock_validate_pre/366 errno/365 sys_timepoint_expired/364 sys_timepoint_cmp/363 sys_write64/362 sys_read64/361 sys_write32/360 sys_read32/359 sys_write16/358 sys_read16/357 sys_write8/356 sys_read8/355 sys_bitfield_test_and_clear_bit/354 sys_bitfield_test_and_set_bit/353 sys_test_and_clear_bit/352 sys_test_and_set_bit/351 sys_bitfield_test_bit/350 sys_bitfield_clear_bit/349 sys_bitfield_set_bit/348 sys_clear_bits/347 sys_set_bits/346 sys_test_bit/345 sys_clear_bit/344 sys_set_bit/343 arch_irq_unlocked/342 arch_irq_unlock/341 arch_irq_lock/340 cmse_nonsecure_caller/339 cmse_TTAT/338 __cmse_TTAT_fptr/337 cmse_TTA/336 __cmse_TTA_fptr/335 cmse_TTT/334 __cmse_TTT_fptr/333 cmse_TT/332 __cmse_TT_fptr/331 ITM_CheckChar/330 ITM_ReceiveChar/329 ITM_SendChar/328 TZ_SysTick_Config_NS/327 SysTick_Config/326 TZ_DIB_GetAuthStatus_NS/325 DIB_GetAuthStatus/324 TZ_DCB_GetAuthCtrl_NS/323 TZ_DCB_SetAuthCtrl_NS/322 DCB_GetAuthCtrl/321 DCB_SetAuthCtrl/320 TZ_SAU_Disable/319 TZ_SAU_Enable/318 SCB_GetFPUType/317 ARM_MPU_Load_NS/316 ARM_MPU_Load/315 ARM_MPU_LoadEx/314 ARM_MPU_OrderedMemcpy/313 ARM_MPU_SetRegion_NS/312 ARM_MPU_SetRegion/311 ARM_MPU_SetRegionEx/310 ARM_MPU_ClrRegion_NS/309 ARM_MPU_ClrRegion/308 ARM_MPU_ClrRegionEx/307 ARM_MPU_SetMemAttr_NS/306 ARM_MPU_SetMemAttr/305 ARM_MPU_SetMemAttrEx/304 ARM_MPU_Disable_NS/303 ARM_MPU_Enable_NS/302 ARM_MPU_Disable/301 ARM_MPU_Enable/300 TZ_NVIC_GetPriority_NS/299 TZ_NVIC_SetPriority_NS/298 TZ_NVIC_GetActive_NS/297 TZ_NVIC_ClearPendingIRQ_NS/296 TZ_NVIC_SetPendingIRQ_NS/295 TZ_NVIC_GetPendingIRQ_NS/294 TZ_NVIC_DisableIRQ_NS/293 TZ_NVIC_GetEnableIRQ_NS/292 TZ_NVIC_EnableIRQ_NS/291 TZ_NVIC_GetPriorityGrouping_NS/290 TZ_NVIC_SetPriorityGrouping_NS/289 __NVIC_SystemReset/288 __NVIC_GetVector/287 __NVIC_SetVector/286 NVIC_DecodePriority/285 NVIC_EncodePriority/284 __NVIC_GetPriority/283 __NVIC_SetPriority/282 NVIC_ClearTargetState/281 NVIC_SetTargetState/280 NVIC_GetTargetState/279 __NVIC_GetActive/278 __NVIC_ClearPendingIRQ/277 __NVIC_SetPendingIRQ/276 __NVIC_GetPendingIRQ/275 __NVIC_DisableIRQ/274 __NVIC_GetEnableIRQ/273 __NVIC_EnableIRQ/272 __NVIC_GetPriorityGrouping/271 __NVIC_SetPriorityGrouping/270 __SMMLA/269 __QSUB/268 __QADD/267 __SEL/266 __SMLSLDX/265 __SMLSLD/264 __SMLSDX/263 __SMLSD/262 __SMUSDX/261 __SMUSD/260 __SMLALDX/259 __SMLALD/258 __SMLADX/257 __SMLAD/256 __SMUADX/255 __SMUAD/254 __SXTAB16_RORn/253 __SXTAB16/252 __SXTB16_RORn/251 __SXTB16/250 __UXTAB16/249 __UXTB16/248 __USADA8/247 __USAD8/246 __UHSAX/245 __UQSAX/244 __USAX/243 __SHSAX/242 __QSAX/241 __SSAX/240 __UHASX/239 __UQASX/238 __UASX/237 __SHASX/236 __QASX/235 __SASX/234 __UHSUB16/233 __UQSUB16/232 __USUB16/231 __SHSUB16/230 __QSUB16/229 __SSUB16/228 __UHADD16/227 __UQADD16/226 __UADD16/225 __SHADD16/224 __QADD16/223 __SADD16/222 __UHSUB8/221 __UQSUB8/220 __USUB8/219 __SHSUB8/218 __QSUB8/217 __SSUB8/216 __UHADD8/215 __UQADD8/214 __UADD8/213 __SHADD8/212 __QADD8/211 __SADD8/210 __set_FPSCR/209 __get_FPSCR/208 __TZ_set_MSPLIM_NS/207 __set_MSPLIM/206 __TZ_get_MSPLIM_NS/205 __get_MSPLIM/204 __TZ_set_PSPLIM_NS/203 __set_PSPLIM/202 __TZ_get_PSPLIM_NS/201 __get_PSPLIM/200 __TZ_set_FAULTMASK_NS/199 __set_FAULTMASK/198 __TZ_get_FAULTMASK_NS/197 __get_FAULTMASK/196 __set_BASEPRI_MAX/195 __TZ_set_BASEPRI_NS/194 __set_BASEPRI/193 __TZ_get_BASEPRI_NS/192 __get_BASEPRI/191 __disable_fault_irq/190 __enable_fault_irq/189 __TZ_set_PRIMASK_NS/188 __set_PRIMASK/187 __TZ_get_PRIMASK_NS/186 __get_PRIMASK/185 __TZ_set_SP_NS/184 __TZ_get_SP_NS/183 __TZ_set_MSP_NS/182 __set_MSP/181 __TZ_get_MSP_NS/180 __get_MSP/179 __TZ_set_PSP_NS/178 __set_PSP/177 __TZ_get_PSP_NS/176 __get_PSP/175 __get_xPSR/174 __get_APSR/173 __get_IPSR/172 __TZ_set_CONTROL_NS/171 __set_CONTROL/170 __TZ_get_CONTROL_NS/169 __get_CONTROL/168 __disable_irq/167 __enable_irq/166 __STLEX/165 __STLEXH/164 __STLEXB/163 __LDAEX/162 __LDAEXH/161 __LDAEXB/160 __STL/159 __STLH/158 __STLB/157 __LDA/156 __LDAH/155 __LDAB/154 __STRT/153 __STRHT/152 __STRBT/151 __LDRT/150 __LDRHT/149 __LDRBT/148 __RRX/147 __CLREX/146 __STREXW/145 __STREXH/144 __STREXB/143 __LDREXW/142 __LDREXH/141 __LDREXB/140 __CLZ/139 __RBIT/138 __ROR/137 __REVSH/136 __REV16/135 __REV/134 __DMB/133 __DSB/132 __ISB/131 __TZ_set_STACKSEAL_S/130 find_lsb_set/129 find_msb_set/128 arch_nop/127 arch_k_cycle_get_64/126 arch_k_cycle_get_32/125 arch_isr_direct_footer/124 arch_isr_direct_header/123 arch_num_cpus/122 arch_proc_id/121 arch_curr_cpu/120 arch_cohere_stacks/119 arch_mem_coherent/118 __printf_float/117 rb_walk/116 rb_get_max/115 rb_get_min/114 sys_heap_validate/113 sys_sflist_len/112 sys_sflist_find_and_remove/111 sys_sflist_remove/110 sys_sflist_get/109 sys_sflist_get_not_empty/108 sys_sflist_insert/107 sys_sflist_merge_sflist/106 sys_sflist_append_list/105 sys_sflist_append/104 sys_sflist_prepend/103 sys_sflist_peek_next/102 sys_sflist_peek_next_no_check/101 sys_sflist_is_empty/100 sys_sfnode_flags_set/99 sys_sfnode_init/98 sys_sfnode_flags_get/97 sys_sflist_peek_tail/96 sys_sflist_peek_head/95 z_sflist_tail_set/94 z_sflist_head_set/93 z_sfnode_next_set/92 z_sfnode_next_peek/91 sys_sflist_init/90 sys_slist_find_and_remove/89 sys_slist_len/88 sys_slist_find/87 sys_slist_remove/86 sys_slist_get/85 sys_slist_get_not_empty/84 sys_slist_insert/83 sys_slist_merge_slist/82 sys_slist_append_list/81 sys_slist_append/80 sys_slist_prepend/79 sys_slist_peek_next/78 sys_slist_peek_next_no_check/77 sys_slist_is_empty/76 sys_slist_peek_tail/75 sys_slist_peek_head/74 z_slist_tail_set/73 z_slist_head_set/72 z_snode_next_set/71 z_snode_next_peek/70 sys_slist_init/69 sys_dlist_len/68 sys_dlist_get/67 sys_dlist_remove/66 sys_dlist_dequeue/65 sys_dlist_insert_at/64 sys_dlist_insert/63 sys_dlist_prepend/62 sys_dlist_append/61 sys_dlist_peek_tail/60 sys_dlist_peek_prev/59 sys_dlist_peek_prev_no_check/58 sys_dlist_peek_next/57 sys_dlist_peek_next_no_check/56 sys_dlist_peek_head_not_empty/55 sys_dlist_peek_head/54 sys_dlist_has_multiple_nodes/53 sys_dlist_is_empty/52 sys_dlist_is_tail/51 sys_dlist_is_head/50 sys_dnode_is_linked/49 sys_dnode_init/48 sys_dlist_init/47 atomic_set_bit_to/46 atomic_set_bit/45 atomic_clear_bit/44 atomic_test_and_set_bit/43 atomic_test_and_clear_bit/42 atomic_test_bit/41 atomic_nand/40 atomic_and/39 atomic_xor/38 atomic_or/37 atomic_ptr_clear/36 atomic_clear/35 atomic_ptr_set/34 atomic_set/33 atomic_ptr_get/32 atomic_get/31 atomic_dec/30 atomic_inc/29 atomic_sub/28 atomic_add/27 atomic_ptr_cas/26 atomic_cas/25 device_get_by_dt_nodelabel/24 device_init/23 device_is_ready/22 device_get_binding/21 k_is_user_context/20 z_syscall_trap/19 device_from_handle/18 device_handle_get/17 k_mem_unmap/16 k_mem_map/15 k_mem_virt_addr/14 k_mem_phys_addr/13 pm_state_cpu_get_all/12 mem_xor_128/11 mem_xor_32/10 mem_xor_n/9 sign_extend_64/8 sign_extend/7 bin2bcd/6 bcd2bin/5 byteswp/4 bytecpy/3 arithmetic_shift_right/2 is_null_no_warn/1 is_power_of_two/0
+
+Reclaimed Symbol table:
+
+dynamic_regions/588 (dynamic_regions) @00000000078e8b80
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: 
+  Referring: z_arm_configure_dynamic_mpu_regions/579 (addr) 
+  Availability: not-ready
+  Varpool flags:
+arm_core_mpu_configure_dynamic_mpu_regions/587 (arm_core_mpu_configure_dynamic_mpu_regions) @00000000078eae38
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: z_arm_configure_dynamic_mpu_regions/579 
+  Calls: 
+arm_core_mpu_mark_areas_for_dynamic_regions/586 (arm_core_mpu_mark_areas_for_dynamic_regions) @00000000078ead20
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: z_arm_configure_static_mpu_regions/578 
+  Calls: 
+__kernel_ram_start/585 (__kernel_ram_start) @00000000078e8b00
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: z_arm_configure_static_mpu_regions/578 (addr) z_arm_configure_static_mpu_regions/578 (addr) 
+  Availability: not-ready
+  Varpool flags:
+arm_core_mpu_configure_static_mpu_regions/584 (arm_core_mpu_configure_static_mpu_regions) @00000000078eac08
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: z_arm_configure_static_mpu_regions/578 
+  Calls: 
+__kernel_ram_end/583 (__kernel_ram_end) @00000000078e8a80
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: z_arm_configure_static_mpu_regions/578 (addr) z_arm_configure_static_mpu_regions/578 (addr) 
+  Availability: not-ready
+  Varpool flags:
+_image_ram_start/582 (_image_ram_start) @00000000078e8a00
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: z_arm_configure_static_mpu_regions/578 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__ramfunc_size/581 (__ramfunc_size) @00000000078e8980
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: static_regions/577 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__ramfunc_start/580 (__ramfunc_start) @00000000078e8900
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: static_regions/577 (addr) 
+  Availability: not-ready
+  Varpool flags:
+z_arm_configure_dynamic_mpu_regions/579 (z_arm_configure_dynamic_mpu_regions) @00000000078eaaf0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: dynamic_regions/588 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: arm_core_mpu_configure_dynamic_mpu_regions/587 
+z_arm_configure_static_mpu_regions/578 (z_arm_configure_static_mpu_regions) @00000000078ea9d8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: _image_ram_start/582 (addr) __kernel_ram_end/583 (addr) static_regions/577 (addr) __kernel_ram_start/585 (addr) __kernel_ram_end/583 (addr) __kernel_ram_start/585 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: arm_core_mpu_mark_areas_for_dynamic_regions/586 arm_core_mpu_configure_static_mpu_regions/584 
+static_regions/577 (static_regions) @00000000078e8780
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: __ramfunc_start/580 (addr) __ramfunc_size/581 (addr) 
+  Referring: z_arm_configure_static_mpu_regions/578 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__log_level/575 (__log_level) @00000000078e8580
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__log_current_dynamic_data/574 (__log_current_dynamic_data) @00000000078e8500
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+__log_current_const_data/573 (__log_current_const_data) @00000000078e8480
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+
+
+Initial Symbol table:
+
+dynamic_regions.0/588 (dynamic_regions) @00000000078e8b80
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: 
+  Referring: z_arm_configure_dynamic_mpu_regions/579 (addr) 
+  Availability: not-ready
+  Varpool flags:
+arm_core_mpu_configure_dynamic_mpu_regions/587 (arm_core_mpu_configure_dynamic_mpu_regions) @00000000078eae38
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: z_arm_configure_dynamic_mpu_regions/579 
+  Calls: 
+arm_core_mpu_mark_areas_for_dynamic_regions/586 (arm_core_mpu_mark_areas_for_dynamic_regions) @00000000078ead20
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: z_arm_configure_static_mpu_regions/578 
+  Calls: 
+__kernel_ram_start/585 (__kernel_ram_start) @00000000078e8b00
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: z_arm_configure_static_mpu_regions/578 (addr) z_arm_configure_static_mpu_regions/578 (addr) 
+  Availability: not-ready
+  Varpool flags:
+arm_core_mpu_configure_static_mpu_regions/584 (arm_core_mpu_configure_static_mpu_regions) @00000000078eac08
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: z_arm_configure_static_mpu_regions/578 
+  Calls: 
+__kernel_ram_end/583 (__kernel_ram_end) @00000000078e8a80
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: z_arm_configure_static_mpu_regions/578 (addr) z_arm_configure_static_mpu_regions/578 (addr) 
+  Availability: not-ready
+  Varpool flags:
+_image_ram_start/582 (_image_ram_start) @00000000078e8a00
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: z_arm_configure_static_mpu_regions/578 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__ramfunc_size/581 (__ramfunc_size) @00000000078e8980
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: static_regions/577 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__ramfunc_start/580 (__ramfunc_start) @00000000078e8900
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: static_regions/577 (addr) 
+  Availability: not-ready
+  Varpool flags:
+z_arm_configure_dynamic_mpu_regions/579 (z_arm_configure_dynamic_mpu_regions) @00000000078eaaf0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: dynamic_regions.0/588 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: arm_core_mpu_configure_dynamic_mpu_regions/587 
+z_arm_configure_static_mpu_regions/578 (z_arm_configure_static_mpu_regions) @00000000078ea9d8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: _image_ram_start/582 (addr) __kernel_ram_end/583 (addr) static_regions/577 (addr) __kernel_ram_start/585 (addr) __kernel_ram_end/583 (addr) __kernel_ram_start/585 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: arm_core_mpu_mark_areas_for_dynamic_regions/586 arm_core_mpu_configure_static_mpu_regions/584 
+static_regions/577 (static_regions) @00000000078e8780
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: __ramfunc_start/580 (addr) __ramfunc_size/581 (addr) 
+  Referring: z_arm_configure_static_mpu_regions/578 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__log_level/575 (__log_level) @00000000078e8580
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__log_current_dynamic_data/574 (__log_current_dynamic_data) @00000000078e8500
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+__log_current_const_data/573 (__log_current_const_data) @00000000078e8480
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+dynamic_regions.0/588 (dynamic_regions) @00000000078e8b80
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: 
+  Referring: z_arm_configure_dynamic_mpu_regions/579 (addr) 
+  Availability: not-ready
+  Varpool flags:
+arm_core_mpu_configure_dynamic_mpu_regions/587 (arm_core_mpu_configure_dynamic_mpu_regions) @00000000078eae38
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: z_arm_configure_dynamic_mpu_regions/579 
+  Calls: 
+arm_core_mpu_mark_areas_for_dynamic_regions/586 (arm_core_mpu_mark_areas_for_dynamic_regions) @00000000078ead20
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: z_arm_configure_static_mpu_regions/578 
+  Calls: 
+__kernel_ram_start/585 (__kernel_ram_start) @00000000078e8b00
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: z_arm_configure_static_mpu_regions/578 (addr) z_arm_configure_static_mpu_regions/578 (addr) 
+  Availability: not-ready
+  Varpool flags:
+arm_core_mpu_configure_static_mpu_regions/584 (arm_core_mpu_configure_static_mpu_regions) @00000000078eac08
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: z_arm_configure_static_mpu_regions/578 
+  Calls: 
+__kernel_ram_end/583 (__kernel_ram_end) @00000000078e8a80
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: z_arm_configure_static_mpu_regions/578 (addr) z_arm_configure_static_mpu_regions/578 (addr) 
+  Availability: not-ready
+  Varpool flags:
+_image_ram_start/582 (_image_ram_start) @00000000078e8a00
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: z_arm_configure_static_mpu_regions/578 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__ramfunc_size/581 (__ramfunc_size) @00000000078e8980
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: static_regions/577 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__ramfunc_start/580 (__ramfunc_start) @00000000078e8900
+  Type: variable
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: static_regions/577 (addr) 
+  Availability: not-ready
+  Varpool flags:
+z_arm_configure_dynamic_mpu_regions/579 (z_arm_configure_dynamic_mpu_regions) @00000000078eaaf0
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: dynamic_regions.0/588 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: arm_core_mpu_configure_dynamic_mpu_regions/587 
+z_arm_configure_static_mpu_regions/578 (z_arm_configure_static_mpu_regions) @00000000078ea9d8
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: _image_ram_start/582 (addr) __kernel_ram_end/583 (addr) static_regions/577 (addr) __kernel_ram_start/585 (addr) __kernel_ram_end/583 (addr) __kernel_ram_start/585 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: arm_core_mpu_mark_areas_for_dynamic_regions/586 arm_core_mpu_configure_static_mpu_regions/584 
+static_regions/577 (static_regions) @00000000078e8780
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: __ramfunc_start/580 (addr) __ramfunc_size/581 (addr) 
+  Referring: z_arm_configure_static_mpu_regions/578 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__log_level/575 (__log_level) @00000000078e8580
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+__log_current_dynamic_data/574 (__log_current_dynamic_data) @00000000078e8500
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+__log_current_const_data/573 (__log_current_const_data) @00000000078e8480
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+dynamic_regions.0/588 (dynamic_regions) @00000000078e8b80
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
+  References: 
+  Referring: z_arm_configure_dynamic_mpu_regions/579 (addr) 
+  Availability: available
+  Varpool flags:
+arm_core_mpu_configure_dynamic_mpu_regions/587 (arm_core_mpu_configure_dynamic_mpu_regions) @00000000078eae38
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: z_arm_configure_dynamic_mpu_regions/579 
+  Calls: 
+arm_core_mpu_mark_areas_for_dynamic_regions/586 (arm_core_mpu_mark_areas_for_dynamic_regions) @00000000078ead20
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: z_arm_configure_static_mpu_regions/578 
+  Calls: 
+__kernel_ram_start/585 (__kernel_ram_start) @00000000078e8b00
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: z_arm_configure_static_mpu_regions/578 (addr) z_arm_configure_static_mpu_regions/578 (addr) 
+  Availability: not_available
+  Varpool flags:
+arm_core_mpu_configure_static_mpu_regions/584 (arm_core_mpu_configure_static_mpu_regions) @00000000078eac08
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: z_arm_configure_static_mpu_regions/578 
+  Calls: 
+__kernel_ram_end/583 (__kernel_ram_end) @00000000078e8a80
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: z_arm_configure_static_mpu_regions/578 (addr) z_arm_configure_static_mpu_regions/578 (addr) 
+  Availability: not_available
+  Varpool flags:
+_image_ram_start/582 (_image_ram_start) @00000000078e8a00
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: z_arm_configure_static_mpu_regions/578 (addr) 
+  Availability: not_available
+  Varpool flags:
+__ramfunc_size/581 (__ramfunc_size) @00000000078e8980
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: static_regions/577 (addr) 
+  Availability: not_available
+  Varpool flags:
+__ramfunc_start/580 (__ramfunc_start) @00000000078e8900
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: static_regions/577 (addr) 
+  Availability: not_available
+  Varpool flags:
+z_arm_configure_dynamic_mpu_regions/579 (z_arm_configure_dynamic_mpu_regions) @00000000078eaaf0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: dynamic_regions.0/588 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: arm_core_mpu_configure_dynamic_mpu_regions/587 
+z_arm_configure_static_mpu_regions/578 (z_arm_configure_static_mpu_regions) @00000000078ea9d8
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: _image_ram_start/582 (addr) __kernel_ram_end/583 (addr) static_regions/577 (addr) __kernel_ram_start/585 (addr) __kernel_ram_end/583 (addr) __kernel_ram_start/585 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: arm_core_mpu_mark_areas_for_dynamic_regions/586 arm_core_mpu_configure_static_mpu_regions/584 
+static_regions/577 (static_regions) @00000000078e8780
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
+  References: __ramfunc_start/580 (addr) __ramfunc_size/581 (addr) 
+  Referring: z_arm_configure_static_mpu_regions/578 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+__log_level/575 (__log_level) @00000000078e8580
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+__log_current_dynamic_data/574 (__log_current_dynamic_data) @00000000078e8500
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+__log_current_const_data/573 (__log_current_const_data) @00000000078e8480
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+Trivially needed variables: dynamic_regions.0/588 static_regions/577 __log_level/575 __log_current_dynamic_data/574 __log_current_const_data/573
+Removing variables:
+
+Final Symbol table:
+
+dynamic_regions.0/588 (dynamic_regions) @00000000078e8b80
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.bss.dynamic_regions.0 (implicit_section)
+  Aux: @0000000000000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+arm_core_mpu_configure_dynamic_mpu_regions/587 (arm_core_mpu_configure_dynamic_mpu_regions) @00000000078eae38
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+arm_core_mpu_mark_areas_for_dynamic_regions/586 (arm_core_mpu_mark_areas_for_dynamic_regions) @00000000078ead20
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+__kernel_ram_start/585 (__kernel_ram_start) @00000000078e8b00
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+arm_core_mpu_configure_static_mpu_regions/584 (arm_core_mpu_configure_static_mpu_regions) @00000000078eac08
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+__kernel_ram_end/583 (__kernel_ram_end) @00000000078e8a80
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+_image_ram_start/582 (_image_ram_start) @00000000078e8a00
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+__ramfunc_size/581 (__ramfunc_size) @00000000078e8980
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: static_regions/577 (addr) 
+  Availability: not_available
+  Varpool flags:
+__ramfunc_start/580 (__ramfunc_start) @00000000078e8900
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: static_regions/577 (addr) 
+  Availability: not_available
+  Varpool flags:
+z_arm_configure_dynamic_mpu_regions/579 (z_arm_configure_dynamic_mpu_regions) @00000000078eaaf0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.z_arm_configure_dynamic_mpu_regions (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+z_arm_configure_static_mpu_regions/578 (z_arm_configure_static_mpu_regions) @00000000078ea9d8
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.z_arm_configure_static_mpu_regions (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+static_regions/577 (static_regions) @00000000078e8780
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.rodata.static_regions (implicit_section)
+  Aux: @00000000078e8b80
+  References: __ramfunc_start/580 (addr) __ramfunc_size/581 (addr) 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+__log_level/575 (__log_level) @00000000078e8580
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.rodata.__log_level (implicit_section)
+  Aux: @00000000078e8780
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+__log_current_dynamic_data/574 (__log_current_dynamic_data) @00000000078e8500
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.bss.__log_current_dynamic_data (implicit_section)
+  Aux: @00000000078e8580
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+__log_current_const_data/573 (__log_current_const_data) @00000000078e8480
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.bss.__log_current_const_data (implicit_section)
+  Aux: @00000000078e8500
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized

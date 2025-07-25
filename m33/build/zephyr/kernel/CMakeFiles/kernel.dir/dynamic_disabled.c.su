@@ -1,0 +1,2 @@
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/dynamic_disabled.c:12:19:z_impl_k_thread_stack_alloc	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/dynamic_disabled.c:20:5:z_impl_k_thread_stack_free	16	static

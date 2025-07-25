@@ -1,0 +1,14 @@
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/kernel.h:975:19:k_mutex_lock	24	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/kernel.h:992:19:k_mutex_unlock	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/sys/math_extras_impl.h:105:20:size_mul_overflow	32	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/sys/mutex.h:151:19:sys_mutex_lock	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/sys/mutex.h:156:19:sys_mutex_unlock	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/libc/common/source/stdlib/malloc.c:123:1:malloc_lock	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/libc/common/source/stdlib/malloc.c:131:1:malloc_unlock	8	static
+c:\analog\cfs\1.1.0\tools\zephyr-sdk\arm-zephyr-eabi\picolibc\include\stdlib.h:183:7:malloc	24	static
+c:\analog\cfs\1.1.0\tools\zephyr-sdk\arm-zephyr-eabi\picolibc\include\stdlib.h:110:9:aligned_alloc	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/libc/common/source/stdlib/malloc.c:193:12:malloc_prepare	16	static
+c:\analog\cfs\1.1.0\tools\zephyr-sdk\arm-zephyr-eabi\picolibc\include\stdlib.h:243:7:realloc	24	static
+c:\analog\cfs\1.1.0\tools\zephyr-sdk\arm-zephyr-eabi\picolibc\include\stdlib.h:147:6:free	16	static
+c:\analog\cfs\1.1.0\tools\zephyr-sdk\arm-zephyr-eabi\picolibc\include\stdlib.h:136:7:calloc	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/libc/common/source/stdlib/malloc.c:312:7:reallocarray	24	static

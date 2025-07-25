@@ -1,0 +1,1 @@
+"mcuboot":"C:/analog/cfs/1.1.0/SDK/zephyr/bootloader/mcuboot":"C:/analog/cfs/1.1.0/SDK/zephyr/bootloader/mcuboot/boot/zephyr/sysbuild"

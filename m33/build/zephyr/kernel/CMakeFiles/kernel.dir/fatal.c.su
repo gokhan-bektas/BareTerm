@@ -1,0 +1,8 @@
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/kernel.h:223:20:k_thread_abort	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/debug/coredump.h:260:20:coredump	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/fatal.c:21:27:arch_system_halt	32	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/fatal.c:37:13:k_sys_fatal_error_handler	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/fatal.c:49:20:thread_name_get	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/fatal.c:60:20:reason_to_str	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/fatal.c:79:20:k_fatal_halt	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/fatal.c:85:6:z_fatal_error	56	static

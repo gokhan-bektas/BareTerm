@@ -1,0 +1,5 @@
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/sys/internal/kobject_internal.h:92:20:k_object_init	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/device.c:22:6:z_device_state_init	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/device.c:29:22:z_impl_device_get_binding	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/device.c:122:8:z_device_get_all_static	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/device.c:132:6:z_impl_device_is_ready	16	static

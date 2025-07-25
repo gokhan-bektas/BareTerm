@@ -1,0 +1,17 @@
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/GPIO/gpio_reva.c:31:10:MXC_GPIO_RevA_InGet	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/GPIO/gpio_reva.c:36:6:MXC_GPIO_RevA_OutSet	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/GPIO/gpio_reva.c:41:6:MXC_GPIO_RevA_OutClr	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/GPIO/gpio_reva.c:46:10:MXC_GPIO_RevA_OutGet	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/GPIO/gpio_reva.c:51:6:MXC_GPIO_RevA_OutPut	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/GPIO/gpio_reva.c:56:6:MXC_GPIO_RevA_OutToggle	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/GPIO/gpio_reva.c:61:5:MXC_GPIO_RevA_IntConfig	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/GPIO/gpio_reva.c:102:6:MXC_GPIO_RevA_EnableInt	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/GPIO/gpio_reva.c:107:6:MXC_GPIO_RevA_DisableInt	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/GPIO/gpio_reva.c:112:6:MXC_GPIO_RevA_ClearFlags	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/GPIO/gpio_reva.c:117:10:MXC_GPIO_RevA_GetFlags	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/GPIO/gpio_reva.c:122:5:MXC_GPIO_RevA_SetVSSEL	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/GPIO/gpio_reva.c:146:5:MXC_GPIO_RevA_SetAF	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/GPIO/gpio_reva.c:221:6:MXC_GPIO_RevA_SetWakeEn	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/GPIO/gpio_reva.c:226:6:MXC_GPIO_RevA_ClearWakeEn	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/GPIO/gpio_reva.c:231:10:MXC_GPIO_RevA_GetWakeEn	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/adi/MAX/Libraries/PeriphDrivers/Source/GPIO/gpio_reva.c:236:5:MXC_GPIO_RevA_SetDriveStrength	24	static

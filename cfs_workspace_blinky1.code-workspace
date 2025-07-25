@@ -12,6 +12,10 @@
     "terminal.integrated.defaultProfile.windows": "CFS Terminal",
     "terminal.integrated.defaultProfile.osx": "CFS Terminal",
     "terminal.integrated.defaultProfile.linux": "CFS Terminal",
-    "cfs.activeContext": "m33"
+    "cfs.activeContext": "m33",
+    "files.associations": {
+      "stddef.h": "c",
+      "stdarg.h": "c"
+    }
   }
 }

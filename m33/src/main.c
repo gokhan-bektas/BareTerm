@@ -8,6 +8,12 @@
 #include <stdio.h>
 #include <zephyr/kernel.h>
 #include <zephyr/drivers/gpio.h>
+#include <stdio.h>
+#include "tui.h"
+#include "tui_color.h"
+#include "tui_backend.h"
+#include "tui.h"
+#include "tui_event.h"
 
 /* 1000 msec = 1 sec */
 #define SLEEP_TIME_MS   1000
@@ -35,16 +41,48 @@ int main(void)
 	if (ret < 0) {
 		return 0;
 	}
-
+	tui_uart_input_init();   // Start receiving UART input
 	while (1) {
 		ret = gpio_pin_toggle_dt(&led);
 		if (ret < 0) {
 			return 0;
 		}
 
+
+
 		led_state = !led_state;
 		printf("LED state: %s\n", led_state ? "ON" : "OFF");
+
+		tui_set_color(TUI_WHITE, TUI_BLUE, TUI_STYLE_NONE);
+		tui_puts("Plain white on blue");
+
+		tui_set_color(TUI_YELLOW, TUI_RED, TUI_STYLE_BOLD);
+		tui_puts("Bold yellow on red");
+
+		tui_set_color(TUI_GREEN, TUI_BLACK, TUI_STYLE_UNDERLINE);
+		tui_puts("Underlined green on black");
+
+		tui_reset_color();
+		tui_move_cursor(1, 3);
+		tui_puts("This is default color again");
+
+		tui_set_color(TUI_WHITE, TUI_BLUE, TUI_STYLE_BOLD);
+		tui_draw_box(5, 3, 30, 7, " Menu ");
+		tui_reset_color();
+
+		tui_move_cursor(7, 5);
+		tui_puts("Option 1");
+		tui_move_cursor(7, 6);
+		tui_puts("Option 2");
+		tui_event_loop();  // blocking
 		k_msleep(SLEEP_TIME_MS);
+
+
+		printf("\x1B[2J\x1B[H\x1B[44;37mThis is a test\x1B[0m\n");
+
+        tui_clear_screen();
+        tui_backend_puts("Screen cleared\n");
+        tui_printf("System ready on port %d\n", 3);
 	}
 	return 0;
 }

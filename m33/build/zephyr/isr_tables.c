@@ -75,10 +75,10 @@ struct _isr_table_entry __sw_isr_table _sw_isr_table[54] = {
 	{(const void *)0x0, (ISR)z_irq_spurious}, /* 8 */
 	{(const void *)0x0, (ISR)z_irq_spurious}, /* 9 */
 	{(const void *)0x0, (ISR)z_irq_spurious}, /* 10 */
-	{(const void *)0x1008fd0, (ISR)0x1007e9b}, /* 11 */
+	{(const void *)0x10094dc, (ISR)0x1008359}, /* 11 */
 	{(const void *)0x0, (ISR)z_irq_spurious}, /* 12 */
 	{(const void *)0x0, (ISR)z_irq_spurious}, /* 13 */
-	{(const void *)0x1008fbc, (ISR)0x1007749}, /* 14 */
+	{(const void *)0x10094c8, (ISR)0x1007c07}, /* 14 */
 	{(const void *)0x0, (ISR)z_irq_spurious}, /* 15 */
 	{(const void *)0x0, (ISR)z_irq_spurious}, /* 16 */
 	{(const void *)0x0, (ISR)z_irq_spurious}, /* 17 */

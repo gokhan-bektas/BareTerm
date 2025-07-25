@@ -1,0 +1,52 @@
+Trivially needed symbols: tui_event_ltui_event_loopoop/0
+
+
+Initial Symbol table:
+
+tui_event_ltui_event_loopoop/0 (tui_event_ltui_event_loopoop) @0000000006c95348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @0000000001d89da0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+tui_event_ltui_event_loopoop/0 (tui_event_ltui_event_loopoop) @0000000006c95348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+
+
+Initial Symbol table:
+
+tui_event_ltui_event_loopoop/0 (tui_event_ltui_event_loopoop) @0000000006c95348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+tui_event_ltui_event_loopoop/0 (tui_event_ltui_event_loopoop) @0000000006c95348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 

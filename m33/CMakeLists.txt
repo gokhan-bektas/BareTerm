@@ -11,4 +11,10 @@ zephyr_cc_option(-fstack-usage)
 zephyr_cc_option(-fdump-ipa-cgraph)
 zephyr_cc_option(-gdwarf-4)
 
-target_sources(app PRIVATE src/main.c)
+target_sources(app PRIVATE
+  src/main.c
+  src/tui.c
+  src/tui_backend_stdio.c
+  src/tui_event_loop.c 
+  src/tui_uart_input.c
+)

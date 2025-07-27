@@ -15,6 +15,6 @@ target_sources(app PRIVATE
   src/main.c
   src/tui.c
   src/tui_backend_stdio.c
-  src/tui_event_loop.c 
   src/tui_uart_input.c
+  src/tui_input.c
 )

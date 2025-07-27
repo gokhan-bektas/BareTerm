@@ -3,7 +3,7 @@ Trivially needed symbols: tui_backend_write/1
 
 Initial Symbol table:
 
-fwrite/3 (fwrite) @0000000006d058c0
+fwrite/3 (fwrite) @00000000060e78c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -11,14 +11,14 @@ fwrite/3 (fwrite) @0000000006d058c0
   Function flags:
   Called by: tui_backend_write/1 
   Calls: 
-stdout/2 (stdout) @0000000006dbc200
+stdout/2 (stdout) @0000000006195200
   Type: variable
   Visibility: semantic_interposition external public
   References: 
   Referring: tui_backend_write/1 (read) 
   Availability: not-ready
   Varpool flags: read-only
-tui_backend_write/1 (tui_backend_write) @0000000006d057a8
+tui_backend_write/1 (tui_backend_write) @00000000060e77a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @0000000001d89da0
@@ -27,7 +27,7 @@ tui_backend_write/1 (tui_backend_write) @0000000006d057a8
   Function flags: body
   Called by: 
   Calls: fwrite/3 
-__printf_float/0 (__printf_float) @0000000006d05578
+__printf_float/0 (__printf_float) @00000000060e7578
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -40,7 +40,7 @@ Removing unused symbols: __printf_float/0
 
 Reclaimed Symbol table:
 
-fwrite/3 (fwrite) @0000000006d058c0
+fwrite/3 (fwrite) @00000000060e78c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -48,14 +48,14 @@ fwrite/3 (fwrite) @0000000006d058c0
   Function flags:
   Called by: tui_backend_write/1 
   Calls: 
-stdout/2 (stdout) @0000000006dbc200
+stdout/2 (stdout) @0000000006195200
   Type: variable
   Visibility: semantic_interposition external public
   References: 
   Referring: tui_backend_write/1 (read) 
   Availability: not-ready
   Varpool flags: read-only
-tui_backend_write/1 (tui_backend_write) @0000000006d057a8
+tui_backend_write/1 (tui_backend_write) @00000000060e77a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: stdout/2 (read) 
@@ -67,7 +67,7 @@ tui_backend_write/1 (tui_backend_write) @0000000006d057a8
 
 Initial Symbol table:
 
-fwrite/3 (fwrite) @0000000006d058c0
+fwrite/3 (fwrite) @00000000060e78c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -75,14 +75,14 @@ fwrite/3 (fwrite) @0000000006d058c0
   Function flags:
   Called by: tui_backend_write/1 
   Calls: 
-stdout/2 (stdout) @0000000006dbc200
+stdout/2 (stdout) @0000000006195200
   Type: variable
   Visibility: semantic_interposition external public
   References: 
   Referring: tui_backend_write/1 (read) 
   Availability: not-ready
   Varpool flags: read-only
-tui_backend_write/1 (tui_backend_write) @0000000006d057a8
+tui_backend_write/1 (tui_backend_write) @00000000060e77a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: stdout/2 (read) 
@@ -95,7 +95,7 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-fwrite/3 (fwrite) @0000000006d058c0
+fwrite/3 (fwrite) @00000000060e78c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -103,14 +103,14 @@ fwrite/3 (fwrite) @0000000006d058c0
   Function flags:
   Called by: tui_backend_write/1 
   Calls: 
-stdout/2 (stdout) @0000000006dbc200
+stdout/2 (stdout) @0000000006195200
   Type: variable
   Visibility: semantic_interposition external public
   References: 
   Referring: tui_backend_write/1 (read) 
   Availability: not-ready
   Varpool flags: read-only
-tui_backend_write/1 (tui_backend_write) @0000000006d057a8
+tui_backend_write/1 (tui_backend_write) @00000000060e77a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: stdout/2 (read) 
@@ -124,7 +124,7 @@ Reclaiming variables:
 Clearing address taken flags:
 Optimized Symbol table:
 
-fwrite/3 (fwrite) @0000000006d058c0
+fwrite/3 (fwrite) @00000000060e78c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -133,7 +133,7 @@ fwrite/3 (fwrite) @0000000006d058c0
   Function flags:
   Called by: tui_backend_write/1 
   Calls: 
-stdout/2 (stdout) @0000000006dbc200
+stdout/2 (stdout) @0000000006195200
   Type: variable
   Body removed by symtab_remove_unreachable_nodes
   Visibility: semantic_interposition external public
@@ -141,7 +141,7 @@ stdout/2 (stdout) @0000000006dbc200
   Referring: tui_backend_write/1 (read) 
   Availability: not_available
   Varpool flags: read-only
-tui_backend_write/1 (tui_backend_write) @0000000006d057a8
+tui_backend_write/1 (tui_backend_write) @00000000060e77a8
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: stdout/2 (read) 
@@ -155,7 +155,7 @@ Removing variables:
 
 Final Symbol table:
 
-fwrite/3 (fwrite) @0000000006d058c0
+fwrite/3 (fwrite) @00000000060e78c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -164,7 +164,7 @@ fwrite/3 (fwrite) @0000000006d058c0
   Function flags:
   Called by: 
   Calls: 
-stdout/2 (stdout) @0000000006dbc200
+stdout/2 (stdout) @0000000006195200
   Type: variable
   Body removed by symtab_remove_unreachable_nodes
   Visibility: semantic_interposition external public
@@ -172,7 +172,7 @@ stdout/2 (stdout) @0000000006dbc200
   Referring: 
   Availability: not_available
   Varpool flags: read-only
-tui_backend_write/1 (tui_backend_write) @0000000006d057a8
+tui_backend_write/1 (tui_backend_write) @00000000060e77a8
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_backend_write (implicit_section)
   References: 

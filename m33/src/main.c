@@ -10,10 +10,10 @@
 #include <zephyr/drivers/gpio.h>
 #include <stdio.h>
 #include "tui.h"
-#include "tui_color.h"
 #include "tui_backend.h"
 #include "tui.h"
-#include "tui_event.h"
+#include "tui_input.h"	
+#include "tui_uart_input.h"
 
 /* 1000 msec = 1 sec */
 #define SLEEP_TIME_MS   1000
@@ -33,6 +33,15 @@ int main(void)
 	int ret;
 	bool led_state = true;
 
+	tui_init();
+
+    const struct device *uart = DEVICE_DT_GET(DT_CHOSEN(zephyr_console));
+    if (!device_is_ready(uart)) {
+        return;
+    }
+
+    tui_uart_input_init(uart);
+
 	if (!gpio_is_ready_dt(&led)) {
 		return 0;
 	}
@@ -41,7 +50,33 @@ int main(void)
 	if (ret < 0) {
 		return 0;
 	}
-	tui_uart_input_init();   // Start receiving UART input
+
+tui_backend_puts("\x1B[?1000h"); // Basic mouse click tracking
+
+while (1) {
+    tui_event_t evt;
+    if (tui_poll_event(&evt)) {
+        //tui_move_cursor(1, 15);
+		
+        switch (evt.type) {
+            case TUI_EVT_KEY:
+                tui_printf("Key: '%c' (0x%02X)    ", evt.key.ch, evt.key.ch);
+                break;
+			case TUI_EVT_ARROW:
+				tui_printf("Arrow:  %d    ", evt.key.code);
+				break;
+            case TUI_EVT_MOUSE:
+                tui_printf("Mouse: %s at (%d, %d), button %d     ",
+                           evt.mouse.pressed ? "DOWN" : "UP",
+                           evt.mouse.x, evt.mouse.y,
+                           evt.mouse.button);
+                break;
+        }
+    }
+    k_msleep(10);
+}
+
+
 	while (1) {
 		ret = gpio_pin_toggle_dt(&led);
 		if (ret < 0) {
@@ -74,7 +109,7 @@ int main(void)
 		tui_puts("Option 1");
 		tui_move_cursor(7, 6);
 		tui_puts("Option 2");
-		tui_event_loop();  // blocking
+
 		k_msleep(SLEEP_TIME_MS);
 
 

@@ -15,7 +15,14 @@
     "cfs.activeContext": "m33",
     "files.associations": {
       "stddef.h": "c",
-      "stdarg.h": "c"
+      "stdarg.h": "c",
+      "tui_backend.h": "c",
+      "tui_uart_input.h": "c",
+      "compare": "c",
+      "cstddef": "c",
+      "limits": "c",
+      "type_traits": "c",
+      "new": "c"
     }
   }
 }

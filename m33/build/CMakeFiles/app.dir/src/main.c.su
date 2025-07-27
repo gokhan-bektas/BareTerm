@@ -4,9 +4,5 @@ C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/gene
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/drivers/gpio.h:837:20:gpio_is_ready_dt	16	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/drivers/gpio.h:977:19:z_impl_gpio_pin_configure	40	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/drivers/gpio.h:1045:19:gpio_pin_configure_dt	16	static
-C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/drivers/gpio.h:1475:19:z_impl_gpio_port_toggle_bits	24	static
-C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/drivers/gpio.h:1713:19:gpio_pin_toggle	24	static
-C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/drivers/gpio.h:1734:19:gpio_pin_toggle_dt	16	static
 C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/gpio.h:51:19:gpio_pin_configure	24	static
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/gpio.h:224:19:gpio_port_toggle_bits	16	static
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/main.c:31:5:main	24	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/main.c:31:5:main	48	static

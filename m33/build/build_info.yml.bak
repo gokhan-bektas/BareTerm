@@ -1,51 +1,5 @@
-cmake:
-  application:
-    configuration-dir: C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33
-    source-dir: C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33
-  board:
-    name: max32657evkit
-    path:
-     - C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/boards/adi/max32657evkit
-    qualifiers: max32657
-    revision: 
-  devicetree:
-    bindings-dirs:
-     - C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/dts/bindings
-    files:
-     - C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/boards/adi/max32657evkit/max32657evkit_max32657.dts
-     - C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/boards/max32657evkit_max32657.overlay
-    include-dirs:
-     - C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include
-     - C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr
-     - C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/dts/common
-     - C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/dts/x86
-     - C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/dts/xtensa
-     - C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/dts/sparc
-     - C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/dts/riscv
-     - C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/dts/posix
-     - C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/dts/nios2
-     - C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/dts/arm64
-     - C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/dts/arm
-     - C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/dts/arc
-     - C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/dts
-    user-files:
-     - C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/boards/max32657evkit_max32657.overlay
-  kconfig:
-    files:
-     - C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/boards/adi/max32657evkit/max32657evkit_max32657_defconfig
-     - C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/prj.conf
-     - C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/boards/max32657evkit_max32657.conf
-    user-files:
-     - C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/prj.conf
-     - C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/boards/max32657evkit_max32657.conf
-  toolchain:
-    name: zephyr
-    path: C:/analog/cfs/1.1.0/Tools/zephyr-sdk
-  zephyr:
-    version: 4.1.0
-    zephyr-base: C:/analog/cfs/1.1.0/SDK/zephyr/zephyr
-version: 0.1.0
 west:
   command: C:\analog\cfs\1.1.0\Tools\python\Scripts\west build -b max32657evkit/max32657
+    --pristine=always
   topdir: C:\analog\cfs\1.1.0\SDK\zephyr
   version: 1.3.0

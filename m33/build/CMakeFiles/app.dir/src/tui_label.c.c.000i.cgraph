@@ -1,0 +1,395 @@
+Trivially needed symbols: tui_label_init/2 label_event/1 label_draw/0
+
+
+Initial Symbol table:
+
+tui_widget_register/6 (tui_widget_register) @0000000006c679d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: tui_label_init/2 
+  Calls: 
+strlen/5 (strlen) @0000000006c678c0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: tui_label_init/2 
+  Calls: 
+tui_puts/4 (tui_puts) @0000000006c677a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: label_draw/0 
+  Calls: 
+tui_move_cursor/3 (tui_move_cursor) @0000000006c67690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: label_draw/0 
+  Calls: 
+tui_label_init/2 (tui_label_init) @0000000006c67578
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  Aux: @0000000001d89da0
+  References: label_draw/0 (addr) label_event/1 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: tui_widget_register/6 strlen/5 
+label_event/1 (label_event) @0000000006c67460
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  Address is taken.
+  Aux: @0000000006c67578
+  References: 
+  Referring: tui_label_init/2 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+label_draw/0 (label_draw) @0000000006c67348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  Address is taken.
+  Aux: @0000000006c67460
+  References: 
+  Referring: tui_label_init/2 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: tui_puts/4 tui_move_cursor/3 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+tui_widget_register/6 (tui_widget_register) @0000000006c679d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: tui_label_init/2 
+  Calls: 
+strlen/5 (strlen) @0000000006c678c0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: tui_label_init/2 
+  Calls: 
+tui_puts/4 (tui_puts) @0000000006c677a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: label_draw/0 
+  Calls: 
+tui_move_cursor/3 (tui_move_cursor) @0000000006c67690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: label_draw/0 
+  Calls: 
+tui_label_init/2 (tui_label_init) @0000000006c67578
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: label_draw/0 (addr) label_event/1 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: tui_widget_register/6 strlen/5 
+label_event/1 (label_event) @0000000006c67460
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  Address is taken.
+  References: 
+  Referring: tui_label_init/2 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+label_draw/0 (label_draw) @0000000006c67348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  Address is taken.
+  References: 
+  Referring: tui_label_init/2 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: tui_puts/4 tui_move_cursor/3 
+
+
+Initial Symbol table:
+
+tui_widget_register/6 (tui_widget_register) @0000000006c679d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: tui_label_init/2 
+  Calls: 
+strlen/5 (strlen) @0000000006c678c0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: tui_label_init/2 
+  Calls: 
+tui_puts/4 (tui_puts) @0000000006c677a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: label_draw/0 
+  Calls: 
+tui_move_cursor/3 (tui_move_cursor) @0000000006c67690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: label_draw/0 
+  Calls: 
+tui_label_init/2 (tui_label_init) @0000000006c67578
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: label_draw/0 (addr) label_event/1 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: tui_widget_register/6 strlen/5 
+label_event/1 (label_event) @0000000006c67460
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  Address is taken.
+  References: 
+  Referring: tui_label_init/2 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+label_draw/0 (label_draw) @0000000006c67348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  Address is taken.
+  References: 
+  Referring: tui_label_init/2 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: tui_puts/4 tui_move_cursor/3 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+tui_widget_register/6 (tui_widget_register) @0000000006c679d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: tui_label_init/2 
+  Calls: 
+strlen/5 (strlen) @0000000006c678c0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: tui_label_init/2 
+  Calls: 
+tui_puts/4 (tui_puts) @0000000006c677a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: label_draw/0 
+  Calls: 
+tui_move_cursor/3 (tui_move_cursor) @0000000006c67690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: label_draw/0 
+  Calls: 
+tui_label_init/2 (tui_label_init) @0000000006c67578
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: label_draw/0 (addr) label_event/1 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: tui_widget_register/6 strlen/5 
+label_event/1 (label_event) @0000000006c67460
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  Address is taken.
+  References: 
+  Referring: tui_label_init/2 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+label_draw/0 (label_draw) @0000000006c67348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  Address is taken.
+  References: 
+  Referring: tui_label_init/2 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: tui_puts/4 tui_move_cursor/3 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+tui_widget_register/6 (tui_widget_register) @0000000006c679d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: tui_label_init/2 
+  Calls: 
+strlen/5 (strlen) @0000000006c678c0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: tui_label_init/2 
+  Calls: 
+tui_puts/4 (tui_puts) @0000000006c677a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: label_draw/0 
+  Calls: 
+tui_move_cursor/3 (tui_move_cursor) @0000000006c67690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: label_draw/0 
+  Calls: 
+tui_label_init/2 (tui_label_init) @0000000006c67578
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: label_draw/0 (addr) label_event/1 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: tui_widget_register/6 strlen/5 
+label_event/1 (label_event) @0000000006c67460
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: tui_label_init/2 (addr) 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+label_draw/0 (label_draw) @0000000006c67348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: tui_label_init/2 (addr) 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: tui_puts/4 tui_move_cursor/3 
+Trivially needed variables:
+Removing variables:
+
+Final Symbol table:
+
+tui_widget_register/6 (tui_widget_register) @0000000006c679d8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+strlen/5 (strlen) @0000000006c678c0
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+tui_puts/4 (tui_puts) @0000000006c677a8
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+tui_move_cursor/3 (tui_move_cursor) @0000000006c67690
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+tui_label_init/2 (tui_label_init) @0000000006c67578
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_label_init (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+label_event/1 (label_event) @0000000006c67460
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.text.label_event (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+label_draw/0 (label_draw) @0000000006c67348
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.text.label_draw (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 

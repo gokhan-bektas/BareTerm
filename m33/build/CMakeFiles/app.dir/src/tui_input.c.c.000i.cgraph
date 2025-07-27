@@ -1,9 +1,9 @@
-Trivially needed symbols: tui_poll_event/5 tui_input_feed/4 esc_state/3 esc_buf/2 event_ready/1 pending_event/0
+Trivially needed symbols: tui_poll_event/6 tui_input_feed/5 last_button/4 esc_buf/3 esc_state/2 event_ready/1 pending_event/0
 
 
 Initial Symbol table:
 
-tui_poll_event/5 (tui_poll_event) @0000000006145230
+tui_poll_event/6 (tui_poll_event) @0000000006d05230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @0000000001d89da0
@@ -12,45 +12,53 @@ tui_poll_event/5 (tui_poll_event) @0000000006145230
   Function flags: body
   Called by: 
   Calls: 
-tui_input_feed/4 (tui_input_feed) @0000000006145118
+tui_input_feed/5 (tui_input_feed) @0000000006d05118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006145230
-  References: event_ready/1 (read) esc_state/3 (read) esc_state/3 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/3 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/3 (write) esc_state/3 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/3 (write) esc_buf/2 (write) esc_state/3 (write) esc_buf/2 (write) esc_state/3 (write) esc_buf/2 (write) pending_event/0 (write) esc_buf/2 (read) pending_event/0 (write) esc_buf/2 (read) pending_event/0 (write) esc_buf/2 (read) pending_event/0 (write) esc_buf/2 (read) pending_event/0 (write) event_ready/1 (write) esc_state/3 (write) 
+  Aux: @0000000006d05230
+  References: event_ready/1 (read) esc_state/2 (read) esc_state/2 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/2 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/2 (write) esc_state/2 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/2 (write) esc_buf/3 (write) esc_state/2 (write) esc_buf/3 (write) esc_state/2 (write) esc_buf/3 (write) pending_event/0 (write) esc_buf/3 (read) pending_event/0 (write) esc_buf/3 (read) pending_event/0 (write) esc_buf/3 (read) pending_event/0 (write) esc_buf/3 (read) pending_event/0 (write) event_ready/1 (write) esc_state/2 (write) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: 
-esc_state/3 (esc_state) @0000000005e47300
+last_button/4 (last_button) @0000000006a07380
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
-  Aux: @0000000006145118
+  Aux: @0000000006d05118
   References: 
-  Referring: tui_input_feed/4 (read) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) 
+  Referring: 
   Availability: not-ready
   Varpool flags: initialized
-esc_buf/2 (esc_buf) @0000000005e47280
+esc_buf/3 (esc_buf) @0000000006a07300
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
-  Aux: @0000000005e47300
+  Aux: @0000000006a07380
   References: 
-  Referring: tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (read) tui_input_feed/4 (read) tui_input_feed/4 (read) tui_input_feed/4 (read) 
+  Referring: tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (read) tui_input_feed/5 (read) tui_input_feed/5 (read) tui_input_feed/5 (read) 
   Availability: not-ready
   Varpool flags:
-event_ready/1 (event_ready) @0000000005e47200
+esc_state/2 (esc_state) @0000000006a07280
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
-  Aux: @0000000005e47280
+  Aux: @0000000006a07300
   References: 
-  Referring: tui_input_feed/4 (read) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_poll_event/5 (read) tui_poll_event/5 (write) 
+  Referring: tui_input_feed/5 (read) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) 
   Availability: not-ready
   Varpool flags: initialized
-pending_event/0 (pending_event) @0000000005e47180
+event_ready/1 (event_ready) @0000000006a07200
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
-  Aux: @0000000005e47200
+  Aux: @0000000006a07280
   References: 
-  Referring: tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_poll_event/5 (read) 
+  Referring: tui_input_feed/5 (read) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_poll_event/6 (read) tui_poll_event/6 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+pending_event/0 (pending_event) @0000000006a07180
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  Aux: @0000000006a07200
+  References: 
+  Referring: tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_poll_event/6 (read) 
   Availability: not-ready
   Varpool flags:
 
@@ -58,7 +66,7 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-tui_poll_event/5 (tui_poll_event) @0000000006145230
+tui_poll_event/6 (tui_poll_event) @0000000006d05230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: event_ready/1 (read) pending_event/0 (read) event_ready/1 (write) 
@@ -66,47 +74,54 @@ tui_poll_event/5 (tui_poll_event) @0000000006145230
   Function flags: body
   Called by: 
   Calls: 
-tui_input_feed/4 (tui_input_feed) @0000000006145118
+tui_input_feed/5 (tui_input_feed) @0000000006d05118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  References: event_ready/1 (read) esc_state/3 (read) esc_state/3 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/3 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/3 (write) esc_state/3 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/3 (write) esc_buf/2 (write) esc_state/3 (write) esc_buf/2 (write) esc_state/3 (write) esc_buf/2 (write) pending_event/0 (write) esc_buf/2 (read) pending_event/0 (write) esc_buf/2 (read) pending_event/0 (write) esc_buf/2 (read) pending_event/0 (write) esc_buf/2 (read) pending_event/0 (write) event_ready/1 (write) esc_state/3 (write) 
+  References: event_ready/1 (read) esc_state/2 (read) esc_state/2 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/2 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/2 (write) esc_state/2 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/2 (write) esc_buf/3 (write) esc_state/2 (write) esc_buf/3 (write) esc_state/2 (write) esc_buf/3 (write) pending_event/0 (write) esc_buf/3 (read) pending_event/0 (write) esc_buf/3 (read) pending_event/0 (write) esc_buf/3 (read) pending_event/0 (write) esc_buf/3 (read) pending_event/0 (write) event_ready/1 (write) esc_state/2 (write) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: 
-esc_state/3 (esc_state) @0000000005e47300
+last_button/4 (last_button) @0000000006a07380
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
-  Referring: tui_input_feed/4 (read) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) 
+  Referring: 
   Availability: not-ready
   Varpool flags: initialized
-esc_buf/2 (esc_buf) @0000000005e47280
+esc_buf/3 (esc_buf) @0000000006a07300
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
-  Referring: tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (read) tui_input_feed/4 (read) tui_input_feed/4 (read) tui_input_feed/4 (read) 
+  Referring: tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (read) tui_input_feed/5 (read) tui_input_feed/5 (read) tui_input_feed/5 (read) 
   Availability: not-ready
   Varpool flags:
-event_ready/1 (event_ready) @0000000005e47200
+esc_state/2 (esc_state) @0000000006a07280
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
-  Referring: tui_input_feed/4 (read) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_poll_event/5 (read) tui_poll_event/5 (write) 
+  Referring: tui_input_feed/5 (read) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) 
   Availability: not-ready
   Varpool flags: initialized
-pending_event/0 (pending_event) @0000000005e47180
+event_ready/1 (event_ready) @0000000006a07200
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
-  Referring: tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_poll_event/5 (read) 
+  Referring: tui_input_feed/5 (read) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_poll_event/6 (read) tui_poll_event/6 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+pending_event/0 (pending_event) @0000000006a07180
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: 
+  Referring: tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_poll_event/6 (read) 
   Availability: not-ready
   Varpool flags:
 
 
 Initial Symbol table:
 
-tui_poll_event/5 (tui_poll_event) @0000000006145230
+tui_poll_event/6 (tui_poll_event) @0000000006d05230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: event_ready/1 (read) pending_event/0 (read) event_ready/1 (write) 
@@ -114,40 +129,47 @@ tui_poll_event/5 (tui_poll_event) @0000000006145230
   Function flags: body
   Called by: 
   Calls: 
-tui_input_feed/4 (tui_input_feed) @0000000006145118
+tui_input_feed/5 (tui_input_feed) @0000000006d05118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  References: event_ready/1 (read) esc_state/3 (read) esc_state/3 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/3 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/3 (write) esc_state/3 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/3 (write) esc_buf/2 (write) esc_state/3 (write) esc_buf/2 (write) esc_state/3 (write) esc_buf/2 (write) pending_event/0 (write) esc_buf/2 (read) pending_event/0 (write) esc_buf/2 (read) pending_event/0 (write) esc_buf/2 (read) pending_event/0 (write) esc_buf/2 (read) pending_event/0 (write) event_ready/1 (write) esc_state/3 (write) 
+  References: event_ready/1 (read) esc_state/2 (read) esc_state/2 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/2 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/2 (write) esc_state/2 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/2 (write) esc_buf/3 (write) esc_state/2 (write) esc_buf/3 (write) esc_state/2 (write) esc_buf/3 (write) pending_event/0 (write) esc_buf/3 (read) pending_event/0 (write) esc_buf/3 (read) pending_event/0 (write) esc_buf/3 (read) pending_event/0 (write) esc_buf/3 (read) pending_event/0 (write) event_ready/1 (write) esc_state/2 (write) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: 
-esc_state/3 (esc_state) @0000000005e47300
+last_button/4 (last_button) @0000000006a07380
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
-  Referring: tui_input_feed/4 (read) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) 
+  Referring: 
   Availability: not-ready
   Varpool flags: initialized
-esc_buf/2 (esc_buf) @0000000005e47280
+esc_buf/3 (esc_buf) @0000000006a07300
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
-  Referring: tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (read) tui_input_feed/4 (read) tui_input_feed/4 (read) tui_input_feed/4 (read) 
+  Referring: tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (read) tui_input_feed/5 (read) tui_input_feed/5 (read) tui_input_feed/5 (read) 
   Availability: not-ready
   Varpool flags:
-event_ready/1 (event_ready) @0000000005e47200
+esc_state/2 (esc_state) @0000000006a07280
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
-  Referring: tui_input_feed/4 (read) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_poll_event/5 (read) tui_poll_event/5 (write) 
+  Referring: tui_input_feed/5 (read) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) 
   Availability: not-ready
   Varpool flags: initialized
-pending_event/0 (pending_event) @0000000005e47180
+event_ready/1 (event_ready) @0000000006a07200
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
-  Referring: tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_poll_event/5 (read) 
+  Referring: tui_input_feed/5 (read) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_poll_event/6 (read) tui_poll_event/6 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+pending_event/0 (pending_event) @0000000006a07180
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: 
+  Referring: tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_poll_event/6 (read) 
   Availability: not-ready
   Varpool flags:
 
@@ -155,7 +177,7 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-tui_poll_event/5 (tui_poll_event) @0000000006145230
+tui_poll_event/6 (tui_poll_event) @0000000006d05230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: event_ready/1 (read) pending_event/0 (read) event_ready/1 (write) 
@@ -163,40 +185,47 @@ tui_poll_event/5 (tui_poll_event) @0000000006145230
   Function flags: body
   Called by: 
   Calls: 
-tui_input_feed/4 (tui_input_feed) @0000000006145118
+tui_input_feed/5 (tui_input_feed) @0000000006d05118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  References: event_ready/1 (read) esc_state/3 (read) esc_state/3 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/3 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/3 (write) esc_state/3 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/3 (write) esc_buf/2 (write) esc_state/3 (write) esc_buf/2 (write) esc_state/3 (write) esc_buf/2 (write) pending_event/0 (write) esc_buf/2 (read) pending_event/0 (write) esc_buf/2 (read) pending_event/0 (write) esc_buf/2 (read) pending_event/0 (write) esc_buf/2 (read) pending_event/0 (write) event_ready/1 (write) esc_state/3 (write) 
+  References: event_ready/1 (read) esc_state/2 (read) esc_state/2 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/2 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/2 (write) esc_state/2 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/2 (write) esc_buf/3 (write) esc_state/2 (write) esc_buf/3 (write) esc_state/2 (write) esc_buf/3 (write) pending_event/0 (write) esc_buf/3 (read) pending_event/0 (write) esc_buf/3 (read) pending_event/0 (write) esc_buf/3 (read) pending_event/0 (write) esc_buf/3 (read) pending_event/0 (write) event_ready/1 (write) esc_state/2 (write) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: 
-esc_state/3 (esc_state) @0000000005e47300
+last_button/4 (last_button) @0000000006a07380
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
-  Referring: tui_input_feed/4 (read) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) 
+  Referring: 
   Availability: not-ready
   Varpool flags: initialized
-esc_buf/2 (esc_buf) @0000000005e47280
+esc_buf/3 (esc_buf) @0000000006a07300
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
-  Referring: tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (read) tui_input_feed/4 (read) tui_input_feed/4 (read) tui_input_feed/4 (read) 
+  Referring: tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (read) tui_input_feed/5 (read) tui_input_feed/5 (read) tui_input_feed/5 (read) 
   Availability: not-ready
   Varpool flags:
-event_ready/1 (event_ready) @0000000005e47200
+esc_state/2 (esc_state) @0000000006a07280
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
-  Referring: tui_input_feed/4 (read) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_poll_event/5 (read) tui_poll_event/5 (write) 
+  Referring: tui_input_feed/5 (read) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) 
   Availability: not-ready
   Varpool flags: initialized
-pending_event/0 (pending_event) @0000000005e47180
+event_ready/1 (event_ready) @0000000006a07200
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
-  Referring: tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_poll_event/5 (read) 
+  Referring: tui_input_feed/5 (read) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_poll_event/6 (read) tui_poll_event/6 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+pending_event/0 (pending_event) @0000000006a07180
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder
+  References: 
+  Referring: tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_poll_event/6 (read) 
   Availability: not-ready
   Varpool flags:
 
@@ -205,7 +234,7 @@ Reclaiming variables:
 Clearing address taken flags:
 Optimized Symbol table:
 
-tui_poll_event/5 (tui_poll_event) @0000000006145230
+tui_poll_event/6 (tui_poll_event) @0000000006d05230
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: event_ready/1 (read) pending_event/0 (read) event_ready/1 (write) 
@@ -214,49 +243,56 @@ tui_poll_event/5 (tui_poll_event) @0000000006145230
   Function flags: body
   Called by: 
   Calls: 
-tui_input_feed/4 (tui_input_feed) @0000000006145118
+tui_input_feed/5 (tui_input_feed) @0000000006d05118
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
-  References: event_ready/1 (read) esc_state/3 (read) esc_state/3 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/3 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/3 (write) esc_state/3 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/3 (write) esc_buf/2 (write) esc_state/3 (write) esc_buf/2 (write) esc_state/3 (write) esc_buf/2 (write) pending_event/0 (write) esc_buf/2 (read) pending_event/0 (write) esc_buf/2 (read) pending_event/0 (write) esc_buf/2 (read) pending_event/0 (write) esc_buf/2 (read) pending_event/0 (write) event_ready/1 (write) esc_state/3 (write) 
+  References: event_ready/1 (read) esc_state/2 (read) esc_state/2 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/2 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/2 (write) esc_state/2 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) pending_event/0 (write) event_ready/1 (write) esc_state/2 (write) esc_buf/3 (write) esc_state/2 (write) esc_buf/3 (write) esc_state/2 (write) esc_buf/3 (write) pending_event/0 (write) esc_buf/3 (read) pending_event/0 (write) esc_buf/3 (read) pending_event/0 (write) esc_buf/3 (read) pending_event/0 (write) esc_buf/3 (read) pending_event/0 (write) event_ready/1 (write) esc_state/2 (write) 
   Referring: 
   Availability: available
   Function flags: body
   Called by: 
   Calls: 
-esc_state/3 (esc_state) @0000000005e47300
+last_button/4 (last_button) @0000000006a07380
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
   References: 
-  Referring: tui_input_feed/4 (read) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) 
+  Referring: 
   Availability: available
   Varpool flags: initialized
-esc_buf/2 (esc_buf) @0000000005e47280
+esc_buf/3 (esc_buf) @0000000006a07300
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
   References: 
-  Referring: tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (read) tui_input_feed/4 (read) tui_input_feed/4 (read) tui_input_feed/4 (read) 
+  Referring: tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (read) tui_input_feed/5 (read) tui_input_feed/5 (read) tui_input_feed/5 (read) 
   Availability: available
   Varpool flags:
-event_ready/1 (event_ready) @0000000005e47200
+esc_state/2 (esc_state) @0000000006a07280
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
   References: 
-  Referring: tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (read) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_poll_event/5 (read) tui_poll_event/5 (write) 
+  Referring: tui_input_feed/5 (read) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) 
   Availability: available
   Varpool flags: initialized
-pending_event/0 (pending_event) @0000000005e47180
+event_ready/1 (event_ready) @0000000006a07200
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
   References: 
-  Referring: tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_input_feed/4 (write) tui_poll_event/5 (read) 
+  Referring: tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (read) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_poll_event/6 (read) tui_poll_event/6 (write) 
+  Availability: available
+  Varpool flags: initialized
+pending_event/0 (pending_event) @0000000006a07180
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
+  References: 
+  Referring: tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_input_feed/5 (write) tui_poll_event/6 (read) 
   Availability: available
   Varpool flags:
-Trivially needed variables: esc_state/3 esc_buf/2 event_ready/1 pending_event/0
+Trivially needed variables: last_button/4 esc_buf/3 esc_state/2 event_ready/1 pending_event/0
 Removing variables:
 
 Final Symbol table:
 
-tui_poll_event/5 (tui_poll_event) @0000000006145230
+tui_poll_event/6 (tui_poll_event) @0000000006d05230
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_poll_event (implicit_section)
   References: 
@@ -265,7 +301,7 @@ tui_poll_event/5 (tui_poll_event) @0000000006145230
   Function flags:
   Called by: 
   Calls: 
-tui_input_feed/4 (tui_input_feed) @0000000006145118
+tui_input_feed/5 (tui_input_feed) @0000000006d05118
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_input_feed (implicit_section)
   References: 
@@ -274,34 +310,42 @@ tui_input_feed/4 (tui_input_feed) @0000000006145118
   Function flags:
   Called by: 
   Calls: 
-esc_state/3 (esc_state) @0000000005e47300
+last_button/4 (last_button) @0000000006a07380
   Type: variable definition analyzed
-  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.bss.esc_state (implicit_section)
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.bss.last_button (implicit_section)
   Aux: @0000000000000001
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized
-esc_buf/2 (esc_buf) @0000000005e47280
+esc_buf/3 (esc_buf) @0000000006a07300
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.bss.esc_buf (implicit_section)
-  Aux: @0000000005e47300
+  Aux: @0000000006a07380
   References: 
   Referring: 
   Availability: available
   Varpool flags:
-event_ready/1 (event_ready) @0000000005e47200
+esc_state/2 (esc_state) @0000000006a07280
   Type: variable definition analyzed
-  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.bss.event_ready (implicit_section)
-  Aux: @0000000005e47280
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.bss.esc_state (implicit_section)
+  Aux: @0000000006a07300
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized
-pending_event/0 (pending_event) @0000000005e47180
+event_ready/1 (event_ready) @0000000006a07200
+  Type: variable definition analyzed
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.bss.event_ready (implicit_section)
+  Aux: @0000000006a07280
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+pending_event/0 (pending_event) @0000000006a07180
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.bss.pending_event (implicit_section)
-  Aux: @0000000005e47200
+  Aux: @0000000006a07200
   References: 
   Referring: 
   Availability: available

@@ -17,4 +17,6 @@ target_sources(app PRIVATE
   src/tui_backend_stdio.c
   src/tui_uart_input.c
   src/tui_input.c
+  src/tui_widget.c
+  src/tui_label.c
 )

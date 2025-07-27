@@ -19,6 +19,7 @@ typedef enum {
 #define TUI_KEY_DOWN   1002
 #define TUI_KEY_RIGHT  1003
 #define TUI_KEY_LEFT   1004
+#define TUI_KEY_ENTER  13
 
 typedef struct {
     tui_event_type_t type;

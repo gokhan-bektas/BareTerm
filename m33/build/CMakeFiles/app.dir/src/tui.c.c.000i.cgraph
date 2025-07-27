@@ -3,7 +3,7 @@ Trivially needed symbols: tui_draw_box/95 tui_reset_color/94 tui_set_color/93 tu
 
 Initial Symbol table:
 
-__builtin_va_end/102 (__builtin_va_end) @0000000006ddbd20
+__builtin_va_end/102 (__builtin_va_end) @0000000006d8bd20
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -11,7 +11,7 @@ __builtin_va_end/102 (__builtin_va_end) @0000000006ddbd20
   Function flags:
   Called by: tui_printf/92 
   Calls: 
-vsnprintf/101 (vsnprintf) @0000000006ddbc08
+vsnprintf/101 (vsnprintf) @0000000006d8bc08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -19,7 +19,7 @@ vsnprintf/101 (vsnprintf) @0000000006ddbc08
   Function flags:
   Called by: tui_printf/92 
   Calls: 
-__builtin_va_start/100 (__builtin_va_start) @0000000006ddbaf0
+__builtin_va_start/100 (__builtin_va_start) @0000000006d8baf0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -27,7 +27,7 @@ __builtin_va_start/100 (__builtin_va_start) @0000000006ddbaf0
   Function flags:
   Called by: tui_printf/92 
   Calls: 
-strlen/99 (strlen) @0000000006ddb9d8
+strlen/99 (strlen) @0000000006d8b9d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -35,7 +35,7 @@ strlen/99 (strlen) @0000000006ddb9d8
   Function flags:
   Called by: tui_puts/91 
   Calls: 
-snprintf/98 (snprintf) @0000000006ddb8c0
+snprintf/98 (snprintf) @0000000006d8b8c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -43,7 +43,7 @@ snprintf/98 (snprintf) @0000000006ddb8c0
   Function flags:
   Called by: tui_set_color/93 tui_set_color/93 tui_set_color/93 tui_move_cursor/90 
   Calls: 
-fwrite/97 (fwrite) @0000000006ddb7a8
+fwrite/97 (fwrite) @0000000006d8b7a8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -51,14 +51,14 @@ fwrite/97 (fwrite) @0000000006ddb7a8
   Function flags:
   Called by: tui_backend_write/87 
   Calls: 
-stdout/96 (stdout) @0000000006de2400
+stdout/96 (stdout) @0000000006d92400
   Type: variable
   Visibility: semantic_interposition external public
   References: 
   Referring: tui_backend_write/87 (read) 
   Availability: not-ready
   Varpool flags: read-only
-tui_draw_box/95 (tui_draw_box) @0000000006ddb690
+tui_draw_box/95 (tui_draw_box) @0000000006d8b690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @0000000001d89da0
@@ -67,79 +67,79 @@ tui_draw_box/95 (tui_draw_box) @0000000006ddb690
   Function flags: body
   Called by: 
   Calls: tui_puts/91 tui_puts/91 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_puts/91 tui_puts/91 tui_move_cursor/90 
-tui_reset_color/94 (tui_reset_color) @0000000006ddb578
+tui_reset_color/94 (tui_reset_color) @0000000006d8b578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006ddb690
+  Aux: @0000000006d8b690
   References: 
   Referring: 
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 
-tui_set_color/93 (tui_set_color) @0000000006ddb460
+tui_set_color/93 (tui_set_color) @0000000006d8b460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006ddb578
+  Aux: @0000000006d8b578
   References: 
   Referring: 
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 snprintf/98 snprintf/98 snprintf/98 
-tui_printf/92 (tui_printf) @0000000006ddb348
+tui_printf/92 (tui_printf) @0000000006d8b348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006ddb460
+  Aux: @0000000006d8b460
   References: 
   Referring: 
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 __builtin_va_end/102 vsnprintf/101 __builtin_va_start/100 
-tui_puts/91 (tui_puts) @0000000006ddb230
+tui_puts/91 (tui_puts) @0000000006d8b230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006ddb348
+  Aux: @0000000006d8b348
   References: 
   Referring: 
   Function flags: body
   Called by: tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 
   Calls: tui_backend_write/87 strlen/99 
-tui_move_cursor/90 (tui_move_cursor) @0000000006ddb118
+tui_move_cursor/90 (tui_move_cursor) @0000000006d8b118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006ddb230
+  Aux: @0000000006d8b230
   References: 
   Referring: 
   Function flags: body
   Called by: tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 
   Calls: tui_backend_write/87 snprintf/98 
-tui_clear_screen/89 (tui_clear_screen) @0000000006ddb000
+tui_clear_screen/89 (tui_clear_screen) @0000000006d8b000
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006ddb118
+  Aux: @0000000006d8b118
   References: 
   Referring: 
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 
-tui_init/88 (tui_init) @000000000787fe38
+tui_init/88 (tui_init) @0000000007825e38
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006ddb000
+  Aux: @0000000006d8b000
   References: 
   Referring: 
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 
-tui_backend_write/87 (tui_backend_write) @000000000787fd20
+tui_backend_write/87 (tui_backend_write) @0000000007825d20
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public weak
-  Aux: @000000000787fe38
+  Aux: @0000000007825e38
   References: stdout/96 (read) 
   Referring: 
   Function flags: body
   Called by: tui_reset_color/94 tui_set_color/93 tui_printf/92 tui_puts/91 tui_move_cursor/90 tui_clear_screen/89 tui_init/88 
   Calls: fwrite/97 
-uart_drv_cmd/86 (uart_drv_cmd) @000000000787fc08
+uart_drv_cmd/86 (uart_drv_cmd) @0000000007825c08
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -147,7 +147,7 @@ uart_drv_cmd/86 (uart_drv_cmd) @000000000787fc08
   Function flags:
   Called by: 
   Calls: 
-uart_line_ctrl_get/85 (uart_line_ctrl_get) @000000000787faf0
+uart_line_ctrl_get/85 (uart_line_ctrl_get) @0000000007825af0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -155,7 +155,7 @@ uart_line_ctrl_get/85 (uart_line_ctrl_get) @000000000787faf0
   Function flags:
   Called by: 
   Calls: 
-uart_line_ctrl_set/84 (uart_line_ctrl_set) @000000000787f9d8
+uart_line_ctrl_set/84 (uart_line_ctrl_set) @00000000078259d8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -163,7 +163,7 @@ uart_line_ctrl_set/84 (uart_line_ctrl_set) @000000000787f9d8
   Function flags:
   Called by: 
   Calls: 
-uart_rx_disable/83 (uart_rx_disable) @000000000787f8c0
+uart_rx_disable/83 (uart_rx_disable) @00000000078258c0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -171,7 +171,7 @@ uart_rx_disable/83 (uart_rx_disable) @000000000787f8c0
   Function flags:
   Called by: 
   Calls: 
-uart_rx_enable_u16/82 (uart_rx_enable_u16) @000000000787f7a8
+uart_rx_enable_u16/82 (uart_rx_enable_u16) @00000000078257a8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -179,7 +179,7 @@ uart_rx_enable_u16/82 (uart_rx_enable_u16) @000000000787f7a8
   Function flags:
   Called by: 
   Calls: 
-uart_rx_enable/81 (uart_rx_enable) @000000000787f690
+uart_rx_enable/81 (uart_rx_enable) @0000000007825690
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -187,7 +187,7 @@ uart_rx_enable/81 (uart_rx_enable) @000000000787f690
   Function flags:
   Called by: 
   Calls: 
-uart_tx_abort/80 (uart_tx_abort) @000000000787f578
+uart_tx_abort/80 (uart_tx_abort) @0000000007825578
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -195,7 +195,7 @@ uart_tx_abort/80 (uart_tx_abort) @000000000787f578
   Function flags:
   Called by: 
   Calls: 
-uart_tx_u16/79 (uart_tx_u16) @000000000787f460
+uart_tx_u16/79 (uart_tx_u16) @0000000007825460
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -203,7 +203,7 @@ uart_tx_u16/79 (uart_tx_u16) @000000000787f460
   Function flags:
   Called by: 
   Calls: 
-uart_tx/78 (uart_tx) @000000000787f348
+uart_tx/78 (uart_tx) @0000000007825348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -211,7 +211,7 @@ uart_tx/78 (uart_tx) @000000000787f348
   Function flags:
   Called by: 
   Calls: 
-uart_irq_update/77 (uart_irq_update) @000000000787f230
+uart_irq_update/77 (uart_irq_update) @0000000007825230
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -219,7 +219,7 @@ uart_irq_update/77 (uart_irq_update) @000000000787f230
   Function flags:
   Called by: 
   Calls: 
-uart_irq_is_pending/76 (uart_irq_is_pending) @000000000787f118
+uart_irq_is_pending/76 (uart_irq_is_pending) @0000000007825118
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -227,7 +227,7 @@ uart_irq_is_pending/76 (uart_irq_is_pending) @000000000787f118
   Function flags:
   Called by: 
   Calls: 
-uart_irq_err_disable/75 (uart_irq_err_disable) @000000000787f000
+uart_irq_err_disable/75 (uart_irq_err_disable) @0000000007825000
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -235,7 +235,7 @@ uart_irq_err_disable/75 (uart_irq_err_disable) @000000000787f000
   Function flags:
   Called by: 
   Calls: 
-uart_irq_err_enable/74 (uart_irq_err_enable) @0000000007875e38
+uart_irq_err_enable/74 (uart_irq_err_enable) @000000000781be38
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -243,7 +243,7 @@ uart_irq_err_enable/74 (uart_irq_err_enable) @0000000007875e38
   Function flags:
   Called by: 
   Calls: 
-uart_irq_rx_disable/73 (uart_irq_rx_disable) @0000000007875d20
+uart_irq_rx_disable/73 (uart_irq_rx_disable) @000000000781bd20
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -251,7 +251,7 @@ uart_irq_rx_disable/73 (uart_irq_rx_disable) @0000000007875d20
   Function flags:
   Called by: 
   Calls: 
-uart_irq_rx_enable/72 (uart_irq_rx_enable) @0000000007875c08
+uart_irq_rx_enable/72 (uart_irq_rx_enable) @000000000781bc08
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -259,7 +259,7 @@ uart_irq_rx_enable/72 (uart_irq_rx_enable) @0000000007875c08
   Function flags:
   Called by: 
   Calls: 
-uart_irq_tx_disable/71 (uart_irq_tx_disable) @0000000007875af0
+uart_irq_tx_disable/71 (uart_irq_tx_disable) @000000000781baf0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -267,7 +267,7 @@ uart_irq_tx_disable/71 (uart_irq_tx_disable) @0000000007875af0
   Function flags:
   Called by: 
   Calls: 
-uart_irq_tx_enable/70 (uart_irq_tx_enable) @00000000078759d8
+uart_irq_tx_enable/70 (uart_irq_tx_enable) @000000000781b9d8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -275,7 +275,7 @@ uart_irq_tx_enable/70 (uart_irq_tx_enable) @00000000078759d8
   Function flags:
   Called by: 
   Calls: 
-uart_config_get/69 (uart_config_get) @00000000078758c0
+uart_config_get/69 (uart_config_get) @000000000781b8c0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -283,7 +283,7 @@ uart_config_get/69 (uart_config_get) @00000000078758c0
   Function flags:
   Called by: 
   Calls: 
-uart_configure/68 (uart_configure) @00000000078757a8
+uart_configure/68 (uart_configure) @000000000781b7a8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -291,7 +291,7 @@ uart_configure/68 (uart_configure) @00000000078757a8
   Function flags:
   Called by: 
   Calls: 
-uart_poll_out_u16/67 (uart_poll_out_u16) @0000000007875690
+uart_poll_out_u16/67 (uart_poll_out_u16) @000000000781b690
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -299,7 +299,7 @@ uart_poll_out_u16/67 (uart_poll_out_u16) @0000000007875690
   Function flags:
   Called by: 
   Calls: 
-uart_poll_out/66 (uart_poll_out) @0000000007875578
+uart_poll_out/66 (uart_poll_out) @000000000781b578
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -307,7 +307,7 @@ uart_poll_out/66 (uart_poll_out) @0000000007875578
   Function flags:
   Called by: 
   Calls: 
-uart_poll_in_u16/65 (uart_poll_in_u16) @0000000007875460
+uart_poll_in_u16/65 (uart_poll_in_u16) @000000000781b460
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -315,7 +315,7 @@ uart_poll_in_u16/65 (uart_poll_in_u16) @0000000007875460
   Function flags:
   Called by: 
   Calls: 
-uart_poll_in/64 (uart_poll_in) @0000000007875348
+uart_poll_in/64 (uart_poll_in) @000000000781b348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -323,7 +323,7 @@ uart_poll_in/64 (uart_poll_in) @0000000007875348
   Function flags:
   Called by: 
   Calls: 
-uart_err_check/63 (uart_err_check) @0000000007875230
+uart_err_check/63 (uart_err_check) @000000000781b230
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -331,7 +331,7 @@ uart_err_check/63 (uart_err_check) @0000000007875230
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_drv_cmd/62 (z_impl_uart_drv_cmd) @0000000007875118
+z_impl_uart_drv_cmd/62 (z_impl_uart_drv_cmd) @000000000781b118
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -339,7 +339,7 @@ z_impl_uart_drv_cmd/62 (z_impl_uart_drv_cmd) @0000000007875118
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_line_ctrl_get/61 (z_impl_uart_line_ctrl_get) @0000000007875000
+z_impl_uart_line_ctrl_get/61 (z_impl_uart_line_ctrl_get) @000000000781b000
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -347,7 +347,7 @@ z_impl_uart_line_ctrl_get/61 (z_impl_uart_line_ctrl_get) @0000000007875000
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_line_ctrl_set/60 (z_impl_uart_line_ctrl_set) @000000000786be38
+z_impl_uart_line_ctrl_set/60 (z_impl_uart_line_ctrl_set) @0000000007811e38
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -355,7 +355,7 @@ z_impl_uart_line_ctrl_set/60 (z_impl_uart_line_ctrl_set) @000000000786be38
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_rx_disable/59 (z_impl_uart_rx_disable) @000000000786bd20
+z_impl_uart_rx_disable/59 (z_impl_uart_rx_disable) @0000000007811d20
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -363,7 +363,7 @@ z_impl_uart_rx_disable/59 (z_impl_uart_rx_disable) @000000000786bd20
   Function flags:
   Called by: 
   Calls: 
-uart_rx_buf_rsp_u16/58 (uart_rx_buf_rsp_u16) @000000000786bc08
+uart_rx_buf_rsp_u16/58 (uart_rx_buf_rsp_u16) @0000000007811c08
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -371,7 +371,7 @@ uart_rx_buf_rsp_u16/58 (uart_rx_buf_rsp_u16) @000000000786bc08
   Function flags:
   Called by: 
   Calls: 
-uart_rx_buf_rsp/57 (uart_rx_buf_rsp) @000000000786baf0
+uart_rx_buf_rsp/57 (uart_rx_buf_rsp) @0000000007811af0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -379,7 +379,7 @@ uart_rx_buf_rsp/57 (uart_rx_buf_rsp) @000000000786baf0
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_rx_enable_u16/56 (z_impl_uart_rx_enable_u16) @000000000786b9d8
+z_impl_uart_rx_enable_u16/56 (z_impl_uart_rx_enable_u16) @00000000078119d8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -387,7 +387,7 @@ z_impl_uart_rx_enable_u16/56 (z_impl_uart_rx_enable_u16) @000000000786b9d8
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_rx_enable/55 (z_impl_uart_rx_enable) @000000000786b8c0
+z_impl_uart_rx_enable/55 (z_impl_uart_rx_enable) @00000000078118c0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -395,7 +395,7 @@ z_impl_uart_rx_enable/55 (z_impl_uart_rx_enable) @000000000786b8c0
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_tx_abort/54 (z_impl_uart_tx_abort) @000000000786b7a8
+z_impl_uart_tx_abort/54 (z_impl_uart_tx_abort) @00000000078117a8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -403,7 +403,7 @@ z_impl_uart_tx_abort/54 (z_impl_uart_tx_abort) @000000000786b7a8
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_tx_u16/53 (z_impl_uart_tx_u16) @000000000786b690
+z_impl_uart_tx_u16/53 (z_impl_uart_tx_u16) @0000000007811690
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -411,7 +411,7 @@ z_impl_uart_tx_u16/53 (z_impl_uart_tx_u16) @000000000786b690
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_tx/52 (z_impl_uart_tx) @000000000786b578
+z_impl_uart_tx/52 (z_impl_uart_tx) @0000000007811578
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -419,7 +419,7 @@ z_impl_uart_tx/52 (z_impl_uart_tx) @000000000786b578
   Function flags:
   Called by: 
   Calls: 
-uart_callback_set/51 (uart_callback_set) @000000000786b460
+uart_callback_set/51 (uart_callback_set) @0000000007811460
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -427,7 +427,7 @@ uart_callback_set/51 (uart_callback_set) @000000000786b460
   Function flags:
   Called by: 
   Calls: 
-uart_irq_callback_set/50 (uart_irq_callback_set) @000000000786b348
+uart_irq_callback_set/50 (uart_irq_callback_set) @0000000007811348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -435,7 +435,7 @@ uart_irq_callback_set/50 (uart_irq_callback_set) @000000000786b348
   Function flags:
   Called by: 
   Calls: 
-uart_irq_callback_user_data_set/49 (uart_irq_callback_user_data_set) @000000000786b230
+uart_irq_callback_user_data_set/49 (uart_irq_callback_user_data_set) @0000000007811230
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -443,7 +443,7 @@ uart_irq_callback_user_data_set/49 (uart_irq_callback_user_data_set) @0000000007
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_irq_update/48 (z_impl_uart_irq_update) @000000000786b118
+z_impl_uart_irq_update/48 (z_impl_uart_irq_update) @0000000007811118
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -451,7 +451,7 @@ z_impl_uart_irq_update/48 (z_impl_uart_irq_update) @000000000786b118
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_irq_is_pending/47 (z_impl_uart_irq_is_pending) @000000000786b000
+z_impl_uart_irq_is_pending/47 (z_impl_uart_irq_is_pending) @0000000007811000
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -459,7 +459,7 @@ z_impl_uart_irq_is_pending/47 (z_impl_uart_irq_is_pending) @000000000786b000
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_irq_err_disable/46 (z_impl_uart_irq_err_disable) @000000000785be38
+z_impl_uart_irq_err_disable/46 (z_impl_uart_irq_err_disable) @0000000007801e38
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -467,7 +467,7 @@ z_impl_uart_irq_err_disable/46 (z_impl_uart_irq_err_disable) @000000000785be38
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_irq_err_enable/45 (z_impl_uart_irq_err_enable) @000000000785bd20
+z_impl_uart_irq_err_enable/45 (z_impl_uart_irq_err_enable) @0000000007801d20
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -475,7 +475,7 @@ z_impl_uart_irq_err_enable/45 (z_impl_uart_irq_err_enable) @000000000785bd20
   Function flags:
   Called by: 
   Calls: 
-uart_irq_rx_ready/44 (uart_irq_rx_ready) @000000000785bc08
+uart_irq_rx_ready/44 (uart_irq_rx_ready) @0000000007801c08
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -483,7 +483,7 @@ uart_irq_rx_ready/44 (uart_irq_rx_ready) @000000000785bc08
   Function flags:
   Called by: 
   Calls: 
-uart_irq_tx_complete/43 (uart_irq_tx_complete) @000000000785baf0
+uart_irq_tx_complete/43 (uart_irq_tx_complete) @0000000007801af0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -491,7 +491,7 @@ uart_irq_tx_complete/43 (uart_irq_tx_complete) @000000000785baf0
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_irq_rx_disable/42 (z_impl_uart_irq_rx_disable) @000000000785b9d8
+z_impl_uart_irq_rx_disable/42 (z_impl_uart_irq_rx_disable) @00000000078019d8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -499,7 +499,7 @@ z_impl_uart_irq_rx_disable/42 (z_impl_uart_irq_rx_disable) @000000000785b9d8
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_irq_rx_enable/41 (z_impl_uart_irq_rx_enable) @000000000785b8c0
+z_impl_uart_irq_rx_enable/41 (z_impl_uart_irq_rx_enable) @00000000078018c0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -507,7 +507,7 @@ z_impl_uart_irq_rx_enable/41 (z_impl_uart_irq_rx_enable) @000000000785b8c0
   Function flags:
   Called by: 
   Calls: 
-uart_irq_tx_ready/40 (uart_irq_tx_ready) @000000000785b7a8
+uart_irq_tx_ready/40 (uart_irq_tx_ready) @00000000078017a8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -515,7 +515,7 @@ uart_irq_tx_ready/40 (uart_irq_tx_ready) @000000000785b7a8
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_irq_tx_disable/39 (z_impl_uart_irq_tx_disable) @000000000785b690
+z_impl_uart_irq_tx_disable/39 (z_impl_uart_irq_tx_disable) @0000000007801690
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -523,7 +523,7 @@ z_impl_uart_irq_tx_disable/39 (z_impl_uart_irq_tx_disable) @000000000785b690
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_irq_tx_enable/38 (z_impl_uart_irq_tx_enable) @000000000785b578
+z_impl_uart_irq_tx_enable/38 (z_impl_uart_irq_tx_enable) @0000000007801578
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -531,7 +531,7 @@ z_impl_uart_irq_tx_enable/38 (z_impl_uart_irq_tx_enable) @000000000785b578
   Function flags:
   Called by: 
   Calls: 
-uart_fifo_read_u16/37 (uart_fifo_read_u16) @000000000785b460
+uart_fifo_read_u16/37 (uart_fifo_read_u16) @0000000007801460
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -539,7 +539,7 @@ uart_fifo_read_u16/37 (uart_fifo_read_u16) @000000000785b460
   Function flags:
   Called by: 
   Calls: 
-uart_fifo_read/36 (uart_fifo_read) @000000000785b348
+uart_fifo_read/36 (uart_fifo_read) @0000000007801348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -547,7 +547,7 @@ uart_fifo_read/36 (uart_fifo_read) @000000000785b348
   Function flags:
   Called by: 
   Calls: 
-uart_fifo_fill_u16/35 (uart_fifo_fill_u16) @000000000785b230
+uart_fifo_fill_u16/35 (uart_fifo_fill_u16) @0000000007801230
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -555,7 +555,7 @@ uart_fifo_fill_u16/35 (uart_fifo_fill_u16) @000000000785b230
   Function flags:
   Called by: 
   Calls: 
-uart_fifo_fill/34 (uart_fifo_fill) @000000000785b118
+uart_fifo_fill/34 (uart_fifo_fill) @0000000007801118
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -563,7 +563,7 @@ uart_fifo_fill/34 (uart_fifo_fill) @000000000785b118
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_config_get/33 (z_impl_uart_config_get) @000000000785b000
+z_impl_uart_config_get/33 (z_impl_uart_config_get) @0000000007801000
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -571,7 +571,7 @@ z_impl_uart_config_get/33 (z_impl_uart_config_get) @000000000785b000
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_configure/32 (z_impl_uart_configure) @0000000007d22e38
+z_impl_uart_configure/32 (z_impl_uart_configure) @0000000007cd2e38
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -579,7 +579,7 @@ z_impl_uart_configure/32 (z_impl_uart_configure) @0000000007d22e38
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_poll_out_u16/31 (z_impl_uart_poll_out_u16) @0000000007d22d20
+z_impl_uart_poll_out_u16/31 (z_impl_uart_poll_out_u16) @0000000007cd2d20
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -587,7 +587,7 @@ z_impl_uart_poll_out_u16/31 (z_impl_uart_poll_out_u16) @0000000007d22d20
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_poll_out/30 (z_impl_uart_poll_out) @0000000007d22c08
+z_impl_uart_poll_out/30 (z_impl_uart_poll_out) @0000000007cd2c08
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -595,7 +595,7 @@ z_impl_uart_poll_out/30 (z_impl_uart_poll_out) @0000000007d22c08
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_poll_in_u16/29 (z_impl_uart_poll_in_u16) @0000000007d22af0
+z_impl_uart_poll_in_u16/29 (z_impl_uart_poll_in_u16) @0000000007cd2af0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -603,7 +603,7 @@ z_impl_uart_poll_in_u16/29 (z_impl_uart_poll_in_u16) @0000000007d22af0
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_poll_in/28 (z_impl_uart_poll_in) @0000000007d229d8
+z_impl_uart_poll_in/28 (z_impl_uart_poll_in) @0000000007cd29d8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -611,7 +611,7 @@ z_impl_uart_poll_in/28 (z_impl_uart_poll_in) @0000000007d229d8
   Function flags:
   Called by: 
   Calls: 
-z_impl_uart_err_check/27 (z_impl_uart_err_check) @0000000007d228c0
+z_impl_uart_err_check/27 (z_impl_uart_err_check) @0000000007cd28c0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -619,14 +619,14 @@ z_impl_uart_err_check/27 (z_impl_uart_err_check) @0000000007d228c0
   Function flags:
   Called by: 
   Calls: 
-errno/26 (errno) @0000000007842f80
+errno/26 (errno) @00000000077e8f80
   Type: variable
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: tls-local-exec
-device_get_by_dt_nodelabel/25 (device_get_by_dt_nodelabel) @0000000007d227a8
+device_get_by_dt_nodelabel/25 (device_get_by_dt_nodelabel) @0000000007cd27a8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -634,7 +634,7 @@ device_get_by_dt_nodelabel/25 (device_get_by_dt_nodelabel) @0000000007d227a8
   Function flags:
   Called by: 
   Calls: 
-device_init/24 (device_init) @0000000007d22690
+device_init/24 (device_init) @0000000007cd2690
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -642,7 +642,7 @@ device_init/24 (device_init) @0000000007d22690
   Function flags:
   Called by: 
   Calls: 
-device_is_ready/23 (device_is_ready) @0000000007d22578
+device_is_ready/23 (device_is_ready) @0000000007cd2578
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -650,7 +650,7 @@ device_is_ready/23 (device_is_ready) @0000000007d22578
   Function flags:
   Called by: 
   Calls: 
-device_get_binding/22 (device_get_binding) @0000000007d22460
+device_get_binding/22 (device_get_binding) @0000000007cd2460
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -658,7 +658,7 @@ device_get_binding/22 (device_get_binding) @0000000007d22460
   Function flags:
   Called by: 
   Calls: 
-k_is_user_context/21 (k_is_user_context) @0000000007d22348
+k_is_user_context/21 (k_is_user_context) @0000000007cd2348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -666,7 +666,7 @@ k_is_user_context/21 (k_is_user_context) @0000000007d22348
   Function flags:
   Called by: 
   Calls: 
-z_syscall_trap/20 (z_syscall_trap) @0000000007d22230
+z_syscall_trap/20 (z_syscall_trap) @0000000007cd2230
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -674,7 +674,7 @@ z_syscall_trap/20 (z_syscall_trap) @0000000007d22230
   Function flags:
   Called by: 
   Calls: 
-device_from_handle/19 (device_from_handle) @0000000007cc67a8
+device_from_handle/19 (device_from_handle) @0000000007c797a8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -682,7 +682,7 @@ device_from_handle/19 (device_from_handle) @0000000007cc67a8
   Function flags:
   Called by: 
   Calls: 
-device_handle_get/18 (device_handle_get) @0000000007cc6690
+device_handle_get/18 (device_handle_get) @0000000007c79690
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -690,7 +690,7 @@ device_handle_get/18 (device_handle_get) @0000000007cc6690
   Function flags:
   Called by: 
   Calls: 
-k_mem_unmap/17 (k_mem_unmap) @0000000007ca6d20
+k_mem_unmap/17 (k_mem_unmap) @0000000007c5cd20
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -698,7 +698,7 @@ k_mem_unmap/17 (k_mem_unmap) @0000000007ca6d20
   Function flags:
   Called by: 
   Calls: 
-k_mem_map/16 (k_mem_map) @0000000007ca6c08
+k_mem_map/16 (k_mem_map) @0000000007c5cc08
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -706,7 +706,7 @@ k_mem_map/16 (k_mem_map) @0000000007ca6c08
   Function flags:
   Called by: 
   Calls: 
-k_mem_virt_addr/15 (k_mem_virt_addr) @0000000007ca69d8
+k_mem_virt_addr/15 (k_mem_virt_addr) @0000000007c5c9d8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -714,7 +714,7 @@ k_mem_virt_addr/15 (k_mem_virt_addr) @0000000007ca69d8
   Function flags:
   Called by: 
   Calls: 
-k_mem_phys_addr/14 (k_mem_phys_addr) @0000000007ca68c0
+k_mem_phys_addr/14 (k_mem_phys_addr) @0000000007c5c8c0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -722,7 +722,7 @@ k_mem_phys_addr/14 (k_mem_phys_addr) @0000000007ca68c0
   Function flags:
   Called by: 
   Calls: 
-pm_state_cpu_get_all/13 (pm_state_cpu_get_all) @0000000007ca67a8
+pm_state_cpu_get_all/13 (pm_state_cpu_get_all) @0000000007c5c7a8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -730,7 +730,7 @@ pm_state_cpu_get_all/13 (pm_state_cpu_get_all) @0000000007ca67a8
   Function flags:
   Called by: 
   Calls: 
-mem_xor_128/12 (mem_xor_128) @00000000076cf7a8
+mem_xor_128/12 (mem_xor_128) @000000000767b7a8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -738,7 +738,7 @@ mem_xor_128/12 (mem_xor_128) @00000000076cf7a8
   Function flags:
   Called by: 
   Calls: 
-mem_xor_32/11 (mem_xor_32) @00000000076cf690
+mem_xor_32/11 (mem_xor_32) @000000000767b690
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -746,7 +746,7 @@ mem_xor_32/11 (mem_xor_32) @00000000076cf690
   Function flags:
   Called by: 
   Calls: 
-mem_xor_n/10 (mem_xor_n) @00000000076cf578
+mem_xor_n/10 (mem_xor_n) @000000000767b578
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -754,7 +754,7 @@ mem_xor_n/10 (mem_xor_n) @00000000076cf578
   Function flags:
   Called by: 
   Calls: 
-sign_extend_64/9 (sign_extend_64) @00000000076cf460
+sign_extend_64/9 (sign_extend_64) @000000000767b460
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -762,7 +762,7 @@ sign_extend_64/9 (sign_extend_64) @00000000076cf460
   Function flags:
   Called by: 
   Calls: 
-sign_extend/8 (sign_extend) @00000000076cf348
+sign_extend/8 (sign_extend) @000000000767b348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -770,7 +770,7 @@ sign_extend/8 (sign_extend) @00000000076cf348
   Function flags:
   Called by: 
   Calls: 
-bin2bcd/7 (bin2bcd) @00000000076cf230
+bin2bcd/7 (bin2bcd) @000000000767b230
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -778,7 +778,7 @@ bin2bcd/7 (bin2bcd) @00000000076cf230
   Function flags:
   Called by: 
   Calls: 
-bcd2bin/6 (bcd2bin) @00000000076cf118
+bcd2bin/6 (bcd2bin) @000000000767b118
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -786,7 +786,7 @@ bcd2bin/6 (bcd2bin) @00000000076cf118
   Function flags:
   Called by: 
   Calls: 
-byteswp/5 (byteswp) @00000000076cf000
+byteswp/5 (byteswp) @000000000767b000
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -794,7 +794,7 @@ byteswp/5 (byteswp) @00000000076cf000
   Function flags:
   Called by: 
   Calls: 
-bytecpy/4 (bytecpy) @0000000006e58e38
+bytecpy/4 (bytecpy) @0000000006e08e38
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -802,7 +802,7 @@ bytecpy/4 (bytecpy) @0000000006e58e38
   Function flags:
   Called by: 
   Calls: 
-arithmetic_shift_right/3 (arithmetic_shift_right) @0000000006e58d20
+arithmetic_shift_right/3 (arithmetic_shift_right) @0000000006e08d20
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -810,7 +810,7 @@ arithmetic_shift_right/3 (arithmetic_shift_right) @0000000006e58d20
   Function flags:
   Called by: 
   Calls: 
-is_null_no_warn/2 (is_null_no_warn) @0000000006e58c08
+is_null_no_warn/2 (is_null_no_warn) @0000000006e08c08
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -818,7 +818,7 @@ is_null_no_warn/2 (is_null_no_warn) @0000000006e58c08
   Function flags:
   Called by: 
   Calls: 
-is_power_of_two/1 (is_power_of_two) @0000000006e58af0
+is_power_of_two/1 (is_power_of_two) @0000000006e08af0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -826,7 +826,7 @@ is_power_of_two/1 (is_power_of_two) @0000000006e58af0
   Function flags:
   Called by: 
   Calls: 
-__printf_float/0 (__printf_float) @0000000006cf7578
+__printf_float/0 (__printf_float) @0000000006ca7578
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -839,7 +839,7 @@ Removing unused symbols: uart_drv_cmd/86 uart_line_ctrl_get/85 uart_line_ctrl_se
 
 Reclaimed Symbol table:
 
-__builtin_va_end/102 (__builtin_va_end) @0000000006ddbd20
+__builtin_va_end/102 (__builtin_va_end) @0000000006d8bd20
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -847,7 +847,7 @@ __builtin_va_end/102 (__builtin_va_end) @0000000006ddbd20
   Function flags:
   Called by: tui_printf/92 
   Calls: 
-vsnprintf/101 (vsnprintf) @0000000006ddbc08
+vsnprintf/101 (vsnprintf) @0000000006d8bc08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -855,7 +855,7 @@ vsnprintf/101 (vsnprintf) @0000000006ddbc08
   Function flags:
   Called by: tui_printf/92 
   Calls: 
-__builtin_va_start/100 (__builtin_va_start) @0000000006ddbaf0
+__builtin_va_start/100 (__builtin_va_start) @0000000006d8baf0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -863,7 +863,7 @@ __builtin_va_start/100 (__builtin_va_start) @0000000006ddbaf0
   Function flags:
   Called by: tui_printf/92 
   Calls: 
-strlen/99 (strlen) @0000000006ddb9d8
+strlen/99 (strlen) @0000000006d8b9d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -871,7 +871,7 @@ strlen/99 (strlen) @0000000006ddb9d8
   Function flags:
   Called by: tui_puts/91 
   Calls: 
-snprintf/98 (snprintf) @0000000006ddb8c0
+snprintf/98 (snprintf) @0000000006d8b8c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -879,7 +879,7 @@ snprintf/98 (snprintf) @0000000006ddb8c0
   Function flags:
   Called by: tui_set_color/93 tui_set_color/93 tui_set_color/93 tui_move_cursor/90 
   Calls: 
-fwrite/97 (fwrite) @0000000006ddb7a8
+fwrite/97 (fwrite) @0000000006d8b7a8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -887,14 +887,14 @@ fwrite/97 (fwrite) @0000000006ddb7a8
   Function flags:
   Called by: tui_backend_write/87 
   Calls: 
-stdout/96 (stdout) @0000000006de2400
+stdout/96 (stdout) @0000000006d92400
   Type: variable
   Visibility: semantic_interposition external public
   References: 
   Referring: tui_backend_write/87 (read) 
   Availability: not-ready
   Varpool flags: read-only
-tui_draw_box/95 (tui_draw_box) @0000000006ddb690
+tui_draw_box/95 (tui_draw_box) @0000000006d8b690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -902,7 +902,7 @@ tui_draw_box/95 (tui_draw_box) @0000000006ddb690
   Function flags: body
   Called by: 
   Calls: tui_puts/91 tui_puts/91 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_puts/91 tui_puts/91 tui_move_cursor/90 
-tui_reset_color/94 (tui_reset_color) @0000000006ddb578
+tui_reset_color/94 (tui_reset_color) @0000000006d8b578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -910,7 +910,7 @@ tui_reset_color/94 (tui_reset_color) @0000000006ddb578
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 
-tui_set_color/93 (tui_set_color) @0000000006ddb460
+tui_set_color/93 (tui_set_color) @0000000006d8b460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -918,7 +918,7 @@ tui_set_color/93 (tui_set_color) @0000000006ddb460
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 snprintf/98 snprintf/98 snprintf/98 
-tui_printf/92 (tui_printf) @0000000006ddb348
+tui_printf/92 (tui_printf) @0000000006d8b348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -926,7 +926,7 @@ tui_printf/92 (tui_printf) @0000000006ddb348
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 __builtin_va_end/102 vsnprintf/101 __builtin_va_start/100 
-tui_puts/91 (tui_puts) @0000000006ddb230
+tui_puts/91 (tui_puts) @0000000006d8b230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -934,7 +934,7 @@ tui_puts/91 (tui_puts) @0000000006ddb230
   Function flags: body
   Called by: tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 
   Calls: tui_backend_write/87 strlen/99 
-tui_move_cursor/90 (tui_move_cursor) @0000000006ddb118
+tui_move_cursor/90 (tui_move_cursor) @0000000006d8b118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -942,7 +942,7 @@ tui_move_cursor/90 (tui_move_cursor) @0000000006ddb118
   Function flags: body
   Called by: tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 
   Calls: tui_backend_write/87 snprintf/98 
-tui_clear_screen/89 (tui_clear_screen) @0000000006ddb000
+tui_clear_screen/89 (tui_clear_screen) @0000000006d8b000
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -950,7 +950,7 @@ tui_clear_screen/89 (tui_clear_screen) @0000000006ddb000
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 
-tui_init/88 (tui_init) @000000000787fe38
+tui_init/88 (tui_init) @0000000007825e38
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -958,7 +958,7 @@ tui_init/88 (tui_init) @000000000787fe38
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 
-tui_backend_write/87 (tui_backend_write) @000000000787fd20
+tui_backend_write/87 (tui_backend_write) @0000000007825d20
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public weak
   References: stdout/96 (read) 
@@ -970,7 +970,7 @@ tui_backend_write/87 (tui_backend_write) @000000000787fd20
 
 Initial Symbol table:
 
-__builtin_va_end/102 (__builtin_va_end) @0000000006ddbd20
+__builtin_va_end/102 (__builtin_va_end) @0000000006d8bd20
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -978,7 +978,7 @@ __builtin_va_end/102 (__builtin_va_end) @0000000006ddbd20
   Function flags:
   Called by: tui_printf/92 
   Calls: 
-vsnprintf/101 (vsnprintf) @0000000006ddbc08
+vsnprintf/101 (vsnprintf) @0000000006d8bc08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -986,7 +986,7 @@ vsnprintf/101 (vsnprintf) @0000000006ddbc08
   Function flags:
   Called by: tui_printf/92 
   Calls: 
-__builtin_va_start/100 (__builtin_va_start) @0000000006ddbaf0
+__builtin_va_start/100 (__builtin_va_start) @0000000006d8baf0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -994,7 +994,7 @@ __builtin_va_start/100 (__builtin_va_start) @0000000006ddbaf0
   Function flags:
   Called by: tui_printf/92 
   Calls: 
-strlen/99 (strlen) @0000000006ddb9d8
+strlen/99 (strlen) @0000000006d8b9d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -1002,7 +1002,7 @@ strlen/99 (strlen) @0000000006ddb9d8
   Function flags:
   Called by: tui_puts/91 
   Calls: 
-snprintf/98 (snprintf) @0000000006ddb8c0
+snprintf/98 (snprintf) @0000000006d8b8c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -1010,7 +1010,7 @@ snprintf/98 (snprintf) @0000000006ddb8c0
   Function flags:
   Called by: tui_set_color/93 tui_set_color/93 tui_set_color/93 tui_move_cursor/90 
   Calls: 
-fwrite/97 (fwrite) @0000000006ddb7a8
+fwrite/97 (fwrite) @0000000006d8b7a8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -1018,14 +1018,14 @@ fwrite/97 (fwrite) @0000000006ddb7a8
   Function flags:
   Called by: tui_backend_write/87 
   Calls: 
-stdout/96 (stdout) @0000000006de2400
+stdout/96 (stdout) @0000000006d92400
   Type: variable
   Visibility: semantic_interposition external public
   References: 
   Referring: tui_backend_write/87 (read) 
   Availability: not-ready
   Varpool flags: read-only
-tui_draw_box/95 (tui_draw_box) @0000000006ddb690
+tui_draw_box/95 (tui_draw_box) @0000000006d8b690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -1033,7 +1033,7 @@ tui_draw_box/95 (tui_draw_box) @0000000006ddb690
   Function flags: body
   Called by: 
   Calls: tui_puts/91 tui_puts/91 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_puts/91 tui_puts/91 tui_move_cursor/90 
-tui_reset_color/94 (tui_reset_color) @0000000006ddb578
+tui_reset_color/94 (tui_reset_color) @0000000006d8b578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -1041,7 +1041,7 @@ tui_reset_color/94 (tui_reset_color) @0000000006ddb578
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 
-tui_set_color/93 (tui_set_color) @0000000006ddb460
+tui_set_color/93 (tui_set_color) @0000000006d8b460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -1049,7 +1049,7 @@ tui_set_color/93 (tui_set_color) @0000000006ddb460
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 snprintf/98 snprintf/98 snprintf/98 
-tui_printf/92 (tui_printf) @0000000006ddb348
+tui_printf/92 (tui_printf) @0000000006d8b348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -1057,7 +1057,7 @@ tui_printf/92 (tui_printf) @0000000006ddb348
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 __builtin_va_end/102 vsnprintf/101 __builtin_va_start/100 
-tui_puts/91 (tui_puts) @0000000006ddb230
+tui_puts/91 (tui_puts) @0000000006d8b230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -1065,7 +1065,7 @@ tui_puts/91 (tui_puts) @0000000006ddb230
   Function flags: body
   Called by: tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 
   Calls: tui_backend_write/87 strlen/99 
-tui_move_cursor/90 (tui_move_cursor) @0000000006ddb118
+tui_move_cursor/90 (tui_move_cursor) @0000000006d8b118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -1073,7 +1073,7 @@ tui_move_cursor/90 (tui_move_cursor) @0000000006ddb118
   Function flags: body
   Called by: tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 
   Calls: tui_backend_write/87 snprintf/98 
-tui_clear_screen/89 (tui_clear_screen) @0000000006ddb000
+tui_clear_screen/89 (tui_clear_screen) @0000000006d8b000
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -1081,7 +1081,7 @@ tui_clear_screen/89 (tui_clear_screen) @0000000006ddb000
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 
-tui_init/88 (tui_init) @000000000787fe38
+tui_init/88 (tui_init) @0000000007825e38
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -1089,7 +1089,7 @@ tui_init/88 (tui_init) @000000000787fe38
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 
-tui_backend_write/87 (tui_backend_write) @000000000787fd20
+tui_backend_write/87 (tui_backend_write) @0000000007825d20
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public weak
   References: stdout/96 (read) 
@@ -1102,7 +1102,7 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-__builtin_va_end/102 (__builtin_va_end) @0000000006ddbd20
+__builtin_va_end/102 (__builtin_va_end) @0000000006d8bd20
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -1110,7 +1110,7 @@ __builtin_va_end/102 (__builtin_va_end) @0000000006ddbd20
   Function flags:
   Called by: tui_printf/92 
   Calls: 
-vsnprintf/101 (vsnprintf) @0000000006ddbc08
+vsnprintf/101 (vsnprintf) @0000000006d8bc08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -1118,7 +1118,7 @@ vsnprintf/101 (vsnprintf) @0000000006ddbc08
   Function flags:
   Called by: tui_printf/92 
   Calls: 
-__builtin_va_start/100 (__builtin_va_start) @0000000006ddbaf0
+__builtin_va_start/100 (__builtin_va_start) @0000000006d8baf0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -1126,7 +1126,7 @@ __builtin_va_start/100 (__builtin_va_start) @0000000006ddbaf0
   Function flags:
   Called by: tui_printf/92 
   Calls: 
-strlen/99 (strlen) @0000000006ddb9d8
+strlen/99 (strlen) @0000000006d8b9d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -1134,7 +1134,7 @@ strlen/99 (strlen) @0000000006ddb9d8
   Function flags:
   Called by: tui_puts/91 
   Calls: 
-snprintf/98 (snprintf) @0000000006ddb8c0
+snprintf/98 (snprintf) @0000000006d8b8c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -1142,7 +1142,7 @@ snprintf/98 (snprintf) @0000000006ddb8c0
   Function flags:
   Called by: tui_set_color/93 tui_set_color/93 tui_set_color/93 tui_move_cursor/90 
   Calls: 
-fwrite/97 (fwrite) @0000000006ddb7a8
+fwrite/97 (fwrite) @0000000006d8b7a8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -1150,14 +1150,14 @@ fwrite/97 (fwrite) @0000000006ddb7a8
   Function flags:
   Called by: tui_backend_write/87 
   Calls: 
-stdout/96 (stdout) @0000000006de2400
+stdout/96 (stdout) @0000000006d92400
   Type: variable
   Visibility: semantic_interposition external public
   References: 
   Referring: tui_backend_write/87 (read) 
   Availability: not-ready
   Varpool flags: read-only
-tui_draw_box/95 (tui_draw_box) @0000000006ddb690
+tui_draw_box/95 (tui_draw_box) @0000000006d8b690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -1165,7 +1165,7 @@ tui_draw_box/95 (tui_draw_box) @0000000006ddb690
   Function flags: body
   Called by: 
   Calls: tui_puts/91 tui_puts/91 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_puts/91 tui_puts/91 tui_move_cursor/90 
-tui_reset_color/94 (tui_reset_color) @0000000006ddb578
+tui_reset_color/94 (tui_reset_color) @0000000006d8b578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -1173,7 +1173,7 @@ tui_reset_color/94 (tui_reset_color) @0000000006ddb578
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 
-tui_set_color/93 (tui_set_color) @0000000006ddb460
+tui_set_color/93 (tui_set_color) @0000000006d8b460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -1181,7 +1181,7 @@ tui_set_color/93 (tui_set_color) @0000000006ddb460
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 snprintf/98 snprintf/98 snprintf/98 
-tui_printf/92 (tui_printf) @0000000006ddb348
+tui_printf/92 (tui_printf) @0000000006d8b348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -1189,7 +1189,7 @@ tui_printf/92 (tui_printf) @0000000006ddb348
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 __builtin_va_end/102 vsnprintf/101 __builtin_va_start/100 
-tui_puts/91 (tui_puts) @0000000006ddb230
+tui_puts/91 (tui_puts) @0000000006d8b230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -1197,7 +1197,7 @@ tui_puts/91 (tui_puts) @0000000006ddb230
   Function flags: body
   Called by: tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 
   Calls: tui_backend_write/87 strlen/99 
-tui_move_cursor/90 (tui_move_cursor) @0000000006ddb118
+tui_move_cursor/90 (tui_move_cursor) @0000000006d8b118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -1205,7 +1205,7 @@ tui_move_cursor/90 (tui_move_cursor) @0000000006ddb118
   Function flags: body
   Called by: tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 
   Calls: tui_backend_write/87 snprintf/98 
-tui_clear_screen/89 (tui_clear_screen) @0000000006ddb000
+tui_clear_screen/89 (tui_clear_screen) @0000000006d8b000
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -1213,7 +1213,7 @@ tui_clear_screen/89 (tui_clear_screen) @0000000006ddb000
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 
-tui_init/88 (tui_init) @000000000787fe38
+tui_init/88 (tui_init) @0000000007825e38
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -1221,7 +1221,7 @@ tui_init/88 (tui_init) @000000000787fe38
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 
-tui_backend_write/87 (tui_backend_write) @000000000787fd20
+tui_backend_write/87 (tui_backend_write) @0000000007825d20
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public weak
   References: stdout/96 (read) 
@@ -1235,7 +1235,7 @@ Reclaiming variables:
 Clearing address taken flags:
 Optimized Symbol table:
 
-__builtin_va_end/102 (__builtin_va_end) @0000000006ddbd20
+__builtin_va_end/102 (__builtin_va_end) @0000000006d8bd20
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -1244,7 +1244,7 @@ __builtin_va_end/102 (__builtin_va_end) @0000000006ddbd20
   Function flags:
   Called by: tui_printf/92 
   Calls: 
-vsnprintf/101 (vsnprintf) @0000000006ddbc08
+vsnprintf/101 (vsnprintf) @0000000006d8bc08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -1253,7 +1253,7 @@ vsnprintf/101 (vsnprintf) @0000000006ddbc08
   Function flags:
   Called by: tui_printf/92 
   Calls: 
-__builtin_va_start/100 (__builtin_va_start) @0000000006ddbaf0
+__builtin_va_start/100 (__builtin_va_start) @0000000006d8baf0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -1262,7 +1262,7 @@ __builtin_va_start/100 (__builtin_va_start) @0000000006ddbaf0
   Function flags:
   Called by: tui_printf/92 
   Calls: 
-strlen/99 (strlen) @0000000006ddb9d8
+strlen/99 (strlen) @0000000006d8b9d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -1271,7 +1271,7 @@ strlen/99 (strlen) @0000000006ddb9d8
   Function flags:
   Called by: tui_puts/91 
   Calls: 
-snprintf/98 (snprintf) @0000000006ddb8c0
+snprintf/98 (snprintf) @0000000006d8b8c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -1280,7 +1280,7 @@ snprintf/98 (snprintf) @0000000006ddb8c0
   Function flags:
   Called by: tui_set_color/93 tui_set_color/93 tui_set_color/93 tui_move_cursor/90 
   Calls: 
-fwrite/97 (fwrite) @0000000006ddb7a8
+fwrite/97 (fwrite) @0000000006d8b7a8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -1289,7 +1289,7 @@ fwrite/97 (fwrite) @0000000006ddb7a8
   Function flags:
   Called by: tui_backend_write/87 
   Calls: 
-stdout/96 (stdout) @0000000006de2400
+stdout/96 (stdout) @0000000006d92400
   Type: variable
   Body removed by symtab_remove_unreachable_nodes
   Visibility: semantic_interposition external public
@@ -1297,7 +1297,7 @@ stdout/96 (stdout) @0000000006de2400
   Referring: tui_backend_write/87 (read) 
   Availability: not_available
   Varpool flags: read-only
-tui_draw_box/95 (tui_draw_box) @0000000006ddb690
+tui_draw_box/95 (tui_draw_box) @0000000006d8b690
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -1306,7 +1306,7 @@ tui_draw_box/95 (tui_draw_box) @0000000006ddb690
   Function flags: body
   Called by: 
   Calls: tui_puts/91 tui_puts/91 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_puts/91 tui_puts/91 tui_move_cursor/90 
-tui_reset_color/94 (tui_reset_color) @0000000006ddb578
+tui_reset_color/94 (tui_reset_color) @0000000006d8b578
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -1315,7 +1315,7 @@ tui_reset_color/94 (tui_reset_color) @0000000006ddb578
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 
-tui_set_color/93 (tui_set_color) @0000000006ddb460
+tui_set_color/93 (tui_set_color) @0000000006d8b460
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -1324,7 +1324,7 @@ tui_set_color/93 (tui_set_color) @0000000006ddb460
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 snprintf/98 snprintf/98 snprintf/98 
-tui_printf/92 (tui_printf) @0000000006ddb348
+tui_printf/92 (tui_printf) @0000000006d8b348
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -1333,7 +1333,7 @@ tui_printf/92 (tui_printf) @0000000006ddb348
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 __builtin_va_end/102 vsnprintf/101 __builtin_va_start/100 
-tui_puts/91 (tui_puts) @0000000006ddb230
+tui_puts/91 (tui_puts) @0000000006d8b230
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -1342,7 +1342,7 @@ tui_puts/91 (tui_puts) @0000000006ddb230
   Function flags: body
   Called by: tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 
   Calls: tui_backend_write/87 strlen/99 
-tui_move_cursor/90 (tui_move_cursor) @0000000006ddb118
+tui_move_cursor/90 (tui_move_cursor) @0000000006d8b118
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -1351,7 +1351,7 @@ tui_move_cursor/90 (tui_move_cursor) @0000000006ddb118
   Function flags: body
   Called by: tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 
   Calls: tui_backend_write/87 snprintf/98 
-tui_clear_screen/89 (tui_clear_screen) @0000000006ddb000
+tui_clear_screen/89 (tui_clear_screen) @0000000006d8b000
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -1360,7 +1360,7 @@ tui_clear_screen/89 (tui_clear_screen) @0000000006ddb000
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 
-tui_init/88 (tui_init) @000000000787fe38
+tui_init/88 (tui_init) @0000000007825e38
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -1369,7 +1369,7 @@ tui_init/88 (tui_init) @000000000787fe38
   Function flags: body
   Called by: 
   Calls: tui_backend_write/87 
-tui_backend_write/87 (tui_backend_write) @000000000787fd20
+tui_backend_write/87 (tui_backend_write) @0000000007825d20
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public weak
   References: stdout/96 (read) 
@@ -1383,7 +1383,7 @@ Removing variables:
 
 Final Symbol table:
 
-__builtin_va_end/102 (__builtin_va_end) @0000000006ddbd20
+__builtin_va_end/102 (__builtin_va_end) @0000000006d8bd20
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -1392,7 +1392,7 @@ __builtin_va_end/102 (__builtin_va_end) @0000000006ddbd20
   Function flags:
   Called by: 
   Calls: 
-vsnprintf/101 (vsnprintf) @0000000006ddbc08
+vsnprintf/101 (vsnprintf) @0000000006d8bc08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -1401,7 +1401,7 @@ vsnprintf/101 (vsnprintf) @0000000006ddbc08
   Function flags:
   Called by: 
   Calls: 
-__builtin_va_start/100 (__builtin_va_start) @0000000006ddbaf0
+__builtin_va_start/100 (__builtin_va_start) @0000000006d8baf0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -1410,7 +1410,7 @@ __builtin_va_start/100 (__builtin_va_start) @0000000006ddbaf0
   Function flags:
   Called by: 
   Calls: 
-strlen/99 (strlen) @0000000006ddb9d8
+strlen/99 (strlen) @0000000006d8b9d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -1419,7 +1419,7 @@ strlen/99 (strlen) @0000000006ddb9d8
   Function flags:
   Called by: 
   Calls: 
-snprintf/98 (snprintf) @0000000006ddb8c0
+snprintf/98 (snprintf) @0000000006d8b8c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -1428,7 +1428,7 @@ snprintf/98 (snprintf) @0000000006ddb8c0
   Function flags:
   Called by: 
   Calls: 
-fwrite/97 (fwrite) @0000000006ddb7a8
+fwrite/97 (fwrite) @0000000006d8b7a8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -1437,7 +1437,7 @@ fwrite/97 (fwrite) @0000000006ddb7a8
   Function flags:
   Called by: 
   Calls: 
-stdout/96 (stdout) @0000000006de2400
+stdout/96 (stdout) @0000000006d92400
   Type: variable
   Body removed by symtab_remove_unreachable_nodes
   Visibility: semantic_interposition external public
@@ -1445,7 +1445,7 @@ stdout/96 (stdout) @0000000006de2400
   Referring: 
   Availability: not_available
   Varpool flags: read-only
-tui_draw_box/95 (tui_draw_box) @0000000006ddb690
+tui_draw_box/95 (tui_draw_box) @0000000006d8b690
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_draw_box (implicit_section)
   References: 
@@ -1454,7 +1454,7 @@ tui_draw_box/95 (tui_draw_box) @0000000006ddb690
   Function flags:
   Called by: 
   Calls: 
-tui_reset_color/94 (tui_reset_color) @0000000006ddb578
+tui_reset_color/94 (tui_reset_color) @0000000006d8b578
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_reset_color (implicit_section)
   References: 
@@ -1463,7 +1463,7 @@ tui_reset_color/94 (tui_reset_color) @0000000006ddb578
   Function flags:
   Called by: 
   Calls: 
-tui_set_color/93 (tui_set_color) @0000000006ddb460
+tui_set_color/93 (tui_set_color) @0000000006d8b460
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_set_color (implicit_section)
   References: 
@@ -1472,7 +1472,7 @@ tui_set_color/93 (tui_set_color) @0000000006ddb460
   Function flags:
   Called by: 
   Calls: 
-tui_printf/92 (tui_printf) @0000000006ddb348
+tui_printf/92 (tui_printf) @0000000006d8b348
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_printf (implicit_section)
   References: 
@@ -1481,7 +1481,7 @@ tui_printf/92 (tui_printf) @0000000006ddb348
   Function flags:
   Called by: 
   Calls: 
-tui_puts/91 (tui_puts) @0000000006ddb230
+tui_puts/91 (tui_puts) @0000000006d8b230
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_puts (implicit_section)
   References: 
@@ -1490,7 +1490,7 @@ tui_puts/91 (tui_puts) @0000000006ddb230
   Function flags:
   Called by: 
   Calls: 
-tui_move_cursor/90 (tui_move_cursor) @0000000006ddb118
+tui_move_cursor/90 (tui_move_cursor) @0000000006d8b118
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_move_cursor (implicit_section)
   References: 
@@ -1499,7 +1499,7 @@ tui_move_cursor/90 (tui_move_cursor) @0000000006ddb118
   Function flags:
   Called by: 
   Calls: 
-tui_clear_screen/89 (tui_clear_screen) @0000000006ddb000
+tui_clear_screen/89 (tui_clear_screen) @0000000006d8b000
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_clear_screen (implicit_section)
   References: 
@@ -1508,7 +1508,7 @@ tui_clear_screen/89 (tui_clear_screen) @0000000006ddb000
   Function flags:
   Called by: 
   Calls: 
-tui_init/88 (tui_init) @000000000787fe38
+tui_init/88 (tui_init) @0000000007825e38
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_init (implicit_section)
   References: 
@@ -1517,7 +1517,7 @@ tui_init/88 (tui_init) @000000000787fe38
   Function flags:
   Called by: 
   Calls: 
-tui_backend_write/87 (tui_backend_write) @000000000787fd20
+tui_backend_write/87 (tui_backend_write) @0000000007825d20
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public weak section:.text.tui_backend_write (implicit_section)
   References: 

@@ -14,6 +14,7 @@
 #include "tui.h"
 #include "tui_input.h"	
 #include "tui_uart_input.h"
+#include "tui_widget.h"
 
 /* 1000 msec = 1 sec */
 #define SLEEP_TIME_MS   1000
@@ -21,13 +22,25 @@
 /* The devicetree node identifier for the "led0" alias. */
 #define LED0_NODE DT_ALIAS(led0)
 
-
+static tui_widget_t my_label;
 /*
  * A build error on this line means your board is unsupported.
  * See the sample documentation for information on how to fix this.
  */
 static const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED0_NODE, gpios);
 
+// Callback for button press
+static void on_button_click1(void *w) {
+    // Display confirmation in status area
+    tui_move_cursor(1, 20);
+    tui_printf("Button1 clicked!        ");
+}
+// Callback for button press
+static void on_button_click2(void *w) {
+    // Display confirmation in status area
+    tui_move_cursor(1, 20);
+    tui_printf("Button2 clicked!        ");
+}
 int main(void)
 {
 	int ret;
@@ -52,6 +65,37 @@ int main(void)
 	}
 
 tui_backend_puts("\x1B[?1000h"); // Basic mouse click tracking
+
+    tui_clear_screen();
+
+    // Draw a static label
+    tui_move_cursor(2, 2);
+    tui_puts("Press the button:");
+
+    // Create a button widget
+    static tui_widget_t btn1, btn2;
+    tui_button_init(&btn1,
+                    /* x */ 2, /* y */ 4,
+                    /* w */ 20, /* h */ 3,
+                    "[ Click ]",
+                    on_button_click1);
+    tui_button_init(&btn2,
+                    /* x */ 22, /* y */ 4,
+                    /* w */ 20, /* h */ 3,
+                    "[ Click ]",
+                    on_button_click2);
+    // Initial draw
+    tui_draw_all_widgets();
+
+    // Main event loop
+    while (1) {
+        tui_event_t evt;
+        if (tui_poll_event(&evt)) {
+            tui_dispatch_event(&evt);
+            tui_draw_all_widgets();
+        }
+        k_msleep(10);
+    }
 
 while (1) {
     tui_event_t evt;

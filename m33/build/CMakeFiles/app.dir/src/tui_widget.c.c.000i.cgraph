@@ -3,7 +3,7 @@ Trivially needed symbols: tui_button_init/7 button_event/6 button_draw/5 tui_dis
 
 Initial Symbol table:
 
-tui_reset_color/13 (tui_reset_color) @0000000006dff000
+tui_reset_color/13 (tui_reset_color) @0000000006278000
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -11,7 +11,7 @@ tui_reset_color/13 (tui_reset_color) @0000000006dff000
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_puts/12 (tui_puts) @0000000006cf5e38
+tui_puts/12 (tui_puts) @0000000006165e38
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -19,7 +19,7 @@ tui_puts/12 (tui_puts) @0000000006cf5e38
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_set_color/11 (tui_set_color) @0000000006cf5d20
+tui_set_color/11 (tui_set_color) @0000000006165d20
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -27,7 +27,7 @@ tui_set_color/11 (tui_set_color) @0000000006cf5d20
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_move_cursor/10 (tui_move_cursor) @0000000006cf5c08
+tui_move_cursor/10 (tui_move_cursor) @0000000006165c08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -35,7 +35,7 @@ tui_move_cursor/10 (tui_move_cursor) @0000000006cf5c08
   Function flags:
   Called by: button_draw/5 
   Calls: 
-strlen/9 (strlen) @0000000006cf5af0
+strlen/9 (strlen) @0000000006165af0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -43,7 +43,7 @@ strlen/9 (strlen) @0000000006cf5af0
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_draw_box/8 (tui_draw_box) @0000000006cf59d8
+tui_draw_box/8 (tui_draw_box) @00000000061659d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -51,7 +51,7 @@ tui_draw_box/8 (tui_draw_box) @0000000006cf59d8
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_button_init/7 (tui_button_init) @0000000006cf58c0
+tui_button_init/7 (tui_button_init) @00000000061658c0
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @0000000001d89da0
@@ -60,11 +60,11 @@ tui_button_init/7 (tui_button_init) @0000000006cf58c0
   Function flags: body
   Called by: 
   Calls: tui_widget_register/2 
-button_event/6 (button_event) @0000000006cf57a8
+button_event/6 (button_event) @00000000061657a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
-  Aux: @0000000006cf58c0
+  Aux: @00000000061658c0
   References: 
   Referring: tui_button_init/7 (addr) 
   Function flags: body
@@ -72,20 +72,20 @@ button_event/6 (button_event) @0000000006cf57a8
   Calls: 
    Indirect callnum speculative call targets: 0
    Indirect callnum speculative call targets: 0
-button_draw/5 (button_draw) @0000000006cf5690
+button_draw/5 (button_draw) @0000000006165690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
-  Aux: @0000000006cf57a8
+  Aux: @00000000061657a8
   References: 
   Referring: tui_button_init/7 (addr) 
   Function flags: body
   Called by: 
   Calls: tui_reset_color/13 tui_puts/12 tui_set_color/11 tui_move_cursor/10 strlen/9 tui_draw_box/8 
-tui_dispatch_event/4 (tui_dispatch_event) @0000000006cf5578
+tui_dispatch_event/4 (tui_dispatch_event) @0000000006165578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006cf5690
+  Aux: @0000000006165690
   References: widget_list/0 (read) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (write) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (read) 
   Referring: 
   Function flags: body
@@ -93,37 +93,37 @@ tui_dispatch_event/4 (tui_dispatch_event) @0000000006cf5578
   Calls: 
    Indirect callnum speculative call targets: 0
    Indirect callnum speculative call targets: 0
-tui_draw_all_widgets/3 (tui_draw_all_widgets) @0000000006cf5460
+tui_draw_all_widgets/3 (tui_draw_all_widgets) @0000000006165460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006cf5578
+  Aux: @0000000006165578
   References: widget_list/0 (read) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: 
    Indirect callnum speculative call targets: 0
-tui_widget_register/2 (tui_widget_register) @0000000006cf5348
+tui_widget_register/2 (tui_widget_register) @0000000006165348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006cf5460
+  Aux: @0000000006165460
   References: widget_list/0 (read) widget_list/0 (write) focused_widget/1 (read) focused_widget/1 (write) 
   Referring: 
   Function flags: body
   Called by: tui_button_init/7 
   Calls: 
-focused_widget/1 (focused_widget) @0000000006d96d00
+focused_widget/1 (focused_widget) @0000000006211e80
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
-  Aux: @0000000006cf5348
+  Aux: @0000000006165348
   References: 
   Referring: tui_widget_register/2 (read) tui_widget_register/2 (write) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (write) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) 
   Availability: not-ready
   Varpool flags: initialized
-widget_list/0 (widget_list) @0000000006d96c80
+widget_list/0 (widget_list) @0000000006211e00
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
-  Aux: @0000000006d96d00
+  Aux: @0000000006211e80
   References: 
   Referring: tui_widget_register/2 (read) tui_widget_register/2 (write) tui_draw_all_widgets/3 (read) tui_dispatch_event/4 (read) 
   Availability: not-ready
@@ -133,7 +133,7 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-tui_reset_color/13 (tui_reset_color) @0000000006dff000
+tui_reset_color/13 (tui_reset_color) @0000000006278000
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -141,7 +141,7 @@ tui_reset_color/13 (tui_reset_color) @0000000006dff000
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_puts/12 (tui_puts) @0000000006cf5e38
+tui_puts/12 (tui_puts) @0000000006165e38
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -149,7 +149,7 @@ tui_puts/12 (tui_puts) @0000000006cf5e38
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_set_color/11 (tui_set_color) @0000000006cf5d20
+tui_set_color/11 (tui_set_color) @0000000006165d20
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -157,7 +157,7 @@ tui_set_color/11 (tui_set_color) @0000000006cf5d20
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_move_cursor/10 (tui_move_cursor) @0000000006cf5c08
+tui_move_cursor/10 (tui_move_cursor) @0000000006165c08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -165,7 +165,7 @@ tui_move_cursor/10 (tui_move_cursor) @0000000006cf5c08
   Function flags:
   Called by: button_draw/5 
   Calls: 
-strlen/9 (strlen) @0000000006cf5af0
+strlen/9 (strlen) @0000000006165af0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -173,7 +173,7 @@ strlen/9 (strlen) @0000000006cf5af0
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_draw_box/8 (tui_draw_box) @0000000006cf59d8
+tui_draw_box/8 (tui_draw_box) @00000000061659d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -181,7 +181,7 @@ tui_draw_box/8 (tui_draw_box) @0000000006cf59d8
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_button_init/7 (tui_button_init) @0000000006cf58c0
+tui_button_init/7 (tui_button_init) @00000000061658c0
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: button_draw/5 (addr) button_event/6 (addr) 
@@ -189,7 +189,7 @@ tui_button_init/7 (tui_button_init) @0000000006cf58c0
   Function flags: body
   Called by: 
   Calls: tui_widget_register/2 
-button_event/6 (button_event) @0000000006cf57a8
+button_event/6 (button_event) @00000000061657a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
@@ -200,7 +200,7 @@ button_event/6 (button_event) @0000000006cf57a8
   Calls: 
    Indirect callnum speculative call targets: 0
    Indirect callnum speculative call targets: 0
-button_draw/5 (button_draw) @0000000006cf5690
+button_draw/5 (button_draw) @0000000006165690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
@@ -209,7 +209,7 @@ button_draw/5 (button_draw) @0000000006cf5690
   Function flags: body
   Called by: 
   Calls: tui_reset_color/13 tui_puts/12 tui_set_color/11 tui_move_cursor/10 strlen/9 tui_draw_box/8 
-tui_dispatch_event/4 (tui_dispatch_event) @0000000006cf5578
+tui_dispatch_event/4 (tui_dispatch_event) @0000000006165578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: widget_list/0 (read) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (write) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (read) 
@@ -219,7 +219,7 @@ tui_dispatch_event/4 (tui_dispatch_event) @0000000006cf5578
   Calls: 
    Indirect callnum speculative call targets: 0
    Indirect callnum speculative call targets: 0
-tui_draw_all_widgets/3 (tui_draw_all_widgets) @0000000006cf5460
+tui_draw_all_widgets/3 (tui_draw_all_widgets) @0000000006165460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: widget_list/0 (read) 
@@ -228,7 +228,7 @@ tui_draw_all_widgets/3 (tui_draw_all_widgets) @0000000006cf5460
   Called by: 
   Calls: 
    Indirect callnum speculative call targets: 0
-tui_widget_register/2 (tui_widget_register) @0000000006cf5348
+tui_widget_register/2 (tui_widget_register) @0000000006165348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: widget_list/0 (read) widget_list/0 (write) focused_widget/1 (read) focused_widget/1 (write) 
@@ -236,14 +236,14 @@ tui_widget_register/2 (tui_widget_register) @0000000006cf5348
   Function flags: body
   Called by: tui_button_init/7 
   Calls: 
-focused_widget/1 (focused_widget) @0000000006d96d00
+focused_widget/1 (focused_widget) @0000000006211e80
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
   Referring: tui_widget_register/2 (read) tui_widget_register/2 (write) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (write) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) 
   Availability: not-ready
   Varpool flags: initialized
-widget_list/0 (widget_list) @0000000006d96c80
+widget_list/0 (widget_list) @0000000006211e00
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
@@ -254,7 +254,7 @@ widget_list/0 (widget_list) @0000000006d96c80
 
 Initial Symbol table:
 
-tui_reset_color/13 (tui_reset_color) @0000000006dff000
+tui_reset_color/13 (tui_reset_color) @0000000006278000
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -262,7 +262,7 @@ tui_reset_color/13 (tui_reset_color) @0000000006dff000
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_puts/12 (tui_puts) @0000000006cf5e38
+tui_puts/12 (tui_puts) @0000000006165e38
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -270,7 +270,7 @@ tui_puts/12 (tui_puts) @0000000006cf5e38
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_set_color/11 (tui_set_color) @0000000006cf5d20
+tui_set_color/11 (tui_set_color) @0000000006165d20
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -278,7 +278,7 @@ tui_set_color/11 (tui_set_color) @0000000006cf5d20
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_move_cursor/10 (tui_move_cursor) @0000000006cf5c08
+tui_move_cursor/10 (tui_move_cursor) @0000000006165c08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -286,7 +286,7 @@ tui_move_cursor/10 (tui_move_cursor) @0000000006cf5c08
   Function flags:
   Called by: button_draw/5 
   Calls: 
-strlen/9 (strlen) @0000000006cf5af0
+strlen/9 (strlen) @0000000006165af0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -294,7 +294,7 @@ strlen/9 (strlen) @0000000006cf5af0
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_draw_box/8 (tui_draw_box) @0000000006cf59d8
+tui_draw_box/8 (tui_draw_box) @00000000061659d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -302,7 +302,7 @@ tui_draw_box/8 (tui_draw_box) @0000000006cf59d8
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_button_init/7 (tui_button_init) @0000000006cf58c0
+tui_button_init/7 (tui_button_init) @00000000061658c0
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: button_draw/5 (addr) button_event/6 (addr) 
@@ -310,7 +310,7 @@ tui_button_init/7 (tui_button_init) @0000000006cf58c0
   Function flags: body
   Called by: 
   Calls: tui_widget_register/2 
-button_event/6 (button_event) @0000000006cf57a8
+button_event/6 (button_event) @00000000061657a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
@@ -321,7 +321,7 @@ button_event/6 (button_event) @0000000006cf57a8
   Calls: 
    Indirect callnum speculative call targets: 0
    Indirect callnum speculative call targets: 0
-button_draw/5 (button_draw) @0000000006cf5690
+button_draw/5 (button_draw) @0000000006165690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
@@ -330,7 +330,7 @@ button_draw/5 (button_draw) @0000000006cf5690
   Function flags: body
   Called by: 
   Calls: tui_reset_color/13 tui_puts/12 tui_set_color/11 tui_move_cursor/10 strlen/9 tui_draw_box/8 
-tui_dispatch_event/4 (tui_dispatch_event) @0000000006cf5578
+tui_dispatch_event/4 (tui_dispatch_event) @0000000006165578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: widget_list/0 (read) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (write) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (read) 
@@ -340,7 +340,7 @@ tui_dispatch_event/4 (tui_dispatch_event) @0000000006cf5578
   Calls: 
    Indirect callnum speculative call targets: 0
    Indirect callnum speculative call targets: 0
-tui_draw_all_widgets/3 (tui_draw_all_widgets) @0000000006cf5460
+tui_draw_all_widgets/3 (tui_draw_all_widgets) @0000000006165460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: widget_list/0 (read) 
@@ -349,7 +349,7 @@ tui_draw_all_widgets/3 (tui_draw_all_widgets) @0000000006cf5460
   Called by: 
   Calls: 
    Indirect callnum speculative call targets: 0
-tui_widget_register/2 (tui_widget_register) @0000000006cf5348
+tui_widget_register/2 (tui_widget_register) @0000000006165348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: widget_list/0 (read) widget_list/0 (write) focused_widget/1 (read) focused_widget/1 (write) 
@@ -357,14 +357,14 @@ tui_widget_register/2 (tui_widget_register) @0000000006cf5348
   Function flags: body
   Called by: tui_button_init/7 
   Calls: 
-focused_widget/1 (focused_widget) @0000000006d96d00
+focused_widget/1 (focused_widget) @0000000006211e80
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
   Referring: tui_widget_register/2 (read) tui_widget_register/2 (write) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (write) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) 
   Availability: not-ready
   Varpool flags: initialized
-widget_list/0 (widget_list) @0000000006d96c80
+widget_list/0 (widget_list) @0000000006211e00
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
@@ -376,7 +376,7 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-tui_reset_color/13 (tui_reset_color) @0000000006dff000
+tui_reset_color/13 (tui_reset_color) @0000000006278000
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -384,7 +384,7 @@ tui_reset_color/13 (tui_reset_color) @0000000006dff000
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_puts/12 (tui_puts) @0000000006cf5e38
+tui_puts/12 (tui_puts) @0000000006165e38
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -392,7 +392,7 @@ tui_puts/12 (tui_puts) @0000000006cf5e38
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_set_color/11 (tui_set_color) @0000000006cf5d20
+tui_set_color/11 (tui_set_color) @0000000006165d20
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -400,7 +400,7 @@ tui_set_color/11 (tui_set_color) @0000000006cf5d20
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_move_cursor/10 (tui_move_cursor) @0000000006cf5c08
+tui_move_cursor/10 (tui_move_cursor) @0000000006165c08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -408,7 +408,7 @@ tui_move_cursor/10 (tui_move_cursor) @0000000006cf5c08
   Function flags:
   Called by: button_draw/5 
   Calls: 
-strlen/9 (strlen) @0000000006cf5af0
+strlen/9 (strlen) @0000000006165af0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -416,7 +416,7 @@ strlen/9 (strlen) @0000000006cf5af0
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_draw_box/8 (tui_draw_box) @0000000006cf59d8
+tui_draw_box/8 (tui_draw_box) @00000000061659d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -424,7 +424,7 @@ tui_draw_box/8 (tui_draw_box) @0000000006cf59d8
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_button_init/7 (tui_button_init) @0000000006cf58c0
+tui_button_init/7 (tui_button_init) @00000000061658c0
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: button_draw/5 (addr) button_event/6 (addr) 
@@ -432,7 +432,7 @@ tui_button_init/7 (tui_button_init) @0000000006cf58c0
   Function flags: body
   Called by: 
   Calls: tui_widget_register/2 
-button_event/6 (button_event) @0000000006cf57a8
+button_event/6 (button_event) @00000000061657a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
@@ -443,7 +443,7 @@ button_event/6 (button_event) @0000000006cf57a8
   Calls: 
    Indirect callnum speculative call targets: 0
    Indirect callnum speculative call targets: 0
-button_draw/5 (button_draw) @0000000006cf5690
+button_draw/5 (button_draw) @0000000006165690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
@@ -452,7 +452,7 @@ button_draw/5 (button_draw) @0000000006cf5690
   Function flags: body
   Called by: 
   Calls: tui_reset_color/13 tui_puts/12 tui_set_color/11 tui_move_cursor/10 strlen/9 tui_draw_box/8 
-tui_dispatch_event/4 (tui_dispatch_event) @0000000006cf5578
+tui_dispatch_event/4 (tui_dispatch_event) @0000000006165578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: widget_list/0 (read) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (write) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (read) 
@@ -462,7 +462,7 @@ tui_dispatch_event/4 (tui_dispatch_event) @0000000006cf5578
   Calls: 
    Indirect callnum speculative call targets: 0
    Indirect callnum speculative call targets: 0
-tui_draw_all_widgets/3 (tui_draw_all_widgets) @0000000006cf5460
+tui_draw_all_widgets/3 (tui_draw_all_widgets) @0000000006165460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: widget_list/0 (read) 
@@ -471,7 +471,7 @@ tui_draw_all_widgets/3 (tui_draw_all_widgets) @0000000006cf5460
   Called by: 
   Calls: 
    Indirect callnum speculative call targets: 0
-tui_widget_register/2 (tui_widget_register) @0000000006cf5348
+tui_widget_register/2 (tui_widget_register) @0000000006165348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: widget_list/0 (read) widget_list/0 (write) focused_widget/1 (read) focused_widget/1 (write) 
@@ -479,14 +479,14 @@ tui_widget_register/2 (tui_widget_register) @0000000006cf5348
   Function flags: body
   Called by: tui_button_init/7 
   Calls: 
-focused_widget/1 (focused_widget) @0000000006d96d00
+focused_widget/1 (focused_widget) @0000000006211e80
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
   Referring: tui_widget_register/2 (read) tui_widget_register/2 (write) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (write) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) 
   Availability: not-ready
   Varpool flags: initialized
-widget_list/0 (widget_list) @0000000006d96c80
+widget_list/0 (widget_list) @0000000006211e00
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
@@ -499,7 +499,7 @@ Reclaiming variables:
 Clearing address taken flags:
 Optimized Symbol table:
 
-tui_reset_color/13 (tui_reset_color) @0000000006dff000
+tui_reset_color/13 (tui_reset_color) @0000000006278000
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -508,7 +508,7 @@ tui_reset_color/13 (tui_reset_color) @0000000006dff000
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_puts/12 (tui_puts) @0000000006cf5e38
+tui_puts/12 (tui_puts) @0000000006165e38
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -517,7 +517,7 @@ tui_puts/12 (tui_puts) @0000000006cf5e38
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_set_color/11 (tui_set_color) @0000000006cf5d20
+tui_set_color/11 (tui_set_color) @0000000006165d20
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -526,7 +526,7 @@ tui_set_color/11 (tui_set_color) @0000000006cf5d20
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_move_cursor/10 (tui_move_cursor) @0000000006cf5c08
+tui_move_cursor/10 (tui_move_cursor) @0000000006165c08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -535,7 +535,7 @@ tui_move_cursor/10 (tui_move_cursor) @0000000006cf5c08
   Function flags:
   Called by: button_draw/5 
   Calls: 
-strlen/9 (strlen) @0000000006cf5af0
+strlen/9 (strlen) @0000000006165af0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -544,7 +544,7 @@ strlen/9 (strlen) @0000000006cf5af0
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_draw_box/8 (tui_draw_box) @0000000006cf59d8
+tui_draw_box/8 (tui_draw_box) @00000000061659d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -553,7 +553,7 @@ tui_draw_box/8 (tui_draw_box) @0000000006cf59d8
   Function flags:
   Called by: button_draw/5 
   Calls: 
-tui_button_init/7 (tui_button_init) @0000000006cf58c0
+tui_button_init/7 (tui_button_init) @00000000061658c0
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: button_draw/5 (addr) button_event/6 (addr) 
@@ -562,7 +562,7 @@ tui_button_init/7 (tui_button_init) @0000000006cf58c0
   Function flags: body
   Called by: 
   Calls: tui_widget_register/2 
-button_event/6 (button_event) @0000000006cf57a8
+button_event/6 (button_event) @00000000061657a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
   Address is taken.
@@ -574,7 +574,7 @@ button_event/6 (button_event) @0000000006cf57a8
   Calls: 
    Indirect callnum speculative call targets: 0
    Indirect callnum speculative call targets: 0
-button_draw/5 (button_draw) @0000000006cf5690
+button_draw/5 (button_draw) @0000000006165690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
   Address is taken.
@@ -584,7 +584,7 @@ button_draw/5 (button_draw) @0000000006cf5690
   Function flags: body
   Called by: 
   Calls: tui_reset_color/13 tui_puts/12 tui_set_color/11 tui_move_cursor/10 strlen/9 tui_draw_box/8 
-tui_dispatch_event/4 (tui_dispatch_event) @0000000006cf5578
+tui_dispatch_event/4 (tui_dispatch_event) @0000000006165578
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: widget_list/0 (read) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (write) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (read) focused_widget/1 (read) 
@@ -595,7 +595,7 @@ tui_dispatch_event/4 (tui_dispatch_event) @0000000006cf5578
   Calls: 
    Indirect callnum speculative call targets: 0
    Indirect callnum speculative call targets: 0
-tui_draw_all_widgets/3 (tui_draw_all_widgets) @0000000006cf5460
+tui_draw_all_widgets/3 (tui_draw_all_widgets) @0000000006165460
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: widget_list/0 (read) 
@@ -605,7 +605,7 @@ tui_draw_all_widgets/3 (tui_draw_all_widgets) @0000000006cf5460
   Called by: 
   Calls: 
    Indirect callnum speculative call targets: 0
-tui_widget_register/2 (tui_widget_register) @0000000006cf5348
+tui_widget_register/2 (tui_widget_register) @0000000006165348
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: widget_list/0 (read) widget_list/0 (write) focused_widget/1 (read) focused_widget/1 (write) 
@@ -614,14 +614,14 @@ tui_widget_register/2 (tui_widget_register) @0000000006cf5348
   Function flags: body
   Called by: tui_button_init/7 
   Calls: 
-focused_widget/1 (focused_widget) @0000000006d96d00
+focused_widget/1 (focused_widget) @0000000006211e80
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
   References: 
   Referring: tui_widget_register/2 (read) tui_widget_register/2 (write) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (write) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) tui_dispatch_event/4 (read) 
   Availability: available
   Varpool flags: initialized
-widget_list/0 (widget_list) @0000000006d96c80
+widget_list/0 (widget_list) @0000000006211e00
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
   References: 
@@ -633,7 +633,7 @@ Removing variables:
 
 Final Symbol table:
 
-tui_reset_color/13 (tui_reset_color) @0000000006dff000
+tui_reset_color/13 (tui_reset_color) @0000000006278000
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -642,7 +642,7 @@ tui_reset_color/13 (tui_reset_color) @0000000006dff000
   Function flags:
   Called by: 
   Calls: 
-tui_puts/12 (tui_puts) @0000000006cf5e38
+tui_puts/12 (tui_puts) @0000000006165e38
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -651,7 +651,7 @@ tui_puts/12 (tui_puts) @0000000006cf5e38
   Function flags:
   Called by: 
   Calls: 
-tui_set_color/11 (tui_set_color) @0000000006cf5d20
+tui_set_color/11 (tui_set_color) @0000000006165d20
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -660,7 +660,7 @@ tui_set_color/11 (tui_set_color) @0000000006cf5d20
   Function flags:
   Called by: 
   Calls: 
-tui_move_cursor/10 (tui_move_cursor) @0000000006cf5c08
+tui_move_cursor/10 (tui_move_cursor) @0000000006165c08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -669,7 +669,7 @@ tui_move_cursor/10 (tui_move_cursor) @0000000006cf5c08
   Function flags:
   Called by: 
   Calls: 
-strlen/9 (strlen) @0000000006cf5af0
+strlen/9 (strlen) @0000000006165af0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -678,7 +678,7 @@ strlen/9 (strlen) @0000000006cf5af0
   Function flags:
   Called by: 
   Calls: 
-tui_draw_box/8 (tui_draw_box) @0000000006cf59d8
+tui_draw_box/8 (tui_draw_box) @00000000061659d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -687,7 +687,7 @@ tui_draw_box/8 (tui_draw_box) @0000000006cf59d8
   Function flags:
   Called by: 
   Calls: 
-tui_button_init/7 (tui_button_init) @0000000006cf58c0
+tui_button_init/7 (tui_button_init) @00000000061658c0
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_button_init (implicit_section)
   References: 
@@ -696,7 +696,7 @@ tui_button_init/7 (tui_button_init) @0000000006cf58c0
   Function flags:
   Called by: 
   Calls: 
-button_event/6 (button_event) @0000000006cf57a8
+button_event/6 (button_event) @00000000061657a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.text.button_event (implicit_section)
   Address is taken.
@@ -706,7 +706,7 @@ button_event/6 (button_event) @0000000006cf57a8
   Function flags:
   Called by: 
   Calls: 
-button_draw/5 (button_draw) @0000000006cf5690
+button_draw/5 (button_draw) @0000000006165690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.text.button_draw (implicit_section)
   Address is taken.
@@ -716,7 +716,7 @@ button_draw/5 (button_draw) @0000000006cf5690
   Function flags:
   Called by: 
   Calls: 
-tui_dispatch_event/4 (tui_dispatch_event) @0000000006cf5578
+tui_dispatch_event/4 (tui_dispatch_event) @0000000006165578
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_dispatch_event (implicit_section)
   References: 
@@ -725,7 +725,7 @@ tui_dispatch_event/4 (tui_dispatch_event) @0000000006cf5578
   Function flags:
   Called by: 
   Calls: 
-tui_draw_all_widgets/3 (tui_draw_all_widgets) @0000000006cf5460
+tui_draw_all_widgets/3 (tui_draw_all_widgets) @0000000006165460
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_draw_all_widgets (implicit_section)
   References: 
@@ -734,7 +734,7 @@ tui_draw_all_widgets/3 (tui_draw_all_widgets) @0000000006cf5460
   Function flags:
   Called by: 
   Calls: 
-tui_widget_register/2 (tui_widget_register) @0000000006cf5348
+tui_widget_register/2 (tui_widget_register) @0000000006165348
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_widget_register (implicit_section)
   References: 
@@ -743,7 +743,7 @@ tui_widget_register/2 (tui_widget_register) @0000000006cf5348
   Function flags:
   Called by: 
   Calls: 
-focused_widget/1 (focused_widget) @0000000006d96d00
+focused_widget/1 (focused_widget) @0000000006211e80
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.bss.focused_widget (implicit_section)
   Aux: @0000000000000001
@@ -751,10 +751,10 @@ focused_widget/1 (focused_widget) @0000000006d96d00
   Referring: 
   Availability: available
   Varpool flags: initialized
-widget_list/0 (widget_list) @0000000006d96c80
+widget_list/0 (widget_list) @0000000006211e00
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.bss.widget_list (implicit_section)
-  Aux: @0000000006d96d00
+  Aux: @0000000006211e80
   References: 
   Referring: 
   Availability: available

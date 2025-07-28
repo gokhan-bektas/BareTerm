@@ -29,17 +29,29 @@ static tui_widget_t my_label;
  */
 static const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED0_NODE, gpios);
 
+static tui_widget_t lbl1;
+static tui_widget_t lbl2;
+static tui_widget_t bar;
+
 // Callback for button press
 static void on_button_click1(void *w) {
-    // Display confirmation in status area
-    tui_move_cursor(1, 20);
-    tui_printf("Button1 clicked!        ");
+    // Update the label
+    tui_label_set_text(&lbl1, "Clicked Button 1!");
+    tui_label_set_color(&lbl1, TUI_YELLOW, TUI_BLUE, TUI_STYLE_BOLD);
+
+    // Redraw everything
+    tui_draw_all_widgets();
 }
 // Callback for button press
 static void on_button_click2(void *w) {
-    // Display confirmation in status area
-    tui_move_cursor(1, 20);
-    tui_printf("Button2 clicked!        ");
+    // Update the label
+    tui_label_set_text(&lbl2, "Clicked Button 2!");
+    tui_label_set_color(&lbl2, TUI_YELLOW, TUI_GREEN, TUI_STYLE_BOLD);
+
+	tui_progressbar_set_value(&bar, /*new_value=*/ bar.value + 1);
+    // Redraw everything
+    tui_draw_all_widgets();
+
 }
 int main(void)
 {
@@ -64,27 +76,57 @@ int main(void)
 		return 0;
 	}
 
-tui_backend_puts("\x1B[?1000h"); // Basic mouse click tracking
+    tui_backend_puts("\x1B[?1000h"); // Basic mouse click tracking
 
     tui_clear_screen();
 
     // Draw a static label
-    tui_move_cursor(2, 2);
-    tui_puts("Press the button:");
+    //tui_move_cursor(2, 2);
+    //tui_puts("Press the button:");
+
+	tui_draw_box(1, 1, 50, 30, " MAX32657 EVKit Test Tool v0.1.0");
+	tui_label_init(&lbl1,
+				2, 2,
+				"Welcome",
+				TUI_WHITE,   // foreground
+				TUI_BLUE,      // background
+				TUI_STYLE_BOLD);
 
     // Create a button widget
     static tui_widget_t btn1, btn2;
     tui_button_init(&btn1,
-                    /* x */ 2, /* y */ 4,
+                    /* x */ 2, /* y */ 6,
                     /* w */ 20, /* h */ 3,
-                    "[ Click ]",
+                    "[ Button1 ]",
                     on_button_click1);
     tui_button_init(&btn2,
-                    /* x */ 22, /* y */ 4,
+                    /* x */ 22, /* y */ 6,
                     /* w */ 20, /* h */ 3,
-                    "[ Click ]",
+                    "[ Button2 ]",
                     on_button_click2);
-    // Initial draw
+    // 2) Initialize it at position (col=2, row=2) with your text
+	tui_label_init(&lbl2,
+				4, 4,
+				"Press A Button",
+				TUI_YELLOW,   // foreground
+				TUI_BLUE,      // background
+				TUI_STYLE_BOLD);
+
+	static tui_widget_t memo;
+	tui_textbox_init(&memo,
+					/*x*/ 3, /*y*/ 10,
+					/*w*/ 36, /*h*/ 5,
+					"To start tests please follow the instructions below:"
+					"Here are the instructions. Under construction...",
+					TUI_CYAN, TUI_BLACK, TUI_STYLE_NONE);
+
+    tui_progressbar_init(&bar,
+                         /*x*/2,  /*y*/20,
+                         /*w*/30, /*h*/1,
+                         /*value*/30, /*max*/100,
+                         TUI_GREEN, TUI_BLACK, TUI_STYLE_NONE);
+
+	// Initial draw
     tui_draw_all_widgets();
 
     // Main event loop

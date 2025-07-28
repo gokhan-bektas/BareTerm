@@ -1,57 +1,57 @@
-Trivially needed symbols: tui_label_set_color/4 tui_label_set_text/3 tui_label_init/2 label_event/1 label_draw/0
+Trivially needed symbols: tui_progressbar_set_value/3 tui_progressbar_init/2 progressbar_event/1 progressbar_draw/0
 
 
 Initial Symbol table:
 
-tui_widget_register/10 (tui_widget_register) @0000000006d05e38
+tui_widget_register/9 (tui_widget_register) @0000000006cf5d20
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: tui_label_init/2 
+  Called by: tui_progressbar_init/2 
   Calls: 
-strlen/9 (strlen) @0000000006d05d20
+snprintf/8 (snprintf) @0000000006cf5c08
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: tui_label_init/2 
+  Called by: progressbar_draw/0 
   Calls: 
-tui_reset_color/8 (tui_reset_color) @0000000006d05c08
+tui_reset_color/7 (tui_reset_color) @0000000006cf5af0
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: label_draw/0 
+  Called by: progressbar_draw/0 
   Calls: 
-tui_puts/7 (tui_puts) @0000000006d05af0
+tui_puts/6 (tui_puts) @0000000006cf59d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: label_draw/0 
+  Called by: progressbar_draw/0 progressbar_draw/0 progressbar_draw/0 progressbar_draw/0 progressbar_draw/0 
   Calls: 
-tui_set_color/6 (tui_set_color) @0000000006d059d8
+tui_set_color/5 (tui_set_color) @0000000006cf58c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: label_draw/0 
+  Called by: progressbar_draw/0 
   Calls: 
-tui_move_cursor/5 (tui_move_cursor) @0000000006d058c0
+tui_move_cursor/4 (tui_move_cursor) @0000000006cf57a8
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: label_draw/0 
+  Called by: progressbar_draw/0 progressbar_draw/0 
   Calls: 
-tui_label_set_color/4 (tui_label_set_color) @0000000006d057a8
+tui_progressbar_set_value/3 (tui_progressbar_set_value) @0000000006cf5690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @0000000001d89da0
@@ -60,98 +60,89 @@ tui_label_set_color/4 (tui_label_set_color) @0000000006d057a8
   Function flags: body
   Called by: 
   Calls: 
-tui_label_set_text/3 (tui_label_set_text) @0000000006d05690
+tui_progressbar_init/2 (tui_progressbar_init) @0000000006cf5578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006d057a8
-  References: 
+  Aux: @0000000006cf5690
+  References: progressbar_draw/0 (addr) progressbar_event/1 (addr) 
   Referring: 
   Function flags: body
   Called by: 
-  Calls: 
-tui_label_init/2 (tui_label_init) @0000000006d05578
-  Type: function definition analyzed
-  Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006d05690
-  References: label_draw/0 (addr) label_event/1 (addr) 
-  Referring: 
-  Function flags: body
-  Called by: 
-  Calls: tui_widget_register/10 strlen/9 
-label_event/1 (label_event) @0000000006d05460
+  Calls: tui_widget_register/9 
+progressbar_event/1 (progressbar_event) @0000000006cf5460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
-  Aux: @0000000006d05578
+  Aux: @0000000006cf5578
   References: 
-  Referring: tui_label_init/2 (addr) 
+  Referring: tui_progressbar_init/2 (addr) 
   Function flags: body
   Called by: 
   Calls: 
-label_draw/0 (label_draw) @0000000006d05348
+progressbar_draw/0 (progressbar_draw) @0000000006cf5348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
-  Aux: @0000000006d05460
+  Aux: @0000000006cf5460
   References: 
-  Referring: tui_label_init/2 (addr) 
+  Referring: tui_progressbar_init/2 (addr) 
   Function flags: body
   Called by: 
-  Calls: tui_reset_color/8 tui_puts/7 tui_set_color/6 tui_move_cursor/5 
+  Calls: tui_puts/6 tui_move_cursor/4 snprintf/8 tui_reset_color/7 tui_puts/6 tui_puts/6 tui_puts/6 tui_puts/6 tui_set_color/5 tui_move_cursor/4 
 
 Removing unused symbols:
 
 Reclaimed Symbol table:
 
-tui_widget_register/10 (tui_widget_register) @0000000006d05e38
+tui_widget_register/9 (tui_widget_register) @0000000006cf5d20
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: tui_label_init/2 
+  Called by: tui_progressbar_init/2 
   Calls: 
-strlen/9 (strlen) @0000000006d05d20
+snprintf/8 (snprintf) @0000000006cf5c08
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: tui_label_init/2 
+  Called by: progressbar_draw/0 
   Calls: 
-tui_reset_color/8 (tui_reset_color) @0000000006d05c08
+tui_reset_color/7 (tui_reset_color) @0000000006cf5af0
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: label_draw/0 
+  Called by: progressbar_draw/0 
   Calls: 
-tui_puts/7 (tui_puts) @0000000006d05af0
+tui_puts/6 (tui_puts) @0000000006cf59d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: label_draw/0 
+  Called by: progressbar_draw/0 progressbar_draw/0 progressbar_draw/0 progressbar_draw/0 progressbar_draw/0 
   Calls: 
-tui_set_color/6 (tui_set_color) @0000000006d059d8
+tui_set_color/5 (tui_set_color) @0000000006cf58c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: label_draw/0 
+  Called by: progressbar_draw/0 
   Calls: 
-tui_move_cursor/5 (tui_move_cursor) @0000000006d058c0
+tui_move_cursor/4 (tui_move_cursor) @0000000006cf57a8
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: label_draw/0 
+  Called by: progressbar_draw/0 progressbar_draw/0 
   Calls: 
-tui_label_set_color/4 (tui_label_set_color) @0000000006d057a8
+tui_progressbar_set_value/3 (tui_progressbar_set_value) @0000000006cf5690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -159,93 +150,85 @@ tui_label_set_color/4 (tui_label_set_color) @0000000006d057a8
   Function flags: body
   Called by: 
   Calls: 
-tui_label_set_text/3 (tui_label_set_text) @0000000006d05690
+tui_progressbar_init/2 (tui_progressbar_init) @0000000006cf5578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  References: 
+  References: progressbar_draw/0 (addr) progressbar_event/1 (addr) 
   Referring: 
   Function flags: body
   Called by: 
-  Calls: 
-tui_label_init/2 (tui_label_init) @0000000006d05578
-  Type: function definition analyzed
-  Visibility: force_output semantic_interposition no_reorder public
-  References: label_draw/0 (addr) label_event/1 (addr) 
-  Referring: 
-  Function flags: body
-  Called by: 
-  Calls: tui_widget_register/10 strlen/9 
-label_event/1 (label_event) @0000000006d05460
+  Calls: tui_widget_register/9 
+progressbar_event/1 (progressbar_event) @0000000006cf5460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
   References: 
-  Referring: tui_label_init/2 (addr) 
+  Referring: tui_progressbar_init/2 (addr) 
   Function flags: body
   Called by: 
   Calls: 
-label_draw/0 (label_draw) @0000000006d05348
+progressbar_draw/0 (progressbar_draw) @0000000006cf5348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
   References: 
-  Referring: tui_label_init/2 (addr) 
+  Referring: tui_progressbar_init/2 (addr) 
   Function flags: body
   Called by: 
-  Calls: tui_reset_color/8 tui_puts/7 tui_set_color/6 tui_move_cursor/5 
+  Calls: tui_puts/6 tui_move_cursor/4 snprintf/8 tui_reset_color/7 tui_puts/6 tui_puts/6 tui_puts/6 tui_puts/6 tui_set_color/5 tui_move_cursor/4 
 
 
 Initial Symbol table:
 
-tui_widget_register/10 (tui_widget_register) @0000000006d05e38
+tui_widget_register/9 (tui_widget_register) @0000000006cf5d20
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: tui_label_init/2 
+  Called by: tui_progressbar_init/2 
   Calls: 
-strlen/9 (strlen) @0000000006d05d20
+snprintf/8 (snprintf) @0000000006cf5c08
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: tui_label_init/2 
+  Called by: progressbar_draw/0 
   Calls: 
-tui_reset_color/8 (tui_reset_color) @0000000006d05c08
+tui_reset_color/7 (tui_reset_color) @0000000006cf5af0
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: label_draw/0 
+  Called by: progressbar_draw/0 
   Calls: 
-tui_puts/7 (tui_puts) @0000000006d05af0
+tui_puts/6 (tui_puts) @0000000006cf59d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: label_draw/0 
+  Called by: progressbar_draw/0 progressbar_draw/0 progressbar_draw/0 progressbar_draw/0 progressbar_draw/0 
   Calls: 
-tui_set_color/6 (tui_set_color) @0000000006d059d8
+tui_set_color/5 (tui_set_color) @0000000006cf58c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: label_draw/0 
+  Called by: progressbar_draw/0 
   Calls: 
-tui_move_cursor/5 (tui_move_cursor) @0000000006d058c0
+tui_move_cursor/4 (tui_move_cursor) @0000000006cf57a8
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: label_draw/0 
+  Called by: progressbar_draw/0 progressbar_draw/0 
   Calls: 
-tui_label_set_color/4 (tui_label_set_color) @0000000006d057a8
+tui_progressbar_set_value/3 (tui_progressbar_set_value) @0000000006cf5690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -253,94 +236,86 @@ tui_label_set_color/4 (tui_label_set_color) @0000000006d057a8
   Function flags: body
   Called by: 
   Calls: 
-tui_label_set_text/3 (tui_label_set_text) @0000000006d05690
+tui_progressbar_init/2 (tui_progressbar_init) @0000000006cf5578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  References: 
+  References: progressbar_draw/0 (addr) progressbar_event/1 (addr) 
   Referring: 
   Function flags: body
   Called by: 
-  Calls: 
-tui_label_init/2 (tui_label_init) @0000000006d05578
-  Type: function definition analyzed
-  Visibility: force_output semantic_interposition no_reorder public
-  References: label_draw/0 (addr) label_event/1 (addr) 
-  Referring: 
-  Function flags: body
-  Called by: 
-  Calls: tui_widget_register/10 strlen/9 
-label_event/1 (label_event) @0000000006d05460
+  Calls: tui_widget_register/9 
+progressbar_event/1 (progressbar_event) @0000000006cf5460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
   References: 
-  Referring: tui_label_init/2 (addr) 
+  Referring: tui_progressbar_init/2 (addr) 
   Function flags: body
   Called by: 
   Calls: 
-label_draw/0 (label_draw) @0000000006d05348
+progressbar_draw/0 (progressbar_draw) @0000000006cf5348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
   References: 
-  Referring: tui_label_init/2 (addr) 
+  Referring: tui_progressbar_init/2 (addr) 
   Function flags: body
   Called by: 
-  Calls: tui_reset_color/8 tui_puts/7 tui_set_color/6 tui_move_cursor/5 
+  Calls: tui_puts/6 tui_move_cursor/4 snprintf/8 tui_reset_color/7 tui_puts/6 tui_puts/6 tui_puts/6 tui_puts/6 tui_set_color/5 tui_move_cursor/4 
 
 Removing unused symbols:
 
 Reclaimed Symbol table:
 
-tui_widget_register/10 (tui_widget_register) @0000000006d05e38
+tui_widget_register/9 (tui_widget_register) @0000000006cf5d20
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: tui_label_init/2 
+  Called by: tui_progressbar_init/2 
   Calls: 
-strlen/9 (strlen) @0000000006d05d20
+snprintf/8 (snprintf) @0000000006cf5c08
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: tui_label_init/2 
+  Called by: progressbar_draw/0 
   Calls: 
-tui_reset_color/8 (tui_reset_color) @0000000006d05c08
+tui_reset_color/7 (tui_reset_color) @0000000006cf5af0
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: label_draw/0 
+  Called by: progressbar_draw/0 
   Calls: 
-tui_puts/7 (tui_puts) @0000000006d05af0
+tui_puts/6 (tui_puts) @0000000006cf59d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: label_draw/0 
+  Called by: progressbar_draw/0 progressbar_draw/0 progressbar_draw/0 progressbar_draw/0 progressbar_draw/0 
   Calls: 
-tui_set_color/6 (tui_set_color) @0000000006d059d8
+tui_set_color/5 (tui_set_color) @0000000006cf58c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: label_draw/0 
+  Called by: progressbar_draw/0 
   Calls: 
-tui_move_cursor/5 (tui_move_cursor) @0000000006d058c0
+tui_move_cursor/4 (tui_move_cursor) @0000000006cf57a8
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: label_draw/0 
+  Called by: progressbar_draw/0 progressbar_draw/0 
   Calls: 
-tui_label_set_color/4 (tui_label_set_color) @0000000006d057a8
+tui_progressbar_set_value/3 (tui_progressbar_set_value) @0000000006cf5690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -348,101 +323,93 @@ tui_label_set_color/4 (tui_label_set_color) @0000000006d057a8
   Function flags: body
   Called by: 
   Calls: 
-tui_label_set_text/3 (tui_label_set_text) @0000000006d05690
+tui_progressbar_init/2 (tui_progressbar_init) @0000000006cf5578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  References: 
+  References: progressbar_draw/0 (addr) progressbar_event/1 (addr) 
   Referring: 
   Function flags: body
   Called by: 
-  Calls: 
-tui_label_init/2 (tui_label_init) @0000000006d05578
-  Type: function definition analyzed
-  Visibility: force_output semantic_interposition no_reorder public
-  References: label_draw/0 (addr) label_event/1 (addr) 
-  Referring: 
-  Function flags: body
-  Called by: 
-  Calls: tui_widget_register/10 strlen/9 
-label_event/1 (label_event) @0000000006d05460
+  Calls: tui_widget_register/9 
+progressbar_event/1 (progressbar_event) @0000000006cf5460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
   References: 
-  Referring: tui_label_init/2 (addr) 
+  Referring: tui_progressbar_init/2 (addr) 
   Function flags: body
   Called by: 
   Calls: 
-label_draw/0 (label_draw) @0000000006d05348
+progressbar_draw/0 (progressbar_draw) @0000000006cf5348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
   References: 
-  Referring: tui_label_init/2 (addr) 
+  Referring: tui_progressbar_init/2 (addr) 
   Function flags: body
   Called by: 
-  Calls: tui_reset_color/8 tui_puts/7 tui_set_color/6 tui_move_cursor/5 
+  Calls: tui_puts/6 tui_move_cursor/4 snprintf/8 tui_reset_color/7 tui_puts/6 tui_puts/6 tui_puts/6 tui_puts/6 tui_set_color/5 tui_move_cursor/4 
 
 Reclaiming functions:
 Reclaiming variables:
 Clearing address taken flags:
 Optimized Symbol table:
 
-tui_widget_register/10 (tui_widget_register) @0000000006d05e38
+tui_widget_register/9 (tui_widget_register) @0000000006cf5d20
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Availability: not_available
   Function flags:
-  Called by: tui_label_init/2 
+  Called by: tui_progressbar_init/2 
   Calls: 
-strlen/9 (strlen) @0000000006d05d20
+snprintf/8 (snprintf) @0000000006cf5c08
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Availability: not_available
   Function flags:
-  Called by: tui_label_init/2 
+  Called by: progressbar_draw/0 
   Calls: 
-tui_reset_color/8 (tui_reset_color) @0000000006d05c08
+tui_reset_color/7 (tui_reset_color) @0000000006cf5af0
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Availability: not_available
   Function flags:
-  Called by: label_draw/0 
+  Called by: progressbar_draw/0 
   Calls: 
-tui_puts/7 (tui_puts) @0000000006d05af0
+tui_puts/6 (tui_puts) @0000000006cf59d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Availability: not_available
   Function flags:
-  Called by: label_draw/0 
+  Called by: progressbar_draw/0 progressbar_draw/0 progressbar_draw/0 progressbar_draw/0 progressbar_draw/0 
   Calls: 
-tui_set_color/6 (tui_set_color) @0000000006d059d8
+tui_set_color/5 (tui_set_color) @0000000006cf58c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Availability: not_available
   Function flags:
-  Called by: label_draw/0 
+  Called by: progressbar_draw/0 
   Calls: 
-tui_move_cursor/5 (tui_move_cursor) @0000000006d058c0
+tui_move_cursor/4 (tui_move_cursor) @0000000006cf57a8
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Availability: not_available
   Function flags:
-  Called by: label_draw/0 
+  Called by: progressbar_draw/0 progressbar_draw/0 
   Calls: 
-tui_label_set_color/4 (tui_label_set_color) @0000000006d057a8
+tui_progressbar_set_value/3 (tui_progressbar_set_value) @0000000006cf5690
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -451,50 +418,41 @@ tui_label_set_color/4 (tui_label_set_color) @0000000006d057a8
   Function flags: body
   Called by: 
   Calls: 
-tui_label_set_text/3 (tui_label_set_text) @0000000006d05690
+tui_progressbar_init/2 (tui_progressbar_init) @0000000006cf5578
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
-  References: 
+  References: progressbar_draw/0 (addr) progressbar_event/1 (addr) 
   Referring: 
   Availability: available
   Function flags: body
   Called by: 
-  Calls: 
-tui_label_init/2 (tui_label_init) @0000000006d05578
-  Type: function definition analyzed
-  Visibility: force_output externally_visible semantic_interposition no_reorder public
-  References: label_draw/0 (addr) label_event/1 (addr) 
-  Referring: 
-  Availability: available
-  Function flags: body
-  Called by: 
-  Calls: tui_widget_register/10 strlen/9 
-label_event/1 (label_event) @0000000006d05460
+  Calls: tui_widget_register/9 
+progressbar_event/1 (progressbar_event) @0000000006cf5460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
   Address is taken.
   References: 
-  Referring: tui_label_init/2 (addr) 
+  Referring: tui_progressbar_init/2 (addr) 
   Availability: available
   Function flags: body
   Called by: 
   Calls: 
-label_draw/0 (label_draw) @0000000006d05348
+progressbar_draw/0 (progressbar_draw) @0000000006cf5348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
   Address is taken.
   References: 
-  Referring: tui_label_init/2 (addr) 
+  Referring: tui_progressbar_init/2 (addr) 
   Availability: available
   Function flags: body
   Called by: 
-  Calls: tui_reset_color/8 tui_puts/7 tui_set_color/6 tui_move_cursor/5 
+  Calls: tui_puts/6 tui_move_cursor/4 snprintf/8 tui_reset_color/7 tui_puts/6 tui_puts/6 tui_puts/6 tui_puts/6 tui_set_color/5 tui_move_cursor/4 
 Trivially needed variables:
 Removing variables:
 
 Final Symbol table:
 
-tui_widget_register/10 (tui_widget_register) @0000000006d05e38
+tui_widget_register/9 (tui_widget_register) @0000000006cf5d20
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -503,7 +461,7 @@ tui_widget_register/10 (tui_widget_register) @0000000006d05e38
   Function flags:
   Called by: 
   Calls: 
-strlen/9 (strlen) @0000000006d05d20
+snprintf/8 (snprintf) @0000000006cf5c08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -512,7 +470,7 @@ strlen/9 (strlen) @0000000006d05d20
   Function flags:
   Called by: 
   Calls: 
-tui_reset_color/8 (tui_reset_color) @0000000006d05c08
+tui_reset_color/7 (tui_reset_color) @0000000006cf5af0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -521,7 +479,7 @@ tui_reset_color/8 (tui_reset_color) @0000000006d05c08
   Function flags:
   Called by: 
   Calls: 
-tui_puts/7 (tui_puts) @0000000006d05af0
+tui_puts/6 (tui_puts) @0000000006cf59d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -530,7 +488,7 @@ tui_puts/7 (tui_puts) @0000000006d05af0
   Function flags:
   Called by: 
   Calls: 
-tui_set_color/6 (tui_set_color) @0000000006d059d8
+tui_set_color/5 (tui_set_color) @0000000006cf58c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -539,7 +497,7 @@ tui_set_color/6 (tui_set_color) @0000000006d059d8
   Function flags:
   Called by: 
   Calls: 
-tui_move_cursor/5 (tui_move_cursor) @0000000006d058c0
+tui_move_cursor/4 (tui_move_cursor) @0000000006cf57a8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -548,36 +506,27 @@ tui_move_cursor/5 (tui_move_cursor) @0000000006d058c0
   Function flags:
   Called by: 
   Calls: 
-tui_label_set_color/4 (tui_label_set_color) @0000000006d057a8
+tui_progressbar_set_value/3 (tui_progressbar_set_value) @0000000006cf5690
   Type: function definition analyzed
-  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_label_set_color (implicit_section)
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_progressbar_set_value (implicit_section)
   References: 
   Referring: 
   Availability: available
   Function flags:
   Called by: 
   Calls: 
-tui_label_set_text/3 (tui_label_set_text) @0000000006d05690
+tui_progressbar_init/2 (tui_progressbar_init) @0000000006cf5578
   Type: function definition analyzed
-  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_label_set_text (implicit_section)
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_progressbar_init (implicit_section)
   References: 
   Referring: 
   Availability: available
   Function flags:
   Called by: 
   Calls: 
-tui_label_init/2 (tui_label_init) @0000000006d05578
+progressbar_event/1 (progressbar_event) @0000000006cf5460
   Type: function definition analyzed
-  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_label_init (implicit_section)
-  References: 
-  Referring: 
-  Availability: available
-  Function flags:
-  Called by: 
-  Calls: 
-label_event/1 (label_event) @0000000006d05460
-  Type: function definition analyzed
-  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.text.label_event (implicit_section)
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.text.progressbar_event (implicit_section)
   Address is taken.
   References: 
   Referring: 
@@ -585,9 +534,9 @@ label_event/1 (label_event) @0000000006d05460
   Function flags:
   Called by: 
   Calls: 
-label_draw/0 (label_draw) @0000000006d05348
+progressbar_draw/0 (progressbar_draw) @0000000006cf5348
   Type: function definition analyzed
-  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.text.label_draw (implicit_section)
+  Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.text.progressbar_draw (implicit_section)
   Address is taken.
   References: 
   Referring: 

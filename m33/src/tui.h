@@ -41,6 +41,8 @@ void tui_reset_color(void);
 // Box drawing
 void tui_draw_box(int x, int y, int width, int height, const char *title);
 
+
+
 #ifdef __cplusplus
 }
 #endif

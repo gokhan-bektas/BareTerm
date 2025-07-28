@@ -5,6 +5,6 @@ C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/drivers/gpio.h:837:20:gpio_
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/drivers/gpio.h:977:19:z_impl_gpio_pin_configure	40	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/drivers/gpio.h:1045:19:gpio_pin_configure_dt	16	static
 C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/gpio.h:51:19:gpio_pin_configure	24	static
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/main.c:33:13:on_button_click1	16	static
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/main.c:39:13:on_button_click2	16	static
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/main.c:44:5:main	80	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/main.c:37:13:on_button_click1	16	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/main.c:46:13:on_button_click2	16	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/main.c:56:5:main	88	static

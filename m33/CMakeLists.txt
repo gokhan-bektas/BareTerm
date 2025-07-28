@@ -19,4 +19,6 @@ target_sources(app PRIVATE
   src/tui_input.c
   src/tui_widget.c
   src/tui_label.c
+  src/tui_textbox.c
+  src/tui_progressbar.c
 )

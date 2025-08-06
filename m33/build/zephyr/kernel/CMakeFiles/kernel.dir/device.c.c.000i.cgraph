@@ -3,7 +3,7 @@ Trivially needed symbols: z_impl_device_is_ready/65 z_device_get_all_static/64 z
 
 Initial Symbol table:
 
-strcmp/68 (strcmp) @00000000077cf578
+strcmp/68 (strcmp) @0000000006bcf578
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -11,21 +11,21 @@ strcmp/68 (strcmp) @00000000077cf578
   Function flags:
   Called by: z_impl_device_get_binding/63 
   Calls: 
-_device_list_end/67 (_device_list_end) @00000000077ce980
+_device_list_end/67 (_device_list_end) @0000000006bce980
   Type: variable
   Visibility: semantic_interposition external public
   References: 
   Referring: z_device_state_init/62 (addr) z_impl_device_get_binding/63 (addr) z_device_get_all_static/64 (addr) 
   Availability: not-ready
   Varpool flags:
-_device_list_start/66 (_device_list_start) @00000000077ce900
+_device_list_start/66 (_device_list_start) @0000000006bce900
   Type: variable
   Visibility: semantic_interposition external public
   References: 
   Referring: z_device_state_init/62 (addr) z_impl_device_get_binding/63 (addr) z_device_get_all_static/64 (addr) z_device_get_all_static/64 (addr) 
   Availability: not-ready
   Varpool flags:
-z_impl_device_is_ready/65 (z_impl_device_is_ready) @00000000077cf460
+z_impl_device_is_ready/65 (z_impl_device_is_ready) @0000000006bcf460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @0000000001d89da0
@@ -34,34 +34,34 @@ z_impl_device_is_ready/65 (z_impl_device_is_ready) @00000000077cf460
   Function flags: body
   Called by: z_impl_device_get_binding/63 
   Calls: 
-z_device_get_all_static/64 (z_device_get_all_static) @00000000077cf348
+z_device_get_all_static/64 (z_device_get_all_static) @0000000006bcf348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @00000000077cf460
+  Aux: @0000000006bcf460
   References: _device_list_start/66 (addr) _device_list_end/67 (addr) _device_list_start/66 (addr) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: 
-z_impl_device_get_binding/63 (z_impl_device_get_binding) @00000000077cf230
+z_impl_device_get_binding/63 (z_impl_device_get_binding) @0000000006bcf230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @00000000077cf348
+  Aux: @0000000006bcf348
   References: _device_list_start/66 (addr) _device_list_end/67 (addr) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: z_impl_device_is_ready/65 strcmp/68 
-z_device_state_init/62 (z_device_state_init) @00000000077cf118
+z_device_state_init/62 (z_device_state_init) @0000000006bcf118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @00000000077cf230
+  Aux: @0000000006bcf230
   References: _device_list_start/66 (addr) _device_list_end/67 (addr) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: k_object_init/47 
-k_object_alloc_size/61 (k_object_alloc_size) @00000000077cf000
+k_object_alloc_size/61 (k_object_alloc_size) @0000000006bcf000
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -69,7 +69,7 @@ k_object_alloc_size/61 (k_object_alloc_size) @00000000077cf000
   Function flags:
   Called by: 
   Calls: 
-k_object_alloc/60 (k_object_alloc) @00000000077b1e38
+k_object_alloc/60 (k_object_alloc) @0000000006bb1e38
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -77,7 +77,7 @@ k_object_alloc/60 (k_object_alloc) @00000000077b1e38
   Function flags:
   Called by: 
   Calls: 
-k_object_release/59 (k_object_release) @00000000077b1d20
+k_object_release/59 (k_object_release) @0000000006bb1d20
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -85,7 +85,7 @@ k_object_release/59 (k_object_release) @00000000077b1d20
   Function flags:
   Called by: 
   Calls: 
-k_object_access_grant/58 (k_object_access_grant) @00000000077b1c08
+k_object_access_grant/58 (k_object_access_grant) @0000000006bb1c08
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -93,7 +93,7 @@ k_object_access_grant/58 (k_object_access_grant) @00000000077b1c08
   Function flags:
   Called by: 
   Calls: 
-k_object_free/57 (k_object_free) @00000000077b1af0
+k_object_free/57 (k_object_free) @0000000006bb1af0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -101,7 +101,7 @@ k_object_free/57 (k_object_free) @00000000077b1af0
   Function flags:
   Called by: 
   Calls: 
-z_impl_k_object_alloc_size/56 (z_impl_k_object_alloc_size) @00000000077b19d8
+z_impl_k_object_alloc_size/56 (z_impl_k_object_alloc_size) @0000000006bb19d8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -109,7 +109,7 @@ z_impl_k_object_alloc_size/56 (z_impl_k_object_alloc_size) @00000000077b19d8
   Function flags:
   Called by: 
   Calls: 
-z_impl_k_object_alloc/55 (z_impl_k_object_alloc) @00000000077b18c0
+z_impl_k_object_alloc/55 (z_impl_k_object_alloc) @0000000006bb18c0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -117,7 +117,7 @@ z_impl_k_object_alloc/55 (z_impl_k_object_alloc) @00000000077b18c0
   Function flags:
   Called by: 
   Calls: 
-k_object_is_valid/54 (k_object_is_valid) @00000000077b17a8
+k_object_is_valid/54 (k_object_is_valid) @0000000006bb17a8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -125,7 +125,7 @@ k_object_is_valid/54 (k_object_is_valid) @00000000077b17a8
   Function flags:
   Called by: 
   Calls: 
-k_object_access_all_grant/53 (k_object_access_all_grant) @00000000077b1690
+k_object_access_all_grant/53 (k_object_access_all_grant) @0000000006bb1690
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -133,7 +133,7 @@ k_object_access_all_grant/53 (k_object_access_all_grant) @00000000077b1690
   Function flags:
   Called by: 
   Calls: 
-z_impl_k_object_release/52 (z_impl_k_object_release) @00000000077b1578
+z_impl_k_object_release/52 (z_impl_k_object_release) @0000000006bb1578
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -141,7 +141,7 @@ z_impl_k_object_release/52 (z_impl_k_object_release) @00000000077b1578
   Function flags:
   Called by: 
   Calls: 
-k_object_access_revoke/51 (k_object_access_revoke) @00000000077b1460
+k_object_access_revoke/51 (k_object_access_revoke) @0000000006bb1460
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -149,7 +149,7 @@ k_object_access_revoke/51 (k_object_access_revoke) @00000000077b1460
   Function flags:
   Called by: 
   Calls: 
-z_impl_k_object_access_grant/50 (z_impl_k_object_access_grant) @00000000077b1348
+z_impl_k_object_access_grant/50 (z_impl_k_object_access_grant) @0000000006bb1348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -157,7 +157,7 @@ z_impl_k_object_access_grant/50 (z_impl_k_object_access_grant) @00000000077b1348
   Function flags:
   Called by: 
   Calls: 
-k_object_create_dynamic/49 (k_object_create_dynamic) @00000000077b1230
+k_object_create_dynamic/49 (k_object_create_dynamic) @0000000006bb1230
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -165,7 +165,7 @@ k_object_create_dynamic/49 (k_object_create_dynamic) @00000000077b1230
   Function flags:
   Called by: 
   Calls: 
-k_object_create_dynamic_aligned/48 (k_object_create_dynamic_aligned) @00000000077b1118
+k_object_create_dynamic_aligned/48 (k_object_create_dynamic_aligned) @0000000006bb1118
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -173,16 +173,16 @@ k_object_create_dynamic_aligned/48 (k_object_create_dynamic_aligned) @0000000007
   Function flags:
   Called by: 
   Calls: 
-k_object_init/47 (k_object_init) @00000000077b1000
+k_object_init/47 (k_object_init) @0000000006bb1000
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
-  Aux: @00000000077cf230
+  Aux: @0000000006bcf230
   References: 
   Referring: 
   Function flags: body
   Called by: z_device_state_init/62 
   Calls: 
-atomic_set_bit_to/46 (atomic_set_bit_to) @00000000077a3e38
+atomic_set_bit_to/46 (atomic_set_bit_to) @0000000006ba3e38
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -190,7 +190,7 @@ atomic_set_bit_to/46 (atomic_set_bit_to) @00000000077a3e38
   Function flags:
   Called by: 
   Calls: 
-atomic_set_bit/45 (atomic_set_bit) @00000000077a3d20
+atomic_set_bit/45 (atomic_set_bit) @0000000006ba3d20
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -198,7 +198,7 @@ atomic_set_bit/45 (atomic_set_bit) @00000000077a3d20
   Function flags:
   Called by: 
   Calls: 
-atomic_clear_bit/44 (atomic_clear_bit) @00000000077a3c08
+atomic_clear_bit/44 (atomic_clear_bit) @0000000006ba3c08
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -206,7 +206,7 @@ atomic_clear_bit/44 (atomic_clear_bit) @00000000077a3c08
   Function flags:
   Called by: 
   Calls: 
-atomic_test_and_set_bit/43 (atomic_test_and_set_bit) @00000000077a3af0
+atomic_test_and_set_bit/43 (atomic_test_and_set_bit) @0000000006ba3af0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -214,7 +214,7 @@ atomic_test_and_set_bit/43 (atomic_test_and_set_bit) @00000000077a3af0
   Function flags:
   Called by: 
   Calls: 
-atomic_test_and_clear_bit/42 (atomic_test_and_clear_bit) @00000000077a39d8
+atomic_test_and_clear_bit/42 (atomic_test_and_clear_bit) @0000000006ba39d8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -222,7 +222,7 @@ atomic_test_and_clear_bit/42 (atomic_test_and_clear_bit) @00000000077a39d8
   Function flags:
   Called by: 
   Calls: 
-atomic_test_bit/41 (atomic_test_bit) @00000000077a38c0
+atomic_test_bit/41 (atomic_test_bit) @0000000006ba38c0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -230,7 +230,7 @@ atomic_test_bit/41 (atomic_test_bit) @00000000077a38c0
   Function flags:
   Called by: 
   Calls: 
-atomic_nand/40 (atomic_nand) @00000000077a3578
+atomic_nand/40 (atomic_nand) @0000000006ba3578
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -238,7 +238,7 @@ atomic_nand/40 (atomic_nand) @00000000077a3578
   Function flags:
   Called by: 
   Calls: 
-atomic_and/39 (atomic_and) @00000000077a3460
+atomic_and/39 (atomic_and) @0000000006ba3460
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -246,7 +246,7 @@ atomic_and/39 (atomic_and) @00000000077a3460
   Function flags:
   Called by: 
   Calls: 
-atomic_xor/38 (atomic_xor) @00000000077a3348
+atomic_xor/38 (atomic_xor) @0000000006ba3348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -254,7 +254,7 @@ atomic_xor/38 (atomic_xor) @00000000077a3348
   Function flags:
   Called by: 
   Calls: 
-atomic_or/37 (atomic_or) @00000000077a3230
+atomic_or/37 (atomic_or) @0000000006ba3230
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -262,7 +262,7 @@ atomic_or/37 (atomic_or) @00000000077a3230
   Function flags:
   Called by: 
   Calls: 
-atomic_ptr_clear/36 (atomic_ptr_clear) @00000000077a3118
+atomic_ptr_clear/36 (atomic_ptr_clear) @0000000006ba3118
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -270,7 +270,7 @@ atomic_ptr_clear/36 (atomic_ptr_clear) @00000000077a3118
   Function flags:
   Called by: 
   Calls: 
-atomic_clear/35 (atomic_clear) @00000000077a3000
+atomic_clear/35 (atomic_clear) @0000000006ba3000
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -278,7 +278,7 @@ atomic_clear/35 (atomic_clear) @00000000077a3000
   Function flags:
   Called by: 
   Calls: 
-atomic_ptr_set/34 (atomic_ptr_set) @0000000007793e38
+atomic_ptr_set/34 (atomic_ptr_set) @0000000006b93e38
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -286,7 +286,7 @@ atomic_ptr_set/34 (atomic_ptr_set) @0000000007793e38
   Function flags:
   Called by: 
   Calls: 
-atomic_set/33 (atomic_set) @0000000007793d20
+atomic_set/33 (atomic_set) @0000000006b93d20
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -294,7 +294,7 @@ atomic_set/33 (atomic_set) @0000000007793d20
   Function flags:
   Called by: 
   Calls: 
-atomic_ptr_get/32 (atomic_ptr_get) @0000000007793c08
+atomic_ptr_get/32 (atomic_ptr_get) @0000000006b93c08
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -302,7 +302,7 @@ atomic_ptr_get/32 (atomic_ptr_get) @0000000007793c08
   Function flags:
   Called by: 
   Calls: 
-atomic_get/31 (atomic_get) @0000000007793af0
+atomic_get/31 (atomic_get) @0000000006b93af0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -310,7 +310,7 @@ atomic_get/31 (atomic_get) @0000000007793af0
   Function flags:
   Called by: 
   Calls: 
-atomic_dec/30 (atomic_dec) @00000000077939d8
+atomic_dec/30 (atomic_dec) @0000000006b939d8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -318,7 +318,7 @@ atomic_dec/30 (atomic_dec) @00000000077939d8
   Function flags:
   Called by: 
   Calls: 
-atomic_inc/29 (atomic_inc) @00000000077938c0
+atomic_inc/29 (atomic_inc) @0000000006b938c0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -326,7 +326,7 @@ atomic_inc/29 (atomic_inc) @00000000077938c0
   Function flags:
   Called by: 
   Calls: 
-atomic_sub/28 (atomic_sub) @00000000077937a8
+atomic_sub/28 (atomic_sub) @0000000006b937a8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -334,7 +334,7 @@ atomic_sub/28 (atomic_sub) @00000000077937a8
   Function flags:
   Called by: 
   Calls: 
-atomic_add/27 (atomic_add) @0000000007793690
+atomic_add/27 (atomic_add) @0000000006b93690
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -342,7 +342,7 @@ atomic_add/27 (atomic_add) @0000000007793690
   Function flags:
   Called by: 
   Calls: 
-atomic_ptr_cas/26 (atomic_ptr_cas) @0000000007793578
+atomic_ptr_cas/26 (atomic_ptr_cas) @0000000006b93578
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -350,7 +350,7 @@ atomic_ptr_cas/26 (atomic_ptr_cas) @0000000007793578
   Function flags:
   Called by: 
   Calls: 
-atomic_cas/25 (atomic_cas) @0000000007793460
+atomic_cas/25 (atomic_cas) @0000000006b93460
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -358,7 +358,7 @@ atomic_cas/25 (atomic_cas) @0000000007793460
   Function flags:
   Called by: 
   Calls: 
-device_get_by_dt_nodelabel/24 (device_get_by_dt_nodelabel) @0000000007793348
+device_get_by_dt_nodelabel/24 (device_get_by_dt_nodelabel) @0000000006b93348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -366,7 +366,7 @@ device_get_by_dt_nodelabel/24 (device_get_by_dt_nodelabel) @0000000007793348
   Function flags:
   Called by: 
   Calls: 
-device_init/23 (device_init) @0000000007793230
+device_init/23 (device_init) @0000000006b93230
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -374,7 +374,7 @@ device_init/23 (device_init) @0000000007793230
   Function flags:
   Called by: 
   Calls: 
-device_is_ready/22 (device_is_ready) @0000000007793118
+device_is_ready/22 (device_is_ready) @0000000006b93118
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -382,7 +382,7 @@ device_is_ready/22 (device_is_ready) @0000000007793118
   Function flags:
   Called by: 
   Calls: 
-device_get_binding/21 (device_get_binding) @0000000007793000
+device_get_binding/21 (device_get_binding) @0000000006b93000
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -390,7 +390,7 @@ device_get_binding/21 (device_get_binding) @0000000007793000
   Function flags:
   Called by: 
   Calls: 
-k_is_user_context/20 (k_is_user_context) @0000000007c99e38
+k_is_user_context/20 (k_is_user_context) @0000000007099e38
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -398,7 +398,7 @@ k_is_user_context/20 (k_is_user_context) @0000000007c99e38
   Function flags:
   Called by: 
   Calls: 
-z_syscall_trap/19 (z_syscall_trap) @0000000007c99d20
+z_syscall_trap/19 (z_syscall_trap) @0000000007099d20
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -406,7 +406,7 @@ z_syscall_trap/19 (z_syscall_trap) @0000000007c99d20
   Function flags:
   Called by: 
   Calls: 
-device_from_handle/18 (device_from_handle) @0000000007c53348
+device_from_handle/18 (device_from_handle) @0000000007053348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -414,7 +414,7 @@ device_from_handle/18 (device_from_handle) @0000000007c53348
   Function flags:
   Called by: 
   Calls: 
-device_handle_get/17 (device_handle_get) @0000000007c53230
+device_handle_get/17 (device_handle_get) @0000000007053230
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -422,7 +422,7 @@ device_handle_get/17 (device_handle_get) @0000000007c53230
   Function flags:
   Called by: 
   Calls: 
-k_mem_unmap/16 (k_mem_unmap) @0000000007c238c0
+k_mem_unmap/16 (k_mem_unmap) @00000000070278c0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -430,7 +430,7 @@ k_mem_unmap/16 (k_mem_unmap) @0000000007c238c0
   Function flags:
   Called by: 
   Calls: 
-k_mem_map/15 (k_mem_map) @0000000007c237a8
+k_mem_map/15 (k_mem_map) @00000000070277a8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -438,7 +438,7 @@ k_mem_map/15 (k_mem_map) @0000000007c237a8
   Function flags:
   Called by: 
   Calls: 
-k_mem_virt_addr/14 (k_mem_virt_addr) @0000000007c23578
+k_mem_virt_addr/14 (k_mem_virt_addr) @0000000007027578
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -446,7 +446,7 @@ k_mem_virt_addr/14 (k_mem_virt_addr) @0000000007c23578
   Function flags:
   Called by: 
   Calls: 
-k_mem_phys_addr/13 (k_mem_phys_addr) @0000000007c23460
+k_mem_phys_addr/13 (k_mem_phys_addr) @0000000007027460
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -454,7 +454,7 @@ k_mem_phys_addr/13 (k_mem_phys_addr) @0000000007c23460
   Function flags:
   Called by: 
   Calls: 
-pm_state_cpu_get_all/12 (pm_state_cpu_get_all) @0000000007c23348
+pm_state_cpu_get_all/12 (pm_state_cpu_get_all) @0000000007027348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -462,7 +462,7 @@ pm_state_cpu_get_all/12 (pm_state_cpu_get_all) @0000000007c23348
   Function flags:
   Called by: 
   Calls: 
-mem_xor_128/11 (mem_xor_128) @0000000007bae348
+mem_xor_128/11 (mem_xor_128) @0000000006faa348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -470,7 +470,7 @@ mem_xor_128/11 (mem_xor_128) @0000000007bae348
   Function flags:
   Called by: 
   Calls: 
-mem_xor_32/10 (mem_xor_32) @0000000007bae230
+mem_xor_32/10 (mem_xor_32) @0000000006faa230
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -478,7 +478,7 @@ mem_xor_32/10 (mem_xor_32) @0000000007bae230
   Function flags:
   Called by: 
   Calls: 
-mem_xor_n/9 (mem_xor_n) @0000000007bae118
+mem_xor_n/9 (mem_xor_n) @0000000006faa118
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -486,7 +486,7 @@ mem_xor_n/9 (mem_xor_n) @0000000007bae118
   Function flags:
   Called by: 
   Calls: 
-sign_extend_64/8 (sign_extend_64) @0000000007bae000
+sign_extend_64/8 (sign_extend_64) @0000000006faa000
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -494,7 +494,7 @@ sign_extend_64/8 (sign_extend_64) @0000000007bae000
   Function flags:
   Called by: 
   Calls: 
-sign_extend/7 (sign_extend) @0000000007b9de38
+sign_extend/7 (sign_extend) @0000000006f99e38
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -502,7 +502,7 @@ sign_extend/7 (sign_extend) @0000000007b9de38
   Function flags:
   Called by: 
   Calls: 
-bin2bcd/6 (bin2bcd) @0000000007b9dd20
+bin2bcd/6 (bin2bcd) @0000000006f99d20
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -510,7 +510,7 @@ bin2bcd/6 (bin2bcd) @0000000007b9dd20
   Function flags:
   Called by: 
   Calls: 
-bcd2bin/5 (bcd2bin) @0000000007b9dc08
+bcd2bin/5 (bcd2bin) @0000000006f99c08
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -518,7 +518,7 @@ bcd2bin/5 (bcd2bin) @0000000007b9dc08
   Function flags:
   Called by: 
   Calls: 
-byteswp/4 (byteswp) @0000000007b9daf0
+byteswp/4 (byteswp) @0000000006f99af0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -526,7 +526,7 @@ byteswp/4 (byteswp) @0000000007b9daf0
   Function flags:
   Called by: 
   Calls: 
-bytecpy/3 (bytecpy) @0000000007b9d9d8
+bytecpy/3 (bytecpy) @0000000006f999d8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -534,7 +534,7 @@ bytecpy/3 (bytecpy) @0000000007b9d9d8
   Function flags:
   Called by: 
   Calls: 
-arithmetic_shift_right/2 (arithmetic_shift_right) @0000000007b9d8c0
+arithmetic_shift_right/2 (arithmetic_shift_right) @0000000006f998c0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -542,7 +542,7 @@ arithmetic_shift_right/2 (arithmetic_shift_right) @0000000007b9d8c0
   Function flags:
   Called by: 
   Calls: 
-is_null_no_warn/1 (is_null_no_warn) @0000000007b9d7a8
+is_null_no_warn/1 (is_null_no_warn) @0000000006f997a8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -550,7 +550,7 @@ is_null_no_warn/1 (is_null_no_warn) @0000000007b9d7a8
   Function flags:
   Called by: 
   Calls: 
-is_power_of_two/0 (is_power_of_two) @0000000007b9d690
+is_power_of_two/0 (is_power_of_two) @0000000006f99690
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -563,7 +563,7 @@ Removing unused symbols: k_object_alloc_size/61 k_object_alloc/60 k_object_relea
 
 Reclaimed Symbol table:
 
-strcmp/68 (strcmp) @00000000077cf578
+strcmp/68 (strcmp) @0000000006bcf578
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -571,21 +571,21 @@ strcmp/68 (strcmp) @00000000077cf578
   Function flags:
   Called by: z_impl_device_get_binding/63 
   Calls: 
-_device_list_end/67 (_device_list_end) @00000000077ce980
+_device_list_end/67 (_device_list_end) @0000000006bce980
   Type: variable
   Visibility: semantic_interposition external public
   References: 
   Referring: z_device_state_init/62 (addr) z_impl_device_get_binding/63 (addr) z_device_get_all_static/64 (addr) 
   Availability: not-ready
   Varpool flags:
-_device_list_start/66 (_device_list_start) @00000000077ce900
+_device_list_start/66 (_device_list_start) @0000000006bce900
   Type: variable
   Visibility: semantic_interposition external public
   References: 
   Referring: z_device_state_init/62 (addr) z_impl_device_get_binding/63 (addr) z_device_get_all_static/64 (addr) z_device_get_all_static/64 (addr) 
   Availability: not-ready
   Varpool flags:
-z_impl_device_is_ready/65 (z_impl_device_is_ready) @00000000077cf460
+z_impl_device_is_ready/65 (z_impl_device_is_ready) @0000000006bcf460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -593,7 +593,7 @@ z_impl_device_is_ready/65 (z_impl_device_is_ready) @00000000077cf460
   Function flags: body
   Called by: z_impl_device_get_binding/63 
   Calls: 
-z_device_get_all_static/64 (z_device_get_all_static) @00000000077cf348
+z_device_get_all_static/64 (z_device_get_all_static) @0000000006bcf348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: _device_list_start/66 (addr) _device_list_end/67 (addr) _device_list_start/66 (addr) 
@@ -601,7 +601,7 @@ z_device_get_all_static/64 (z_device_get_all_static) @00000000077cf348
   Function flags: body
   Called by: 
   Calls: 
-z_impl_device_get_binding/63 (z_impl_device_get_binding) @00000000077cf230
+z_impl_device_get_binding/63 (z_impl_device_get_binding) @0000000006bcf230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: _device_list_start/66 (addr) _device_list_end/67 (addr) 
@@ -609,7 +609,7 @@ z_impl_device_get_binding/63 (z_impl_device_get_binding) @00000000077cf230
   Function flags: body
   Called by: 
   Calls: z_impl_device_is_ready/65 strcmp/68 
-z_device_state_init/62 (z_device_state_init) @00000000077cf118
+z_device_state_init/62 (z_device_state_init) @0000000006bcf118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: _device_list_start/66 (addr) _device_list_end/67 (addr) 
@@ -617,7 +617,7 @@ z_device_state_init/62 (z_device_state_init) @00000000077cf118
   Function flags: body
   Called by: 
   Calls: k_object_init/47 
-k_object_init/47 (k_object_init) @00000000077b1000
+k_object_init/47 (k_object_init) @0000000006bb1000
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -629,7 +629,7 @@ k_object_init/47 (k_object_init) @00000000077b1000
 
 Initial Symbol table:
 
-strcmp/68 (strcmp) @00000000077cf578
+strcmp/68 (strcmp) @0000000006bcf578
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -637,21 +637,21 @@ strcmp/68 (strcmp) @00000000077cf578
   Function flags:
   Called by: z_impl_device_get_binding/63 
   Calls: 
-_device_list_end/67 (_device_list_end) @00000000077ce980
+_device_list_end/67 (_device_list_end) @0000000006bce980
   Type: variable
   Visibility: semantic_interposition external public
   References: 
   Referring: z_device_state_init/62 (addr) z_impl_device_get_binding/63 (addr) z_device_get_all_static/64 (addr) 
   Availability: not-ready
   Varpool flags:
-_device_list_start/66 (_device_list_start) @00000000077ce900
+_device_list_start/66 (_device_list_start) @0000000006bce900
   Type: variable
   Visibility: semantic_interposition external public
   References: 
   Referring: z_device_state_init/62 (addr) z_impl_device_get_binding/63 (addr) z_device_get_all_static/64 (addr) z_device_get_all_static/64 (addr) 
   Availability: not-ready
   Varpool flags:
-z_impl_device_is_ready/65 (z_impl_device_is_ready) @00000000077cf460
+z_impl_device_is_ready/65 (z_impl_device_is_ready) @0000000006bcf460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -659,7 +659,7 @@ z_impl_device_is_ready/65 (z_impl_device_is_ready) @00000000077cf460
   Function flags: body
   Called by: z_impl_device_get_binding/63 
   Calls: 
-z_device_get_all_static/64 (z_device_get_all_static) @00000000077cf348
+z_device_get_all_static/64 (z_device_get_all_static) @0000000006bcf348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: _device_list_start/66 (addr) _device_list_end/67 (addr) _device_list_start/66 (addr) 
@@ -667,7 +667,7 @@ z_device_get_all_static/64 (z_device_get_all_static) @00000000077cf348
   Function flags: body
   Called by: 
   Calls: 
-z_impl_device_get_binding/63 (z_impl_device_get_binding) @00000000077cf230
+z_impl_device_get_binding/63 (z_impl_device_get_binding) @0000000006bcf230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: _device_list_start/66 (addr) _device_list_end/67 (addr) 
@@ -675,7 +675,7 @@ z_impl_device_get_binding/63 (z_impl_device_get_binding) @00000000077cf230
   Function flags: body
   Called by: 
   Calls: z_impl_device_is_ready/65 strcmp/68 
-z_device_state_init/62 (z_device_state_init) @00000000077cf118
+z_device_state_init/62 (z_device_state_init) @0000000006bcf118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: _device_list_start/66 (addr) _device_list_end/67 (addr) 
@@ -683,7 +683,7 @@ z_device_state_init/62 (z_device_state_init) @00000000077cf118
   Function flags: body
   Called by: 
   Calls: k_object_init/47 
-k_object_init/47 (k_object_init) @00000000077b1000
+k_object_init/47 (k_object_init) @0000000006bb1000
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -696,7 +696,7 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-strcmp/68 (strcmp) @00000000077cf578
+strcmp/68 (strcmp) @0000000006bcf578
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -704,21 +704,21 @@ strcmp/68 (strcmp) @00000000077cf578
   Function flags:
   Called by: z_impl_device_get_binding/63 
   Calls: 
-_device_list_end/67 (_device_list_end) @00000000077ce980
+_device_list_end/67 (_device_list_end) @0000000006bce980
   Type: variable
   Visibility: semantic_interposition external public
   References: 
   Referring: z_device_state_init/62 (addr) z_impl_device_get_binding/63 (addr) z_device_get_all_static/64 (addr) 
   Availability: not-ready
   Varpool flags:
-_device_list_start/66 (_device_list_start) @00000000077ce900
+_device_list_start/66 (_device_list_start) @0000000006bce900
   Type: variable
   Visibility: semantic_interposition external public
   References: 
   Referring: z_device_state_init/62 (addr) z_impl_device_get_binding/63 (addr) z_device_get_all_static/64 (addr) z_device_get_all_static/64 (addr) 
   Availability: not-ready
   Varpool flags:
-z_impl_device_is_ready/65 (z_impl_device_is_ready) @00000000077cf460
+z_impl_device_is_ready/65 (z_impl_device_is_ready) @0000000006bcf460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -726,7 +726,7 @@ z_impl_device_is_ready/65 (z_impl_device_is_ready) @00000000077cf460
   Function flags: body
   Called by: z_impl_device_get_binding/63 
   Calls: 
-z_device_get_all_static/64 (z_device_get_all_static) @00000000077cf348
+z_device_get_all_static/64 (z_device_get_all_static) @0000000006bcf348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: _device_list_start/66 (addr) _device_list_end/67 (addr) _device_list_start/66 (addr) 
@@ -734,7 +734,7 @@ z_device_get_all_static/64 (z_device_get_all_static) @00000000077cf348
   Function flags: body
   Called by: 
   Calls: 
-z_impl_device_get_binding/63 (z_impl_device_get_binding) @00000000077cf230
+z_impl_device_get_binding/63 (z_impl_device_get_binding) @0000000006bcf230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: _device_list_start/66 (addr) _device_list_end/67 (addr) 
@@ -742,7 +742,7 @@ z_impl_device_get_binding/63 (z_impl_device_get_binding) @00000000077cf230
   Function flags: body
   Called by: 
   Calls: z_impl_device_is_ready/65 strcmp/68 
-z_device_state_init/62 (z_device_state_init) @00000000077cf118
+z_device_state_init/62 (z_device_state_init) @0000000006bcf118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: _device_list_start/66 (addr) _device_list_end/67 (addr) 
@@ -750,7 +750,7 @@ z_device_state_init/62 (z_device_state_init) @00000000077cf118
   Function flags: body
   Called by: 
   Calls: k_object_init/47 
-k_object_init/47 (k_object_init) @00000000077b1000
+k_object_init/47 (k_object_init) @0000000006bb1000
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -764,7 +764,7 @@ Reclaiming variables:
 Clearing address taken flags:
 Optimized Symbol table:
 
-strcmp/68 (strcmp) @00000000077cf578
+strcmp/68 (strcmp) @0000000006bcf578
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -773,7 +773,7 @@ strcmp/68 (strcmp) @00000000077cf578
   Function flags:
   Called by: z_impl_device_get_binding/63 
   Calls: 
-_device_list_end/67 (_device_list_end) @00000000077ce980
+_device_list_end/67 (_device_list_end) @0000000006bce980
   Type: variable
   Body removed by symtab_remove_unreachable_nodes
   Visibility: semantic_interposition external public
@@ -781,7 +781,7 @@ _device_list_end/67 (_device_list_end) @00000000077ce980
   Referring: z_device_get_all_static/64 (addr) z_device_state_init/62 (addr) z_impl_device_get_binding/63 (addr) 
   Availability: not_available
   Varpool flags:
-_device_list_start/66 (_device_list_start) @00000000077ce900
+_device_list_start/66 (_device_list_start) @0000000006bce900
   Type: variable
   Body removed by symtab_remove_unreachable_nodes
   Visibility: semantic_interposition external public
@@ -789,7 +789,7 @@ _device_list_start/66 (_device_list_start) @00000000077ce900
   Referring: z_device_get_all_static/64 (addr) z_device_state_init/62 (addr) z_device_get_all_static/64 (addr) z_impl_device_get_binding/63 (addr) 
   Availability: not_available
   Varpool flags:
-z_impl_device_is_ready/65 (z_impl_device_is_ready) @00000000077cf460
+z_impl_device_is_ready/65 (z_impl_device_is_ready) @0000000006bcf460
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -798,7 +798,7 @@ z_impl_device_is_ready/65 (z_impl_device_is_ready) @00000000077cf460
   Function flags: body
   Called by: z_impl_device_get_binding/63 
   Calls: 
-z_device_get_all_static/64 (z_device_get_all_static) @00000000077cf348
+z_device_get_all_static/64 (z_device_get_all_static) @0000000006bcf348
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: _device_list_start/66 (addr) _device_list_end/67 (addr) _device_list_start/66 (addr) 
@@ -807,7 +807,7 @@ z_device_get_all_static/64 (z_device_get_all_static) @00000000077cf348
   Function flags: body
   Called by: 
   Calls: 
-z_impl_device_get_binding/63 (z_impl_device_get_binding) @00000000077cf230
+z_impl_device_get_binding/63 (z_impl_device_get_binding) @0000000006bcf230
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: _device_list_start/66 (addr) _device_list_end/67 (addr) 
@@ -816,7 +816,7 @@ z_impl_device_get_binding/63 (z_impl_device_get_binding) @00000000077cf230
   Function flags: body
   Called by: 
   Calls: z_impl_device_is_ready/65 strcmp/68 
-z_device_state_init/62 (z_device_state_init) @00000000077cf118
+z_device_state_init/62 (z_device_state_init) @0000000006bcf118
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: _device_list_start/66 (addr) _device_list_end/67 (addr) 
@@ -825,7 +825,7 @@ z_device_state_init/62 (z_device_state_init) @00000000077cf118
   Function flags: body
   Called by: 
   Calls: k_object_init/47 
-k_object_init/47 (k_object_init) @00000000077b1000
+k_object_init/47 (k_object_init) @0000000006bb1000
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder prevailing_def_ironly
   References: 
@@ -839,7 +839,7 @@ Removing variables:
 
 Final Symbol table:
 
-strcmp/68 (strcmp) @00000000077cf578
+strcmp/68 (strcmp) @0000000006bcf578
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -848,7 +848,7 @@ strcmp/68 (strcmp) @00000000077cf578
   Function flags:
   Called by: 
   Calls: 
-_device_list_end/67 (_device_list_end) @00000000077ce980
+_device_list_end/67 (_device_list_end) @0000000006bce980
   Type: variable
   Body removed by symtab_remove_unreachable_nodes
   Visibility: semantic_interposition external public
@@ -856,7 +856,7 @@ _device_list_end/67 (_device_list_end) @00000000077ce980
   Referring: 
   Availability: not_available
   Varpool flags:
-_device_list_start/66 (_device_list_start) @00000000077ce900
+_device_list_start/66 (_device_list_start) @0000000006bce900
   Type: variable
   Body removed by symtab_remove_unreachable_nodes
   Visibility: semantic_interposition external public
@@ -864,7 +864,7 @@ _device_list_start/66 (_device_list_start) @00000000077ce900
   Referring: 
   Availability: not_available
   Varpool flags:
-z_impl_device_is_ready/65 (z_impl_device_is_ready) @00000000077cf460
+z_impl_device_is_ready/65 (z_impl_device_is_ready) @0000000006bcf460
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.z_impl_device_is_ready (implicit_section)
   References: 
@@ -873,7 +873,7 @@ z_impl_device_is_ready/65 (z_impl_device_is_ready) @00000000077cf460
   Function flags:
   Called by: 
   Calls: 
-z_device_get_all_static/64 (z_device_get_all_static) @00000000077cf348
+z_device_get_all_static/64 (z_device_get_all_static) @0000000006bcf348
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.z_device_get_all_static (implicit_section)
   References: 
@@ -882,7 +882,7 @@ z_device_get_all_static/64 (z_device_get_all_static) @00000000077cf348
   Function flags:
   Called by: 
   Calls: 
-z_impl_device_get_binding/63 (z_impl_device_get_binding) @00000000077cf230
+z_impl_device_get_binding/63 (z_impl_device_get_binding) @0000000006bcf230
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.z_impl_device_get_binding (implicit_section)
   References: 
@@ -891,7 +891,7 @@ z_impl_device_get_binding/63 (z_impl_device_get_binding) @00000000077cf230
   Function flags:
   Called by: 
   Calls: 
-z_device_state_init/62 (z_device_state_init) @00000000077cf118
+z_device_state_init/62 (z_device_state_init) @0000000006bcf118
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.z_device_state_init (implicit_section)
   References: 
@@ -900,7 +900,7 @@ z_device_state_init/62 (z_device_state_init) @00000000077cf118
   Function flags:
   Called by: 
   Calls: 
-k_object_init/47 (k_object_init) @00000000077b1000
+k_object_init/47 (k_object_init) @0000000006bb1000
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder prevailing_def_ironly asm_written section:.text.k_object_init (implicit_section)
   References: 

@@ -37,6 +37,19 @@ typedef struct tui_widget {
     int max;                          // max value for progress bars
     tui_color_t fg, bg;
     tui_style_t style;
+    int checked;                     // checkbox state (0 = unchecked, 1 = checked)
+    void (*toggle_cb)(tui_widget_t *cb, unsigned char new_state); // callback for checkbox toggle
+    const char **rg_labels;                    // array of option strings
+    int           rg_count;                    // number of options
+    int           rg_selected;                 // index of the currently selected option
+    void        (*rg_change_cb)(tui_widget_t*, int); // callback(new_index)
+    char    *txtbuf;        // pointer to your text buffer
+    int      txt_capacity;  // total buffer capacity (including NUL)
+    int      txt_length;    // current string length
+    int      cursor_pos;    // insertion cursor position [0..txt_length]
+    int      txt_offset;    // first visible character index
+    void   (*submit_cb)(tui_widget_t *ti); // called on Enter
+
 } tui_widget_t;
 
 // Register a widget for drawing and event dispatch
@@ -79,6 +92,65 @@ void tui_progressbar_init(tui_widget_t *pb,
 
 // Update progress bar value at runtime
 void tui_progressbar_set_value(tui_widget_t *pb, int value);                      
+
+
+
+// Checkbox widget initializer
+// cb:       pointer to your widget struct
+// x,y:      upper‑left position
+// label:    text to display to the right of the box
+// initial:  starting checked state
+// on_toggle: callback(widget, new_state) when user toggles
+void tui_checkbox_init(tui_widget_t *cb,
+                       int x, int y,
+                       const char *label,
+                       unsigned char initial,
+                       void (*on_toggle)(tui_widget_t *cb, unsigned char new_state));
+
+// Programmatically set/get its state
+void tui_checkbox_set_checked(tui_widget_t *cb, unsigned char checked);
+unsigned char tui_checkbox_is_checked(const tui_widget_t *cb);
+
+
+void tui_modalpopup_show(const char *title, const char *msg);
+
+// Public API (below your other inits):
+// Initialize a radio‐button group
+// - labels: array of `count` C‐strings (must stay valid)
+// - initial: starting selection [0..count-1]
+// - on_change: called when selection changes
+void tui_radiogroup_init(tui_widget_t *rg,
+                         int x, int y,
+                         const char **labels,
+                         int count,
+                         int initial,
+                         void (*on_change)(tui_widget_t *rg, int selected));
+
+// Programmatically set/get
+void tui_radiogroup_set_selected(tui_widget_t *rg, int selected);
+int  tui_radiogroup_get_selected(const tui_widget_t *rg);
+
+/**
+ * Initialize a single‑line text‑input widget.
+ *
+ * ti:        pointer to a tui_widget_t instance
+ * x,y:       top‑left position
+ * w:         width in characters
+ * buffer:    pointer to a char array of size >= capacity
+ * capacity:  total buffer size (including space for trailing NUL)
+ * on_submit: callback invoked (with the widget) when Enter is pressed
+ */
+void tui_textinput_init(tui_widget_t *ti,
+                        int x, int y, int w,
+                        char *buffer, int capacity,
+                        void (*on_submit)(tui_widget_t *ti));
+
+/** Replace the entire contents of the input. */
+void tui_textinput_set_text(tui_widget_t *ti, const char *text);
+
+/** Copy out up to maxlen‑1 characters + NUL. */
+void tui_textinput_get_text(const tui_widget_t *ti,
+                            char *out, int maxlen);
 
 #ifdef __cplusplus
 }

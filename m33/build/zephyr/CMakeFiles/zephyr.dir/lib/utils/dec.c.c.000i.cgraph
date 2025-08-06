@@ -3,7 +3,7 @@ Trivially needed symbols: u8_to_dec/12
 
 Initial Symbol table:
 
-u8_to_dec/12 (u8_to_dec) @0000000006d50e38
+u8_to_dec/12 (u8_to_dec) @0000000007970e38
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @0000000001d89da0
@@ -12,7 +12,7 @@ u8_to_dec/12 (u8_to_dec) @0000000006d50e38
   Function flags: body
   Called by: 
   Calls: 
-mem_xor_128/11 (mem_xor_128) @0000000006d509d8
+mem_xor_128/11 (mem_xor_128) @00000000079709d8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -20,7 +20,7 @@ mem_xor_128/11 (mem_xor_128) @0000000006d509d8
   Function flags:
   Called by: 
   Calls: 
-mem_xor_32/10 (mem_xor_32) @0000000006d508c0
+mem_xor_32/10 (mem_xor_32) @00000000079708c0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -28,7 +28,7 @@ mem_xor_32/10 (mem_xor_32) @0000000006d508c0
   Function flags:
   Called by: 
   Calls: 
-mem_xor_n/9 (mem_xor_n) @0000000006d507a8
+mem_xor_n/9 (mem_xor_n) @00000000079707a8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -36,7 +36,7 @@ mem_xor_n/9 (mem_xor_n) @0000000006d507a8
   Function flags:
   Called by: 
   Calls: 
-sign_extend_64/8 (sign_extend_64) @0000000006d50690
+sign_extend_64/8 (sign_extend_64) @0000000007970690
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -44,7 +44,7 @@ sign_extend_64/8 (sign_extend_64) @0000000006d50690
   Function flags:
   Called by: 
   Calls: 
-sign_extend/7 (sign_extend) @0000000006d50578
+sign_extend/7 (sign_extend) @0000000007970578
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -52,7 +52,7 @@ sign_extend/7 (sign_extend) @0000000006d50578
   Function flags:
   Called by: 
   Calls: 
-bin2bcd/6 (bin2bcd) @0000000006d50460
+bin2bcd/6 (bin2bcd) @0000000007970460
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -60,7 +60,7 @@ bin2bcd/6 (bin2bcd) @0000000006d50460
   Function flags:
   Called by: 
   Calls: 
-bcd2bin/5 (bcd2bin) @0000000006d50348
+bcd2bin/5 (bcd2bin) @0000000007970348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -68,7 +68,7 @@ bcd2bin/5 (bcd2bin) @0000000006d50348
   Function flags:
   Called by: 
   Calls: 
-byteswp/4 (byteswp) @0000000006d50230
+byteswp/4 (byteswp) @0000000007970230
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -76,7 +76,7 @@ byteswp/4 (byteswp) @0000000006d50230
   Function flags:
   Called by: 
   Calls: 
-bytecpy/3 (bytecpy) @0000000006d50118
+bytecpy/3 (bytecpy) @0000000007970118
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -84,7 +84,7 @@ bytecpy/3 (bytecpy) @0000000006d50118
   Function flags:
   Called by: 
   Calls: 
-arithmetic_shift_right/2 (arithmetic_shift_right) @0000000006d50000
+arithmetic_shift_right/2 (arithmetic_shift_right) @0000000007970000
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -92,7 +92,7 @@ arithmetic_shift_right/2 (arithmetic_shift_right) @0000000006d50000
   Function flags:
   Called by: 
   Calls: 
-is_null_no_warn/1 (is_null_no_warn) @0000000006738e38
+is_null_no_warn/1 (is_null_no_warn) @0000000007368e38
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -100,7 +100,7 @@ is_null_no_warn/1 (is_null_no_warn) @0000000006738e38
   Function flags:
   Called by: 
   Calls: 
-is_power_of_two/0 (is_power_of_two) @0000000006738d20
+is_power_of_two/0 (is_power_of_two) @0000000007368d20
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -113,7 +113,7 @@ Removing unused symbols: mem_xor_128/11 mem_xor_32/10 mem_xor_n/9 sign_extend_64
 
 Reclaimed Symbol table:
 
-u8_to_dec/12 (u8_to_dec) @0000000006d50e38
+u8_to_dec/12 (u8_to_dec) @0000000007970e38
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -125,7 +125,7 @@ u8_to_dec/12 (u8_to_dec) @0000000006d50e38
 
 Initial Symbol table:
 
-u8_to_dec/12 (u8_to_dec) @0000000006d50e38
+u8_to_dec/12 (u8_to_dec) @0000000007970e38
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -138,7 +138,7 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-u8_to_dec/12 (u8_to_dec) @0000000006d50e38
+u8_to_dec/12 (u8_to_dec) @0000000007970e38
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -152,7 +152,7 @@ Reclaiming variables:
 Clearing address taken flags:
 Optimized Symbol table:
 
-u8_to_dec/12 (u8_to_dec) @0000000006d50e38
+u8_to_dec/12 (u8_to_dec) @0000000007970e38
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -166,7 +166,7 @@ Removing variables:
 
 Final Symbol table:
 
-u8_to_dec/12 (u8_to_dec) @0000000006d50e38
+u8_to_dec/12 (u8_to_dec) @0000000007970e38
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.u8_to_dec (implicit_section)
   References: 

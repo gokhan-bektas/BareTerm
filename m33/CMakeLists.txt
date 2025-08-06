@@ -21,4 +21,8 @@ target_sources(app PRIVATE
   src/tui_label.c
   src/tui_textbox.c
   src/tui_progressbar.c
+  src/tui_checkbox.c
+  src/tui_modalpopup.c
+  src/tui_radiogroup.c
+  src/tui_textinput.c
 )

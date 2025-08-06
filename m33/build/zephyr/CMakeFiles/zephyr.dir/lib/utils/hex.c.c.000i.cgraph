@@ -3,7 +3,7 @@ Trivially needed symbols: hex2bin/16 bin2hex/15 hex2char/14 char2hex/13
 
 Initial Symbol table:
 
-hex2bin/16 (hex2bin) @0000000006cd9230
+hex2bin/16 (hex2bin) @0000000006cf9230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @0000000001d89da0
@@ -12,34 +12,34 @@ hex2bin/16 (hex2bin) @0000000006cd9230
   Function flags: body
   Called by: 
   Calls: char2hex/13 char2hex/13 char2hex/13 
-bin2hex/15 (bin2hex) @0000000006cd9118
+bin2hex/15 (bin2hex) @0000000006cf9118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006cd9230
+  Aux: @0000000006cf9230
   References: 
   Referring: 
   Function flags: body
   Called by: 
   Calls: hex2char/14 hex2char/14 
-hex2char/14 (hex2char) @0000000006cd9000
+hex2char/14 (hex2char) @0000000006cf9000
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006cd9118
+  Aux: @0000000006cf9118
   References: 
   Referring: 
   Function flags: body
   Called by: bin2hex/15 bin2hex/15 
   Calls: 
-char2hex/13 (char2hex) @0000000006c89e38
+char2hex/13 (char2hex) @0000000006ca9e38
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006cd9000
+  Aux: @0000000006cf9000
   References: 
   Referring: 
   Function flags: body
   Called by: hex2bin/16 hex2bin/16 hex2bin/16 
   Calls: 
-mem_xor_128/12 (mem_xor_128) @0000000006c899d8
+mem_xor_128/12 (mem_xor_128) @0000000006ca99d8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -47,7 +47,7 @@ mem_xor_128/12 (mem_xor_128) @0000000006c899d8
   Function flags:
   Called by: 
   Calls: 
-mem_xor_32/11 (mem_xor_32) @0000000006c898c0
+mem_xor_32/11 (mem_xor_32) @0000000006ca98c0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -55,7 +55,7 @@ mem_xor_32/11 (mem_xor_32) @0000000006c898c0
   Function flags:
   Called by: 
   Calls: 
-mem_xor_n/10 (mem_xor_n) @0000000006c897a8
+mem_xor_n/10 (mem_xor_n) @0000000006ca97a8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -63,7 +63,7 @@ mem_xor_n/10 (mem_xor_n) @0000000006c897a8
   Function flags:
   Called by: 
   Calls: 
-sign_extend_64/9 (sign_extend_64) @0000000006c89690
+sign_extend_64/9 (sign_extend_64) @0000000006ca9690
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -71,7 +71,7 @@ sign_extend_64/9 (sign_extend_64) @0000000006c89690
   Function flags:
   Called by: 
   Calls: 
-sign_extend/8 (sign_extend) @0000000006c89578
+sign_extend/8 (sign_extend) @0000000006ca9578
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -79,7 +79,7 @@ sign_extend/8 (sign_extend) @0000000006c89578
   Function flags:
   Called by: 
   Calls: 
-bin2bcd/7 (bin2bcd) @0000000006c89460
+bin2bcd/7 (bin2bcd) @0000000006ca9460
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -87,7 +87,7 @@ bin2bcd/7 (bin2bcd) @0000000006c89460
   Function flags:
   Called by: 
   Calls: 
-bcd2bin/6 (bcd2bin) @0000000006c89348
+bcd2bin/6 (bcd2bin) @0000000006ca9348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -95,7 +95,7 @@ bcd2bin/6 (bcd2bin) @0000000006c89348
   Function flags:
   Called by: 
   Calls: 
-byteswp/5 (byteswp) @0000000006c89230
+byteswp/5 (byteswp) @0000000006ca9230
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -103,7 +103,7 @@ byteswp/5 (byteswp) @0000000006c89230
   Function flags:
   Called by: 
   Calls: 
-bytecpy/4 (bytecpy) @0000000006c89118
+bytecpy/4 (bytecpy) @0000000006ca9118
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -111,7 +111,7 @@ bytecpy/4 (bytecpy) @0000000006c89118
   Function flags:
   Called by: 
   Calls: 
-arithmetic_shift_right/3 (arithmetic_shift_right) @0000000006c89000
+arithmetic_shift_right/3 (arithmetic_shift_right) @0000000006ca9000
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -119,7 +119,7 @@ arithmetic_shift_right/3 (arithmetic_shift_right) @0000000006c89000
   Function flags:
   Called by: 
   Calls: 
-is_null_no_warn/2 (is_null_no_warn) @00000000066cee38
+is_null_no_warn/2 (is_null_no_warn) @00000000066eee38
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -127,7 +127,7 @@ is_null_no_warn/2 (is_null_no_warn) @00000000066cee38
   Function flags:
   Called by: 
   Calls: 
-is_power_of_two/1 (is_power_of_two) @00000000066ced20
+is_power_of_two/1 (is_power_of_two) @00000000066eed20
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -135,7 +135,7 @@ is_power_of_two/1 (is_power_of_two) @00000000066ced20
   Function flags:
   Called by: 
   Calls: 
-errno/0 (errno) @0000000005d67100
+errno/0 (errno) @0000000005d87100
   Type: variable
   Visibility: semantic_interposition external public
   References: 
@@ -147,7 +147,7 @@ Removing unused symbols: mem_xor_128/12 mem_xor_32/11 mem_xor_n/10 sign_extend_6
 
 Reclaimed Symbol table:
 
-hex2bin/16 (hex2bin) @0000000006cd9230
+hex2bin/16 (hex2bin) @0000000006cf9230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -155,7 +155,7 @@ hex2bin/16 (hex2bin) @0000000006cd9230
   Function flags: body
   Called by: 
   Calls: char2hex/13 char2hex/13 char2hex/13 
-bin2hex/15 (bin2hex) @0000000006cd9118
+bin2hex/15 (bin2hex) @0000000006cf9118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -163,7 +163,7 @@ bin2hex/15 (bin2hex) @0000000006cd9118
   Function flags: body
   Called by: 
   Calls: hex2char/14 hex2char/14 
-hex2char/14 (hex2char) @0000000006cd9000
+hex2char/14 (hex2char) @0000000006cf9000
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -171,7 +171,7 @@ hex2char/14 (hex2char) @0000000006cd9000
   Function flags: body
   Called by: bin2hex/15 bin2hex/15 
   Calls: 
-char2hex/13 (char2hex) @0000000006c89e38
+char2hex/13 (char2hex) @0000000006ca9e38
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -183,7 +183,7 @@ char2hex/13 (char2hex) @0000000006c89e38
 
 Initial Symbol table:
 
-hex2bin/16 (hex2bin) @0000000006cd9230
+hex2bin/16 (hex2bin) @0000000006cf9230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -191,7 +191,7 @@ hex2bin/16 (hex2bin) @0000000006cd9230
   Function flags: body
   Called by: 
   Calls: char2hex/13 char2hex/13 char2hex/13 
-bin2hex/15 (bin2hex) @0000000006cd9118
+bin2hex/15 (bin2hex) @0000000006cf9118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -199,7 +199,7 @@ bin2hex/15 (bin2hex) @0000000006cd9118
   Function flags: body
   Called by: 
   Calls: hex2char/14 hex2char/14 
-hex2char/14 (hex2char) @0000000006cd9000
+hex2char/14 (hex2char) @0000000006cf9000
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -207,7 +207,7 @@ hex2char/14 (hex2char) @0000000006cd9000
   Function flags: body
   Called by: bin2hex/15 bin2hex/15 
   Calls: 
-char2hex/13 (char2hex) @0000000006c89e38
+char2hex/13 (char2hex) @0000000006ca9e38
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -220,7 +220,7 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-hex2bin/16 (hex2bin) @0000000006cd9230
+hex2bin/16 (hex2bin) @0000000006cf9230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -228,7 +228,7 @@ hex2bin/16 (hex2bin) @0000000006cd9230
   Function flags: body
   Called by: 
   Calls: char2hex/13 char2hex/13 char2hex/13 
-bin2hex/15 (bin2hex) @0000000006cd9118
+bin2hex/15 (bin2hex) @0000000006cf9118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -236,7 +236,7 @@ bin2hex/15 (bin2hex) @0000000006cd9118
   Function flags: body
   Called by: 
   Calls: hex2char/14 hex2char/14 
-hex2char/14 (hex2char) @0000000006cd9000
+hex2char/14 (hex2char) @0000000006cf9000
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -244,7 +244,7 @@ hex2char/14 (hex2char) @0000000006cd9000
   Function flags: body
   Called by: bin2hex/15 bin2hex/15 
   Calls: 
-char2hex/13 (char2hex) @0000000006c89e38
+char2hex/13 (char2hex) @0000000006ca9e38
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -258,7 +258,7 @@ Reclaiming variables:
 Clearing address taken flags:
 Optimized Symbol table:
 
-hex2bin/16 (hex2bin) @0000000006cd9230
+hex2bin/16 (hex2bin) @0000000006cf9230
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -267,7 +267,7 @@ hex2bin/16 (hex2bin) @0000000006cd9230
   Function flags: body
   Called by: 
   Calls: char2hex/13 char2hex/13 char2hex/13 
-bin2hex/15 (bin2hex) @0000000006cd9118
+bin2hex/15 (bin2hex) @0000000006cf9118
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -276,7 +276,7 @@ bin2hex/15 (bin2hex) @0000000006cd9118
   Function flags: body
   Called by: 
   Calls: hex2char/14 hex2char/14 
-hex2char/14 (hex2char) @0000000006cd9000
+hex2char/14 (hex2char) @0000000006cf9000
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -285,7 +285,7 @@ hex2char/14 (hex2char) @0000000006cd9000
   Function flags: body
   Called by: bin2hex/15 bin2hex/15 
   Calls: 
-char2hex/13 (char2hex) @0000000006c89e38
+char2hex/13 (char2hex) @0000000006ca9e38
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -299,7 +299,7 @@ Removing variables:
 
 Final Symbol table:
 
-hex2bin/16 (hex2bin) @0000000006cd9230
+hex2bin/16 (hex2bin) @0000000006cf9230
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.hex2bin (implicit_section)
   References: 
@@ -308,7 +308,7 @@ hex2bin/16 (hex2bin) @0000000006cd9230
   Function flags:
   Called by: 
   Calls: 
-bin2hex/15 (bin2hex) @0000000006cd9118
+bin2hex/15 (bin2hex) @0000000006cf9118
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.bin2hex (implicit_section)
   References: 
@@ -317,7 +317,7 @@ bin2hex/15 (bin2hex) @0000000006cd9118
   Function flags:
   Called by: 
   Calls: 
-hex2char/14 (hex2char) @0000000006cd9000
+hex2char/14 (hex2char) @0000000006cf9000
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.hex2char (implicit_section)
   References: 
@@ -326,7 +326,7 @@ hex2char/14 (hex2char) @0000000006cd9000
   Function flags:
   Called by: 
   Calls: 
-char2hex/13 (char2hex) @0000000006c89e38
+char2hex/13 (char2hex) @0000000006ca9e38
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.char2hex (implicit_section)
   References: 

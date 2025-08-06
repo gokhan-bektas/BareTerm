@@ -3,7 +3,7 @@ Trivially needed symbols: z_init_static/0
 
 Initial Symbol table:
 
-z_init_static/0 (z_init_static) @00000000060d7118
+z_init_static/0 (z_init_static) @0000000006d06118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @0000000001d89da0
@@ -17,7 +17,7 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-z_init_static/0 (z_init_static) @00000000060d7118
+z_init_static/0 (z_init_static) @0000000006d06118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -29,7 +29,7 @@ z_init_static/0 (z_init_static) @00000000060d7118
 
 Initial Symbol table:
 
-z_init_static/0 (z_init_static) @00000000060d7118
+z_init_static/0 (z_init_static) @0000000006d06118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -42,7 +42,7 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-z_init_static/0 (z_init_static) @00000000060d7118
+z_init_static/0 (z_init_static) @0000000006d06118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -56,7 +56,7 @@ Reclaiming variables:
 Clearing address taken flags:
 Optimized Symbol table:
 
-z_init_static/0 (z_init_static) @00000000060d7118
+z_init_static/0 (z_init_static) @0000000006d06118
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -70,7 +70,7 @@ Removing variables:
 
 Final Symbol table:
 
-z_init_static/0 (z_init_static) @00000000060d7118
+z_init_static/0 (z_init_static) @0000000006d06118
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.z_init_static (implicit_section)
   References: 

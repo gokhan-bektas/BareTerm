@@ -23,7 +23,9 @@
       "limits": "c",
       "type_traits": "c",
       "new": "c",
-      "xtr1common": "c"
-    }
+      "xtr1common": "c",
+      "tui_widget.h": "c"
+    },
+    "cfs.project.board": "EvKit_V1"
   }
 }

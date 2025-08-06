@@ -16,22 +16,40 @@
 #include "tui_uart_input.h"
 #include "tui_widget.h"
 
+
 /* 1000 msec = 1 sec */
 #define SLEEP_TIME_MS   1000
 
 /* The devicetree node identifier for the "led0" alias. */
 #define LED0_NODE DT_ALIAS(led0)
 
-static tui_widget_t my_label;
+
 /*
  * A build error on this line means your board is unsupported.
  * See the sample documentation for information on how to fix this.
  */
 static const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED0_NODE, gpios);
 
+static tui_widget_t btn1, btn2;
+static tui_widget_t memo;
 static tui_widget_t lbl1;
 static tui_widget_t lbl2;
 static tui_widget_t bar;
+static tui_widget_t cb1, cb2;
+
+static tui_widget_t rg;
+static const char *choices[] = { "SPI", "I2C", "UART" };
+
+static tui_widget_t input;
+static char buf[64] = "";
+
+void on_submit(tui_widget_t *ti) {
+    // Copy out and display
+    char out[64];
+    tui_textinput_get_text(ti, out, sizeof(out));
+    tui_move_cursor(1, 20);
+    tui_printf("You entered: %s", out);
+}
 
 // Callback for button press
 static void on_button_click1(void *w) {
@@ -39,20 +57,71 @@ static void on_button_click1(void *w) {
     tui_label_set_text(&lbl1, "Clicked Button 1!");
     tui_label_set_color(&lbl1, TUI_YELLOW, TUI_BLUE, TUI_STYLE_BOLD);
 
+	tui_progressbar_set_value(&bar, /*new_value=*/ bar.value - 1);
+
     // Redraw everything
     tui_draw_all_widgets();
 }
 // Callback for button press
 static void on_button_click2(void *w) {
     // Update the label
-    tui_label_set_text(&lbl2, "Clicked Button 2!");
-    tui_label_set_color(&lbl2, TUI_YELLOW, TUI_GREEN, TUI_STYLE_BOLD);
+    tui_label_set_text(&lbl1, "Clicked Button 2!");
+    tui_label_set_color(&lbl1, TUI_YELLOW, TUI_GREEN, TUI_STYLE_BOLD);
 
 	tui_progressbar_set_value(&bar, /*new_value=*/ bar.value + 1);
     // Redraw everything
     tui_draw_all_widgets();
 
 }
+
+
+void on_toggle(tui_widget_t *cb, unsigned char state) {
+    tui_move_cursor(10, 20);
+    tui_printf("Checkbox is now %s   ", state ? "☑️" : "☐");
+
+	if (cb->checked) {
+		tui_label_set_text(&lbl2, "Checkbox enabled");
+		tui_backend_puts("\x1B[?1049h");  // Push into alternate screen
+		//tui_draw_box(6, 24, 10, 3, " TEST");
+		tui_modalpopup_show("Checkbox Enabled", "You have enabled the checkbox feature.");
+	} else {
+		tui_label_set_text(&lbl2, "Checkbox disabled");
+		tui_backend_puts("\x1B[?1049h");  // Push into alternate screen
+	}	
+		
+	// draw your dialog and whatever else
+	tui_backend_puts("\x1B[?1049l");  // Pop back to the original screen
+
+}
+
+void on_choice_change(tui_widget_t *w, int sel) {
+    tui_move_cursor(4, 18);
+    tui_printf("Selected: %s   ", choices[sel]);
+}
+
+int test_draw_welcomescreen() {
+
+	tui_clear_screen();
+	tui_draw_box(1, 1, 50, 30, " MAX32657 EVKit Test Tool v0.1.0");
+
+	tui_textbox_init(&memo,
+					3, 8,
+					47, 5,
+					"This is the automated production test tool for "
+					"MAX32657 Rev-C EVKit. Use mouse to interact."
+					"                                           "
+					"Click START Button to begin.",
+					TUI_CYAN, TUI_BLACK, TUI_STYLE_NONE);
+
+    tui_button_init(&btn1,
+                    15, 18,
+                    20, 3,
+                    " START ",
+                    on_button_click1);
+
+
+}
+
 int main(void)
 {
 	int ret;
@@ -76,7 +145,15 @@ int main(void)
 		return 0;
 	}
 
+			// Hide cursor
+		tui_backend_write("\x1B[?25l", 6);
+
+		// Show cursor
+		//tui_backend_write("\x1B[?25h", 6);
+
     tui_backend_puts("\x1B[?1000h"); // Basic mouse click tracking
+
+	//test_draw_welcomescreen();
 
     tui_clear_screen();
 
@@ -86,45 +163,75 @@ int main(void)
 
 	tui_draw_box(1, 1, 50, 30, " MAX32657 EVKit Test Tool v0.1.0");
 	tui_label_init(&lbl1,
-				2, 2,
+				15, 4,
 				"Welcome",
 				TUI_WHITE,   // foreground
 				TUI_BLUE,      // background
 				TUI_STYLE_BOLD);
 
-    // Create a button widget
-    static tui_widget_t btn1, btn2;
-    tui_button_init(&btn1,
-                    /* x */ 2, /* y */ 6,
-                    /* w */ 20, /* h */ 3,
-                    "[ Button1 ]",
-                    on_button_click1);
-    tui_button_init(&btn2,
-                    /* x */ 22, /* y */ 6,
-                    /* w */ 20, /* h */ 3,
-                    "[ Button2 ]",
-                    on_button_click2);
     // 2) Initialize it at position (col=2, row=2) with your text
 	tui_label_init(&lbl2,
-				4, 4,
-				"Press A Button",
+				14, 24,
+				"Click somewhere to start",
 				TUI_YELLOW,   // foreground
 				TUI_BLUE,      // background
 				TUI_STYLE_BOLD);
 
-	static tui_widget_t memo;
+    // Create a button widget
+
+    tui_button_init(&btn1,
+                    4, 6,
+                    20, 3,
+                    "[ Button1 ]",
+                    on_button_click1);
+    tui_button_init(&btn2,
+                    26, 6,
+                    20, 3,
+                    "[ Button2 ]",
+                    on_button_click2);
+
+
+
 	tui_textbox_init(&memo,
-					/*x*/ 3, /*y*/ 10,
-					/*w*/ 36, /*h*/ 5,
+					3, 10,
+					36, 5,
 					"To start tests please follow the instructions below:"
 					"Here are the instructions. Under construction...",
 					TUI_CYAN, TUI_BLACK, TUI_STYLE_NONE);
 
     tui_progressbar_init(&bar,
-                         /*x*/2,  /*y*/20,
-                         /*w*/30, /*h*/1,
-                         /*value*/30, /*max*/100,
+                         4,  15,
+                         38, 1,
+                         30, 100,
                          TUI_GREEN, TUI_BLACK, TUI_STYLE_NONE);
+
+    tui_checkbox_init(&cb1,
+                      12, 27,
+                      "Enable feature 1",
+                      false,  //initial=
+                      on_toggle);
+
+    tui_checkbox_init(&cb2,
+                      12, 28,
+                      "Enable feature 2",
+                      false,  //initial=
+                      on_toggle);
+
+
+    tui_radiogroup_init(&rg,
+        4, 19,
+        choices, 3,   // labels + count
+        1,            // start with “Green”
+        on_choice_change);
+
+	/*buf[0] = 'A'; // Initialize text input buffer
+	buf[1] = 'B'; // Initialize text input buffer
+    tui_textinput_init(&input,
+                       30, 2,
+                       27,
+                       buf, sizeof(buf),
+                       on_submit);
+	*/				   
 
 	// Initial draw
     tui_draw_all_widgets();
@@ -133,12 +240,34 @@ int main(void)
     while (1) {
         tui_event_t evt;
         if (tui_poll_event(&evt)) {
+
+			switch (evt.type) {
+				case TUI_EVT_KEY:
+					//tui_printf("Key: '%c' (0x%02X)    ", evt.key.ch, evt.key.ch);
+					break;
+				case TUI_EVT_ARROW:
+					//tui_printf("Arrow:  %d    ", evt.key.code);
+					break;
+				case TUI_EVT_MOUSE:
+					//tui_printf("Mouse: %s at (%d, %d), button %d     ",
+					//		evt.mouse.pressed ? "DOWN" : "UP",
+					//		evt.mouse.x, evt.mouse.y,
+					//		evt.mouse.button);
+					break;
+			}
+
             tui_dispatch_event(&evt);
             tui_draw_all_widgets();
         }
         k_msleep(10);
     }
 
+
+
+
+
+
+	
 while (1) {
     tui_event_t evt;
     if (tui_poll_event(&evt)) {

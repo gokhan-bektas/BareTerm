@@ -1,15 +1,15 @@
-Trivially needed symbols: tui_label_set_color/4 tui_label_set_text/3 tui_label_init/2 label_event/1 label_draw/0
+Trivially needed symbols: bareterm_label_set_color/4 bareterm_label_set_text/3 bareterm_label_init/2 label_event/1 label_draw/0
 
 
 Initial Symbol table:
 
-tui_widget_register/10 (tui_widget_register) @0000000006da9000
+bareterm_widget_register/10 (bareterm_widget_register) @0000000006da9000
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: tui_label_init/2 
+  Called by: bareterm_label_init/2 
   Calls: 
 strlen/9 (strlen) @0000000006cd5e38
   Type: function
@@ -17,9 +17,9 @@ strlen/9 (strlen) @0000000006cd5e38
   References: 
   Referring: 
   Function flags:
-  Called by: tui_label_init/2 
+  Called by: bareterm_label_init/2 
   Calls: 
-tui_reset_color/8 (tui_reset_color) @0000000006cd5d20
+bareterm_reset_color/8 (bareterm_reset_color) @0000000006cd5d20
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -27,7 +27,7 @@ tui_reset_color/8 (tui_reset_color) @0000000006cd5d20
   Function flags:
   Called by: label_draw/0 
   Calls: 
-tui_puts/7 (tui_puts) @0000000006cd5c08
+bareterm_puts/7 (bareterm_puts) @0000000006cd5c08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -35,7 +35,7 @@ tui_puts/7 (tui_puts) @0000000006cd5c08
   Function flags:
   Called by: label_draw/0 
   Calls: 
-tui_set_color/6 (tui_set_color) @0000000006cd5af0
+bareterm_set_color/6 (bareterm_set_color) @0000000006cd5af0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -43,7 +43,7 @@ tui_set_color/6 (tui_set_color) @0000000006cd5af0
   Function flags:
   Called by: label_draw/0 
   Calls: 
-tui_move_cursor/5 (tui_move_cursor) @0000000006cd59d8
+bareterm_move_cursor/5 (bareterm_move_cursor) @0000000006cd59d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -51,7 +51,7 @@ tui_move_cursor/5 (tui_move_cursor) @0000000006cd59d8
   Function flags:
   Called by: label_draw/0 
   Calls: 
-tui_label_set_color/4 (tui_label_set_color) @0000000006cd58c0
+bareterm_label_set_color/4 (bareterm_label_set_color) @0000000006cd58c0
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @0000000001d89da0
@@ -60,7 +60,7 @@ tui_label_set_color/4 (tui_label_set_color) @0000000006cd58c0
   Function flags: body
   Called by: 
   Calls: 
-tui_label_set_text/3 (tui_label_set_text) @0000000006cd57a8
+bareterm_label_set_text/3 (bareterm_label_set_text) @0000000006cd57a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @0000000006cd58c0
@@ -69,7 +69,7 @@ tui_label_set_text/3 (tui_label_set_text) @0000000006cd57a8
   Function flags: body
   Called by: 
   Calls: 
-tui_label_init/2 (tui_label_init) @0000000006cd5690
+bareterm_label_init/2 (bareterm_label_init) @0000000006cd5690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @0000000006cd57a8
@@ -77,14 +77,14 @@ tui_label_init/2 (tui_label_init) @0000000006cd5690
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_widget_register/10 strlen/9 
+  Calls: bareterm_widget_register/10 strlen/9 
 label_event/1 (label_event) @0000000006cd5578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
   Aux: @0000000006cd5690
   References: 
-  Referring: tui_label_init/2 (addr) 
+  Referring: bareterm_label_init/2 (addr) 
   Function flags: body
   Called by: 
   Calls: 
@@ -94,22 +94,22 @@ label_draw/0 (label_draw) @0000000006cd5460
   Address is taken.
   Aux: @0000000006cd5578
   References: 
-  Referring: tui_label_init/2 (addr) 
+  Referring: bareterm_label_init/2 (addr) 
   Function flags: body
   Called by: 
-  Calls: tui_reset_color/8 tui_puts/7 tui_set_color/6 tui_move_cursor/5 
+  Calls: bareterm_reset_color/8 bareterm_puts/7 bareterm_set_color/6 bareterm_move_cursor/5 
 
 Removing unused symbols:
 
 Reclaimed Symbol table:
 
-tui_widget_register/10 (tui_widget_register) @0000000006da9000
+bareterm_widget_register/10 (bareterm_widget_register) @0000000006da9000
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: tui_label_init/2 
+  Called by: bareterm_label_init/2 
   Calls: 
 strlen/9 (strlen) @0000000006cd5e38
   Type: function
@@ -117,9 +117,9 @@ strlen/9 (strlen) @0000000006cd5e38
   References: 
   Referring: 
   Function flags:
-  Called by: tui_label_init/2 
+  Called by: bareterm_label_init/2 
   Calls: 
-tui_reset_color/8 (tui_reset_color) @0000000006cd5d20
+bareterm_reset_color/8 (bareterm_reset_color) @0000000006cd5d20
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -127,7 +127,7 @@ tui_reset_color/8 (tui_reset_color) @0000000006cd5d20
   Function flags:
   Called by: label_draw/0 
   Calls: 
-tui_puts/7 (tui_puts) @0000000006cd5c08
+bareterm_puts/7 (bareterm_puts) @0000000006cd5c08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -135,7 +135,7 @@ tui_puts/7 (tui_puts) @0000000006cd5c08
   Function flags:
   Called by: label_draw/0 
   Calls: 
-tui_set_color/6 (tui_set_color) @0000000006cd5af0
+bareterm_set_color/6 (bareterm_set_color) @0000000006cd5af0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -143,7 +143,7 @@ tui_set_color/6 (tui_set_color) @0000000006cd5af0
   Function flags:
   Called by: label_draw/0 
   Calls: 
-tui_move_cursor/5 (tui_move_cursor) @0000000006cd59d8
+bareterm_move_cursor/5 (bareterm_move_cursor) @0000000006cd59d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -151,7 +151,7 @@ tui_move_cursor/5 (tui_move_cursor) @0000000006cd59d8
   Function flags:
   Called by: label_draw/0 
   Calls: 
-tui_label_set_color/4 (tui_label_set_color) @0000000006cd58c0
+bareterm_label_set_color/4 (bareterm_label_set_color) @0000000006cd58c0
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -159,7 +159,7 @@ tui_label_set_color/4 (tui_label_set_color) @0000000006cd58c0
   Function flags: body
   Called by: 
   Calls: 
-tui_label_set_text/3 (tui_label_set_text) @0000000006cd57a8
+bareterm_label_set_text/3 (bareterm_label_set_text) @0000000006cd57a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -167,20 +167,20 @@ tui_label_set_text/3 (tui_label_set_text) @0000000006cd57a8
   Function flags: body
   Called by: 
   Calls: 
-tui_label_init/2 (tui_label_init) @0000000006cd5690
+bareterm_label_init/2 (bareterm_label_init) @0000000006cd5690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: label_draw/0 (addr) label_event/1 (addr) 
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_widget_register/10 strlen/9 
+  Calls: bareterm_widget_register/10 strlen/9 
 label_event/1 (label_event) @0000000006cd5578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
   References: 
-  Referring: tui_label_init/2 (addr) 
+  Referring: bareterm_label_init/2 (addr) 
   Function flags: body
   Called by: 
   Calls: 
@@ -189,21 +189,21 @@ label_draw/0 (label_draw) @0000000006cd5460
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
   References: 
-  Referring: tui_label_init/2 (addr) 
+  Referring: bareterm_label_init/2 (addr) 
   Function flags: body
   Called by: 
-  Calls: tui_reset_color/8 tui_puts/7 tui_set_color/6 tui_move_cursor/5 
+  Calls: bareterm_reset_color/8 bareterm_puts/7 bareterm_set_color/6 bareterm_move_cursor/5 
 
 
 Initial Symbol table:
 
-tui_widget_register/10 (tui_widget_register) @0000000006da9000
+bareterm_widget_register/10 (bareterm_widget_register) @0000000006da9000
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: tui_label_init/2 
+  Called by: bareterm_label_init/2 
   Calls: 
 strlen/9 (strlen) @0000000006cd5e38
   Type: function
@@ -211,9 +211,9 @@ strlen/9 (strlen) @0000000006cd5e38
   References: 
   Referring: 
   Function flags:
-  Called by: tui_label_init/2 
+  Called by: bareterm_label_init/2 
   Calls: 
-tui_reset_color/8 (tui_reset_color) @0000000006cd5d20
+bareterm_reset_color/8 (bareterm_reset_color) @0000000006cd5d20
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -221,7 +221,7 @@ tui_reset_color/8 (tui_reset_color) @0000000006cd5d20
   Function flags:
   Called by: label_draw/0 
   Calls: 
-tui_puts/7 (tui_puts) @0000000006cd5c08
+bareterm_puts/7 (bareterm_puts) @0000000006cd5c08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -229,7 +229,7 @@ tui_puts/7 (tui_puts) @0000000006cd5c08
   Function flags:
   Called by: label_draw/0 
   Calls: 
-tui_set_color/6 (tui_set_color) @0000000006cd5af0
+bareterm_set_color/6 (bareterm_set_color) @0000000006cd5af0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -237,7 +237,7 @@ tui_set_color/6 (tui_set_color) @0000000006cd5af0
   Function flags:
   Called by: label_draw/0 
   Calls: 
-tui_move_cursor/5 (tui_move_cursor) @0000000006cd59d8
+bareterm_move_cursor/5 (bareterm_move_cursor) @0000000006cd59d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -245,7 +245,7 @@ tui_move_cursor/5 (tui_move_cursor) @0000000006cd59d8
   Function flags:
   Called by: label_draw/0 
   Calls: 
-tui_label_set_color/4 (tui_label_set_color) @0000000006cd58c0
+bareterm_label_set_color/4 (bareterm_label_set_color) @0000000006cd58c0
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -253,7 +253,7 @@ tui_label_set_color/4 (tui_label_set_color) @0000000006cd58c0
   Function flags: body
   Called by: 
   Calls: 
-tui_label_set_text/3 (tui_label_set_text) @0000000006cd57a8
+bareterm_label_set_text/3 (bareterm_label_set_text) @0000000006cd57a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -261,20 +261,20 @@ tui_label_set_text/3 (tui_label_set_text) @0000000006cd57a8
   Function flags: body
   Called by: 
   Calls: 
-tui_label_init/2 (tui_label_init) @0000000006cd5690
+bareterm_label_init/2 (bareterm_label_init) @0000000006cd5690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: label_draw/0 (addr) label_event/1 (addr) 
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_widget_register/10 strlen/9 
+  Calls: bareterm_widget_register/10 strlen/9 
 label_event/1 (label_event) @0000000006cd5578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
   References: 
-  Referring: tui_label_init/2 (addr) 
+  Referring: bareterm_label_init/2 (addr) 
   Function flags: body
   Called by: 
   Calls: 
@@ -283,22 +283,22 @@ label_draw/0 (label_draw) @0000000006cd5460
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
   References: 
-  Referring: tui_label_init/2 (addr) 
+  Referring: bareterm_label_init/2 (addr) 
   Function flags: body
   Called by: 
-  Calls: tui_reset_color/8 tui_puts/7 tui_set_color/6 tui_move_cursor/5 
+  Calls: bareterm_reset_color/8 bareterm_puts/7 bareterm_set_color/6 bareterm_move_cursor/5 
 
 Removing unused symbols:
 
 Reclaimed Symbol table:
 
-tui_widget_register/10 (tui_widget_register) @0000000006da9000
+bareterm_widget_register/10 (bareterm_widget_register) @0000000006da9000
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Function flags:
-  Called by: tui_label_init/2 
+  Called by: bareterm_label_init/2 
   Calls: 
 strlen/9 (strlen) @0000000006cd5e38
   Type: function
@@ -306,9 +306,9 @@ strlen/9 (strlen) @0000000006cd5e38
   References: 
   Referring: 
   Function flags:
-  Called by: tui_label_init/2 
+  Called by: bareterm_label_init/2 
   Calls: 
-tui_reset_color/8 (tui_reset_color) @0000000006cd5d20
+bareterm_reset_color/8 (bareterm_reset_color) @0000000006cd5d20
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -316,7 +316,7 @@ tui_reset_color/8 (tui_reset_color) @0000000006cd5d20
   Function flags:
   Called by: label_draw/0 
   Calls: 
-tui_puts/7 (tui_puts) @0000000006cd5c08
+bareterm_puts/7 (bareterm_puts) @0000000006cd5c08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -324,7 +324,7 @@ tui_puts/7 (tui_puts) @0000000006cd5c08
   Function flags:
   Called by: label_draw/0 
   Calls: 
-tui_set_color/6 (tui_set_color) @0000000006cd5af0
+bareterm_set_color/6 (bareterm_set_color) @0000000006cd5af0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -332,7 +332,7 @@ tui_set_color/6 (tui_set_color) @0000000006cd5af0
   Function flags:
   Called by: label_draw/0 
   Calls: 
-tui_move_cursor/5 (tui_move_cursor) @0000000006cd59d8
+bareterm_move_cursor/5 (bareterm_move_cursor) @0000000006cd59d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -340,7 +340,7 @@ tui_move_cursor/5 (tui_move_cursor) @0000000006cd59d8
   Function flags:
   Called by: label_draw/0 
   Calls: 
-tui_label_set_color/4 (tui_label_set_color) @0000000006cd58c0
+bareterm_label_set_color/4 (bareterm_label_set_color) @0000000006cd58c0
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -348,7 +348,7 @@ tui_label_set_color/4 (tui_label_set_color) @0000000006cd58c0
   Function flags: body
   Called by: 
   Calls: 
-tui_label_set_text/3 (tui_label_set_text) @0000000006cd57a8
+bareterm_label_set_text/3 (bareterm_label_set_text) @0000000006cd57a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -356,20 +356,20 @@ tui_label_set_text/3 (tui_label_set_text) @0000000006cd57a8
   Function flags: body
   Called by: 
   Calls: 
-tui_label_init/2 (tui_label_init) @0000000006cd5690
+bareterm_label_init/2 (bareterm_label_init) @0000000006cd5690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: label_draw/0 (addr) label_event/1 (addr) 
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_widget_register/10 strlen/9 
+  Calls: bareterm_widget_register/10 strlen/9 
 label_event/1 (label_event) @0000000006cd5578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
   References: 
-  Referring: tui_label_init/2 (addr) 
+  Referring: bareterm_label_init/2 (addr) 
   Function flags: body
   Called by: 
   Calls: 
@@ -378,24 +378,24 @@ label_draw/0 (label_draw) @0000000006cd5460
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
   References: 
-  Referring: tui_label_init/2 (addr) 
+  Referring: bareterm_label_init/2 (addr) 
   Function flags: body
   Called by: 
-  Calls: tui_reset_color/8 tui_puts/7 tui_set_color/6 tui_move_cursor/5 
+  Calls: bareterm_reset_color/8 bareterm_puts/7 bareterm_set_color/6 bareterm_move_cursor/5 
 
 Reclaiming functions:
 Reclaiming variables:
 Clearing address taken flags:
 Optimized Symbol table:
 
-tui_widget_register/10 (tui_widget_register) @0000000006da9000
+bareterm_widget_register/10 (bareterm_widget_register) @0000000006da9000
   Type: function
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Availability: not_available
   Function flags:
-  Called by: tui_label_init/2 
+  Called by: bareterm_label_init/2 
   Calls: 
 strlen/9 (strlen) @0000000006cd5e38
   Type: function
@@ -404,9 +404,9 @@ strlen/9 (strlen) @0000000006cd5e38
   Referring: 
   Availability: not_available
   Function flags:
-  Called by: tui_label_init/2 
+  Called by: bareterm_label_init/2 
   Calls: 
-tui_reset_color/8 (tui_reset_color) @0000000006cd5d20
+bareterm_reset_color/8 (bareterm_reset_color) @0000000006cd5d20
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -415,7 +415,7 @@ tui_reset_color/8 (tui_reset_color) @0000000006cd5d20
   Function flags:
   Called by: label_draw/0 
   Calls: 
-tui_puts/7 (tui_puts) @0000000006cd5c08
+bareterm_puts/7 (bareterm_puts) @0000000006cd5c08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -424,7 +424,7 @@ tui_puts/7 (tui_puts) @0000000006cd5c08
   Function flags:
   Called by: label_draw/0 
   Calls: 
-tui_set_color/6 (tui_set_color) @0000000006cd5af0
+bareterm_set_color/6 (bareterm_set_color) @0000000006cd5af0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -433,7 +433,7 @@ tui_set_color/6 (tui_set_color) @0000000006cd5af0
   Function flags:
   Called by: label_draw/0 
   Calls: 
-tui_move_cursor/5 (tui_move_cursor) @0000000006cd59d8
+bareterm_move_cursor/5 (bareterm_move_cursor) @0000000006cd59d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -442,7 +442,7 @@ tui_move_cursor/5 (tui_move_cursor) @0000000006cd59d8
   Function flags:
   Called by: label_draw/0 
   Calls: 
-tui_label_set_color/4 (tui_label_set_color) @0000000006cd58c0
+bareterm_label_set_color/4 (bareterm_label_set_color) @0000000006cd58c0
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -451,7 +451,7 @@ tui_label_set_color/4 (tui_label_set_color) @0000000006cd58c0
   Function flags: body
   Called by: 
   Calls: 
-tui_label_set_text/3 (tui_label_set_text) @0000000006cd57a8
+bareterm_label_set_text/3 (bareterm_label_set_text) @0000000006cd57a8
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -460,7 +460,7 @@ tui_label_set_text/3 (tui_label_set_text) @0000000006cd57a8
   Function flags: body
   Called by: 
   Calls: 
-tui_label_init/2 (tui_label_init) @0000000006cd5690
+bareterm_label_init/2 (bareterm_label_init) @0000000006cd5690
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: label_draw/0 (addr) label_event/1 (addr) 
@@ -468,13 +468,13 @@ tui_label_init/2 (tui_label_init) @0000000006cd5690
   Availability: available
   Function flags: body
   Called by: 
-  Calls: tui_widget_register/10 strlen/9 
+  Calls: bareterm_widget_register/10 strlen/9 
 label_event/1 (label_event) @0000000006cd5578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
   Address is taken.
   References: 
-  Referring: tui_label_init/2 (addr) 
+  Referring: bareterm_label_init/2 (addr) 
   Availability: available
   Function flags: body
   Called by: 
@@ -484,17 +484,17 @@ label_draw/0 (label_draw) @0000000006cd5460
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
   Address is taken.
   References: 
-  Referring: tui_label_init/2 (addr) 
+  Referring: bareterm_label_init/2 (addr) 
   Availability: available
   Function flags: body
   Called by: 
-  Calls: tui_reset_color/8 tui_puts/7 tui_set_color/6 tui_move_cursor/5 
+  Calls: bareterm_reset_color/8 bareterm_puts/7 bareterm_set_color/6 bareterm_move_cursor/5 
 Trivially needed variables:
 Removing variables:
 
 Final Symbol table:
 
-tui_widget_register/10 (tui_widget_register) @0000000006da9000
+bareterm_widget_register/10 (bareterm_widget_register) @0000000006da9000
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -512,7 +512,7 @@ strlen/9 (strlen) @0000000006cd5e38
   Function flags:
   Called by: 
   Calls: 
-tui_reset_color/8 (tui_reset_color) @0000000006cd5d20
+bareterm_reset_color/8 (bareterm_reset_color) @0000000006cd5d20
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -521,7 +521,7 @@ tui_reset_color/8 (tui_reset_color) @0000000006cd5d20
   Function flags:
   Called by: 
   Calls: 
-tui_puts/7 (tui_puts) @0000000006cd5c08
+bareterm_puts/7 (bareterm_puts) @0000000006cd5c08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -530,7 +530,7 @@ tui_puts/7 (tui_puts) @0000000006cd5c08
   Function flags:
   Called by: 
   Calls: 
-tui_set_color/6 (tui_set_color) @0000000006cd5af0
+bareterm_set_color/6 (bareterm_set_color) @0000000006cd5af0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -539,7 +539,7 @@ tui_set_color/6 (tui_set_color) @0000000006cd5af0
   Function flags:
   Called by: 
   Calls: 
-tui_move_cursor/5 (tui_move_cursor) @0000000006cd59d8
+bareterm_move_cursor/5 (bareterm_move_cursor) @0000000006cd59d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -548,27 +548,27 @@ tui_move_cursor/5 (tui_move_cursor) @0000000006cd59d8
   Function flags:
   Called by: 
   Calls: 
-tui_label_set_color/4 (tui_label_set_color) @0000000006cd58c0
+bareterm_label_set_color/4 (bareterm_label_set_color) @0000000006cd58c0
   Type: function definition analyzed
-  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_label_set_color (implicit_section)
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.bareterm_label_set_color (implicit_section)
   References: 
   Referring: 
   Availability: available
   Function flags:
   Called by: 
   Calls: 
-tui_label_set_text/3 (tui_label_set_text) @0000000006cd57a8
+bareterm_label_set_text/3 (bareterm_label_set_text) @0000000006cd57a8
   Type: function definition analyzed
-  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_label_set_text (implicit_section)
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.bareterm_label_set_text (implicit_section)
   References: 
   Referring: 
   Availability: available
   Function flags:
   Called by: 
   Calls: 
-tui_label_init/2 (tui_label_init) @0000000006cd5690
+bareterm_label_init/2 (bareterm_label_init) @0000000006cd5690
   Type: function definition analyzed
-  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_label_init (implicit_section)
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.bareterm_label_init (implicit_section)
   References: 
   Referring: 
   Availability: available

@@ -269,3 +269,6 @@ C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/cmake/report
 C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/cmake/reports/CMakeFiles/footprint.dir
 C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/cmake/reports/CMakeFiles/edit_cache.dir
 C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/cmake/reports/CMakeFiles/rebuild_cache.dir
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/bareterm/CMakeFiles/bareterm.dir
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/bareterm/CMakeFiles/edit_cache.dir
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/bareterm/CMakeFiles/rebuild_cache.dir

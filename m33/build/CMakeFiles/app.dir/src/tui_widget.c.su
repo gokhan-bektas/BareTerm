@@ -1,6 +1,6 @@
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/tui_widget.c:12:6:tui_widget_register	16	static
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/tui_widget.c:26:6:tui_draw_all_widgets	16	static
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/tui_widget.c:36:6:tui_dispatch_event	32	static
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/tui_widget.c:66:13:button_draw	48	static
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/tui_widget.c:79:13:button_event	32	static
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/tui_widget.c:97:6:tui_button_init	24	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/bareterm_widget.c:12:6:bareterm_widget_register	16	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/bareterm_widget.c:26:6:bareterm_draw_all_widgets	16	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/bareterm_widget.c:36:6:bareterm_dispatch_event	32	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/bareterm_widget.c:66:13:button_draw	48	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/bareterm_widget.c:79:13:button_event	32	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/bareterm_widget.c:97:6:bareterm_button_init	24	static

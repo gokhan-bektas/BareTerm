@@ -1,15 +1,15 @@
 // ============================
-// File: tui_widget.c
+// File: bareterm_widget.c
 // ============================
-#include "tui_widget.h"
+#include "bareterm_widget.h"
 #include <string.h>
 
 // Internal linked list head and focus tracking
-static tui_widget_t *widget_list = NULL;
-static tui_widget_t *focused_widget = NULL;
+static bareterm_widget_t *widget_list = NULL;
+static bareterm_widget_t *focused_widget = NULL;
 
 // Register widget: add to list, set initial focus
-void tui_widget_register(tui_widget_t *w) {
+void bareterm_widget_register(bareterm_widget_t *w) {
     w->next_sibling = widget_list;
     widget_list = w;
     w->parent = NULL;
@@ -23,8 +23,8 @@ void tui_widget_register(tui_widget_t *w) {
 }
 
 // Draw all widgets in the order registered
-void tui_draw_all_widgets(void) {
-    for (tui_widget_t *w = widget_list; w; w = w->next_sibling) {
+void bareterm_draw_all_widgets(void) {
+    for (bareterm_widget_t *w = widget_list; w; w = w->next_sibling) {
         if (w->visible && w->draw) {
             w->draw(w);
             w->needs_redraw = false;
@@ -33,10 +33,10 @@ void tui_draw_all_widgets(void) {
 }
 
 // Dispatch event to appropriate widget (mouse hit-test + keyboard focus)
-void tui_dispatch_event(const tui_event_t *evt) {
+void bareterm_dispatch_event(const bareterm_event_t *evt) {
     // Mouse events: hit-test all widgets
-    if (evt->type == TUI_EVT_MOUSE) {
-        for (tui_widget_t *w = widget_list; w; w = w->next_sibling) {
+    if (evt->type == bareterm_EVT_MOUSE) {
+        for (bareterm_widget_t *w = widget_list; w; w = w->next_sibling) {
             if (!w->visible) continue;
             int mx = evt->mouse.x;
             int my = evt->mouse.y;
@@ -63,26 +63,26 @@ void tui_dispatch_event(const tui_event_t *evt) {
 }
 
 // Button draw and event handlers
-static void button_draw(tui_widget_t *w) {
+static void button_draw(bareterm_widget_t *w) {
     // Draw border
-    tui_draw_box(w->x, w->y, w->width, w->height, NULL);
+    bareterm_draw_box(w->x, w->y, w->width, w->height, NULL);
     // Center label
     int len = strlen(w->label);
     int cx = w->x + (w->width - len) / 2;
     int cy = w->y + w->height / 2;
-    tui_move_cursor(cx, cy);
-    if (w->focused) tui_set_color(TUI_BLACK, TUI_WHITE, TUI_STYLE_BOLD);
-    tui_puts(w->label);
-    if (w->focused) tui_reset_color();
+    bareterm_move_cursor(cx, cy);
+    if (w->focused) bareterm_set_color(bareterm_BLACK, bareterm_WHITE, bareterm_STYLE_BOLD);
+    bareterm_puts(w->label);
+    if (w->focused) bareterm_reset_color();
 }
 
-static void button_event(tui_widget_t *w, const tui_event_t *evt) {
+static void button_event(bareterm_widget_t *w, const bareterm_event_t *evt) {
     // Handle Enter key or mouse click
-    if (evt->type == TUI_EVT_KEY && evt->key.code == TUI_KEY_ENTER) {
+    if (evt->type == bareterm_EVT_KEY && evt->key.code == bareterm_KEY_ENTER) {
         void (*cb)(void *) = w->click_cb;
         if (cb) cb(w);
     }
-    if (evt->type == TUI_EVT_MOUSE && evt->mouse.pressed) {
+    if (evt->type == bareterm_EVT_MOUSE && evt->mouse.pressed) {
         int mx = evt->mouse.x;
         int my = evt->mouse.y;
         if (mx >= w->x && mx < w->x + w->width &&
@@ -94,7 +94,7 @@ static void button_event(tui_widget_t *w, const tui_event_t *evt) {
 }
 
 // Public: initialize a button widget
-void tui_button_init(tui_widget_t *btn,
+void bareterm_button_init(bareterm_widget_t *btn,
                      int x, int y, int w, int h,
                      const char *label,
                      void (*on_click)(void *)) {
@@ -117,7 +117,7 @@ void tui_button_init(tui_widget_t *btn,
     btn->handle_event = button_event;
 
     // Register in widget system
-    tui_widget_register(btn);
+    bareterm_widget_register(btn);
 }
 
 

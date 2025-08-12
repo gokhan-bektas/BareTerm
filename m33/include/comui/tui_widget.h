@@ -1,11 +1,11 @@
 // ============================
-// File: tui_widget.h
+// File: bareterm_widget.h
 // ============================
-#ifndef TUI_WIDGET_H
-#define TUI_WIDGET_H
+#ifndef bareterm_WIDGET_H
+#define bareterm_WIDGET_H
 
-#include "tui.h"
-#include "tui_input.h"
+#include "comui/tui.h"
+#include "comui/bareterm_input.h"
 #include <stdbool.h>
 
 #ifdef __cplusplus
@@ -13,85 +13,85 @@ extern "C" {
 #endif
 
 // Forward declaration
-typedef struct tui_widget tui_widget_t;
+typedef struct bareterm_widget bareterm_widget_t;
 
 // Function pointer types for widget operations
-typedef void (*tui_widget_draw_fn)(tui_widget_t *widget);
-typedef void (*tui_widget_event_fn)(tui_widget_t *widget, const tui_event_t *evt);
+typedef void (*bareterm_widget_draw_fn)(bareterm_widget_t *widget);
+typedef void (*bareterm_widget_event_fn)(bareterm_widget_t *widget, const bareterm_event_t *evt);
 
 // Base widget structure
-typedef struct tui_widget {
+typedef struct bareterm_widget {
     int x, y;                         // position
     int width, height;                // size
     bool focused;                     // focus state
     bool visible;                     // visibility flag
     bool needs_redraw;                // dirty flag
-    tui_widget_draw_fn draw;          // draw method
-    tui_widget_event_fn handle_event; // event handler
-    struct tui_widget *parent;        // parent container
-    struct tui_widget *next_sibling;  // next in focus order
+    bareterm_widget_draw_fn draw;          // draw method
+    bareterm_widget_event_fn handle_event; // event handler
+    struct bareterm_widget *parent;        // parent container
+    struct bareterm_widget *next_sibling;  // next in focus order
     void *user_data;                  // widget-specific data
     const char *label;                // label text for buttons/labels
     void (*click_cb)(void *);         // callback for button click           // widget-specific data
     int value;                        // value for progress bars
     int max;                          // max value for progress bars
-    tui_color_t fg, bg;
-    tui_style_t style;
+    bareterm_color_t fg, bg;
+    bareterm_style_t style;
     int checked;                     // checkbox state (0 = unchecked, 1 = checked)
-    void (*toggle_cb)(tui_widget_t *cb, unsigned char new_state); // callback for checkbox toggle
+    void (*toggle_cb)(bareterm_widget_t *cb, unsigned char new_state); // callback for checkbox toggle
     const char **rg_labels;                    // array of option strings
     int           rg_count;                    // number of options
     int           rg_selected;                 // index of the currently selected option
-    void        (*rg_change_cb)(tui_widget_t*, int); // callback(new_index)
+    void        (*rg_change_cb)(bareterm_widget_t*, int); // callback(new_index)
     char    *txtbuf;        // pointer to your text buffer
     int      txt_capacity;  // total buffer capacity (including NUL)
     int      txt_length;    // current string length
     int      cursor_pos;    // insertion cursor position [0..txt_length]
     int      txt_offset;    // first visible character index
-    void   (*submit_cb)(tui_widget_t *ti); // called on Enter
+    void   (*submit_cb)(bareterm_widget_t *ti); // called on Enter
 
-} tui_widget_t;
+} bareterm_widget_t;
 
 // Register a widget for drawing and event dispatch
-void tui_widget_register(tui_widget_t *widget);
+void bareterm_widget_register(bareterm_widget_t *widget);
 
 // Draw all registered widgets
-void tui_draw_all_widgets(void);
+void bareterm_draw_all_widgets(void);
 
 // Dispatch an event to the focused widget
-void tui_dispatch_event(const tui_event_t *evt);
+void bareterm_dispatch_event(const bareterm_event_t *evt);
 
-void tui_label_init(tui_widget_t *lbl,
+void bareterm_label_init(bareterm_widget_t *lbl,
                     int x, int y,
                     const char *text,
-                    tui_color_t fg, tui_color_t bg,
-                    tui_style_t style);
+                    bareterm_color_t fg, bareterm_color_t bg,
+                    bareterm_style_t style);
 // Update label text at runtime
-void tui_label_set_text(tui_widget_t *lbl, const char *text);
+void bareterm_label_set_text(bareterm_widget_t *lbl, const char *text);
 
 // Update label color and style at runtime
-void tui_label_set_color(tui_widget_t *lbl, tui_color_t fg, tui_color_t bg, tui_style_t style);
+void bareterm_label_set_color(bareterm_widget_t *lbl, bareterm_color_t fg, bareterm_color_t bg, bareterm_style_t style);
 
 
-static void textbox_draw(tui_widget_t *w);
-static void textbox_event(tui_widget_t *w, const tui_event_t *evt);
-void tui_textbox_init(tui_widget_t *tb,
+void textbox_draw(bareterm_widget_t *w);
+void textbox_event(bareterm_widget_t *w, const bareterm_event_t *evt);
+void bareterm_textbox_init(bareterm_widget_t *tb,
                       int x, int y, int w, int h,
                       const char *text,
-                      tui_color_t fg, tui_color_t bg, tui_style_t style);
-void tui_textbox_set_text(tui_widget_t *tb, const char *text);
-void tui_textbox_set_color(tui_widget_t *tb, tui_color_t fg, tui_color_t bg, tui_style_t style);
+                      bareterm_color_t fg, bareterm_color_t bg, bareterm_style_t style);
+void bareterm_textbox_set_text(bareterm_widget_t *tb, const char *text);
+void bareterm_textbox_set_color(bareterm_widget_t *tb, bareterm_color_t fg, bareterm_color_t bg, bareterm_style_t style);
 // ============================
 // ProgressBar widget initializer and update functions
 // ============================
 // Initialize a horizontal progress bar widget
-void tui_progressbar_init(tui_widget_t *pb,
+void bareterm_progressbar_init(bareterm_widget_t *pb,
                           int x, int y, int w, int h,
                           int value, int max,
-                          tui_color_t fg, tui_color_t bg, tui_style_t style);
+                          bareterm_color_t fg, bareterm_color_t bg, bareterm_style_t style);
 
 // Update progress bar value at runtime
-void tui_progressbar_set_value(tui_widget_t *pb, int value);                      
+void bareterm_progressbar_set_value(bareterm_widget_t *pb, int value);                      
 
 
 
@@ -101,59 +101,59 @@ void tui_progressbar_set_value(tui_widget_t *pb, int value);
 // label:    text to display to the right of the box
 // initial:  starting checked state
 // on_toggle: callback(widget, new_state) when user toggles
-void tui_checkbox_init(tui_widget_t *cb,
+void bareterm_checkbox_init(bareterm_widget_t *cb,
                        int x, int y,
                        const char *label,
                        unsigned char initial,
-                       void (*on_toggle)(tui_widget_t *cb, unsigned char new_state));
+                       void (*on_toggle)(bareterm_widget_t *cb, unsigned char new_state));
 
 // Programmatically set/get its state
-void tui_checkbox_set_checked(tui_widget_t *cb, unsigned char checked);
-unsigned char tui_checkbox_is_checked(const tui_widget_t *cb);
+void bareterm_checkbox_set_checked(bareterm_widget_t *cb, unsigned char checked);
+unsigned char bareterm_checkbox_is_checked(const bareterm_widget_t *cb);
 
 
-void tui_modalpopup_show(const char *title, const char *msg);
+void bareterm_modalpopup_show(const char *title, const char *msg);
 
 // Public API (below your other inits):
 // Initialize a radio‐button group
 // - labels: array of `count` C‐strings (must stay valid)
 // - initial: starting selection [0..count-1]
 // - on_change: called when selection changes
-void tui_radiogroup_init(tui_widget_t *rg,
+void bareterm_radiogroup_init(bareterm_widget_t *rg,
                          int x, int y,
                          const char **labels,
                          int count,
                          int initial,
-                         void (*on_change)(tui_widget_t *rg, int selected));
+                         void (*on_change)(bareterm_widget_t *rg, int selected));
 
 // Programmatically set/get
-void tui_radiogroup_set_selected(tui_widget_t *rg, int selected);
-int  tui_radiogroup_get_selected(const tui_widget_t *rg);
+void bareterm_radiogroup_set_selected(bareterm_widget_t *rg, int selected);
+int  bareterm_radiogroup_get_selected(const bareterm_widget_t *rg);
 
 /**
  * Initialize a single‑line text‑input widget.
  *
- * ti:        pointer to a tui_widget_t instance
+ * ti:        pointer to a bareterm_widget_t instance
  * x,y:       top‑left position
  * w:         width in characters
  * buffer:    pointer to a char array of size >= capacity
  * capacity:  total buffer size (including space for trailing NUL)
  * on_submit: callback invoked (with the widget) when Enter is pressed
  */
-void tui_textinput_init(tui_widget_t *ti,
+void bareterm_textinput_init(bareterm_widget_t *ti,
                         int x, int y, int w,
                         char *buffer, int capacity,
-                        void (*on_submit)(tui_widget_t *ti));
+                        void (*on_submit)(bareterm_widget_t *ti));
 
 /** Replace the entire contents of the input. */
-void tui_textinput_set_text(tui_widget_t *ti, const char *text);
+void bareterm_textinput_set_text(bareterm_widget_t *ti, const char *text);
 
 /** Copy out up to maxlen‑1 characters + NUL. */
-void tui_textinput_get_text(const tui_widget_t *ti,
+void bareterm_textinput_get_text(const bareterm_widget_t *ti,
                             char *out, int maxlen);
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif // TUI_WIDGET_H
+#endif // bareterm_WIDGET_H

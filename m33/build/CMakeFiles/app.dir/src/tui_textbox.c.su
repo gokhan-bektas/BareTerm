@@ -1,5 +1,5 @@
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/tui_textbox.c:11:13:textbox_draw	64	static
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/tui_textbox.c:49:13:textbox_event	16	static
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/tui_textbox.c:54:6:tui_textbox_init	24	static
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/tui_textbox.c:74:6:tui_textbox_set_text	16	static
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/tui_textbox.c:80:6:tui_textbox_set_color	16	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/bareterm_textbox.c:11:13:textbox_draw	64	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/bareterm_textbox.c:49:13:textbox_event	16	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/bareterm_textbox.c:54:6:bareterm_textbox_init	24	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/bareterm_textbox.c:74:6:bareterm_textbox_set_text	16	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/bareterm_textbox.c:80:6:bareterm_textbox_set_color	16	static

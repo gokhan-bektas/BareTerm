@@ -1,9 +1,9 @@
-Trivially needed symbols: tui_uart_input_init/602 uart_cb/601 uart_dev/600
+Trivially needed symbols: bareterm_uart_input_init/602 uart_cb/601 uart_dev/600
 
 
 Initial Symbol table:
 
-tui_input_feed/603 (tui_input_feed) @0000000008350118
+bareterm_input_feed/603 (bareterm_input_feed) @0000000008350118
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -11,7 +11,7 @@ tui_input_feed/603 (tui_input_feed) @0000000008350118
   Function flags:
   Called by: uart_cb/601 
   Calls: 
-tui_uart_input_init/602 (tui_uart_input_init) @0000000008350000
+bareterm_uart_input_init/602 (bareterm_uart_input_init) @0000000008350000
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @0000000001d89da0
@@ -26,16 +26,16 @@ uart_cb/601 (uart_cb) @00000000082c0e38
   Address is taken.
   Aux: @0000000008350000
   References: 
-  Referring: tui_uart_input_init/602 (addr) 
+  Referring: bareterm_uart_input_init/602 (addr) 
   Function flags: body
   Called by: 
-  Calls: uart_irq_is_pending/589 uart_irq_update/590 uart_fifo_read/549 tui_input_feed/603 uart_irq_rx_ready/557 
+  Calls: uart_irq_is_pending/589 uart_irq_update/590 uart_fifo_read/549 bareterm_input_feed/603 uart_irq_rx_ready/557 
 uart_dev/600 (uart_dev) @000000000834ae80
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   Aux: @00000000082c0e38
   References: 
-  Referring: tui_uart_input_init/602 (write) tui_uart_input_init/602 (read) tui_uart_input_init/602 (read) 
+  Referring: bareterm_uart_input_init/602 (write) bareterm_uart_input_init/602 (read) bareterm_uart_input_init/602 (read) 
   Availability: not-ready
   Varpool flags:
 uart_drv_cmd/599 (uart_drv_cmd) @00000000082c0d20
@@ -159,7 +159,7 @@ uart_irq_rx_enable/585 (uart_irq_rx_enable) @0000000007df3d20
   References: 
   Referring: 
   Function flags: body
-  Called by: tui_uart_input_init/602 
+  Called by: bareterm_uart_input_init/602 
   Calls: z_impl_uart_irq_rx_enable/554 
 uart_irq_tx_disable/584 (uart_irq_tx_disable) @0000000007df3c08
   Type: function definition
@@ -344,7 +344,7 @@ uart_irq_callback_user_data_set/562 (uart_irq_callback_user_data_set) @000000000
   References: 
   Referring: 
   Function flags: body
-  Called by: tui_uart_input_init/602 
+  Called by: bareterm_uart_input_init/602 
   Calls: 
    Indirect callnum speculative call targets: 0
 z_impl_uart_irq_update/561 (z_impl_uart_irq_update) @0000000007de8230
@@ -4856,7 +4856,7 @@ Removing unused symbols: uart_drv_cmd/599 uart_line_ctrl_get/598 uart_line_ctrl_
 
 Reclaimed Symbol table:
 
-tui_input_feed/603 (tui_input_feed) @0000000008350118
+bareterm_input_feed/603 (bareterm_input_feed) @0000000008350118
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -4864,7 +4864,7 @@ tui_input_feed/603 (tui_input_feed) @0000000008350118
   Function flags:
   Called by: uart_cb/601 
   Calls: 
-tui_uart_input_init/602 (tui_uart_input_init) @0000000008350000
+bareterm_uart_input_init/602 (bareterm_uart_input_init) @0000000008350000
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: uart_dev/600 (write) uart_dev/600 (read) uart_cb/601 (addr) uart_dev/600 (read) 
@@ -4877,15 +4877,15 @@ uart_cb/601 (uart_cb) @00000000082c0e38
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
   References: 
-  Referring: tui_uart_input_init/602 (addr) 
+  Referring: bareterm_uart_input_init/602 (addr) 
   Function flags: body
   Called by: 
-  Calls: uart_irq_is_pending/589 uart_irq_update/590 uart_fifo_read/549 tui_input_feed/603 uart_irq_rx_ready/557 
+  Calls: uart_irq_is_pending/589 uart_irq_update/590 uart_fifo_read/549 bareterm_input_feed/603 uart_irq_rx_ready/557 
 uart_dev/600 (uart_dev) @000000000834ae80
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
-  Referring: tui_uart_input_init/602 (write) tui_uart_input_init/602 (read) tui_uart_input_init/602 (read) 
+  Referring: bareterm_uart_input_init/602 (write) bareterm_uart_input_init/602 (read) bareterm_uart_input_init/602 (read) 
   Availability: not-ready
   Varpool flags:
 uart_irq_update/590 (uart_irq_update) @00000000082c0348
@@ -4910,7 +4910,7 @@ uart_irq_rx_enable/585 (uart_irq_rx_enable) @0000000007df3d20
   References: 
   Referring: 
   Function flags: body
-  Called by: tui_uart_input_init/602 
+  Called by: bareterm_uart_input_init/602 
   Calls: z_impl_uart_irq_rx_enable/554 
 uart_irq_callback_user_data_set/562 (uart_irq_callback_user_data_set) @0000000007de8348
   Type: function definition analyzed
@@ -4918,7 +4918,7 @@ uart_irq_callback_user_data_set/562 (uart_irq_callback_user_data_set) @000000000
   References: 
   Referring: 
   Function flags: body
-  Called by: tui_uart_input_init/602 
+  Called by: bareterm_uart_input_init/602 
   Calls: 
    Indirect callnum speculative call targets: 0
 z_impl_uart_irq_update/561 (z_impl_uart_irq_update) @0000000007de8230
@@ -4970,7 +4970,7 @@ uart_fifo_read/549 (uart_fifo_read) @0000000006da8460
 
 Initial Symbol table:
 
-tui_input_feed/603 (tui_input_feed) @0000000008350118
+bareterm_input_feed/603 (bareterm_input_feed) @0000000008350118
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -4978,7 +4978,7 @@ tui_input_feed/603 (tui_input_feed) @0000000008350118
   Function flags:
   Called by: uart_cb/601 
   Calls: 
-tui_uart_input_init/602 (tui_uart_input_init) @0000000008350000
+bareterm_uart_input_init/602 (bareterm_uart_input_init) @0000000008350000
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: uart_dev/600 (write) uart_dev/600 (read) uart_cb/601 (addr) uart_dev/600 (read) 
@@ -4991,15 +4991,15 @@ uart_cb/601 (uart_cb) @00000000082c0e38
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
   References: 
-  Referring: tui_uart_input_init/602 (addr) 
+  Referring: bareterm_uart_input_init/602 (addr) 
   Function flags: body
   Called by: 
-  Calls: uart_irq_is_pending/589 uart_irq_update/590 uart_fifo_read/549 tui_input_feed/603 uart_irq_rx_ready/557 
+  Calls: uart_irq_is_pending/589 uart_irq_update/590 uart_fifo_read/549 bareterm_input_feed/603 uart_irq_rx_ready/557 
 uart_dev/600 (uart_dev) @000000000834ae80
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
-  Referring: tui_uart_input_init/602 (write) tui_uart_input_init/602 (read) tui_uart_input_init/602 (read) 
+  Referring: bareterm_uart_input_init/602 (write) bareterm_uart_input_init/602 (read) bareterm_uart_input_init/602 (read) 
   Availability: not-ready
   Varpool flags:
 uart_irq_update/590 (uart_irq_update) @00000000082c0348
@@ -5024,7 +5024,7 @@ uart_irq_rx_enable/585 (uart_irq_rx_enable) @0000000007df3d20
   References: 
   Referring: 
   Function flags: body
-  Called by: tui_uart_input_init/602 
+  Called by: bareterm_uart_input_init/602 
   Calls: z_impl_uart_irq_rx_enable/554 
 uart_irq_callback_user_data_set/562 (uart_irq_callback_user_data_set) @0000000007de8348
   Type: function definition analyzed
@@ -5032,7 +5032,7 @@ uart_irq_callback_user_data_set/562 (uart_irq_callback_user_data_set) @000000000
   References: 
   Referring: 
   Function flags: body
-  Called by: tui_uart_input_init/602 
+  Called by: bareterm_uart_input_init/602 
   Calls: 
    Indirect callnum speculative call targets: 0
 z_impl_uart_irq_update/561 (z_impl_uart_irq_update) @0000000007de8230
@@ -5085,7 +5085,7 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-tui_input_feed/603 (tui_input_feed) @0000000008350118
+bareterm_input_feed/603 (bareterm_input_feed) @0000000008350118
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -5093,7 +5093,7 @@ tui_input_feed/603 (tui_input_feed) @0000000008350118
   Function flags:
   Called by: uart_cb/601 
   Calls: 
-tui_uart_input_init/602 (tui_uart_input_init) @0000000008350000
+bareterm_uart_input_init/602 (bareterm_uart_input_init) @0000000008350000
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: uart_dev/600 (write) uart_dev/600 (read) uart_cb/601 (addr) uart_dev/600 (read) 
@@ -5106,15 +5106,15 @@ uart_cb/601 (uart_cb) @00000000082c0e38
   Visibility: force_output semantic_interposition no_reorder
   Address is taken.
   References: 
-  Referring: tui_uart_input_init/602 (addr) 
+  Referring: bareterm_uart_input_init/602 (addr) 
   Function flags: body
   Called by: 
-  Calls: uart_irq_is_pending/589 uart_irq_update/590 uart_fifo_read/549 tui_input_feed/603 uart_irq_rx_ready/557 
+  Calls: uart_irq_is_pending/589 uart_irq_update/590 uart_fifo_read/549 bareterm_input_feed/603 uart_irq_rx_ready/557 
 uart_dev/600 (uart_dev) @000000000834ae80
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
-  Referring: tui_uart_input_init/602 (write) tui_uart_input_init/602 (read) tui_uart_input_init/602 (read) 
+  Referring: bareterm_uart_input_init/602 (write) bareterm_uart_input_init/602 (read) bareterm_uart_input_init/602 (read) 
   Availability: not-ready
   Varpool flags:
 uart_irq_update/590 (uart_irq_update) @00000000082c0348
@@ -5139,7 +5139,7 @@ uart_irq_rx_enable/585 (uart_irq_rx_enable) @0000000007df3d20
   References: 
   Referring: 
   Function flags: body
-  Called by: tui_uart_input_init/602 
+  Called by: bareterm_uart_input_init/602 
   Calls: z_impl_uart_irq_rx_enable/554 
 uart_irq_callback_user_data_set/562 (uart_irq_callback_user_data_set) @0000000007de8348
   Type: function definition analyzed
@@ -5147,7 +5147,7 @@ uart_irq_callback_user_data_set/562 (uart_irq_callback_user_data_set) @000000000
   References: 
   Referring: 
   Function flags: body
-  Called by: tui_uart_input_init/602 
+  Called by: bareterm_uart_input_init/602 
   Calls: 
    Indirect callnum speculative call targets: 0
 z_impl_uart_irq_update/561 (z_impl_uart_irq_update) @0000000007de8230
@@ -5201,7 +5201,7 @@ Reclaiming variables:
 Clearing address taken flags:
 Optimized Symbol table:
 
-tui_input_feed/603 (tui_input_feed) @0000000008350118
+bareterm_input_feed/603 (bareterm_input_feed) @0000000008350118
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -5210,7 +5210,7 @@ tui_input_feed/603 (tui_input_feed) @0000000008350118
   Function flags:
   Called by: uart_cb/601 
   Calls: 
-tui_uart_input_init/602 (tui_uart_input_init) @0000000008350000
+bareterm_uart_input_init/602 (bareterm_uart_input_init) @0000000008350000
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: uart_dev/600 (write) uart_dev/600 (read) uart_cb/601 (addr) uart_dev/600 (read) 
@@ -5224,16 +5224,16 @@ uart_cb/601 (uart_cb) @00000000082c0e38
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
   Address is taken.
   References: 
-  Referring: tui_uart_input_init/602 (addr) 
+  Referring: bareterm_uart_input_init/602 (addr) 
   Availability: available
   Function flags: body
   Called by: 
-  Calls: uart_irq_is_pending/589 uart_irq_update/590 uart_fifo_read/549 tui_input_feed/603 uart_irq_rx_ready/557 
+  Calls: uart_irq_is_pending/589 uart_irq_update/590 uart_fifo_read/549 bareterm_input_feed/603 uart_irq_rx_ready/557 
 uart_dev/600 (uart_dev) @000000000834ae80
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
   References: 
-  Referring: tui_uart_input_init/602 (write) tui_uart_input_init/602 (read) tui_uart_input_init/602 (read) 
+  Referring: bareterm_uart_input_init/602 (write) bareterm_uart_input_init/602 (read) bareterm_uart_input_init/602 (read) 
   Availability: available
   Varpool flags:
 uart_irq_update/590 (uart_irq_update) @00000000082c0348
@@ -5261,7 +5261,7 @@ uart_irq_rx_enable/585 (uart_irq_rx_enable) @0000000007df3d20
   Referring: 
   Availability: local
   Function flags: body local
-  Called by: tui_uart_input_init/602 
+  Called by: bareterm_uart_input_init/602 
   Calls: z_impl_uart_irq_rx_enable/554 
 uart_irq_callback_user_data_set/562 (uart_irq_callback_user_data_set) @0000000007de8348
   Type: function definition analyzed
@@ -5270,7 +5270,7 @@ uart_irq_callback_user_data_set/562 (uart_irq_callback_user_data_set) @000000000
   Referring: 
   Availability: local
   Function flags: body local
-  Called by: tui_uart_input_init/602 
+  Called by: bareterm_uart_input_init/602 
   Calls: 
    Indirect callnum speculative call targets: 0
 z_impl_uart_irq_update/561 (z_impl_uart_irq_update) @0000000007de8230
@@ -5328,7 +5328,7 @@ Removing variables:
 
 Final Symbol table:
 
-tui_input_feed/603 (tui_input_feed) @0000000008350118
+bareterm_input_feed/603 (bareterm_input_feed) @0000000008350118
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -5337,9 +5337,9 @@ tui_input_feed/603 (tui_input_feed) @0000000008350118
   Function flags:
   Called by: 
   Calls: 
-tui_uart_input_init/602 (tui_uart_input_init) @0000000008350000
+bareterm_uart_input_init/602 (bareterm_uart_input_init) @0000000008350000
   Type: function definition analyzed
-  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_uart_input_init (implicit_section)
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.bareterm_uart_input_init (implicit_section)
   References: 
   Referring: 
   Availability: available

@@ -1,35 +1,35 @@
 // ============================
-// File: tui_checkbox.c
+// File: bareterm_checkbox.c
 // ============================
-#include "tui_widget.h"
+#include "bareterm_widget.h"
 #include <string.h>
 
 // ============================
 // Checkbox draw & event
 // ============================
-static void checkbox_draw(tui_widget_t *w) {
+static void checkbox_draw(bareterm_widget_t *w) {
     // ▢ = U+25A2 white square, ▣ = U+25A3 checked
     const char *BOX_UNCHECK = "\xE2\x96\xA2"; // ▢
     const char *BOX_CHECK   = "\xE2\x96\xA3"; // ▣
 
-    tui_move_cursor(w->x, w->y);
+    bareterm_move_cursor(w->x, w->y);
     // draw box
-    tui_set_color(w->fg, w->bg, w->style);
-    tui_puts(w->checked ? BOX_CHECK : BOX_UNCHECK);
+    bareterm_set_color(w->fg, w->bg, w->style);
+    bareterm_puts(w->checked ? BOX_CHECK : BOX_UNCHECK);
     // space + label
-    tui_puts(" ");
-    tui_puts(w->label);
-    tui_reset_color();
+    bareterm_puts(" ");
+    bareterm_puts(w->label);
+    bareterm_reset_color();
 }
 
-static void checkbox_event(tui_widget_t *w, const tui_event_t *evt) {
+static void checkbox_event(bareterm_widget_t *w, const bareterm_event_t *evt) {
     unsigned char inside = 0;
-    if (evt->type == TUI_EVT_MOUSE && evt->mouse.pressed) {
+    if (evt->type == bareterm_EVT_MOUSE && evt->mouse.pressed) {
         int mx = evt->mouse.x, my = evt->mouse.y;
         inside = (mx >= w->x && mx < w->x + 1  // only the box is clickable
                && my >= w->y && my < w->y + 1);
     }
-    else if (evt->type == TUI_EVT_KEY && evt->key.code == TUI_KEY_ENTER) {
+    else if (evt->type == bareterm_EVT_KEY && evt->key.code == bareterm_KEY_ENTER) {
         inside = w->focused;
     }
 
@@ -45,11 +45,11 @@ static void checkbox_event(tui_widget_t *w, const tui_event_t *evt) {
 // ============================
 // Public API: checkbox init & access
 // ============================
-void tui_checkbox_init(tui_widget_t *cb,
+void bareterm_checkbox_init(bareterm_widget_t *cb,
                        int x, int y,
                        const char *label,
                        unsigned char initial,
-                       void (*on_toggle)(tui_widget_t *cb, unsigned char new_state))
+                       void (*on_toggle)(bareterm_widget_t *cb, unsigned char new_state))
 {
     cb->x            = x;
     cb->y            = y;
@@ -59,23 +59,23 @@ void tui_checkbox_init(tui_widget_t *cb,
     cb->checked      = initial;
     cb->toggle_cb    = on_toggle;
     // default colors (you can override with set_color later)
-    cb->fg           = TUI_WHITE;
-    cb->bg           = TUI_BLACK;
-    cb->style        = TUI_STYLE_NONE;
+    cb->fg           = bareterm_WHITE;
+    cb->bg           = bareterm_BLACK;
+    cb->style        = bareterm_STYLE_NONE;
     cb->visible      = 1;
     cb->needs_redraw = 1;
     // hook up draw & event
     cb->draw         = checkbox_draw;
     cb->handle_event = checkbox_event;
     // register
-    tui_widget_register(cb);
+    bareterm_widget_register(cb);
 }
 
-void tui_checkbox_set_checked(tui_widget_t *cb, unsigned char checked) {
+void bareterm_checkbox_set_checked(bareterm_widget_t *cb, unsigned char checked) {
     cb->checked      = checked;
     cb->needs_redraw = 1;
 }
 
-unsigned char tui_checkbox_is_checked(const tui_widget_t *cb) {
+unsigned char bareterm_checkbox_is_checked(const bareterm_widget_t *cb) {
     return cb->checked;
 }

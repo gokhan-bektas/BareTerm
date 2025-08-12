@@ -1,13 +1,14 @@
 // ============================
-// File: tui_progressbar.c
+// File: bareterm_progressbar.c
 // ============================
-#include "tui_widget.h"
+#include "bareterm_widget.h"
 #include <string.h>
+#include <stdio.h> 
 
-static void progressbar_draw(tui_widget_t *w) {
+static void progressbar_draw(bareterm_widget_t *w) {
     // Unicode blocks
     const char *FILLED = "\xE2\x96\x88"; // █
-    const char *EMPTY  = "\xE2\x96\x91"; // ░
+    const char *EMPTY_BLOCK  = "\xE2\x96\x91"; // ░
 
     // Total width includes brackets: "[…]"
     int total    = w->width;
@@ -20,34 +21,34 @@ static void progressbar_draw(tui_widget_t *w) {
     if (filled > inner)   filled = inner;
 
     // Draw the bar
-    tui_move_cursor(w->x, w->y);
-    tui_set_color(w->fg, w->bg, w->style);
-    tui_puts("[");
-    for (int i = 0; i < filled;   i++) tui_puts(FILLED);
-    for (int i = filled; i < inner; i++) tui_puts(EMPTY);
-    tui_puts("]");
-    tui_reset_color();
+    bareterm_move_cursor(w->x, w->y);
+    bareterm_set_color(w->fg, w->bg, w->style);
+    bareterm_puts("[");
+    for (int i = 0; i < filled;   i++) bareterm_puts(FILLED);
+    for (int i = filled; i < inner; i++) bareterm_puts(EMPTY_BLOCK);
+    bareterm_puts("]");
+    bareterm_reset_color();
 
     // Draw the percentage to the right
     char pct[8];
     int percent = (int)(100 * w->value / w->max);
-    int n = snprintf(pct, sizeof(pct), " %3d%%", percent);
+    snprintf(pct, sizeof(pct), " %3d%%", percent);
 
     // Move cursor just past the closing bracket
-    tui_move_cursor(w->x + total, w->y);
-    tui_puts(pct);
+    bareterm_move_cursor(w->x + total, w->y);
+    bareterm_puts(pct);
 }
 
 // No events to handle (read–only bar)
-static void progressbar_event(tui_widget_t *w, const tui_event_t *evt) {
+static void progressbar_event(bareterm_widget_t *w, const bareterm_event_t *evt) {
     (void)w; (void)evt;
 }
 
 // Public API: initialize a progress bar
-void tui_progressbar_init(tui_widget_t *pb,
+void bareterm_progressbar_init(bareterm_widget_t *pb,
                           int x, int y, int w, int h,
                           int value, int max,
-                          tui_color_t fg, tui_color_t bg, tui_style_t style)
+                          bareterm_color_t fg, bareterm_color_t bg, bareterm_style_t style)
 {
     pb->x           = x;
     pb->y           = y;
@@ -64,11 +65,11 @@ void tui_progressbar_init(tui_widget_t *pb,
     pb->draw        = progressbar_draw;
     pb->handle_event = progressbar_event;
 
-    tui_widget_register(pb);
+    bareterm_widget_register(pb);
 }
 
 // Public API: update its value at runtime
-void tui_progressbar_set_value(tui_widget_t *pb, int value) {
+void bareterm_progressbar_set_value(bareterm_widget_t *pb, int value) {
     if (value < 0)      value = 0;
     else if (value > pb->max) value = pb->max;
     pb->value        = value;

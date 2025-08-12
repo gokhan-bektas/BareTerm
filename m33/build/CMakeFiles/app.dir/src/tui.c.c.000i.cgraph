@@ -1,4 +1,4 @@
-Trivially needed symbols: tui_draw_box/95 tui_reset_color/94 tui_set_color/93 tui_printf/92 tui_puts/91 tui_move_cursor/90 tui_clear_screen/89 tui_init/88 tui_backend_write/87
+Trivially needed symbols: bareterm_draw_box/95 bareterm_reset_color/94 bareterm_set_color/93 bareterm_printf/92 bareterm_puts/91 bareterm_move_cursor/90 bareterm_clear_screen/89 bareterm_init/88 bareterm_backend_write/87
 
 
 Initial Symbol table:
@@ -9,7 +9,7 @@ __builtin_va_end/102 (__builtin_va_end) @000000000718fd20
   References: 
   Referring: 
   Function flags:
-  Called by: tui_printf/92 
+  Called by: bareterm_printf/92 
   Calls: 
 vsnprintf/101 (vsnprintf) @000000000718fc08
   Type: function
@@ -17,7 +17,7 @@ vsnprintf/101 (vsnprintf) @000000000718fc08
   References: 
   Referring: 
   Function flags:
-  Called by: tui_printf/92 
+  Called by: bareterm_printf/92 
   Calls: 
 __builtin_va_start/100 (__builtin_va_start) @000000000718faf0
   Type: function
@@ -25,7 +25,7 @@ __builtin_va_start/100 (__builtin_va_start) @000000000718faf0
   References: 
   Referring: 
   Function flags:
-  Called by: tui_printf/92 
+  Called by: bareterm_printf/92 
   Calls: 
 strlen/99 (strlen) @000000000718f9d8
   Type: function
@@ -33,7 +33,7 @@ strlen/99 (strlen) @000000000718f9d8
   References: 
   Referring: 
   Function flags:
-  Called by: tui_puts/91 
+  Called by: bareterm_puts/91 
   Calls: 
 snprintf/98 (snprintf) @000000000718f8c0
   Type: function
@@ -41,7 +41,7 @@ snprintf/98 (snprintf) @000000000718f8c0
   References: 
   Referring: 
   Function flags:
-  Called by: tui_set_color/93 tui_set_color/93 tui_set_color/93 tui_move_cursor/90 
+  Called by: bareterm_set_color/93 bareterm_set_color/93 bareterm_set_color/93 bareterm_move_cursor/90 
   Calls: 
 fwrite/97 (fwrite) @000000000718f7a8
   Type: function
@@ -49,16 +49,16 @@ fwrite/97 (fwrite) @000000000718f7a8
   References: 
   Referring: 
   Function flags:
-  Called by: tui_backend_write/87 
+  Called by: bareterm_backend_write/87 
   Calls: 
 stdout/96 (stdout) @0000000007196400
   Type: variable
   Visibility: semantic_interposition external public
   References: 
-  Referring: tui_backend_write/87 (read) 
+  Referring: bareterm_backend_write/87 (read) 
   Availability: not-ready
   Varpool flags: read-only
-tui_draw_box/95 (tui_draw_box) @000000000718f690
+bareterm_draw_box/95 (bareterm_draw_box) @000000000718f690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @0000000001d89da0
@@ -66,8 +66,8 @@ tui_draw_box/95 (tui_draw_box) @000000000718f690
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_puts/91 tui_puts/91 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_puts/91 tui_puts/91 tui_move_cursor/90 
-tui_reset_color/94 (tui_reset_color) @000000000718f578
+  Calls: bareterm_puts/91 bareterm_puts/91 bareterm_puts/91 bareterm_move_cursor/90 bareterm_puts/91 bareterm_move_cursor/90 bareterm_puts/91 bareterm_move_cursor/90 bareterm_puts/91 bareterm_move_cursor/90 bareterm_puts/91 bareterm_puts/91 bareterm_puts/91 bareterm_move_cursor/90 
+bareterm_reset_color/94 (bareterm_reset_color) @000000000718f578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @000000000718f690
@@ -75,8 +75,8 @@ tui_reset_color/94 (tui_reset_color) @000000000718f578
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_backend_write/87 
-tui_set_color/93 (tui_set_color) @000000000718f460
+  Calls: bareterm_backend_write/87 
+bareterm_set_color/93 (bareterm_set_color) @000000000718f460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @000000000718f578
@@ -84,8 +84,8 @@ tui_set_color/93 (tui_set_color) @000000000718f460
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_backend_write/87 snprintf/98 snprintf/98 snprintf/98 
-tui_printf/92 (tui_printf) @000000000718f348
+  Calls: bareterm_backend_write/87 snprintf/98 snprintf/98 snprintf/98 
+bareterm_printf/92 (bareterm_printf) @000000000718f348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @000000000718f460
@@ -93,26 +93,26 @@ tui_printf/92 (tui_printf) @000000000718f348
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_backend_write/87 __builtin_va_end/102 vsnprintf/101 __builtin_va_start/100 
-tui_puts/91 (tui_puts) @000000000718f230
+  Calls: bareterm_backend_write/87 __builtin_va_end/102 vsnprintf/101 __builtin_va_start/100 
+bareterm_puts/91 (bareterm_puts) @000000000718f230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @000000000718f348
   References: 
   Referring: 
   Function flags: body
-  Called by: tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 
-  Calls: tui_backend_write/87 strlen/99 
-tui_move_cursor/90 (tui_move_cursor) @000000000718f118
+  Called by: bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 
+  Calls: bareterm_backend_write/87 strlen/99 
+bareterm_move_cursor/90 (bareterm_move_cursor) @000000000718f118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @000000000718f230
   References: 
   Referring: 
   Function flags: body
-  Called by: tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 
-  Calls: tui_backend_write/87 snprintf/98 
-tui_clear_screen/89 (tui_clear_screen) @000000000718f000
+  Called by: bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 
+  Calls: bareterm_backend_write/87 snprintf/98 
+bareterm_clear_screen/89 (bareterm_clear_screen) @000000000718f000
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @000000000718f118
@@ -120,8 +120,8 @@ tui_clear_screen/89 (tui_clear_screen) @000000000718f000
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_backend_write/87 
-tui_init/88 (tui_init) @0000000006c50e38
+  Calls: bareterm_backend_write/87 
+bareterm_init/88 (bareterm_init) @0000000006c50e38
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @000000000718f000
@@ -129,15 +129,15 @@ tui_init/88 (tui_init) @0000000006c50e38
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_backend_write/87 
-tui_backend_write/87 (tui_backend_write) @0000000006c50d20
+  Calls: bareterm_backend_write/87 
+bareterm_backend_write/87 (bareterm_backend_write) @0000000006c50d20
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public weak
   Aux: @0000000006c50e38
   References: stdout/96 (read) 
   Referring: 
   Function flags: body
-  Called by: tui_reset_color/94 tui_set_color/93 tui_printf/92 tui_puts/91 tui_move_cursor/90 tui_clear_screen/89 tui_init/88 
+  Called by: bareterm_reset_color/94 bareterm_set_color/93 bareterm_printf/92 bareterm_puts/91 bareterm_move_cursor/90 bareterm_clear_screen/89 bareterm_init/88 
   Calls: fwrite/97 
 uart_drv_cmd/86 (uart_drv_cmd) @0000000006c50c08
   Type: function definition
@@ -845,7 +845,7 @@ __builtin_va_end/102 (__builtin_va_end) @000000000718fd20
   References: 
   Referring: 
   Function flags:
-  Called by: tui_printf/92 
+  Called by: bareterm_printf/92 
   Calls: 
 vsnprintf/101 (vsnprintf) @000000000718fc08
   Type: function
@@ -853,7 +853,7 @@ vsnprintf/101 (vsnprintf) @000000000718fc08
   References: 
   Referring: 
   Function flags:
-  Called by: tui_printf/92 
+  Called by: bareterm_printf/92 
   Calls: 
 __builtin_va_start/100 (__builtin_va_start) @000000000718faf0
   Type: function
@@ -861,7 +861,7 @@ __builtin_va_start/100 (__builtin_va_start) @000000000718faf0
   References: 
   Referring: 
   Function flags:
-  Called by: tui_printf/92 
+  Called by: bareterm_printf/92 
   Calls: 
 strlen/99 (strlen) @000000000718f9d8
   Type: function
@@ -869,7 +869,7 @@ strlen/99 (strlen) @000000000718f9d8
   References: 
   Referring: 
   Function flags:
-  Called by: tui_puts/91 
+  Called by: bareterm_puts/91 
   Calls: 
 snprintf/98 (snprintf) @000000000718f8c0
   Type: function
@@ -877,7 +877,7 @@ snprintf/98 (snprintf) @000000000718f8c0
   References: 
   Referring: 
   Function flags:
-  Called by: tui_set_color/93 tui_set_color/93 tui_set_color/93 tui_move_cursor/90 
+  Called by: bareterm_set_color/93 bareterm_set_color/93 bareterm_set_color/93 bareterm_move_cursor/90 
   Calls: 
 fwrite/97 (fwrite) @000000000718f7a8
   Type: function
@@ -885,86 +885,86 @@ fwrite/97 (fwrite) @000000000718f7a8
   References: 
   Referring: 
   Function flags:
-  Called by: tui_backend_write/87 
+  Called by: bareterm_backend_write/87 
   Calls: 
 stdout/96 (stdout) @0000000007196400
   Type: variable
   Visibility: semantic_interposition external public
   References: 
-  Referring: tui_backend_write/87 (read) 
+  Referring: bareterm_backend_write/87 (read) 
   Availability: not-ready
   Varpool flags: read-only
-tui_draw_box/95 (tui_draw_box) @000000000718f690
+bareterm_draw_box/95 (bareterm_draw_box) @000000000718f690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_puts/91 tui_puts/91 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_puts/91 tui_puts/91 tui_move_cursor/90 
-tui_reset_color/94 (tui_reset_color) @000000000718f578
+  Calls: bareterm_puts/91 bareterm_puts/91 bareterm_puts/91 bareterm_move_cursor/90 bareterm_puts/91 bareterm_move_cursor/90 bareterm_puts/91 bareterm_move_cursor/90 bareterm_puts/91 bareterm_move_cursor/90 bareterm_puts/91 bareterm_puts/91 bareterm_puts/91 bareterm_move_cursor/90 
+bareterm_reset_color/94 (bareterm_reset_color) @000000000718f578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_backend_write/87 
-tui_set_color/93 (tui_set_color) @000000000718f460
+  Calls: bareterm_backend_write/87 
+bareterm_set_color/93 (bareterm_set_color) @000000000718f460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_backend_write/87 snprintf/98 snprintf/98 snprintf/98 
-tui_printf/92 (tui_printf) @000000000718f348
+  Calls: bareterm_backend_write/87 snprintf/98 snprintf/98 snprintf/98 
+bareterm_printf/92 (bareterm_printf) @000000000718f348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_backend_write/87 __builtin_va_end/102 vsnprintf/101 __builtin_va_start/100 
-tui_puts/91 (tui_puts) @000000000718f230
+  Calls: bareterm_backend_write/87 __builtin_va_end/102 vsnprintf/101 __builtin_va_start/100 
+bareterm_puts/91 (bareterm_puts) @000000000718f230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
   Referring: 
   Function flags: body
-  Called by: tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 
-  Calls: tui_backend_write/87 strlen/99 
-tui_move_cursor/90 (tui_move_cursor) @000000000718f118
+  Called by: bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 
+  Calls: bareterm_backend_write/87 strlen/99 
+bareterm_move_cursor/90 (bareterm_move_cursor) @000000000718f118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
   Referring: 
   Function flags: body
-  Called by: tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 
-  Calls: tui_backend_write/87 snprintf/98 
-tui_clear_screen/89 (tui_clear_screen) @000000000718f000
-  Type: function definition analyzed
-  Visibility: force_output semantic_interposition no_reorder public
-  References: 
-  Referring: 
-  Function flags: body
-  Called by: 
-  Calls: tui_backend_write/87 
-tui_init/88 (tui_init) @0000000006c50e38
+  Called by: bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 
+  Calls: bareterm_backend_write/87 snprintf/98 
+bareterm_clear_screen/89 (bareterm_clear_screen) @000000000718f000
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_backend_write/87 
-tui_backend_write/87 (tui_backend_write) @0000000006c50d20
+  Calls: bareterm_backend_write/87 
+bareterm_init/88 (bareterm_init) @0000000006c50e38
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: bareterm_backend_write/87 
+bareterm_backend_write/87 (bareterm_backend_write) @0000000006c50d20
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public weak
   References: stdout/96 (read) 
   Referring: 
   Function flags: body
-  Called by: tui_reset_color/94 tui_set_color/93 tui_printf/92 tui_puts/91 tui_move_cursor/90 tui_clear_screen/89 tui_init/88 
+  Called by: bareterm_reset_color/94 bareterm_set_color/93 bareterm_printf/92 bareterm_puts/91 bareterm_move_cursor/90 bareterm_clear_screen/89 bareterm_init/88 
   Calls: fwrite/97 
 
 
@@ -976,7 +976,7 @@ __builtin_va_end/102 (__builtin_va_end) @000000000718fd20
   References: 
   Referring: 
   Function flags:
-  Called by: tui_printf/92 
+  Called by: bareterm_printf/92 
   Calls: 
 vsnprintf/101 (vsnprintf) @000000000718fc08
   Type: function
@@ -984,7 +984,7 @@ vsnprintf/101 (vsnprintf) @000000000718fc08
   References: 
   Referring: 
   Function flags:
-  Called by: tui_printf/92 
+  Called by: bareterm_printf/92 
   Calls: 
 __builtin_va_start/100 (__builtin_va_start) @000000000718faf0
   Type: function
@@ -992,7 +992,7 @@ __builtin_va_start/100 (__builtin_va_start) @000000000718faf0
   References: 
   Referring: 
   Function flags:
-  Called by: tui_printf/92 
+  Called by: bareterm_printf/92 
   Calls: 
 strlen/99 (strlen) @000000000718f9d8
   Type: function
@@ -1000,7 +1000,7 @@ strlen/99 (strlen) @000000000718f9d8
   References: 
   Referring: 
   Function flags:
-  Called by: tui_puts/91 
+  Called by: bareterm_puts/91 
   Calls: 
 snprintf/98 (snprintf) @000000000718f8c0
   Type: function
@@ -1008,7 +1008,7 @@ snprintf/98 (snprintf) @000000000718f8c0
   References: 
   Referring: 
   Function flags:
-  Called by: tui_set_color/93 tui_set_color/93 tui_set_color/93 tui_move_cursor/90 
+  Called by: bareterm_set_color/93 bareterm_set_color/93 bareterm_set_color/93 bareterm_move_cursor/90 
   Calls: 
 fwrite/97 (fwrite) @000000000718f7a8
   Type: function
@@ -1016,86 +1016,86 @@ fwrite/97 (fwrite) @000000000718f7a8
   References: 
   Referring: 
   Function flags:
-  Called by: tui_backend_write/87 
+  Called by: bareterm_backend_write/87 
   Calls: 
 stdout/96 (stdout) @0000000007196400
   Type: variable
   Visibility: semantic_interposition external public
   References: 
-  Referring: tui_backend_write/87 (read) 
+  Referring: bareterm_backend_write/87 (read) 
   Availability: not-ready
   Varpool flags: read-only
-tui_draw_box/95 (tui_draw_box) @000000000718f690
+bareterm_draw_box/95 (bareterm_draw_box) @000000000718f690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_puts/91 tui_puts/91 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_puts/91 tui_puts/91 tui_move_cursor/90 
-tui_reset_color/94 (tui_reset_color) @000000000718f578
+  Calls: bareterm_puts/91 bareterm_puts/91 bareterm_puts/91 bareterm_move_cursor/90 bareterm_puts/91 bareterm_move_cursor/90 bareterm_puts/91 bareterm_move_cursor/90 bareterm_puts/91 bareterm_move_cursor/90 bareterm_puts/91 bareterm_puts/91 bareterm_puts/91 bareterm_move_cursor/90 
+bareterm_reset_color/94 (bareterm_reset_color) @000000000718f578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_backend_write/87 
-tui_set_color/93 (tui_set_color) @000000000718f460
+  Calls: bareterm_backend_write/87 
+bareterm_set_color/93 (bareterm_set_color) @000000000718f460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_backend_write/87 snprintf/98 snprintf/98 snprintf/98 
-tui_printf/92 (tui_printf) @000000000718f348
+  Calls: bareterm_backend_write/87 snprintf/98 snprintf/98 snprintf/98 
+bareterm_printf/92 (bareterm_printf) @000000000718f348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_backend_write/87 __builtin_va_end/102 vsnprintf/101 __builtin_va_start/100 
-tui_puts/91 (tui_puts) @000000000718f230
+  Calls: bareterm_backend_write/87 __builtin_va_end/102 vsnprintf/101 __builtin_va_start/100 
+bareterm_puts/91 (bareterm_puts) @000000000718f230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
   Referring: 
   Function flags: body
-  Called by: tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 
-  Calls: tui_backend_write/87 strlen/99 
-tui_move_cursor/90 (tui_move_cursor) @000000000718f118
+  Called by: bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 
+  Calls: bareterm_backend_write/87 strlen/99 
+bareterm_move_cursor/90 (bareterm_move_cursor) @000000000718f118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
   Referring: 
   Function flags: body
-  Called by: tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 
-  Calls: tui_backend_write/87 snprintf/98 
-tui_clear_screen/89 (tui_clear_screen) @000000000718f000
-  Type: function definition analyzed
-  Visibility: force_output semantic_interposition no_reorder public
-  References: 
-  Referring: 
-  Function flags: body
-  Called by: 
-  Calls: tui_backend_write/87 
-tui_init/88 (tui_init) @0000000006c50e38
+  Called by: bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 
+  Calls: bareterm_backend_write/87 snprintf/98 
+bareterm_clear_screen/89 (bareterm_clear_screen) @000000000718f000
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_backend_write/87 
-tui_backend_write/87 (tui_backend_write) @0000000006c50d20
+  Calls: bareterm_backend_write/87 
+bareterm_init/88 (bareterm_init) @0000000006c50e38
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: bareterm_backend_write/87 
+bareterm_backend_write/87 (bareterm_backend_write) @0000000006c50d20
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public weak
   References: stdout/96 (read) 
   Referring: 
   Function flags: body
-  Called by: tui_reset_color/94 tui_set_color/93 tui_printf/92 tui_puts/91 tui_move_cursor/90 tui_clear_screen/89 tui_init/88 
+  Called by: bareterm_reset_color/94 bareterm_set_color/93 bareterm_printf/92 bareterm_puts/91 bareterm_move_cursor/90 bareterm_clear_screen/89 bareterm_init/88 
   Calls: fwrite/97 
 
 Removing unused symbols:
@@ -1108,7 +1108,7 @@ __builtin_va_end/102 (__builtin_va_end) @000000000718fd20
   References: 
   Referring: 
   Function flags:
-  Called by: tui_printf/92 
+  Called by: bareterm_printf/92 
   Calls: 
 vsnprintf/101 (vsnprintf) @000000000718fc08
   Type: function
@@ -1116,7 +1116,7 @@ vsnprintf/101 (vsnprintf) @000000000718fc08
   References: 
   Referring: 
   Function flags:
-  Called by: tui_printf/92 
+  Called by: bareterm_printf/92 
   Calls: 
 __builtin_va_start/100 (__builtin_va_start) @000000000718faf0
   Type: function
@@ -1124,7 +1124,7 @@ __builtin_va_start/100 (__builtin_va_start) @000000000718faf0
   References: 
   Referring: 
   Function flags:
-  Called by: tui_printf/92 
+  Called by: bareterm_printf/92 
   Calls: 
 strlen/99 (strlen) @000000000718f9d8
   Type: function
@@ -1132,7 +1132,7 @@ strlen/99 (strlen) @000000000718f9d8
   References: 
   Referring: 
   Function flags:
-  Called by: tui_puts/91 
+  Called by: bareterm_puts/91 
   Calls: 
 snprintf/98 (snprintf) @000000000718f8c0
   Type: function
@@ -1140,7 +1140,7 @@ snprintf/98 (snprintf) @000000000718f8c0
   References: 
   Referring: 
   Function flags:
-  Called by: tui_set_color/93 tui_set_color/93 tui_set_color/93 tui_move_cursor/90 
+  Called by: bareterm_set_color/93 bareterm_set_color/93 bareterm_set_color/93 bareterm_move_cursor/90 
   Calls: 
 fwrite/97 (fwrite) @000000000718f7a8
   Type: function
@@ -1148,86 +1148,86 @@ fwrite/97 (fwrite) @000000000718f7a8
   References: 
   Referring: 
   Function flags:
-  Called by: tui_backend_write/87 
+  Called by: bareterm_backend_write/87 
   Calls: 
 stdout/96 (stdout) @0000000007196400
   Type: variable
   Visibility: semantic_interposition external public
   References: 
-  Referring: tui_backend_write/87 (read) 
+  Referring: bareterm_backend_write/87 (read) 
   Availability: not-ready
   Varpool flags: read-only
-tui_draw_box/95 (tui_draw_box) @000000000718f690
+bareterm_draw_box/95 (bareterm_draw_box) @000000000718f690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_puts/91 tui_puts/91 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_puts/91 tui_puts/91 tui_move_cursor/90 
-tui_reset_color/94 (tui_reset_color) @000000000718f578
+  Calls: bareterm_puts/91 bareterm_puts/91 bareterm_puts/91 bareterm_move_cursor/90 bareterm_puts/91 bareterm_move_cursor/90 bareterm_puts/91 bareterm_move_cursor/90 bareterm_puts/91 bareterm_move_cursor/90 bareterm_puts/91 bareterm_puts/91 bareterm_puts/91 bareterm_move_cursor/90 
+bareterm_reset_color/94 (bareterm_reset_color) @000000000718f578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_backend_write/87 
-tui_set_color/93 (tui_set_color) @000000000718f460
+  Calls: bareterm_backend_write/87 
+bareterm_set_color/93 (bareterm_set_color) @000000000718f460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_backend_write/87 snprintf/98 snprintf/98 snprintf/98 
-tui_printf/92 (tui_printf) @000000000718f348
+  Calls: bareterm_backend_write/87 snprintf/98 snprintf/98 snprintf/98 
+bareterm_printf/92 (bareterm_printf) @000000000718f348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_backend_write/87 __builtin_va_end/102 vsnprintf/101 __builtin_va_start/100 
-tui_puts/91 (tui_puts) @000000000718f230
+  Calls: bareterm_backend_write/87 __builtin_va_end/102 vsnprintf/101 __builtin_va_start/100 
+bareterm_puts/91 (bareterm_puts) @000000000718f230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
   Referring: 
   Function flags: body
-  Called by: tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 
-  Calls: tui_backend_write/87 strlen/99 
-tui_move_cursor/90 (tui_move_cursor) @000000000718f118
+  Called by: bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 
+  Calls: bareterm_backend_write/87 strlen/99 
+bareterm_move_cursor/90 (bareterm_move_cursor) @000000000718f118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
   Referring: 
   Function flags: body
-  Called by: tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 
-  Calls: tui_backend_write/87 snprintf/98 
-tui_clear_screen/89 (tui_clear_screen) @000000000718f000
-  Type: function definition analyzed
-  Visibility: force_output semantic_interposition no_reorder public
-  References: 
-  Referring: 
-  Function flags: body
-  Called by: 
-  Calls: tui_backend_write/87 
-tui_init/88 (tui_init) @0000000006c50e38
+  Called by: bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 
+  Calls: bareterm_backend_write/87 snprintf/98 
+bareterm_clear_screen/89 (bareterm_clear_screen) @000000000718f000
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
   Referring: 
   Function flags: body
   Called by: 
-  Calls: tui_backend_write/87 
-tui_backend_write/87 (tui_backend_write) @0000000006c50d20
+  Calls: bareterm_backend_write/87 
+bareterm_init/88 (bareterm_init) @0000000006c50e38
+  Type: function definition analyzed
+  Visibility: force_output semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: bareterm_backend_write/87 
+bareterm_backend_write/87 (bareterm_backend_write) @0000000006c50d20
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public weak
   References: stdout/96 (read) 
   Referring: 
   Function flags: body
-  Called by: tui_reset_color/94 tui_set_color/93 tui_printf/92 tui_puts/91 tui_move_cursor/90 tui_clear_screen/89 tui_init/88 
+  Called by: bareterm_reset_color/94 bareterm_set_color/93 bareterm_printf/92 bareterm_puts/91 bareterm_move_cursor/90 bareterm_clear_screen/89 bareterm_init/88 
   Calls: fwrite/97 
 
 Reclaiming functions:
@@ -1242,7 +1242,7 @@ __builtin_va_end/102 (__builtin_va_end) @000000000718fd20
   Referring: 
   Availability: not_available
   Function flags:
-  Called by: tui_printf/92 
+  Called by: bareterm_printf/92 
   Calls: 
 vsnprintf/101 (vsnprintf) @000000000718fc08
   Type: function
@@ -1251,7 +1251,7 @@ vsnprintf/101 (vsnprintf) @000000000718fc08
   Referring: 
   Availability: not_available
   Function flags:
-  Called by: tui_printf/92 
+  Called by: bareterm_printf/92 
   Calls: 
 __builtin_va_start/100 (__builtin_va_start) @000000000718faf0
   Type: function
@@ -1260,7 +1260,7 @@ __builtin_va_start/100 (__builtin_va_start) @000000000718faf0
   Referring: 
   Availability: not_available
   Function flags:
-  Called by: tui_printf/92 
+  Called by: bareterm_printf/92 
   Calls: 
 strlen/99 (strlen) @000000000718f9d8
   Type: function
@@ -1269,7 +1269,7 @@ strlen/99 (strlen) @000000000718f9d8
   Referring: 
   Availability: not_available
   Function flags:
-  Called by: tui_puts/91 
+  Called by: bareterm_puts/91 
   Calls: 
 snprintf/98 (snprintf) @000000000718f8c0
   Type: function
@@ -1278,7 +1278,7 @@ snprintf/98 (snprintf) @000000000718f8c0
   Referring: 
   Availability: not_available
   Function flags:
-  Called by: tui_set_color/93 tui_set_color/93 tui_set_color/93 tui_move_cursor/90 
+  Called by: bareterm_set_color/93 bareterm_set_color/93 bareterm_set_color/93 bareterm_move_cursor/90 
   Calls: 
 fwrite/97 (fwrite) @000000000718f7a8
   Type: function
@@ -1287,17 +1287,17 @@ fwrite/97 (fwrite) @000000000718f7a8
   Referring: 
   Availability: not_available
   Function flags:
-  Called by: tui_backend_write/87 
+  Called by: bareterm_backend_write/87 
   Calls: 
 stdout/96 (stdout) @0000000007196400
   Type: variable
   Body removed by symtab_remove_unreachable_nodes
   Visibility: semantic_interposition external public
   References: 
-  Referring: tui_backend_write/87 (read) 
+  Referring: bareterm_backend_write/87 (read) 
   Availability: not_available
   Varpool flags: read-only
-tui_draw_box/95 (tui_draw_box) @000000000718f690
+bareterm_draw_box/95 (bareterm_draw_box) @000000000718f690
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -1305,8 +1305,8 @@ tui_draw_box/95 (tui_draw_box) @000000000718f690
   Availability: available
   Function flags: body
   Called by: 
-  Calls: tui_puts/91 tui_puts/91 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_move_cursor/90 tui_puts/91 tui_puts/91 tui_puts/91 tui_move_cursor/90 
-tui_reset_color/94 (tui_reset_color) @000000000718f578
+  Calls: bareterm_puts/91 bareterm_puts/91 bareterm_puts/91 bareterm_move_cursor/90 bareterm_puts/91 bareterm_move_cursor/90 bareterm_puts/91 bareterm_move_cursor/90 bareterm_puts/91 bareterm_move_cursor/90 bareterm_puts/91 bareterm_puts/91 bareterm_puts/91 bareterm_move_cursor/90 
+bareterm_reset_color/94 (bareterm_reset_color) @000000000718f578
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -1314,8 +1314,8 @@ tui_reset_color/94 (tui_reset_color) @000000000718f578
   Availability: available
   Function flags: body
   Called by: 
-  Calls: tui_backend_write/87 
-tui_set_color/93 (tui_set_color) @000000000718f460
+  Calls: bareterm_backend_write/87 
+bareterm_set_color/93 (bareterm_set_color) @000000000718f460
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -1323,8 +1323,8 @@ tui_set_color/93 (tui_set_color) @000000000718f460
   Availability: available
   Function flags: body
   Called by: 
-  Calls: tui_backend_write/87 snprintf/98 snprintf/98 snprintf/98 
-tui_printf/92 (tui_printf) @000000000718f348
+  Calls: bareterm_backend_write/87 snprintf/98 snprintf/98 snprintf/98 
+bareterm_printf/92 (bareterm_printf) @000000000718f348
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -1332,35 +1332,26 @@ tui_printf/92 (tui_printf) @000000000718f348
   Availability: available
   Function flags: body
   Called by: 
-  Calls: tui_backend_write/87 __builtin_va_end/102 vsnprintf/101 __builtin_va_start/100 
-tui_puts/91 (tui_puts) @000000000718f230
+  Calls: bareterm_backend_write/87 __builtin_va_end/102 vsnprintf/101 __builtin_va_start/100 
+bareterm_puts/91 (bareterm_puts) @000000000718f230
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
   Referring: 
   Availability: available
   Function flags: body
-  Called by: tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 
-  Calls: tui_backend_write/87 strlen/99 
-tui_move_cursor/90 (tui_move_cursor) @000000000718f118
+  Called by: bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 
+  Calls: bareterm_backend_write/87 strlen/99 
+bareterm_move_cursor/90 (bareterm_move_cursor) @000000000718f118
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
   Referring: 
   Availability: available
   Function flags: body
-  Called by: tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 tui_draw_box/95 
-  Calls: tui_backend_write/87 snprintf/98 
-tui_clear_screen/89 (tui_clear_screen) @000000000718f000
-  Type: function definition analyzed
-  Visibility: force_output externally_visible semantic_interposition no_reorder public
-  References: 
-  Referring: 
-  Availability: available
-  Function flags: body
-  Called by: 
-  Calls: tui_backend_write/87 
-tui_init/88 (tui_init) @0000000006c50e38
+  Called by: bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 bareterm_draw_box/95 
+  Calls: bareterm_backend_write/87 snprintf/98 
+bareterm_clear_screen/89 (bareterm_clear_screen) @000000000718f000
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -1368,15 +1359,24 @@ tui_init/88 (tui_init) @0000000006c50e38
   Availability: available
   Function flags: body
   Called by: 
-  Calls: tui_backend_write/87 
-tui_backend_write/87 (tui_backend_write) @0000000006c50d20
+  Calls: bareterm_backend_write/87 
+bareterm_init/88 (bareterm_init) @0000000006c50e38
+  Type: function definition analyzed
+  Visibility: force_output externally_visible semantic_interposition no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: bareterm_backend_write/87 
+bareterm_backend_write/87 (bareterm_backend_write) @0000000006c50d20
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public weak
   References: stdout/96 (read) 
   Referring: 
   Availability: overwritable
   Function flags: body
-  Called by: tui_reset_color/94 tui_set_color/93 tui_printf/92 tui_puts/91 tui_move_cursor/90 tui_clear_screen/89 tui_init/88 
+  Called by: bareterm_reset_color/94 bareterm_set_color/93 bareterm_printf/92 bareterm_puts/91 bareterm_move_cursor/90 bareterm_clear_screen/89 bareterm_init/88 
   Calls: fwrite/97 
 Trivially needed variables:
 Removing variables:
@@ -1445,81 +1445,81 @@ stdout/96 (stdout) @0000000007196400
   Referring: 
   Availability: not_available
   Varpool flags: read-only
-tui_draw_box/95 (tui_draw_box) @000000000718f690
+bareterm_draw_box/95 (bareterm_draw_box) @000000000718f690
   Type: function definition analyzed
-  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_draw_box (implicit_section)
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.bareterm_draw_box (implicit_section)
   References: 
   Referring: 
   Availability: available
   Function flags:
   Called by: 
   Calls: 
-tui_reset_color/94 (tui_reset_color) @000000000718f578
+bareterm_reset_color/94 (bareterm_reset_color) @000000000718f578
   Type: function definition analyzed
-  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_reset_color (implicit_section)
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.bareterm_reset_color (implicit_section)
   References: 
   Referring: 
   Availability: available
   Function flags:
   Called by: 
   Calls: 
-tui_set_color/93 (tui_set_color) @000000000718f460
+bareterm_set_color/93 (bareterm_set_color) @000000000718f460
   Type: function definition analyzed
-  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_set_color (implicit_section)
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.bareterm_set_color (implicit_section)
   References: 
   Referring: 
   Availability: available
   Function flags:
   Called by: 
   Calls: 
-tui_printf/92 (tui_printf) @000000000718f348
+bareterm_printf/92 (bareterm_printf) @000000000718f348
   Type: function definition analyzed
-  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_printf (implicit_section)
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.bareterm_printf (implicit_section)
   References: 
   Referring: 
   Availability: available
   Function flags:
   Called by: 
   Calls: 
-tui_puts/91 (tui_puts) @000000000718f230
+bareterm_puts/91 (bareterm_puts) @000000000718f230
   Type: function definition analyzed
-  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_puts (implicit_section)
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.bareterm_puts (implicit_section)
   References: 
   Referring: 
   Availability: available
   Function flags:
   Called by: 
   Calls: 
-tui_move_cursor/90 (tui_move_cursor) @000000000718f118
+bareterm_move_cursor/90 (bareterm_move_cursor) @000000000718f118
   Type: function definition analyzed
-  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_move_cursor (implicit_section)
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.bareterm_move_cursor (implicit_section)
   References: 
   Referring: 
   Availability: available
   Function flags:
   Called by: 
   Calls: 
-tui_clear_screen/89 (tui_clear_screen) @000000000718f000
+bareterm_clear_screen/89 (bareterm_clear_screen) @000000000718f000
   Type: function definition analyzed
-  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_clear_screen (implicit_section)
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.bareterm_clear_screen (implicit_section)
   References: 
   Referring: 
   Availability: available
   Function flags:
   Called by: 
   Calls: 
-tui_init/88 (tui_init) @0000000006c50e38
+bareterm_init/88 (bareterm_init) @0000000006c50e38
   Type: function definition analyzed
-  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_init (implicit_section)
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.bareterm_init (implicit_section)
   References: 
   Referring: 
   Availability: available
   Function flags:
   Called by: 
   Calls: 
-tui_backend_write/87 (tui_backend_write) @0000000006c50d20
+bareterm_backend_write/87 (bareterm_backend_write) @0000000006c50d20
   Type: function definition analyzed
-  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public weak section:.text.tui_backend_write (implicit_section)
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public weak section:.text.bareterm_backend_write (implicit_section)
   References: 
   Referring: 
   Availability: overwritable

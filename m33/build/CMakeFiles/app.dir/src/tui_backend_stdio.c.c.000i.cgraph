@@ -1,4 +1,4 @@
-Trivially needed symbols: tui_backend_write/1
+Trivially needed symbols: bareterm_backend_write/1
 
 
 Initial Symbol table:
@@ -9,16 +9,16 @@ fwrite/3 (fwrite) @00000000060778c0
   References: 
   Referring: 
   Function flags:
-  Called by: tui_backend_write/1 
+  Called by: bareterm_backend_write/1 
   Calls: 
 stdout/2 (stdout) @000000000612c200
   Type: variable
   Visibility: semantic_interposition external public
   References: 
-  Referring: tui_backend_write/1 (read) 
+  Referring: bareterm_backend_write/1 (read) 
   Availability: not-ready
   Varpool flags: read-only
-tui_backend_write/1 (tui_backend_write) @00000000060777a8
+bareterm_backend_write/1 (bareterm_backend_write) @00000000060777a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @0000000001d89da0
@@ -46,16 +46,16 @@ fwrite/3 (fwrite) @00000000060778c0
   References: 
   Referring: 
   Function flags:
-  Called by: tui_backend_write/1 
+  Called by: bareterm_backend_write/1 
   Calls: 
 stdout/2 (stdout) @000000000612c200
   Type: variable
   Visibility: semantic_interposition external public
   References: 
-  Referring: tui_backend_write/1 (read) 
+  Referring: bareterm_backend_write/1 (read) 
   Availability: not-ready
   Varpool flags: read-only
-tui_backend_write/1 (tui_backend_write) @00000000060777a8
+bareterm_backend_write/1 (bareterm_backend_write) @00000000060777a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: stdout/2 (read) 
@@ -73,16 +73,16 @@ fwrite/3 (fwrite) @00000000060778c0
   References: 
   Referring: 
   Function flags:
-  Called by: tui_backend_write/1 
+  Called by: bareterm_backend_write/1 
   Calls: 
 stdout/2 (stdout) @000000000612c200
   Type: variable
   Visibility: semantic_interposition external public
   References: 
-  Referring: tui_backend_write/1 (read) 
+  Referring: bareterm_backend_write/1 (read) 
   Availability: not-ready
   Varpool flags: read-only
-tui_backend_write/1 (tui_backend_write) @00000000060777a8
+bareterm_backend_write/1 (bareterm_backend_write) @00000000060777a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: stdout/2 (read) 
@@ -101,16 +101,16 @@ fwrite/3 (fwrite) @00000000060778c0
   References: 
   Referring: 
   Function flags:
-  Called by: tui_backend_write/1 
+  Called by: bareterm_backend_write/1 
   Calls: 
 stdout/2 (stdout) @000000000612c200
   Type: variable
   Visibility: semantic_interposition external public
   References: 
-  Referring: tui_backend_write/1 (read) 
+  Referring: bareterm_backend_write/1 (read) 
   Availability: not-ready
   Varpool flags: read-only
-tui_backend_write/1 (tui_backend_write) @00000000060777a8
+bareterm_backend_write/1 (bareterm_backend_write) @00000000060777a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: stdout/2 (read) 
@@ -131,17 +131,17 @@ fwrite/3 (fwrite) @00000000060778c0
   Referring: 
   Availability: not_available
   Function flags:
-  Called by: tui_backend_write/1 
+  Called by: bareterm_backend_write/1 
   Calls: 
 stdout/2 (stdout) @000000000612c200
   Type: variable
   Body removed by symtab_remove_unreachable_nodes
   Visibility: semantic_interposition external public
   References: 
-  Referring: tui_backend_write/1 (read) 
+  Referring: bareterm_backend_write/1 (read) 
   Availability: not_available
   Varpool flags: read-only
-tui_backend_write/1 (tui_backend_write) @00000000060777a8
+bareterm_backend_write/1 (bareterm_backend_write) @00000000060777a8
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: stdout/2 (read) 
@@ -172,9 +172,9 @@ stdout/2 (stdout) @000000000612c200
   Referring: 
   Availability: not_available
   Varpool flags: read-only
-tui_backend_write/1 (tui_backend_write) @00000000060777a8
+bareterm_backend_write/1 (bareterm_backend_write) @00000000060777a8
   Type: function definition analyzed
-  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.tui_backend_write (implicit_section)
+  Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.bareterm_backend_write (implicit_section)
   References: 
   Referring: 
   Availability: available

@@ -1,4 +1,4 @@
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/tui_progressbar.c:7:13:progressbar_draw	64	static
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/tui_progressbar.c:42:13:progressbar_event	16	static
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/tui_progressbar.c:47:6:tui_progressbar_init	24	static
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/tui_progressbar.c:71:6:tui_progressbar_set_value	16	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/bareterm_progressbar.c:7:13:progressbar_draw	64	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/bareterm_progressbar.c:42:13:progressbar_event	16	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/bareterm_progressbar.c:47:6:bareterm_progressbar_init	24	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/bareterm_progressbar.c:71:6:bareterm_progressbar_set_value	16	static

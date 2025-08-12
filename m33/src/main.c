@@ -9,12 +9,10 @@
 #include <zephyr/kernel.h>
 #include <zephyr/drivers/gpio.h>
 #include <stdio.h>
-#include "tui.h"
-#include "tui_backend.h"
-#include "tui.h"
-#include "tui_input.h"	
-#include "tui_uart_input.h"
-#include "tui_widget.h"
+
+#include <bareterm.h>
+#include <bareterm_widget.h>
+
 
 
 /* 1000 msec = 1 sec */
@@ -30,90 +28,90 @@
  */
 static const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED0_NODE, gpios);
 
-static tui_widget_t btn1, btn2;
-static tui_widget_t memo;
-static tui_widget_t lbl1;
-static tui_widget_t lbl2;
-static tui_widget_t bar;
-static tui_widget_t cb1, cb2;
+static bareterm_widget_t btn1, btn2;
+static bareterm_widget_t memo;
+static bareterm_widget_t lbl1;
+static bareterm_widget_t lbl2;
+static bareterm_widget_t bar;
+static bareterm_widget_t cb1, cb2;
 
-static tui_widget_t rg;
+static bareterm_widget_t rg;
 static const char *choices[] = { "SPI", "I2C", "UART" };
 
-static tui_widget_t input;
+static bareterm_widget_t input;
 static char buf[64] = "";
 
-void on_submit(tui_widget_t *ti) {
+void on_submit(bareterm_widget_t *ti) {
     // Copy out and display
     char out[64];
-    tui_textinput_get_text(ti, out, sizeof(out));
-    tui_move_cursor(1, 20);
-    tui_printf("You entered: %s", out);
+    bareterm_textinput_get_text(ti, out, sizeof(out));
+    bareterm_move_cursor(1, 20);
+    bareterm_printf("You entered: %s", out);
 }
 
 // Callback for button press
 static void on_button_click1(void *w) {
     // Update the label
-    tui_label_set_text(&lbl1, "Clicked Button 1!");
-    tui_label_set_color(&lbl1, TUI_YELLOW, TUI_BLUE, TUI_STYLE_BOLD);
+    bareterm_label_set_text(&lbl1, "Clicked Button 1!");
+    bareterm_label_set_color(&lbl1, bareterm_YELLOW, bareterm_BLUE, bareterm_STYLE_BOLD);
 
-	tui_progressbar_set_value(&bar, /*new_value=*/ bar.value - 1);
+	bareterm_progressbar_set_value(&bar, /*new_value=*/ bar.value - 1);
 
     // Redraw everything
-    tui_draw_all_widgets();
+    bareterm_draw_all_widgets();
 }
 // Callback for button press
 static void on_button_click2(void *w) {
     // Update the label
-    tui_label_set_text(&lbl1, "Clicked Button 2!");
-    tui_label_set_color(&lbl1, TUI_YELLOW, TUI_GREEN, TUI_STYLE_BOLD);
+    bareterm_label_set_text(&lbl1, "Clicked Button 2!");
+    bareterm_label_set_color(&lbl1, bareterm_YELLOW, bareterm_GREEN, bareterm_STYLE_BOLD);
 
-	tui_progressbar_set_value(&bar, /*new_value=*/ bar.value + 1);
+	bareterm_progressbar_set_value(&bar, /*new_value=*/ bar.value + 1);
     // Redraw everything
-    tui_draw_all_widgets();
+    bareterm_draw_all_widgets();
 
 }
 
 
-void on_toggle(tui_widget_t *cb, unsigned char state) {
-    tui_move_cursor(10, 20);
-    tui_printf("Checkbox is now %s   ", state ? "☑️" : "☐");
+void on_toggle(bareterm_widget_t *cb, unsigned char state) {
+    bareterm_move_cursor(10, 20);
+    bareterm_printf("Checkbox is now %s   ", state ? "☑️" : "☐");
 
 	if (cb->checked) {
-		tui_label_set_text(&lbl2, "Checkbox enabled");
-		tui_backend_puts("\x1B[?1049h");  // Push into alternate screen
-		//tui_draw_box(6, 24, 10, 3, " TEST");
-		tui_modalpopup_show("Checkbox Enabled", "You have enabled the checkbox feature.");
+		bareterm_label_set_text(&lbl2, "Checkbox enabled");
+		bareterm_backend_puts("\x1B[?1049h");  // Push into alternate screen
+		//bareterm_draw_box(6, 24, 10, 3, " TEST");
+		bareterm_modalpopup_show("Checkbox Enabled", "You have enabled the checkbox feature.");
 	} else {
-		tui_label_set_text(&lbl2, "Checkbox disabled");
-		tui_backend_puts("\x1B[?1049h");  // Push into alternate screen
+		bareterm_label_set_text(&lbl2, "Checkbox disabled");
+		bareterm_backend_puts("\x1B[?1049h");  // Push into alternate screen
 	}	
 		
 	// draw your dialog and whatever else
-	tui_backend_puts("\x1B[?1049l");  // Pop back to the original screen
+	bareterm_backend_puts("\x1B[?1049l");  // Pop back to the original screen
 
 }
 
-void on_choice_change(tui_widget_t *w, int sel) {
-    tui_move_cursor(4, 18);
-    tui_printf("Selected: %s   ", choices[sel]);
+void on_choice_change(bareterm_widget_t *w, int sel) {
+    bareterm_move_cursor(4, 18);
+    bareterm_printf("Selected: %s   ", choices[sel]);
 }
 
 int test_draw_welcomescreen() {
 
-	tui_clear_screen();
-	tui_draw_box(1, 1, 50, 30, " MAX32657 EVKit Test Tool v0.1.0");
+	bareterm_clear_screen();
+	bareterm_draw_box(1, 1, 50, 30, " MAX32657 EVKit Test Tool v0.1.0");
 
-	tui_textbox_init(&memo,
+	bareterm_textbox_init(&memo,
 					3, 8,
 					47, 5,
 					"This is the automated production test tool for "
 					"MAX32657 Rev-C EVKit. Use mouse to interact."
 					"                                           "
 					"Click START Button to begin.",
-					TUI_CYAN, TUI_BLACK, TUI_STYLE_NONE);
+					bareterm_CYAN, bareterm_BLACK, bareterm_STYLE_NONE);
 
-    tui_button_init(&btn1,
+    bareterm_button_init(&btn1,
                     15, 18,
                     20, 3,
                     " START ",
@@ -127,14 +125,14 @@ int main(void)
 	int ret;
 	bool led_state = true;
 
-	tui_init();
+	bareterm_init();
 
     const struct device *uart = DEVICE_DT_GET(DT_CHOSEN(zephyr_console));
     if (!device_is_ready(uart)) {
         return;
     }
 
-    tui_uart_input_init(uart);
+    bareterm_uart_input_init(uart);
 
 	if (!gpio_is_ready_dt(&led)) {
 		return 0;
@@ -146,45 +144,45 @@ int main(void)
 	}
 
 			// Hide cursor
-		tui_backend_write("\x1B[?25l", 6);
+		bareterm_backend_write("\x1B[?25l", 6);
 
 		// Show cursor
-		//tui_backend_write("\x1B[?25h", 6);
+		//bareterm_backend_write("\x1B[?25h", 6);
 
-    tui_backend_puts("\x1B[?1000h"); // Basic mouse click tracking
+    bareterm_backend_puts("\x1B[?1000h"); // Basic mouse click tracking
 
 	//test_draw_welcomescreen();
 
-    tui_clear_screen();
+    bareterm_clear_screen();
 
     // Draw a static label
-    //tui_move_cursor(2, 2);
-    //tui_puts("Press the button:");
+    //bareterm_move_cursor(2, 2);
+    //bareterm_puts("Press the button:");
 
-	tui_draw_box(1, 1, 50, 30, " MAX32657 EVKit Test Tool v0.1.0");
-	tui_label_init(&lbl1,
+	bareterm_draw_box(1, 1, 50, 30, " MAX32657 EVKit Test Tool v0.1.0");
+	bareterm_label_init(&lbl1,
 				15, 4,
 				"Welcome",
-				TUI_WHITE,   // foreground
-				TUI_BLUE,      // background
-				TUI_STYLE_BOLD);
+				bareterm_WHITE,   // foreground
+				bareterm_BLUE,      // background
+				bareterm_STYLE_BOLD);
 
     // 2) Initialize it at position (col=2, row=2) with your text
-	tui_label_init(&lbl2,
+	bareterm_label_init(&lbl2,
 				14, 24,
 				"Click somewhere to start",
-				TUI_YELLOW,   // foreground
-				TUI_BLUE,      // background
-				TUI_STYLE_BOLD);
+				bareterm_YELLOW,   // foreground
+				bareterm_BLUE,      // background
+				bareterm_STYLE_BOLD);
 
     // Create a button widget
 
-    tui_button_init(&btn1,
+    bareterm_button_init(&btn1,
                     4, 6,
                     20, 3,
                     "[ Button1 ]",
                     on_button_click1);
-    tui_button_init(&btn2,
+    bareterm_button_init(&btn2,
                     26, 6,
                     20, 3,
                     "[ Button2 ]",
@@ -192,33 +190,33 @@ int main(void)
 
 
 
-	tui_textbox_init(&memo,
+	bareterm_textbox_init(&memo,
 					3, 10,
 					36, 5,
 					"To start tests please follow the instructions below:"
 					"Here are the instructions. Under construction...",
-					TUI_CYAN, TUI_BLACK, TUI_STYLE_NONE);
+					bareterm_CYAN, bareterm_BLACK, bareterm_STYLE_NONE);
 
-    tui_progressbar_init(&bar,
+    bareterm_progressbar_init(&bar,
                          4,  15,
                          38, 1,
                          30, 100,
-                         TUI_GREEN, TUI_BLACK, TUI_STYLE_NONE);
+                         bareterm_GREEN, bareterm_BLACK, bareterm_STYLE_NONE);
 
-    tui_checkbox_init(&cb1,
+    bareterm_checkbox_init(&cb1,
                       12, 27,
                       "Enable feature 1",
                       false,  //initial=
                       on_toggle);
 
-    tui_checkbox_init(&cb2,
+    bareterm_checkbox_init(&cb2,
                       12, 28,
                       "Enable feature 2",
                       false,  //initial=
                       on_toggle);
 
 
-    tui_radiogroup_init(&rg,
+    bareterm_radiogroup_init(&rg,
         4, 19,
         choices, 3,   // labels + count
         1,            // start with “Green”
@@ -226,7 +224,7 @@ int main(void)
 
 	/*buf[0] = 'A'; // Initialize text input buffer
 	buf[1] = 'B'; // Initialize text input buffer
-    tui_textinput_init(&input,
+    bareterm_textinput_init(&input,
                        30, 2,
                        27,
                        buf, sizeof(buf),
@@ -234,105 +232,33 @@ int main(void)
 	*/				   
 
 	// Initial draw
-    tui_draw_all_widgets();
+    bareterm_draw_all_widgets();
 
     // Main event loop
     while (1) {
-        tui_event_t evt;
-        if (tui_poll_event(&evt)) {
+        bareterm_event_t evt;
+        if (bareterm_poll_event(&evt)) {
 
 			switch (evt.type) {
-				case TUI_EVT_KEY:
-					//tui_printf("Key: '%c' (0x%02X)    ", evt.key.ch, evt.key.ch);
+				case bareterm_EVT_KEY:
+					//bareterm_printf("Key: '%c' (0x%02X)    ", evt.key.ch, evt.key.ch);
 					break;
-				case TUI_EVT_ARROW:
-					//tui_printf("Arrow:  %d    ", evt.key.code);
+				case bareterm_EVT_ARROW:
+					//bareterm_printf("Arrow:  %d    ", evt.key.code);
 					break;
-				case TUI_EVT_MOUSE:
-					//tui_printf("Mouse: %s at (%d, %d), button %d     ",
+				case bareterm_EVT_MOUSE:
+					//bareterm_printf("Mouse: %s at (%d, %d), button %d     ",
 					//		evt.mouse.pressed ? "DOWN" : "UP",
 					//		evt.mouse.x, evt.mouse.y,
 					//		evt.mouse.button);
 					break;
 			}
 
-            tui_dispatch_event(&evt);
-            tui_draw_all_widgets();
+            bareterm_dispatch_event(&evt);
+            bareterm_draw_all_widgets();
         }
         k_msleep(10);
     }
 
-
-
-
-
-
-	
-while (1) {
-    tui_event_t evt;
-    if (tui_poll_event(&evt)) {
-        //tui_move_cursor(1, 15);
-		
-        switch (evt.type) {
-            case TUI_EVT_KEY:
-                tui_printf("Key: '%c' (0x%02X)    ", evt.key.ch, evt.key.ch);
-                break;
-			case TUI_EVT_ARROW:
-				tui_printf("Arrow:  %d    ", evt.key.code);
-				break;
-            case TUI_EVT_MOUSE:
-                tui_printf("Mouse: %s at (%d, %d), button %d     ",
-                           evt.mouse.pressed ? "DOWN" : "UP",
-                           evt.mouse.x, evt.mouse.y,
-                           evt.mouse.button);
-                break;
-        }
-    }
-    k_msleep(10);
-}
-
-
-	while (1) {
-		ret = gpio_pin_toggle_dt(&led);
-		if (ret < 0) {
-			return 0;
-		}
-
-
-
-		led_state = !led_state;
-		printf("LED state: %s\n", led_state ? "ON" : "OFF");
-
-		tui_set_color(TUI_WHITE, TUI_BLUE, TUI_STYLE_NONE);
-		tui_puts("Plain white on blue");
-
-		tui_set_color(TUI_YELLOW, TUI_RED, TUI_STYLE_BOLD);
-		tui_puts("Bold yellow on red");
-
-		tui_set_color(TUI_GREEN, TUI_BLACK, TUI_STYLE_UNDERLINE);
-		tui_puts("Underlined green on black");
-
-		tui_reset_color();
-		tui_move_cursor(1, 3);
-		tui_puts("This is default color again");
-
-		tui_set_color(TUI_WHITE, TUI_BLUE, TUI_STYLE_BOLD);
-		tui_draw_box(5, 3, 30, 7, " Menu ");
-		tui_reset_color();
-
-		tui_move_cursor(7, 5);
-		tui_puts("Option 1");
-		tui_move_cursor(7, 6);
-		tui_puts("Option 2");
-
-		k_msleep(SLEEP_TIME_MS);
-
-
-		printf("\x1B[2J\x1B[H\x1B[44;37mThis is a test\x1B[0m\n");
-
-        tui_clear_screen();
-        tui_backend_puts("Screen cleared\n");
-        tui_printf("System ready on port %d\n", 3);
-	}
 	return 0;
 }

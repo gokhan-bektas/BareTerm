@@ -7,5 +7,5 @@ C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/drivers/uart/uart_internal.
 C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/uart.h:243:20:uart_irq_rx_enable	16	static
 C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/uart.h:339:19:uart_irq_is_pending	16	static
 C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/uart.h:362:19:uart_irq_update	16	static
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/tui_uart_input.c:10:13:uart_cb	24	static
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/tui_uart_input.c:23:6:tui_uart_input_init	16	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/bareterm_uart_input.c:10:13:uart_cb	24	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/bareterm_uart_input.c:23:6:bareterm_uart_input_init	16	static

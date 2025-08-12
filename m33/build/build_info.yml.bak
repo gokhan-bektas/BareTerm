@@ -15,6 +15,7 @@ cmake:
      - C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/boards/adi/max32657evkit/max32657evkit_max32657.dts
      - C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/boards/max32657evkit_max32657.overlay
     include-dirs:
+     - C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/include
      - C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include
      - C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr
      - C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/dts/common

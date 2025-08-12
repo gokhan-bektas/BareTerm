@@ -1,5 +1,5 @@
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/tui_label.c:8:13:label_draw	16	static
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/tui_label.c:16:13:label_event	16	static
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/tui_label.c:20:6:tui_label_init	24	static
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/tui_label.c:38:6:tui_label_set_text	16	static
-C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/tui_label.c:44:6:tui_label_set_color	16	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/bareterm_label.c:8:13:label_draw	16	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/bareterm_label.c:16:13:label_event	16	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/bareterm_label.c:20:6:bareterm_label_init	24	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/bareterm_label.c:38:6:bareterm_label_set_text	16	static
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/src/bareterm_label.c:44:6:bareterm_label_set_color	16	static

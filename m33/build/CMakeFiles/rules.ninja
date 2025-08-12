@@ -449,6 +449,25 @@ rule C_STATIC_LIBRARY_LINKER__kernel_
 
 
 #############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__bareterm_unscanned_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}C:\analog\cfs\1.1.0\Tools\zephyr-sdk\arm-zephyr-eabi\bin\arm-zephyr-eabi-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER__bareterm_
+  command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && C:\analog\cfs\1.1.0\Tools\cmake\bin\cmake.exe -E rm -f $TARGET_FILE && C:\analog\cfs\1.1.0\Tools\zephyr-sdk\arm-zephyr-eabi\bin\arm-zephyr-eabi-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\analog\cfs\1.1.0\Tools\zephyr-sdk\arm-zephyr-eabi\bin\arm-zephyr-eabi-ranlib.exe $TARGET_FILE && $POST_BUILD"
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE

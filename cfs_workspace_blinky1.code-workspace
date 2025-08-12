@@ -24,7 +24,13 @@
       "type_traits": "c",
       "new": "c",
       "xtr1common": "c",
-      "tui_widget.h": "c"
+      "tui_widget.h": "c",
+      "tui_input.h": "c",
+      "tui.h": "c",
+      "stdbool.h": "c",
+      "kernel.h": "c",
+      "string.h": "c",
+      "stdio.h": "c"
     },
     "cfs.project.board": "EvKit_V1"
   }

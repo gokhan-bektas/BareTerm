@@ -11,18 +11,14 @@ zephyr_cc_option(-fstack-usage)
 zephyr_cc_option(-fdump-ipa-cgraph)
 zephyr_cc_option(-gdwarf-4)
 
+# Add the BareTerm library
+add_subdirectory(bareterm)
+
 target_sources(app PRIVATE
   src/main.c
-  src/tui.c
-  src/tui_backend_stdio.c
-  src/tui_uart_input.c
-  src/tui_input.c
-  src/tui_widget.c
-  src/tui_label.c
-  src/tui_textbox.c
-  src/tui_progressbar.c
-  src/tui_checkbox.c
-  src/tui_modalpopup.c
-  src/tui_radiogroup.c
-  src/tui_textinput.c
+  src/test_unit.c
 )
+
+
+# Link with comui library
+target_link_libraries(app PRIVATE bareterm )

@@ -2,7 +2,7 @@
 // File: bareterm_modalpopup.c
 // ============================
 #include "bareterm_widget.h"
-#include "bareterm_backend.h"
+#include "../bareterm_backend.h"
 #include <string.h>
 //#include <zephyr/kernel.h>
 

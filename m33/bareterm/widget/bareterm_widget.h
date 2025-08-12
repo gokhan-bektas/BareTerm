@@ -4,7 +4,7 @@
 #ifndef bareterm_WIDGET_H
 #define bareterm_WIDGET_H
 
-#include "bareterm.h"
+#include "../bareterm.h"
 #include "bareterm_input.h"
 #include <stdbool.h>
 
@@ -49,7 +49,14 @@ typedef struct bareterm_widget {
     int      cursor_pos;    // insertion cursor position [0..txt_length]
     int      txt_offset;    // first visible character index
     void   (*submit_cb)(bareterm_widget_t *ti); // called on Enter
-
+    
+    // Listbox-specific data
+    const char **lb_items;
+    int          lb_count;
+    int          lb_selected;
+    int          lb_top;
+    void       (*lb_select_cb)(bareterm_widget_t*, int);
+    
 } bareterm_widget_t;
 
 // Register a widget for drawing and event dispatch
@@ -149,6 +156,12 @@ void bareterm_textinput_set_text(bareterm_widget_t *ti, const char *text);
 /** Copy out up to maxlen‑1 characters + NUL. */
 void bareterm_textinput_get_text(const bareterm_widget_t *ti,
                             char *out, int maxlen);
+
+// Listbox widget initializer
+void bareterm_listbox_init(bareterm_widget_t *lb,
+                      int x, int y, int w, int h,
+                      const char **items, int count,
+                      void (*on_select)(bareterm_widget_t *lb, int selected));
 
 #ifdef __cplusplus
 }

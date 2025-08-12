@@ -11,7 +11,9 @@
 #include <stdio.h>
 
 #include <bareterm.h>
-#include <bareterm_widget.h>
+#include <widget/bareterm_widget.h>
+
+
 
 
 
@@ -36,9 +38,24 @@ static bareterm_widget_t bar;
 static bareterm_widget_t cb1, cb2;
 
 static bareterm_widget_t rg;
-static const char *choices[] = { "SPI", "I2C", "UART" };
+static const char *choices[] = { "SPI", "I2C", "UART", "I2C"};
 
 static bareterm_widget_t input;
+static bareterm_widget_t status_led;
+
+static bareterm_widget_t listbox;
+static const char *list_items[] = {
+    "First Item",
+    "Second Item",
+    "A Third, Longer Item",
+    "Item Four",
+    "Fifth",
+    "Sixth Sense",
+    "Seventh Heaven",
+    "Eighth Wonder",
+    "Ninth Life",
+    "Tenth Planet"
+};
 static char buf[64] = "";
 
 void on_submit(bareterm_widget_t *ti) {
@@ -57,8 +74,11 @@ static void on_button_click1(void *w) {
 
 	bareterm_progressbar_set_value(&bar, /*new_value=*/ bar.value - 1);
 
-    // Redraw everything
-    bareterm_draw_all_widgets();
+    // Cycle status indicator color
+    static int status_idx = 0;
+    bareterm_color_t colors[] = { bareterm_GREEN, bareterm_YELLOW, bareterm_RED, bareterm_WHITE };
+    status_idx = (status_idx + 1) % 4;
+    bareterm_statusindicator_set_color(&status_led, colors[status_idx]);
 }
 // Callback for button press
 static void on_button_click2(void *w) {
@@ -67,9 +87,6 @@ static void on_button_click2(void *w) {
     bareterm_label_set_color(&lbl1, bareterm_YELLOW, bareterm_GREEN, bareterm_STYLE_BOLD);
 
 	bareterm_progressbar_set_value(&bar, /*new_value=*/ bar.value + 1);
-    // Redraw everything
-    bareterm_draw_all_widgets();
-
 }
 
 
@@ -77,19 +94,13 @@ void on_toggle(bareterm_widget_t *cb, unsigned char state) {
     bareterm_move_cursor(10, 20);
     bareterm_printf("Checkbox is now %s   ", state ? "☑️" : "☐");
 
-	if (cb->checked) {
+	if (state) {
 		bareterm_label_set_text(&lbl2, "Checkbox enabled");
-		bareterm_backend_puts("\x1B[?1049h");  // Push into alternate screen
-		//bareterm_draw_box(6, 24, 10, 3, " TEST");
 		bareterm_modalpopup_show("Checkbox Enabled", "You have enabled the checkbox feature.");
 	} else {
 		bareterm_label_set_text(&lbl2, "Checkbox disabled");
-		bareterm_backend_puts("\x1B[?1049h");  // Push into alternate screen
-	}	
-		
-	// draw your dialog and whatever else
-	bareterm_backend_puts("\x1B[?1049l");  // Pop back to the original screen
-
+		bareterm_modalpopup_show("Checkbox Disabled", "The feature has been turned off.");
+	}
 }
 
 void on_choice_change(bareterm_widget_t *w, int sel) {
@@ -97,12 +108,17 @@ void on_choice_change(bareterm_widget_t *w, int sel) {
     bareterm_printf("Selected: %s   ", choices[sel]);
 }
 
+void on_list_select(bareterm_widget_t *w, int sel) {
+    bareterm_move_cursor(1, 22);
+    bareterm_printf("Listbox selected: %-20s", list_items[sel]);
+}
+
 int test_draw_welcomescreen() {
 
 	bareterm_clear_screen();
-	bareterm_draw_box(1, 1, 50, 30, " MAX32657 EVKit Test Tool v0.1.0");
+	bareterm_draw_box(1, 1, 80, 30, " MAX32657 EVKit Test Tool v0.1.0");
 
-	bareterm_textbox_init(&memo,
+	bareterm_textbox_init(&memo, 
 					3, 8,
 					47, 5,
 					"This is the automated production test tool for "
@@ -159,7 +175,7 @@ int main(void)
     //bareterm_move_cursor(2, 2);
     //bareterm_puts("Press the button:");
 
-	bareterm_draw_box(1, 1, 50, 30, " MAX32657 EVKit Test Tool v0.1.0");
+	bareterm_draw_box(1, 1, 80, 30, " MAX32657 EVKit Test Tool v0.1.0");
 	bareterm_label_init(&lbl1,
 				15, 4,
 				"Welcome",
@@ -218,9 +234,20 @@ int main(void)
 
     bareterm_radiogroup_init(&rg,
         4, 19,
-        choices, 3,   // labels + count
+        choices, 4,   // labels + count
         1,            // start with “Green”
         on_choice_change);
+
+    bareterm_statusindicator_init(&status_led,
+        40, 15,
+        "System Status",
+        bareterm_GREEN);
+
+    bareterm_listbox_init(&listbox,
+        52, 2,
+        25, 12,
+        list_items, 10,
+        on_list_select);
 
 	/*buf[0] = 'A'; // Initialize text input buffer
 	buf[1] = 'B'; // Initialize text input buffer

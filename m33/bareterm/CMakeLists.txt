@@ -4,14 +4,15 @@ if(ZEPHYR_BASE)
     bareterm_backend_stdio.c
     bareterm_uart_input.c
     bareterm_input.c
-    bareterm_widget.c
-    bareterm_label.c
-    bareterm_textbox.c
-    bareterm_progressbar.c
-    bareterm_checkbox.c
-    bareterm_modalpopup.c
-    bareterm_radiogroup.c
-    bareterm_textinput.c
+    widget/bareterm_widget.c
+    widget/bareterm_label.c
+    widget/bareterm_textbox.c
+    widget/bareterm_progressbar.c
+    widget/bareterm_checkbox.c
+    widget/bareterm_modalpopup.c
+    widget/bareterm_radiogroup.c
+    widget/bareterm_textinput.c
+    widget/bareterm_listbox.c
   )
 
 # COMUI library includes

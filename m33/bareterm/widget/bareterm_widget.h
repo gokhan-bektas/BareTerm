@@ -59,6 +59,10 @@ typedef struct bareterm_widget {
     
 } bareterm_widget_t;
 
+
+// Register a widget for drawing and event dispatch
+void bareterm_widget_unregister_all(void);
+
 // Register a widget for drawing and event dispatch
 void bareterm_widget_register(bareterm_widget_t *widget);
 
@@ -162,6 +166,14 @@ void bareterm_listbox_init(bareterm_widget_t *lb,
                       int x, int y, int w, int h,
                       const char **items, int count,
                       void (*on_select)(bareterm_widget_t *lb, int selected));
+
+// Status Indicator widget
+void bareterm_statusindicator_init(bareterm_widget_t *si,
+                              int x, int y,
+                              const char *label,
+                              bareterm_color_t initial_color);
+
+void bareterm_statusindicator_set_color(bareterm_widget_t *si, bareterm_color_t color);
 
 #ifdef __cplusplus
 }

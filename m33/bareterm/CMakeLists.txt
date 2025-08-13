@@ -13,6 +13,8 @@ if(ZEPHYR_BASE)
     widget/bareterm_radiogroup.c
     widget/bareterm_textinput.c
     widget/bareterm_listbox.c
+    widget/bareterm_statusindicator.c
+    bareterm_screen_manager.c
   )
 
 # COMUI library includes

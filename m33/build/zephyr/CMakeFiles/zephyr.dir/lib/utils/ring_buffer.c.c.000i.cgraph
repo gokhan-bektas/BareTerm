@@ -3,7 +3,7 @@ Trivially needed symbols: ring_buf_item_get/32 ring_buf_item_put/31 ring_buf_pee
 
 Initial Symbol table:
 
-memcpy/34 (memcpy) @0000000006de88c0
+memcpy/34 (memcpy) @000000000792d8c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -11,7 +11,7 @@ memcpy/34 (memcpy) @0000000006de88c0
   Function flags:
   Called by: ring_buf_item_get/32 ring_buf_item_put/31 ring_buf_peek/30 ring_buf_get/29 ring_buf_put/28 
   Calls: 
-__builtin_expect/33 (__builtin_expect) @0000000006de87a8
+__builtin_expect/33 (__builtin_expect) @000000000792d7a8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -19,7 +19,7 @@ __builtin_expect/33 (__builtin_expect) @0000000006de87a8
   Function flags:
   Called by: ring_buf_area_finish/27 ring_buf_area_finish/27 ring_buf_area_claim/26 
   Calls: 
-ring_buf_item_get/32 (ring_buf_item_get) @0000000006de8690
+ring_buf_item_get/32 (ring_buf_item_get) @000000000792d690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @0000000001d89da0
@@ -28,106 +28,106 @@ ring_buf_item_get/32 (ring_buf_item_get) @0000000006de8690
   Function flags: body
   Called by: 
   Calls: ring_buf_get_finish/25 memcpy/34 ring_buf_get_claim/24 ring_buf_get_finish/25 ring_buf_get_claim/24 ring_buf_is_empty/16 
-ring_buf_item_put/31 (ring_buf_item_put) @0000000006de8578
+ring_buf_item_put/31 (ring_buf_item_put) @000000000792d578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006de8690
+  Aux: @000000000792d690
   References: 
   Referring: 
   Function flags: body
   Called by: 
   Calls: ring_buf_put_finish/23 memcpy/34 ring_buf_put_claim/22 ring_buf_put_claim/22 ring_buf_space_get/18 
-ring_buf_peek/30 (ring_buf_peek) @0000000006de8460
+ring_buf_peek/30 (ring_buf_peek) @000000000792d460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006de8578
+  Aux: @000000000792d578
   References: 
   Referring: 
   Function flags: body
   Called by: 
   Calls: ring_buf_get_finish/25 memcpy/34 ring_buf_get_claim/24 
-ring_buf_get/29 (ring_buf_get) @0000000006de8348
+ring_buf_get/29 (ring_buf_get) @000000000792d348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006de8460
+  Aux: @000000000792d460
   References: 
   Referring: 
   Function flags: body
   Called by: 
   Calls: ring_buf_get_finish/25 memcpy/34 ring_buf_get_claim/24 
-ring_buf_put/28 (ring_buf_put) @0000000006de8230
+ring_buf_put/28 (ring_buf_put) @000000000792d230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006de8348
+  Aux: @000000000792d348
   References: 
   Referring: 
   Function flags: body
   Called by: 
   Calls: ring_buf_put_finish/23 memcpy/34 ring_buf_put_claim/22 
-ring_buf_area_finish/27 (ring_buf_area_finish) @0000000006de8118
+ring_buf_area_finish/27 (ring_buf_area_finish) @000000000792d118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006de8230
+  Aux: @000000000792d230
   References: 
   Referring: 
   Function flags: body
   Called by: ring_buf_get_finish/25 ring_buf_put_finish/23 
   Calls: __builtin_expect/33 __builtin_expect/33 
-ring_buf_area_claim/26 (ring_buf_area_claim) @0000000006de8000
+ring_buf_area_claim/26 (ring_buf_area_claim) @000000000792d000
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006de8118
+  Aux: @000000000792d118
   References: 
   Referring: 
   Function flags: body
   Called by: ring_buf_get_claim/24 ring_buf_put_claim/22 
   Calls: __builtin_expect/33 
-ring_buf_get_finish/25 (ring_buf_get_finish) @0000000006dc7e38
+ring_buf_get_finish/25 (ring_buf_get_finish) @000000000790ce38
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
-  Aux: @0000000006de8460
+  Aux: @000000000792d460
   References: 
   Referring: 
   Function flags: body
   Called by: ring_buf_item_get/32 ring_buf_item_get/32 ring_buf_peek/30 ring_buf_get/29 
   Calls: ring_buf_area_finish/27 
-ring_buf_get_claim/24 (ring_buf_get_claim) @0000000006dc7d20
+ring_buf_get_claim/24 (ring_buf_get_claim) @000000000790cd20
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
-  Aux: @0000000006dc7e38
+  Aux: @000000000790ce38
   References: 
   Referring: 
   Function flags: body
   Called by: ring_buf_item_get/32 ring_buf_item_get/32 ring_buf_peek/30 ring_buf_get/29 
   Calls: ring_buf_area_claim/26 ring_buf_size_get/21 ring_buf_size_get/21 
-ring_buf_put_finish/23 (ring_buf_put_finish) @0000000006dc7af0
+ring_buf_put_finish/23 (ring_buf_put_finish) @000000000790caf0
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
-  Aux: @0000000006de8348
+  Aux: @000000000792d348
   References: 
   Referring: 
   Function flags: body
   Called by: ring_buf_item_put/31 ring_buf_put/28 
   Calls: ring_buf_area_finish/27 
-ring_buf_put_claim/22 (ring_buf_put_claim) @0000000006dc79d8
+ring_buf_put_claim/22 (ring_buf_put_claim) @000000000790c9d8
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
-  Aux: @0000000006dc7af0
+  Aux: @000000000790caf0
   References: 
   Referring: 
   Function flags: body
   Called by: ring_buf_item_put/31 ring_buf_item_put/31 ring_buf_put/28 
   Calls: ring_buf_area_claim/26 ring_buf_space_get/18 ring_buf_space_get/18 
-ring_buf_size_get/21 (ring_buf_size_get) @0000000006dc77a8
+ring_buf_size_get/21 (ring_buf_size_get) @000000000790c7a8
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
-  Aux: @0000000006dc7e38
+  Aux: @000000000790ce38
   References: 
   Referring: 
   Function flags: body
   Called by: ring_buf_get_claim/24 ring_buf_get_claim/24 
   Calls: 
-ring_buf_capacity_get/20 (ring_buf_capacity_get) @0000000006dc7690
+ring_buf_capacity_get/20 (ring_buf_capacity_get) @000000000790c690
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -135,7 +135,7 @@ ring_buf_capacity_get/20 (ring_buf_capacity_get) @0000000006dc7690
   Function flags:
   Called by: 
   Calls: 
-ring_buf_item_space_get/19 (ring_buf_item_space_get) @0000000006dc7578
+ring_buf_item_space_get/19 (ring_buf_item_space_get) @000000000790c578
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -143,16 +143,16 @@ ring_buf_item_space_get/19 (ring_buf_item_space_get) @0000000006dc7578
   Function flags:
   Called by: 
   Calls: 
-ring_buf_space_get/18 (ring_buf_space_get) @0000000006dc7460
+ring_buf_space_get/18 (ring_buf_space_get) @000000000790c460
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
-  Aux: @0000000006dc7af0
+  Aux: @000000000790caf0
   References: 
   Referring: 
   Function flags: body
   Called by: ring_buf_item_put/31 ring_buf_put_claim/22 ring_buf_put_claim/22 
   Calls: 
-ring_buf_reset/17 (ring_buf_reset) @0000000006dc7348
+ring_buf_reset/17 (ring_buf_reset) @000000000790c348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -160,7 +160,7 @@ ring_buf_reset/17 (ring_buf_reset) @0000000006dc7348
   Function flags:
   Called by: 
   Calls: 
-ring_buf_is_empty/16 (ring_buf_is_empty) @0000000006dc7230
+ring_buf_is_empty/16 (ring_buf_is_empty) @000000000790c230
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   Aux: @0000000001d89da0
@@ -169,7 +169,7 @@ ring_buf_is_empty/16 (ring_buf_is_empty) @0000000006dc7230
   Function flags: body
   Called by: ring_buf_item_get/32 
   Calls: 
-ring_buf_item_init/15 (ring_buf_item_init) @0000000006dc7118
+ring_buf_item_init/15 (ring_buf_item_init) @000000000790c118
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -177,7 +177,7 @@ ring_buf_item_init/15 (ring_buf_item_init) @0000000006dc7118
   Function flags:
   Called by: 
   Calls: 
-ring_buf_init/14 (ring_buf_init) @0000000006dc7000
+ring_buf_init/14 (ring_buf_init) @000000000790c000
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -185,7 +185,7 @@ ring_buf_init/14 (ring_buf_init) @0000000006dc7000
   Function flags:
   Called by: 
   Calls: 
-ring_buf_internal_reset/13 (ring_buf_internal_reset) @0000000006d8be38
+ring_buf_internal_reset/13 (ring_buf_internal_reset) @00000000078d0e38
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -193,14 +193,14 @@ ring_buf_internal_reset/13 (ring_buf_internal_reset) @0000000006d8be38
   Function flags:
   Called by: 
   Calls: 
-errno/12 (errno) @0000000006da3e80
+errno/12 (errno) @00000000078e8e80
   Type: variable
   Visibility: semantic_interposition external public
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: tls-local-exec
-mem_xor_128/11 (mem_xor_128) @0000000006d8b9d8
+mem_xor_128/11 (mem_xor_128) @00000000078d09d8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -208,7 +208,7 @@ mem_xor_128/11 (mem_xor_128) @0000000006d8b9d8
   Function flags:
   Called by: 
   Calls: 
-mem_xor_32/10 (mem_xor_32) @0000000006d8b8c0
+mem_xor_32/10 (mem_xor_32) @00000000078d08c0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -216,7 +216,7 @@ mem_xor_32/10 (mem_xor_32) @0000000006d8b8c0
   Function flags:
   Called by: 
   Calls: 
-mem_xor_n/9 (mem_xor_n) @0000000006d8b7a8
+mem_xor_n/9 (mem_xor_n) @00000000078d07a8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -224,7 +224,7 @@ mem_xor_n/9 (mem_xor_n) @0000000006d8b7a8
   Function flags:
   Called by: 
   Calls: 
-sign_extend_64/8 (sign_extend_64) @0000000006d8b690
+sign_extend_64/8 (sign_extend_64) @00000000078d0690
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -232,7 +232,7 @@ sign_extend_64/8 (sign_extend_64) @0000000006d8b690
   Function flags:
   Called by: 
   Calls: 
-sign_extend/7 (sign_extend) @0000000006d8b578
+sign_extend/7 (sign_extend) @00000000078d0578
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -240,7 +240,7 @@ sign_extend/7 (sign_extend) @0000000006d8b578
   Function flags:
   Called by: 
   Calls: 
-bin2bcd/6 (bin2bcd) @0000000006d8b460
+bin2bcd/6 (bin2bcd) @00000000078d0460
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -248,7 +248,7 @@ bin2bcd/6 (bin2bcd) @0000000006d8b460
   Function flags:
   Called by: 
   Calls: 
-bcd2bin/5 (bcd2bin) @0000000006d8b348
+bcd2bin/5 (bcd2bin) @00000000078d0348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -256,7 +256,7 @@ bcd2bin/5 (bcd2bin) @0000000006d8b348
   Function flags:
   Called by: 
   Calls: 
-byteswp/4 (byteswp) @0000000006d8b230
+byteswp/4 (byteswp) @00000000078d0230
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -264,7 +264,7 @@ byteswp/4 (byteswp) @0000000006d8b230
   Function flags:
   Called by: 
   Calls: 
-bytecpy/3 (bytecpy) @0000000006d8b118
+bytecpy/3 (bytecpy) @00000000078d0118
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -272,7 +272,7 @@ bytecpy/3 (bytecpy) @0000000006d8b118
   Function flags:
   Called by: 
   Calls: 
-arithmetic_shift_right/2 (arithmetic_shift_right) @0000000006d8b000
+arithmetic_shift_right/2 (arithmetic_shift_right) @00000000078d0000
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -280,7 +280,7 @@ arithmetic_shift_right/2 (arithmetic_shift_right) @0000000006d8b000
   Function flags:
   Called by: 
   Calls: 
-is_null_no_warn/1 (is_null_no_warn) @0000000006778e38
+is_null_no_warn/1 (is_null_no_warn) @00000000072c8e38
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -288,7 +288,7 @@ is_null_no_warn/1 (is_null_no_warn) @0000000006778e38
   Function flags:
   Called by: 
   Calls: 
-is_power_of_two/0 (is_power_of_two) @0000000006778d20
+is_power_of_two/0 (is_power_of_two) @00000000072c8d20
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -301,7 +301,7 @@ Removing unused symbols: ring_buf_capacity_get/20 ring_buf_item_space_get/19 rin
 
 Reclaimed Symbol table:
 
-memcpy/34 (memcpy) @0000000006de88c0
+memcpy/34 (memcpy) @000000000792d8c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -309,7 +309,7 @@ memcpy/34 (memcpy) @0000000006de88c0
   Function flags:
   Called by: ring_buf_item_get/32 ring_buf_item_put/31 ring_buf_peek/30 ring_buf_get/29 ring_buf_put/28 
   Calls: 
-__builtin_expect/33 (__builtin_expect) @0000000006de87a8
+__builtin_expect/33 (__builtin_expect) @000000000792d7a8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -317,7 +317,7 @@ __builtin_expect/33 (__builtin_expect) @0000000006de87a8
   Function flags:
   Called by: ring_buf_area_finish/27 ring_buf_area_finish/27 ring_buf_area_claim/26 
   Calls: 
-ring_buf_item_get/32 (ring_buf_item_get) @0000000006de8690
+ring_buf_item_get/32 (ring_buf_item_get) @000000000792d690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -325,7 +325,7 @@ ring_buf_item_get/32 (ring_buf_item_get) @0000000006de8690
   Function flags: body
   Called by: 
   Calls: ring_buf_get_finish/25 memcpy/34 ring_buf_get_claim/24 ring_buf_get_finish/25 ring_buf_get_claim/24 ring_buf_is_empty/16 
-ring_buf_item_put/31 (ring_buf_item_put) @0000000006de8578
+ring_buf_item_put/31 (ring_buf_item_put) @000000000792d578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -333,7 +333,7 @@ ring_buf_item_put/31 (ring_buf_item_put) @0000000006de8578
   Function flags: body
   Called by: 
   Calls: ring_buf_put_finish/23 memcpy/34 ring_buf_put_claim/22 ring_buf_put_claim/22 ring_buf_space_get/18 
-ring_buf_peek/30 (ring_buf_peek) @0000000006de8460
+ring_buf_peek/30 (ring_buf_peek) @000000000792d460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -341,7 +341,7 @@ ring_buf_peek/30 (ring_buf_peek) @0000000006de8460
   Function flags: body
   Called by: 
   Calls: ring_buf_get_finish/25 memcpy/34 ring_buf_get_claim/24 
-ring_buf_get/29 (ring_buf_get) @0000000006de8348
+ring_buf_get/29 (ring_buf_get) @000000000792d348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -349,7 +349,7 @@ ring_buf_get/29 (ring_buf_get) @0000000006de8348
   Function flags: body
   Called by: 
   Calls: ring_buf_get_finish/25 memcpy/34 ring_buf_get_claim/24 
-ring_buf_put/28 (ring_buf_put) @0000000006de8230
+ring_buf_put/28 (ring_buf_put) @000000000792d230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -357,7 +357,7 @@ ring_buf_put/28 (ring_buf_put) @0000000006de8230
   Function flags: body
   Called by: 
   Calls: ring_buf_put_finish/23 memcpy/34 ring_buf_put_claim/22 
-ring_buf_area_finish/27 (ring_buf_area_finish) @0000000006de8118
+ring_buf_area_finish/27 (ring_buf_area_finish) @000000000792d118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -365,7 +365,7 @@ ring_buf_area_finish/27 (ring_buf_area_finish) @0000000006de8118
   Function flags: body
   Called by: ring_buf_get_finish/25 ring_buf_put_finish/23 
   Calls: __builtin_expect/33 __builtin_expect/33 
-ring_buf_area_claim/26 (ring_buf_area_claim) @0000000006de8000
+ring_buf_area_claim/26 (ring_buf_area_claim) @000000000792d000
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -373,7 +373,7 @@ ring_buf_area_claim/26 (ring_buf_area_claim) @0000000006de8000
   Function flags: body
   Called by: ring_buf_get_claim/24 ring_buf_put_claim/22 
   Calls: __builtin_expect/33 
-ring_buf_get_finish/25 (ring_buf_get_finish) @0000000006dc7e38
+ring_buf_get_finish/25 (ring_buf_get_finish) @000000000790ce38
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -381,7 +381,7 @@ ring_buf_get_finish/25 (ring_buf_get_finish) @0000000006dc7e38
   Function flags: body
   Called by: ring_buf_item_get/32 ring_buf_item_get/32 ring_buf_peek/30 ring_buf_get/29 
   Calls: ring_buf_area_finish/27 
-ring_buf_get_claim/24 (ring_buf_get_claim) @0000000006dc7d20
+ring_buf_get_claim/24 (ring_buf_get_claim) @000000000790cd20
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -389,7 +389,7 @@ ring_buf_get_claim/24 (ring_buf_get_claim) @0000000006dc7d20
   Function flags: body
   Called by: ring_buf_item_get/32 ring_buf_item_get/32 ring_buf_peek/30 ring_buf_get/29 
   Calls: ring_buf_area_claim/26 ring_buf_size_get/21 ring_buf_size_get/21 
-ring_buf_put_finish/23 (ring_buf_put_finish) @0000000006dc7af0
+ring_buf_put_finish/23 (ring_buf_put_finish) @000000000790caf0
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -397,7 +397,7 @@ ring_buf_put_finish/23 (ring_buf_put_finish) @0000000006dc7af0
   Function flags: body
   Called by: ring_buf_item_put/31 ring_buf_put/28 
   Calls: ring_buf_area_finish/27 
-ring_buf_put_claim/22 (ring_buf_put_claim) @0000000006dc79d8
+ring_buf_put_claim/22 (ring_buf_put_claim) @000000000790c9d8
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -405,7 +405,7 @@ ring_buf_put_claim/22 (ring_buf_put_claim) @0000000006dc79d8
   Function flags: body
   Called by: ring_buf_item_put/31 ring_buf_item_put/31 ring_buf_put/28 
   Calls: ring_buf_area_claim/26 ring_buf_space_get/18 ring_buf_space_get/18 
-ring_buf_size_get/21 (ring_buf_size_get) @0000000006dc77a8
+ring_buf_size_get/21 (ring_buf_size_get) @000000000790c7a8
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -413,7 +413,7 @@ ring_buf_size_get/21 (ring_buf_size_get) @0000000006dc77a8
   Function flags: body
   Called by: ring_buf_get_claim/24 ring_buf_get_claim/24 
   Calls: 
-ring_buf_space_get/18 (ring_buf_space_get) @0000000006dc7460
+ring_buf_space_get/18 (ring_buf_space_get) @000000000790c460
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -421,7 +421,7 @@ ring_buf_space_get/18 (ring_buf_space_get) @0000000006dc7460
   Function flags: body
   Called by: ring_buf_item_put/31 ring_buf_put_claim/22 ring_buf_put_claim/22 
   Calls: 
-ring_buf_is_empty/16 (ring_buf_is_empty) @0000000006dc7230
+ring_buf_is_empty/16 (ring_buf_is_empty) @000000000790c230
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -433,7 +433,7 @@ ring_buf_is_empty/16 (ring_buf_is_empty) @0000000006dc7230
 
 Initial Symbol table:
 
-memcpy/34 (memcpy) @0000000006de88c0
+memcpy/34 (memcpy) @000000000792d8c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -441,7 +441,7 @@ memcpy/34 (memcpy) @0000000006de88c0
   Function flags:
   Called by: ring_buf_item_get/32 ring_buf_item_put/31 ring_buf_peek/30 ring_buf_get/29 ring_buf_put/28 
   Calls: 
-__builtin_expect/33 (__builtin_expect) @0000000006de87a8
+__builtin_expect/33 (__builtin_expect) @000000000792d7a8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -449,7 +449,7 @@ __builtin_expect/33 (__builtin_expect) @0000000006de87a8
   Function flags:
   Called by: ring_buf_area_finish/27 ring_buf_area_finish/27 ring_buf_area_claim/26 
   Calls: 
-ring_buf_item_get/32 (ring_buf_item_get) @0000000006de8690
+ring_buf_item_get/32 (ring_buf_item_get) @000000000792d690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -457,7 +457,7 @@ ring_buf_item_get/32 (ring_buf_item_get) @0000000006de8690
   Function flags: body
   Called by: 
   Calls: ring_buf_get_finish/25 memcpy/34 ring_buf_get_claim/24 ring_buf_get_finish/25 ring_buf_get_claim/24 ring_buf_is_empty/16 
-ring_buf_item_put/31 (ring_buf_item_put) @0000000006de8578
+ring_buf_item_put/31 (ring_buf_item_put) @000000000792d578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -465,7 +465,7 @@ ring_buf_item_put/31 (ring_buf_item_put) @0000000006de8578
   Function flags: body
   Called by: 
   Calls: ring_buf_put_finish/23 memcpy/34 ring_buf_put_claim/22 ring_buf_put_claim/22 ring_buf_space_get/18 
-ring_buf_peek/30 (ring_buf_peek) @0000000006de8460
+ring_buf_peek/30 (ring_buf_peek) @000000000792d460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -473,7 +473,7 @@ ring_buf_peek/30 (ring_buf_peek) @0000000006de8460
   Function flags: body
   Called by: 
   Calls: ring_buf_get_finish/25 memcpy/34 ring_buf_get_claim/24 
-ring_buf_get/29 (ring_buf_get) @0000000006de8348
+ring_buf_get/29 (ring_buf_get) @000000000792d348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -481,7 +481,7 @@ ring_buf_get/29 (ring_buf_get) @0000000006de8348
   Function flags: body
   Called by: 
   Calls: ring_buf_get_finish/25 memcpy/34 ring_buf_get_claim/24 
-ring_buf_put/28 (ring_buf_put) @0000000006de8230
+ring_buf_put/28 (ring_buf_put) @000000000792d230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -489,7 +489,7 @@ ring_buf_put/28 (ring_buf_put) @0000000006de8230
   Function flags: body
   Called by: 
   Calls: ring_buf_put_finish/23 memcpy/34 ring_buf_put_claim/22 
-ring_buf_area_finish/27 (ring_buf_area_finish) @0000000006de8118
+ring_buf_area_finish/27 (ring_buf_area_finish) @000000000792d118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -497,7 +497,7 @@ ring_buf_area_finish/27 (ring_buf_area_finish) @0000000006de8118
   Function flags: body
   Called by: ring_buf_get_finish/25 ring_buf_put_finish/23 
   Calls: __builtin_expect/33 __builtin_expect/33 
-ring_buf_area_claim/26 (ring_buf_area_claim) @0000000006de8000
+ring_buf_area_claim/26 (ring_buf_area_claim) @000000000792d000
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -505,7 +505,7 @@ ring_buf_area_claim/26 (ring_buf_area_claim) @0000000006de8000
   Function flags: body
   Called by: ring_buf_get_claim/24 ring_buf_put_claim/22 
   Calls: __builtin_expect/33 
-ring_buf_get_finish/25 (ring_buf_get_finish) @0000000006dc7e38
+ring_buf_get_finish/25 (ring_buf_get_finish) @000000000790ce38
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -513,7 +513,7 @@ ring_buf_get_finish/25 (ring_buf_get_finish) @0000000006dc7e38
   Function flags: body
   Called by: ring_buf_item_get/32 ring_buf_item_get/32 ring_buf_peek/30 ring_buf_get/29 
   Calls: ring_buf_area_finish/27 
-ring_buf_get_claim/24 (ring_buf_get_claim) @0000000006dc7d20
+ring_buf_get_claim/24 (ring_buf_get_claim) @000000000790cd20
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -521,7 +521,7 @@ ring_buf_get_claim/24 (ring_buf_get_claim) @0000000006dc7d20
   Function flags: body
   Called by: ring_buf_item_get/32 ring_buf_item_get/32 ring_buf_peek/30 ring_buf_get/29 
   Calls: ring_buf_area_claim/26 ring_buf_size_get/21 ring_buf_size_get/21 
-ring_buf_put_finish/23 (ring_buf_put_finish) @0000000006dc7af0
+ring_buf_put_finish/23 (ring_buf_put_finish) @000000000790caf0
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -529,7 +529,7 @@ ring_buf_put_finish/23 (ring_buf_put_finish) @0000000006dc7af0
   Function flags: body
   Called by: ring_buf_item_put/31 ring_buf_put/28 
   Calls: ring_buf_area_finish/27 
-ring_buf_put_claim/22 (ring_buf_put_claim) @0000000006dc79d8
+ring_buf_put_claim/22 (ring_buf_put_claim) @000000000790c9d8
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -537,7 +537,7 @@ ring_buf_put_claim/22 (ring_buf_put_claim) @0000000006dc79d8
   Function flags: body
   Called by: ring_buf_item_put/31 ring_buf_item_put/31 ring_buf_put/28 
   Calls: ring_buf_area_claim/26 ring_buf_space_get/18 ring_buf_space_get/18 
-ring_buf_size_get/21 (ring_buf_size_get) @0000000006dc77a8
+ring_buf_size_get/21 (ring_buf_size_get) @000000000790c7a8
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -545,7 +545,7 @@ ring_buf_size_get/21 (ring_buf_size_get) @0000000006dc77a8
   Function flags: body
   Called by: ring_buf_get_claim/24 ring_buf_get_claim/24 
   Calls: 
-ring_buf_space_get/18 (ring_buf_space_get) @0000000006dc7460
+ring_buf_space_get/18 (ring_buf_space_get) @000000000790c460
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -553,7 +553,7 @@ ring_buf_space_get/18 (ring_buf_space_get) @0000000006dc7460
   Function flags: body
   Called by: ring_buf_item_put/31 ring_buf_put_claim/22 ring_buf_put_claim/22 
   Calls: 
-ring_buf_is_empty/16 (ring_buf_is_empty) @0000000006dc7230
+ring_buf_is_empty/16 (ring_buf_is_empty) @000000000790c230
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -566,7 +566,7 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-memcpy/34 (memcpy) @0000000006de88c0
+memcpy/34 (memcpy) @000000000792d8c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -574,7 +574,7 @@ memcpy/34 (memcpy) @0000000006de88c0
   Function flags:
   Called by: ring_buf_item_get/32 ring_buf_item_put/31 ring_buf_peek/30 ring_buf_get/29 ring_buf_put/28 
   Calls: 
-__builtin_expect/33 (__builtin_expect) @0000000006de87a8
+__builtin_expect/33 (__builtin_expect) @000000000792d7a8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -582,7 +582,7 @@ __builtin_expect/33 (__builtin_expect) @0000000006de87a8
   Function flags:
   Called by: ring_buf_area_finish/27 ring_buf_area_finish/27 ring_buf_area_claim/26 
   Calls: 
-ring_buf_item_get/32 (ring_buf_item_get) @0000000006de8690
+ring_buf_item_get/32 (ring_buf_item_get) @000000000792d690
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -590,7 +590,7 @@ ring_buf_item_get/32 (ring_buf_item_get) @0000000006de8690
   Function flags: body
   Called by: 
   Calls: ring_buf_get_finish/25 memcpy/34 ring_buf_get_claim/24 ring_buf_get_finish/25 ring_buf_get_claim/24 ring_buf_is_empty/16 
-ring_buf_item_put/31 (ring_buf_item_put) @0000000006de8578
+ring_buf_item_put/31 (ring_buf_item_put) @000000000792d578
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -598,7 +598,7 @@ ring_buf_item_put/31 (ring_buf_item_put) @0000000006de8578
   Function flags: body
   Called by: 
   Calls: ring_buf_put_finish/23 memcpy/34 ring_buf_put_claim/22 ring_buf_put_claim/22 ring_buf_space_get/18 
-ring_buf_peek/30 (ring_buf_peek) @0000000006de8460
+ring_buf_peek/30 (ring_buf_peek) @000000000792d460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -606,7 +606,7 @@ ring_buf_peek/30 (ring_buf_peek) @0000000006de8460
   Function flags: body
   Called by: 
   Calls: ring_buf_get_finish/25 memcpy/34 ring_buf_get_claim/24 
-ring_buf_get/29 (ring_buf_get) @0000000006de8348
+ring_buf_get/29 (ring_buf_get) @000000000792d348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -614,7 +614,7 @@ ring_buf_get/29 (ring_buf_get) @0000000006de8348
   Function flags: body
   Called by: 
   Calls: ring_buf_get_finish/25 memcpy/34 ring_buf_get_claim/24 
-ring_buf_put/28 (ring_buf_put) @0000000006de8230
+ring_buf_put/28 (ring_buf_put) @000000000792d230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -622,7 +622,7 @@ ring_buf_put/28 (ring_buf_put) @0000000006de8230
   Function flags: body
   Called by: 
   Calls: ring_buf_put_finish/23 memcpy/34 ring_buf_put_claim/22 
-ring_buf_area_finish/27 (ring_buf_area_finish) @0000000006de8118
+ring_buf_area_finish/27 (ring_buf_area_finish) @000000000792d118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -630,7 +630,7 @@ ring_buf_area_finish/27 (ring_buf_area_finish) @0000000006de8118
   Function flags: body
   Called by: ring_buf_get_finish/25 ring_buf_put_finish/23 
   Calls: __builtin_expect/33 __builtin_expect/33 
-ring_buf_area_claim/26 (ring_buf_area_claim) @0000000006de8000
+ring_buf_area_claim/26 (ring_buf_area_claim) @000000000792d000
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -638,7 +638,7 @@ ring_buf_area_claim/26 (ring_buf_area_claim) @0000000006de8000
   Function flags: body
   Called by: ring_buf_get_claim/24 ring_buf_put_claim/22 
   Calls: __builtin_expect/33 
-ring_buf_get_finish/25 (ring_buf_get_finish) @0000000006dc7e38
+ring_buf_get_finish/25 (ring_buf_get_finish) @000000000790ce38
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -646,7 +646,7 @@ ring_buf_get_finish/25 (ring_buf_get_finish) @0000000006dc7e38
   Function flags: body
   Called by: ring_buf_item_get/32 ring_buf_item_get/32 ring_buf_peek/30 ring_buf_get/29 
   Calls: ring_buf_area_finish/27 
-ring_buf_get_claim/24 (ring_buf_get_claim) @0000000006dc7d20
+ring_buf_get_claim/24 (ring_buf_get_claim) @000000000790cd20
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -654,7 +654,7 @@ ring_buf_get_claim/24 (ring_buf_get_claim) @0000000006dc7d20
   Function flags: body
   Called by: ring_buf_item_get/32 ring_buf_item_get/32 ring_buf_peek/30 ring_buf_get/29 
   Calls: ring_buf_area_claim/26 ring_buf_size_get/21 ring_buf_size_get/21 
-ring_buf_put_finish/23 (ring_buf_put_finish) @0000000006dc7af0
+ring_buf_put_finish/23 (ring_buf_put_finish) @000000000790caf0
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -662,7 +662,7 @@ ring_buf_put_finish/23 (ring_buf_put_finish) @0000000006dc7af0
   Function flags: body
   Called by: ring_buf_item_put/31 ring_buf_put/28 
   Calls: ring_buf_area_finish/27 
-ring_buf_put_claim/22 (ring_buf_put_claim) @0000000006dc79d8
+ring_buf_put_claim/22 (ring_buf_put_claim) @000000000790c9d8
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -670,7 +670,7 @@ ring_buf_put_claim/22 (ring_buf_put_claim) @0000000006dc79d8
   Function flags: body
   Called by: ring_buf_item_put/31 ring_buf_item_put/31 ring_buf_put/28 
   Calls: ring_buf_area_claim/26 ring_buf_space_get/18 ring_buf_space_get/18 
-ring_buf_size_get/21 (ring_buf_size_get) @0000000006dc77a8
+ring_buf_size_get/21 (ring_buf_size_get) @000000000790c7a8
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -678,7 +678,7 @@ ring_buf_size_get/21 (ring_buf_size_get) @0000000006dc77a8
   Function flags: body
   Called by: ring_buf_get_claim/24 ring_buf_get_claim/24 
   Calls: 
-ring_buf_space_get/18 (ring_buf_space_get) @0000000006dc7460
+ring_buf_space_get/18 (ring_buf_space_get) @000000000790c460
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -686,7 +686,7 @@ ring_buf_space_get/18 (ring_buf_space_get) @0000000006dc7460
   Function flags: body
   Called by: ring_buf_item_put/31 ring_buf_put_claim/22 ring_buf_put_claim/22 
   Calls: 
-ring_buf_is_empty/16 (ring_buf_is_empty) @0000000006dc7230
+ring_buf_is_empty/16 (ring_buf_is_empty) @000000000790c230
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder
   References: 
@@ -700,7 +700,7 @@ Reclaiming variables:
 Clearing address taken flags:
 Optimized Symbol table:
 
-memcpy/34 (memcpy) @0000000006de88c0
+memcpy/34 (memcpy) @000000000792d8c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -709,7 +709,7 @@ memcpy/34 (memcpy) @0000000006de88c0
   Function flags:
   Called by: ring_buf_item_get/32 ring_buf_item_put/31 ring_buf_peek/30 ring_buf_get/29 ring_buf_put/28 
   Calls: 
-__builtin_expect/33 (__builtin_expect) @0000000006de87a8
+__builtin_expect/33 (__builtin_expect) @000000000792d7a8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -718,7 +718,7 @@ __builtin_expect/33 (__builtin_expect) @0000000006de87a8
   Function flags:
   Called by: ring_buf_area_finish/27 ring_buf_area_finish/27 ring_buf_area_claim/26 
   Calls: 
-ring_buf_item_get/32 (ring_buf_item_get) @0000000006de8690
+ring_buf_item_get/32 (ring_buf_item_get) @000000000792d690
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -727,7 +727,7 @@ ring_buf_item_get/32 (ring_buf_item_get) @0000000006de8690
   Function flags: body
   Called by: 
   Calls: ring_buf_get_finish/25 memcpy/34 ring_buf_get_claim/24 ring_buf_get_finish/25 ring_buf_get_claim/24 ring_buf_is_empty/16 
-ring_buf_item_put/31 (ring_buf_item_put) @0000000006de8578
+ring_buf_item_put/31 (ring_buf_item_put) @000000000792d578
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -736,7 +736,7 @@ ring_buf_item_put/31 (ring_buf_item_put) @0000000006de8578
   Function flags: body
   Called by: 
   Calls: ring_buf_put_finish/23 memcpy/34 ring_buf_put_claim/22 ring_buf_put_claim/22 ring_buf_space_get/18 
-ring_buf_peek/30 (ring_buf_peek) @0000000006de8460
+ring_buf_peek/30 (ring_buf_peek) @000000000792d460
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -745,7 +745,7 @@ ring_buf_peek/30 (ring_buf_peek) @0000000006de8460
   Function flags: body
   Called by: 
   Calls: ring_buf_get_finish/25 memcpy/34 ring_buf_get_claim/24 
-ring_buf_get/29 (ring_buf_get) @0000000006de8348
+ring_buf_get/29 (ring_buf_get) @000000000792d348
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -754,7 +754,7 @@ ring_buf_get/29 (ring_buf_get) @0000000006de8348
   Function flags: body
   Called by: 
   Calls: ring_buf_get_finish/25 memcpy/34 ring_buf_get_claim/24 
-ring_buf_put/28 (ring_buf_put) @0000000006de8230
+ring_buf_put/28 (ring_buf_put) @000000000792d230
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -763,7 +763,7 @@ ring_buf_put/28 (ring_buf_put) @0000000006de8230
   Function flags: body
   Called by: 
   Calls: ring_buf_put_finish/23 memcpy/34 ring_buf_put_claim/22 
-ring_buf_area_finish/27 (ring_buf_area_finish) @0000000006de8118
+ring_buf_area_finish/27 (ring_buf_area_finish) @000000000792d118
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -772,7 +772,7 @@ ring_buf_area_finish/27 (ring_buf_area_finish) @0000000006de8118
   Function flags: body
   Called by: ring_buf_get_finish/25 ring_buf_put_finish/23 
   Calls: __builtin_expect/33 __builtin_expect/33 
-ring_buf_area_claim/26 (ring_buf_area_claim) @0000000006de8000
+ring_buf_area_claim/26 (ring_buf_area_claim) @000000000792d000
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -781,7 +781,7 @@ ring_buf_area_claim/26 (ring_buf_area_claim) @0000000006de8000
   Function flags: body
   Called by: ring_buf_get_claim/24 ring_buf_put_claim/22 
   Calls: __builtin_expect/33 
-ring_buf_get_finish/25 (ring_buf_get_finish) @0000000006dc7e38
+ring_buf_get_finish/25 (ring_buf_get_finish) @000000000790ce38
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder prevailing_def_ironly
   References: 
@@ -790,7 +790,7 @@ ring_buf_get_finish/25 (ring_buf_get_finish) @0000000006dc7e38
   Function flags: body local
   Called by: ring_buf_item_get/32 ring_buf_item_get/32 ring_buf_peek/30 ring_buf_get/29 
   Calls: ring_buf_area_finish/27 
-ring_buf_get_claim/24 (ring_buf_get_claim) @0000000006dc7d20
+ring_buf_get_claim/24 (ring_buf_get_claim) @000000000790cd20
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder prevailing_def_ironly
   References: 
@@ -799,7 +799,7 @@ ring_buf_get_claim/24 (ring_buf_get_claim) @0000000006dc7d20
   Function flags: body local
   Called by: ring_buf_item_get/32 ring_buf_item_get/32 ring_buf_peek/30 ring_buf_get/29 
   Calls: ring_buf_area_claim/26 ring_buf_size_get/21 ring_buf_size_get/21 
-ring_buf_put_finish/23 (ring_buf_put_finish) @0000000006dc7af0
+ring_buf_put_finish/23 (ring_buf_put_finish) @000000000790caf0
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder prevailing_def_ironly
   References: 
@@ -808,7 +808,7 @@ ring_buf_put_finish/23 (ring_buf_put_finish) @0000000006dc7af0
   Function flags: body local
   Called by: ring_buf_item_put/31 ring_buf_put/28 
   Calls: ring_buf_area_finish/27 
-ring_buf_put_claim/22 (ring_buf_put_claim) @0000000006dc79d8
+ring_buf_put_claim/22 (ring_buf_put_claim) @000000000790c9d8
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder prevailing_def_ironly
   References: 
@@ -817,7 +817,7 @@ ring_buf_put_claim/22 (ring_buf_put_claim) @0000000006dc79d8
   Function flags: body local
   Called by: ring_buf_item_put/31 ring_buf_item_put/31 ring_buf_put/28 
   Calls: ring_buf_area_claim/26 ring_buf_space_get/18 ring_buf_space_get/18 
-ring_buf_size_get/21 (ring_buf_size_get) @0000000006dc77a8
+ring_buf_size_get/21 (ring_buf_size_get) @000000000790c7a8
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder prevailing_def_ironly
   References: 
@@ -826,7 +826,7 @@ ring_buf_size_get/21 (ring_buf_size_get) @0000000006dc77a8
   Function flags: body local
   Called by: ring_buf_get_claim/24 ring_buf_get_claim/24 
   Calls: 
-ring_buf_space_get/18 (ring_buf_space_get) @0000000006dc7460
+ring_buf_space_get/18 (ring_buf_space_get) @000000000790c460
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder prevailing_def_ironly
   References: 
@@ -835,7 +835,7 @@ ring_buf_space_get/18 (ring_buf_space_get) @0000000006dc7460
   Function flags: body local
   Called by: ring_buf_item_put/31 ring_buf_put_claim/22 ring_buf_put_claim/22 
   Calls: 
-ring_buf_is_empty/16 (ring_buf_is_empty) @0000000006dc7230
+ring_buf_is_empty/16 (ring_buf_is_empty) @000000000790c230
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder prevailing_def_ironly
   References: 
@@ -849,7 +849,7 @@ Removing variables:
 
 Final Symbol table:
 
-memcpy/34 (memcpy) @0000000006de88c0
+memcpy/34 (memcpy) @000000000792d8c0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -858,7 +858,7 @@ memcpy/34 (memcpy) @0000000006de88c0
   Function flags:
   Called by: 
   Calls: 
-__builtin_expect/33 (__builtin_expect) @0000000006de87a8
+__builtin_expect/33 (__builtin_expect) @000000000792d7a8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -867,7 +867,7 @@ __builtin_expect/33 (__builtin_expect) @0000000006de87a8
   Function flags:
   Called by: 
   Calls: 
-ring_buf_item_get/32 (ring_buf_item_get) @0000000006de8690
+ring_buf_item_get/32 (ring_buf_item_get) @000000000792d690
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.ring_buf_item_get (implicit_section)
   References: 
@@ -876,7 +876,7 @@ ring_buf_item_get/32 (ring_buf_item_get) @0000000006de8690
   Function flags:
   Called by: 
   Calls: 
-ring_buf_item_put/31 (ring_buf_item_put) @0000000006de8578
+ring_buf_item_put/31 (ring_buf_item_put) @000000000792d578
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.ring_buf_item_put (implicit_section)
   References: 
@@ -885,7 +885,7 @@ ring_buf_item_put/31 (ring_buf_item_put) @0000000006de8578
   Function flags:
   Called by: 
   Calls: 
-ring_buf_peek/30 (ring_buf_peek) @0000000006de8460
+ring_buf_peek/30 (ring_buf_peek) @000000000792d460
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.ring_buf_peek (implicit_section)
   References: 
@@ -894,7 +894,7 @@ ring_buf_peek/30 (ring_buf_peek) @0000000006de8460
   Function flags:
   Called by: 
   Calls: 
-ring_buf_get/29 (ring_buf_get) @0000000006de8348
+ring_buf_get/29 (ring_buf_get) @000000000792d348
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.ring_buf_get (implicit_section)
   References: 
@@ -903,7 +903,7 @@ ring_buf_get/29 (ring_buf_get) @0000000006de8348
   Function flags:
   Called by: 
   Calls: 
-ring_buf_put/28 (ring_buf_put) @0000000006de8230
+ring_buf_put/28 (ring_buf_put) @000000000792d230
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.ring_buf_put (implicit_section)
   References: 
@@ -912,7 +912,7 @@ ring_buf_put/28 (ring_buf_put) @0000000006de8230
   Function flags:
   Called by: 
   Calls: 
-ring_buf_area_finish/27 (ring_buf_area_finish) @0000000006de8118
+ring_buf_area_finish/27 (ring_buf_area_finish) @000000000792d118
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.ring_buf_area_finish (implicit_section)
   References: 
@@ -921,7 +921,7 @@ ring_buf_area_finish/27 (ring_buf_area_finish) @0000000006de8118
   Function flags:
   Called by: 
   Calls: 
-ring_buf_area_claim/26 (ring_buf_area_claim) @0000000006de8000
+ring_buf_area_claim/26 (ring_buf_area_claim) @000000000792d000
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.ring_buf_area_claim (implicit_section)
   References: 
@@ -930,7 +930,7 @@ ring_buf_area_claim/26 (ring_buf_area_claim) @0000000006de8000
   Function flags:
   Called by: 
   Calls: 
-ring_buf_get_finish/25 (ring_buf_get_finish) @0000000006dc7e38
+ring_buf_get_finish/25 (ring_buf_get_finish) @000000000790ce38
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder prevailing_def_ironly asm_written section:.text.ring_buf_get_finish (implicit_section)
   References: 
@@ -939,7 +939,7 @@ ring_buf_get_finish/25 (ring_buf_get_finish) @0000000006dc7e38
   Function flags: local
   Called by: 
   Calls: 
-ring_buf_get_claim/24 (ring_buf_get_claim) @0000000006dc7d20
+ring_buf_get_claim/24 (ring_buf_get_claim) @000000000790cd20
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder prevailing_def_ironly asm_written section:.text.ring_buf_get_claim (implicit_section)
   References: 
@@ -948,7 +948,7 @@ ring_buf_get_claim/24 (ring_buf_get_claim) @0000000006dc7d20
   Function flags: local
   Called by: 
   Calls: 
-ring_buf_put_finish/23 (ring_buf_put_finish) @0000000006dc7af0
+ring_buf_put_finish/23 (ring_buf_put_finish) @000000000790caf0
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder prevailing_def_ironly asm_written section:.text.ring_buf_put_finish (implicit_section)
   References: 
@@ -957,7 +957,7 @@ ring_buf_put_finish/23 (ring_buf_put_finish) @0000000006dc7af0
   Function flags: local
   Called by: 
   Calls: 
-ring_buf_put_claim/22 (ring_buf_put_claim) @0000000006dc79d8
+ring_buf_put_claim/22 (ring_buf_put_claim) @000000000790c9d8
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder prevailing_def_ironly asm_written section:.text.ring_buf_put_claim (implicit_section)
   References: 
@@ -966,7 +966,7 @@ ring_buf_put_claim/22 (ring_buf_put_claim) @0000000006dc79d8
   Function flags: local
   Called by: 
   Calls: 
-ring_buf_size_get/21 (ring_buf_size_get) @0000000006dc77a8
+ring_buf_size_get/21 (ring_buf_size_get) @000000000790c7a8
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder prevailing_def_ironly asm_written section:.text.ring_buf_size_get (implicit_section)
   References: 
@@ -975,7 +975,7 @@ ring_buf_size_get/21 (ring_buf_size_get) @0000000006dc77a8
   Function flags: local
   Called by: 
   Calls: 
-ring_buf_space_get/18 (ring_buf_space_get) @0000000006dc7460
+ring_buf_space_get/18 (ring_buf_space_get) @000000000790c460
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder prevailing_def_ironly asm_written section:.text.ring_buf_space_get (implicit_section)
   References: 
@@ -984,7 +984,7 @@ ring_buf_space_get/18 (ring_buf_space_get) @0000000006dc7460
   Function flags: local
   Called by: 
   Calls: 
-ring_buf_is_empty/16 (ring_buf_is_empty) @0000000006dc7230
+ring_buf_is_empty/16 (ring_buf_is_empty) @000000000790c230
   Type: function definition analyzed
   Visibility: semantic_interposition no_reorder prevailing_def_ironly asm_written section:.text.ring_buf_is_empty (implicit_section)
   References: 

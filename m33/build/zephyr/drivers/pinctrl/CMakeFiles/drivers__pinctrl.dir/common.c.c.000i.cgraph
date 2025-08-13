@@ -3,7 +3,7 @@ Trivially needed symbols: pinctrl_lookup_state/29
 
 Initial Symbol table:
 
-pinctrl_lookup_state/29 (pinctrl_lookup_state) @00000000077cb7a8
+pinctrl_lookup_state/29 (pinctrl_lookup_state) @00000000077b27a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @0000000001d89da0
@@ -12,7 +12,7 @@ pinctrl_lookup_state/29 (pinctrl_lookup_state) @00000000077cb7a8
   Function flags: body
   Called by: 
   Calls: 
-pinctrl_update_states/28 (pinctrl_update_states) @00000000077cb690
+pinctrl_update_states/28 (pinctrl_update_states) @00000000077b2690
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -20,7 +20,7 @@ pinctrl_update_states/28 (pinctrl_update_states) @00000000077cb690
   Function flags:
   Called by: 
   Calls: 
-pinctrl_apply_state/27 (pinctrl_apply_state) @00000000077cb578
+pinctrl_apply_state/27 (pinctrl_apply_state) @00000000077b2578
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -28,7 +28,7 @@ pinctrl_apply_state/27 (pinctrl_apply_state) @00000000077cb578
   Function flags:
   Called by: 
   Calls: 
-pinctrl_apply_state_direct/26 (pinctrl_apply_state_direct) @00000000077cb460
+pinctrl_apply_state_direct/26 (pinctrl_apply_state_direct) @00000000077b2460
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -36,7 +36,7 @@ pinctrl_apply_state_direct/26 (pinctrl_apply_state_direct) @00000000077cb460
   Function flags:
   Called by: 
   Calls: 
-device_get_by_dt_nodelabel/25 (device_get_by_dt_nodelabel) @00000000077cb348
+device_get_by_dt_nodelabel/25 (device_get_by_dt_nodelabel) @00000000077b2348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -44,7 +44,7 @@ device_get_by_dt_nodelabel/25 (device_get_by_dt_nodelabel) @00000000077cb348
   Function flags:
   Called by: 
   Calls: 
-device_init/24 (device_init) @00000000077cb230
+device_init/24 (device_init) @00000000077b2230
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -52,7 +52,7 @@ device_init/24 (device_init) @00000000077cb230
   Function flags:
   Called by: 
   Calls: 
-device_is_ready/23 (device_is_ready) @00000000077cb118
+device_is_ready/23 (device_is_ready) @00000000077b2118
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -60,7 +60,7 @@ device_is_ready/23 (device_is_ready) @00000000077cb118
   Function flags:
   Called by: 
   Calls: 
-device_get_binding/22 (device_get_binding) @00000000077cb000
+device_get_binding/22 (device_get_binding) @00000000077b2000
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -68,7 +68,7 @@ device_get_binding/22 (device_get_binding) @00000000077cb000
   Function flags:
   Called by: 
   Calls: 
-k_is_user_context/21 (k_is_user_context) @0000000007ccce38
+k_is_user_context/21 (k_is_user_context) @0000000007cb8e38
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -76,7 +76,7 @@ k_is_user_context/21 (k_is_user_context) @0000000007ccce38
   Function flags:
   Called by: 
   Calls: 
-z_syscall_trap/20 (z_syscall_trap) @0000000007cccd20
+z_syscall_trap/20 (z_syscall_trap) @0000000007cb8d20
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -84,7 +84,7 @@ z_syscall_trap/20 (z_syscall_trap) @0000000007cccd20
   Function flags:
   Called by: 
   Calls: 
-device_from_handle/19 (device_from_handle) @0000000007c88348
+device_from_handle/19 (device_from_handle) @0000000007c74348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -92,7 +92,7 @@ device_from_handle/19 (device_from_handle) @0000000007c88348
   Function flags:
   Called by: 
   Calls: 
-device_handle_get/18 (device_handle_get) @0000000007c88230
+device_handle_get/18 (device_handle_get) @0000000007c74230
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -100,7 +100,7 @@ device_handle_get/18 (device_handle_get) @0000000007c88230
   Function flags:
   Called by: 
   Calls: 
-k_mem_unmap/17 (k_mem_unmap) @0000000007c718c0
+k_mem_unmap/17 (k_mem_unmap) @0000000007c5d8c0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -108,7 +108,7 @@ k_mem_unmap/17 (k_mem_unmap) @0000000007c718c0
   Function flags:
   Called by: 
   Calls: 
-k_mem_map/16 (k_mem_map) @0000000007c717a8
+k_mem_map/16 (k_mem_map) @0000000007c5d7a8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -116,7 +116,7 @@ k_mem_map/16 (k_mem_map) @0000000007c717a8
   Function flags:
   Called by: 
   Calls: 
-k_mem_virt_addr/15 (k_mem_virt_addr) @0000000007c71578
+k_mem_virt_addr/15 (k_mem_virt_addr) @0000000007c5d578
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -124,7 +124,7 @@ k_mem_virt_addr/15 (k_mem_virt_addr) @0000000007c71578
   Function flags:
   Called by: 
   Calls: 
-k_mem_phys_addr/14 (k_mem_phys_addr) @0000000007c71460
+k_mem_phys_addr/14 (k_mem_phys_addr) @0000000007c5d460
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -132,7 +132,7 @@ k_mem_phys_addr/14 (k_mem_phys_addr) @0000000007c71460
   Function flags:
   Called by: 
   Calls: 
-pm_state_cpu_get_all/13 (pm_state_cpu_get_all) @0000000007c71348
+pm_state_cpu_get_all/13 (pm_state_cpu_get_all) @0000000007c5d348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -140,7 +140,7 @@ pm_state_cpu_get_all/13 (pm_state_cpu_get_all) @0000000007c71348
   Function flags:
   Called by: 
   Calls: 
-mem_xor_128/12 (mem_xor_128) @0000000007bfb348
+mem_xor_128/12 (mem_xor_128) @0000000007be6348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -148,7 +148,7 @@ mem_xor_128/12 (mem_xor_128) @0000000007bfb348
   Function flags:
   Called by: 
   Calls: 
-mem_xor_32/11 (mem_xor_32) @0000000007bfb230
+mem_xor_32/11 (mem_xor_32) @0000000007be6230
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -156,7 +156,7 @@ mem_xor_32/11 (mem_xor_32) @0000000007bfb230
   Function flags:
   Called by: 
   Calls: 
-mem_xor_n/10 (mem_xor_n) @0000000007bfb118
+mem_xor_n/10 (mem_xor_n) @0000000007be6118
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -164,7 +164,7 @@ mem_xor_n/10 (mem_xor_n) @0000000007bfb118
   Function flags:
   Called by: 
   Calls: 
-sign_extend_64/9 (sign_extend_64) @0000000007bfb000
+sign_extend_64/9 (sign_extend_64) @0000000007be6000
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -172,7 +172,7 @@ sign_extend_64/9 (sign_extend_64) @0000000007bfb000
   Function flags:
   Called by: 
   Calls: 
-sign_extend/8 (sign_extend) @0000000007be9e38
+sign_extend/8 (sign_extend) @0000000007bcbe38
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -180,7 +180,7 @@ sign_extend/8 (sign_extend) @0000000007be9e38
   Function flags:
   Called by: 
   Calls: 
-bin2bcd/7 (bin2bcd) @0000000007be9d20
+bin2bcd/7 (bin2bcd) @0000000007bcbd20
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -188,7 +188,7 @@ bin2bcd/7 (bin2bcd) @0000000007be9d20
   Function flags:
   Called by: 
   Calls: 
-bcd2bin/6 (bcd2bin) @0000000007be9c08
+bcd2bin/6 (bcd2bin) @0000000007bcbc08
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -196,7 +196,7 @@ bcd2bin/6 (bcd2bin) @0000000007be9c08
   Function flags:
   Called by: 
   Calls: 
-byteswp/5 (byteswp) @0000000007be9af0
+byteswp/5 (byteswp) @0000000007bcbaf0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -204,7 +204,7 @@ byteswp/5 (byteswp) @0000000007be9af0
   Function flags:
   Called by: 
   Calls: 
-bytecpy/4 (bytecpy) @0000000007be99d8
+bytecpy/4 (bytecpy) @0000000007bcb9d8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -212,7 +212,7 @@ bytecpy/4 (bytecpy) @0000000007be99d8
   Function flags:
   Called by: 
   Calls: 
-arithmetic_shift_right/3 (arithmetic_shift_right) @0000000007be98c0
+arithmetic_shift_right/3 (arithmetic_shift_right) @0000000007bcb8c0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -220,7 +220,7 @@ arithmetic_shift_right/3 (arithmetic_shift_right) @0000000007be98c0
   Function flags:
   Called by: 
   Calls: 
-is_null_no_warn/2 (is_null_no_warn) @0000000007be97a8
+is_null_no_warn/2 (is_null_no_warn) @0000000007bcb7a8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -228,7 +228,7 @@ is_null_no_warn/2 (is_null_no_warn) @0000000007be97a8
   Function flags:
   Called by: 
   Calls: 
-is_power_of_two/1 (is_power_of_two) @0000000007be9690
+is_power_of_two/1 (is_power_of_two) @0000000007bcb690
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -236,7 +236,7 @@ is_power_of_two/1 (is_power_of_two) @0000000007be9690
   Function flags:
   Called by: 
   Calls: 
-errno/0 (errno) @00000000069f7080
+errno/0 (errno) @00000000069e7080
   Type: variable
   Visibility: semantic_interposition external public
   References: 
@@ -248,7 +248,7 @@ Removing unused symbols: pinctrl_update_states/28 pinctrl_apply_state/27 pinctrl
 
 Reclaimed Symbol table:
 
-pinctrl_lookup_state/29 (pinctrl_lookup_state) @00000000077cb7a8
+pinctrl_lookup_state/29 (pinctrl_lookup_state) @00000000077b27a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -260,7 +260,7 @@ pinctrl_lookup_state/29 (pinctrl_lookup_state) @00000000077cb7a8
 
 Initial Symbol table:
 
-pinctrl_lookup_state/29 (pinctrl_lookup_state) @00000000077cb7a8
+pinctrl_lookup_state/29 (pinctrl_lookup_state) @00000000077b27a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -273,7 +273,7 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-pinctrl_lookup_state/29 (pinctrl_lookup_state) @00000000077cb7a8
+pinctrl_lookup_state/29 (pinctrl_lookup_state) @00000000077b27a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -287,7 +287,7 @@ Reclaiming variables:
 Clearing address taken flags:
 Optimized Symbol table:
 
-pinctrl_lookup_state/29 (pinctrl_lookup_state) @00000000077cb7a8
+pinctrl_lookup_state/29 (pinctrl_lookup_state) @00000000077b27a8
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -301,7 +301,7 @@ Removing variables:
 
 Final Symbol table:
 
-pinctrl_lookup_state/29 (pinctrl_lookup_state) @00000000077cb7a8
+pinctrl_lookup_state/29 (pinctrl_lookup_state) @00000000077b27a8
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.pinctrl_lookup_state (implicit_section)
   References: 

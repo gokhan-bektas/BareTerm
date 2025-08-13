@@ -3,7 +3,7 @@ Trivially needed symbols: pinctrl_configure_pins/31 pinctrl_configure_pin/30 gpi
 
 Initial Symbol table:
 
-MXC_GPIO_OutClr/34 (MXC_GPIO_OutClr) @00000000077abc08
+MXC_GPIO_OutClr/34 (MXC_GPIO_OutClr) @0000000006bacc08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -11,7 +11,7 @@ MXC_GPIO_OutClr/34 (MXC_GPIO_OutClr) @00000000077abc08
   Function flags:
   Called by: pinctrl_configure_pin/30 
   Calls: 
-MXC_GPIO_OutSet/33 (MXC_GPIO_OutSet) @00000000077abaf0
+MXC_GPIO_OutSet/33 (MXC_GPIO_OutSet) @0000000006bacaf0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -19,7 +19,7 @@ MXC_GPIO_OutSet/33 (MXC_GPIO_OutSet) @00000000077abaf0
   Function flags:
   Called by: pinctrl_configure_pin/30 
   Calls: 
-MXC_GPIO_Config/32 (MXC_GPIO_Config) @00000000077ab9d8
+MXC_GPIO_Config/32 (MXC_GPIO_Config) @0000000006bac9d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -27,7 +27,7 @@ MXC_GPIO_Config/32 (MXC_GPIO_Config) @00000000077ab9d8
   Function flags:
   Called by: pinctrl_configure_pin/30 
   Calls: 
-pinctrl_configure_pins/31 (pinctrl_configure_pins) @00000000077ab8c0
+pinctrl_configure_pins/31 (pinctrl_configure_pins) @0000000006bac8c0
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @0000000001d89da0
@@ -36,24 +36,24 @@ pinctrl_configure_pins/31 (pinctrl_configure_pins) @00000000077ab8c0
   Function flags: body
   Called by: 
   Calls: pinctrl_configure_pin/30 
-pinctrl_configure_pin/30 (pinctrl_configure_pin) @00000000077ab7a8
+pinctrl_configure_pin/30 (pinctrl_configure_pin) @0000000006bac7a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
-  Aux: @00000000077ab8c0
+  Aux: @0000000006bac8c0
   References: 
   Referring: 
   Function flags: body
   Called by: pinctrl_configure_pins/31 
   Calls: MXC_GPIO_OutClr/34 MXC_GPIO_OutSet/33 MXC_GPIO_Config/32 
-gpios/29 (gpios) @00000000077f7c80
+gpios/29 (gpios) @0000000006bf8c80
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
-  Aux: @00000000077ab7a8
+  Aux: @0000000006bac7a8
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-pinctrl_update_states/28 (pinctrl_update_states) @00000000077ab690
+pinctrl_update_states/28 (pinctrl_update_states) @0000000006bac690
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -61,7 +61,7 @@ pinctrl_update_states/28 (pinctrl_update_states) @00000000077ab690
   Function flags:
   Called by: 
   Calls: 
-pinctrl_apply_state/27 (pinctrl_apply_state) @00000000077ab578
+pinctrl_apply_state/27 (pinctrl_apply_state) @0000000006bac578
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -69,7 +69,7 @@ pinctrl_apply_state/27 (pinctrl_apply_state) @00000000077ab578
   Function flags:
   Called by: 
   Calls: 
-pinctrl_apply_state_direct/26 (pinctrl_apply_state_direct) @00000000077ab460
+pinctrl_apply_state_direct/26 (pinctrl_apply_state_direct) @0000000006bac460
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -77,7 +77,7 @@ pinctrl_apply_state_direct/26 (pinctrl_apply_state_direct) @00000000077ab460
   Function flags:
   Called by: 
   Calls: 
-device_get_by_dt_nodelabel/25 (device_get_by_dt_nodelabel) @00000000077ab348
+device_get_by_dt_nodelabel/25 (device_get_by_dt_nodelabel) @0000000006bac348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -85,7 +85,7 @@ device_get_by_dt_nodelabel/25 (device_get_by_dt_nodelabel) @00000000077ab348
   Function flags:
   Called by: 
   Calls: 
-device_init/24 (device_init) @00000000077ab230
+device_init/24 (device_init) @0000000006bac230
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -93,7 +93,7 @@ device_init/24 (device_init) @00000000077ab230
   Function flags:
   Called by: 
   Calls: 
-device_is_ready/23 (device_is_ready) @00000000077ab118
+device_is_ready/23 (device_is_ready) @0000000006bac118
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -101,7 +101,7 @@ device_is_ready/23 (device_is_ready) @00000000077ab118
   Function flags:
   Called by: 
   Calls: 
-device_get_binding/22 (device_get_binding) @00000000077ab000
+device_get_binding/22 (device_get_binding) @0000000006bac000
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -109,7 +109,7 @@ device_get_binding/22 (device_get_binding) @00000000077ab000
   Function flags:
   Called by: 
   Calls: 
-k_is_user_context/21 (k_is_user_context) @0000000007caae38
+k_is_user_context/21 (k_is_user_context) @00000000070a9e38
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -117,7 +117,7 @@ k_is_user_context/21 (k_is_user_context) @0000000007caae38
   Function flags:
   Called by: 
   Calls: 
-z_syscall_trap/20 (z_syscall_trap) @0000000007caad20
+z_syscall_trap/20 (z_syscall_trap) @00000000070a9d20
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -125,7 +125,7 @@ z_syscall_trap/20 (z_syscall_trap) @0000000007caad20
   Function flags:
   Called by: 
   Calls: 
-device_from_handle/19 (device_from_handle) @0000000007c63348
+device_from_handle/19 (device_from_handle) @0000000007062348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -133,7 +133,7 @@ device_from_handle/19 (device_from_handle) @0000000007c63348
   Function flags:
   Called by: 
   Calls: 
-device_handle_get/18 (device_handle_get) @0000000007c63230
+device_handle_get/18 (device_handle_get) @0000000007062230
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -141,7 +141,7 @@ device_handle_get/18 (device_handle_get) @0000000007c63230
   Function flags:
   Called by: 
   Calls: 
-k_mem_unmap/17 (k_mem_unmap) @0000000007c4c8c0
+k_mem_unmap/17 (k_mem_unmap) @00000000070498c0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -149,7 +149,7 @@ k_mem_unmap/17 (k_mem_unmap) @0000000007c4c8c0
   Function flags:
   Called by: 
   Calls: 
-k_mem_map/16 (k_mem_map) @0000000007c4c7a8
+k_mem_map/16 (k_mem_map) @00000000070497a8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -157,7 +157,7 @@ k_mem_map/16 (k_mem_map) @0000000007c4c7a8
   Function flags:
   Called by: 
   Calls: 
-k_mem_virt_addr/15 (k_mem_virt_addr) @0000000007c4c578
+k_mem_virt_addr/15 (k_mem_virt_addr) @0000000007049578
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -165,7 +165,7 @@ k_mem_virt_addr/15 (k_mem_virt_addr) @0000000007c4c578
   Function flags:
   Called by: 
   Calls: 
-k_mem_phys_addr/14 (k_mem_phys_addr) @0000000007c4c460
+k_mem_phys_addr/14 (k_mem_phys_addr) @0000000007049460
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -173,7 +173,7 @@ k_mem_phys_addr/14 (k_mem_phys_addr) @0000000007c4c460
   Function flags:
   Called by: 
   Calls: 
-pm_state_cpu_get_all/13 (pm_state_cpu_get_all) @0000000007c4c348
+pm_state_cpu_get_all/13 (pm_state_cpu_get_all) @0000000007049348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -181,7 +181,7 @@ pm_state_cpu_get_all/13 (pm_state_cpu_get_all) @0000000007c4c348
   Function flags:
   Called by: 
   Calls: 
-mem_xor_128/12 (mem_xor_128) @0000000007bd6348
+mem_xor_128/12 (mem_xor_128) @0000000006fd3348
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -189,7 +189,7 @@ mem_xor_128/12 (mem_xor_128) @0000000007bd6348
   Function flags:
   Called by: 
   Calls: 
-mem_xor_32/11 (mem_xor_32) @0000000007bd6230
+mem_xor_32/11 (mem_xor_32) @0000000006fd3230
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -197,7 +197,7 @@ mem_xor_32/11 (mem_xor_32) @0000000007bd6230
   Function flags:
   Called by: 
   Calls: 
-mem_xor_n/10 (mem_xor_n) @0000000007bd6118
+mem_xor_n/10 (mem_xor_n) @0000000006fd3118
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -205,7 +205,7 @@ mem_xor_n/10 (mem_xor_n) @0000000007bd6118
   Function flags:
   Called by: 
   Calls: 
-sign_extend_64/9 (sign_extend_64) @0000000007bd6000
+sign_extend_64/9 (sign_extend_64) @0000000006fd3000
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -213,7 +213,7 @@ sign_extend_64/9 (sign_extend_64) @0000000007bd6000
   Function flags:
   Called by: 
   Calls: 
-sign_extend/8 (sign_extend) @0000000007bc0e38
+sign_extend/8 (sign_extend) @0000000006fc0e38
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -221,7 +221,7 @@ sign_extend/8 (sign_extend) @0000000007bc0e38
   Function flags:
   Called by: 
   Calls: 
-bin2bcd/7 (bin2bcd) @0000000007bc0d20
+bin2bcd/7 (bin2bcd) @0000000006fc0d20
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -229,7 +229,7 @@ bin2bcd/7 (bin2bcd) @0000000007bc0d20
   Function flags:
   Called by: 
   Calls: 
-bcd2bin/6 (bcd2bin) @0000000007bc0c08
+bcd2bin/6 (bcd2bin) @0000000006fc0c08
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -237,7 +237,7 @@ bcd2bin/6 (bcd2bin) @0000000007bc0c08
   Function flags:
   Called by: 
   Calls: 
-byteswp/5 (byteswp) @0000000007bc0af0
+byteswp/5 (byteswp) @0000000006fc0af0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -245,7 +245,7 @@ byteswp/5 (byteswp) @0000000007bc0af0
   Function flags:
   Called by: 
   Calls: 
-bytecpy/4 (bytecpy) @0000000007bc09d8
+bytecpy/4 (bytecpy) @0000000006fc09d8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -253,7 +253,7 @@ bytecpy/4 (bytecpy) @0000000007bc09d8
   Function flags:
   Called by: 
   Calls: 
-arithmetic_shift_right/3 (arithmetic_shift_right) @0000000007bc08c0
+arithmetic_shift_right/3 (arithmetic_shift_right) @0000000006fc08c0
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -261,7 +261,7 @@ arithmetic_shift_right/3 (arithmetic_shift_right) @0000000007bc08c0
   Function flags:
   Called by: 
   Calls: 
-is_null_no_warn/2 (is_null_no_warn) @0000000007bc07a8
+is_null_no_warn/2 (is_null_no_warn) @0000000006fc07a8
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -269,7 +269,7 @@ is_null_no_warn/2 (is_null_no_warn) @0000000007bc07a8
   Function flags:
   Called by: 
   Calls: 
-is_power_of_two/1 (is_power_of_two) @0000000007bc0690
+is_power_of_two/1 (is_power_of_two) @0000000006fc0690
   Type: function definition
   Visibility: semantic_interposition no_reorder
   References: 
@@ -277,7 +277,7 @@ is_power_of_two/1 (is_power_of_two) @0000000007bc0690
   Function flags:
   Called by: 
   Calls: 
-errno/0 (errno) @00000000069d7080
+errno/0 (errno) @0000000005dd7080
   Type: variable
   Visibility: semantic_interposition external public
   References: 
@@ -289,7 +289,7 @@ Removing unused symbols: pinctrl_update_states/28 pinctrl_apply_state/27 pinctrl
 
 Reclaimed Symbol table:
 
-MXC_GPIO_OutClr/34 (MXC_GPIO_OutClr) @00000000077abc08
+MXC_GPIO_OutClr/34 (MXC_GPIO_OutClr) @0000000006bacc08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -297,7 +297,7 @@ MXC_GPIO_OutClr/34 (MXC_GPIO_OutClr) @00000000077abc08
   Function flags:
   Called by: pinctrl_configure_pin/30 
   Calls: 
-MXC_GPIO_OutSet/33 (MXC_GPIO_OutSet) @00000000077abaf0
+MXC_GPIO_OutSet/33 (MXC_GPIO_OutSet) @0000000006bacaf0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -305,7 +305,7 @@ MXC_GPIO_OutSet/33 (MXC_GPIO_OutSet) @00000000077abaf0
   Function flags:
   Called by: pinctrl_configure_pin/30 
   Calls: 
-MXC_GPIO_Config/32 (MXC_GPIO_Config) @00000000077ab9d8
+MXC_GPIO_Config/32 (MXC_GPIO_Config) @0000000006bac9d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -313,7 +313,7 @@ MXC_GPIO_Config/32 (MXC_GPIO_Config) @00000000077ab9d8
   Function flags:
   Called by: pinctrl_configure_pin/30 
   Calls: 
-pinctrl_configure_pins/31 (pinctrl_configure_pins) @00000000077ab8c0
+pinctrl_configure_pins/31 (pinctrl_configure_pins) @0000000006bac8c0
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -321,7 +321,7 @@ pinctrl_configure_pins/31 (pinctrl_configure_pins) @00000000077ab8c0
   Function flags: body
   Called by: 
   Calls: pinctrl_configure_pin/30 
-pinctrl_configure_pin/30 (pinctrl_configure_pin) @00000000077ab7a8
+pinctrl_configure_pin/30 (pinctrl_configure_pin) @0000000006bac7a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
@@ -329,7 +329,7 @@ pinctrl_configure_pin/30 (pinctrl_configure_pin) @00000000077ab7a8
   Function flags: body
   Called by: pinctrl_configure_pins/31 
   Calls: MXC_GPIO_OutClr/34 MXC_GPIO_OutSet/33 MXC_GPIO_Config/32 
-gpios/29 (gpios) @00000000077f7c80
+gpios/29 (gpios) @0000000006bf8c80
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
@@ -340,7 +340,7 @@ gpios/29 (gpios) @00000000077f7c80
 
 Initial Symbol table:
 
-MXC_GPIO_OutClr/34 (MXC_GPIO_OutClr) @00000000077abc08
+MXC_GPIO_OutClr/34 (MXC_GPIO_OutClr) @0000000006bacc08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -348,7 +348,7 @@ MXC_GPIO_OutClr/34 (MXC_GPIO_OutClr) @00000000077abc08
   Function flags:
   Called by: pinctrl_configure_pin/30 
   Calls: 
-MXC_GPIO_OutSet/33 (MXC_GPIO_OutSet) @00000000077abaf0
+MXC_GPIO_OutSet/33 (MXC_GPIO_OutSet) @0000000006bacaf0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -356,7 +356,7 @@ MXC_GPIO_OutSet/33 (MXC_GPIO_OutSet) @00000000077abaf0
   Function flags:
   Called by: pinctrl_configure_pin/30 
   Calls: 
-MXC_GPIO_Config/32 (MXC_GPIO_Config) @00000000077ab9d8
+MXC_GPIO_Config/32 (MXC_GPIO_Config) @0000000006bac9d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -364,7 +364,7 @@ MXC_GPIO_Config/32 (MXC_GPIO_Config) @00000000077ab9d8
   Function flags:
   Called by: pinctrl_configure_pin/30 
   Calls: 
-pinctrl_configure_pins/31 (pinctrl_configure_pins) @00000000077ab8c0
+pinctrl_configure_pins/31 (pinctrl_configure_pins) @0000000006bac8c0
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -372,7 +372,7 @@ pinctrl_configure_pins/31 (pinctrl_configure_pins) @00000000077ab8c0
   Function flags: body
   Called by: 
   Calls: pinctrl_configure_pin/30 
-pinctrl_configure_pin/30 (pinctrl_configure_pin) @00000000077ab7a8
+pinctrl_configure_pin/30 (pinctrl_configure_pin) @0000000006bac7a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
@@ -380,7 +380,7 @@ pinctrl_configure_pin/30 (pinctrl_configure_pin) @00000000077ab7a8
   Function flags: body
   Called by: pinctrl_configure_pins/31 
   Calls: MXC_GPIO_OutClr/34 MXC_GPIO_OutSet/33 MXC_GPIO_Config/32 
-gpios/29 (gpios) @00000000077f7c80
+gpios/29 (gpios) @0000000006bf8c80
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
@@ -392,7 +392,7 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-MXC_GPIO_OutClr/34 (MXC_GPIO_OutClr) @00000000077abc08
+MXC_GPIO_OutClr/34 (MXC_GPIO_OutClr) @0000000006bacc08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -400,7 +400,7 @@ MXC_GPIO_OutClr/34 (MXC_GPIO_OutClr) @00000000077abc08
   Function flags:
   Called by: pinctrl_configure_pin/30 
   Calls: 
-MXC_GPIO_OutSet/33 (MXC_GPIO_OutSet) @00000000077abaf0
+MXC_GPIO_OutSet/33 (MXC_GPIO_OutSet) @0000000006bacaf0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -408,7 +408,7 @@ MXC_GPIO_OutSet/33 (MXC_GPIO_OutSet) @00000000077abaf0
   Function flags:
   Called by: pinctrl_configure_pin/30 
   Calls: 
-MXC_GPIO_Config/32 (MXC_GPIO_Config) @00000000077ab9d8
+MXC_GPIO_Config/32 (MXC_GPIO_Config) @0000000006bac9d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -416,7 +416,7 @@ MXC_GPIO_Config/32 (MXC_GPIO_Config) @00000000077ab9d8
   Function flags:
   Called by: pinctrl_configure_pin/30 
   Calls: 
-pinctrl_configure_pins/31 (pinctrl_configure_pins) @00000000077ab8c0
+pinctrl_configure_pins/31 (pinctrl_configure_pins) @0000000006bac8c0
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -424,7 +424,7 @@ pinctrl_configure_pins/31 (pinctrl_configure_pins) @00000000077ab8c0
   Function flags: body
   Called by: 
   Calls: pinctrl_configure_pin/30 
-pinctrl_configure_pin/30 (pinctrl_configure_pin) @00000000077ab7a8
+pinctrl_configure_pin/30 (pinctrl_configure_pin) @0000000006bac7a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
@@ -432,7 +432,7 @@ pinctrl_configure_pin/30 (pinctrl_configure_pin) @00000000077ab7a8
   Function flags: body
   Called by: pinctrl_configure_pins/31 
   Calls: MXC_GPIO_OutClr/34 MXC_GPIO_OutSet/33 MXC_GPIO_Config/32 
-gpios/29 (gpios) @00000000077f7c80
+gpios/29 (gpios) @0000000006bf8c80
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder
   References: 
@@ -445,7 +445,7 @@ Reclaiming variables:
 Clearing address taken flags:
 Optimized Symbol table:
 
-MXC_GPIO_OutClr/34 (MXC_GPIO_OutClr) @00000000077abc08
+MXC_GPIO_OutClr/34 (MXC_GPIO_OutClr) @0000000006bacc08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -454,7 +454,7 @@ MXC_GPIO_OutClr/34 (MXC_GPIO_OutClr) @00000000077abc08
   Function flags:
   Called by: pinctrl_configure_pin/30 
   Calls: 
-MXC_GPIO_OutSet/33 (MXC_GPIO_OutSet) @00000000077abaf0
+MXC_GPIO_OutSet/33 (MXC_GPIO_OutSet) @0000000006bacaf0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -463,7 +463,7 @@ MXC_GPIO_OutSet/33 (MXC_GPIO_OutSet) @00000000077abaf0
   Function flags:
   Called by: pinctrl_configure_pin/30 
   Calls: 
-MXC_GPIO_Config/32 (MXC_GPIO_Config) @00000000077ab9d8
+MXC_GPIO_Config/32 (MXC_GPIO_Config) @0000000006bac9d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -472,7 +472,7 @@ MXC_GPIO_Config/32 (MXC_GPIO_Config) @00000000077ab9d8
   Function flags:
   Called by: pinctrl_configure_pin/30 
   Calls: 
-pinctrl_configure_pins/31 (pinctrl_configure_pins) @00000000077ab8c0
+pinctrl_configure_pins/31 (pinctrl_configure_pins) @0000000006bac8c0
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -481,7 +481,7 @@ pinctrl_configure_pins/31 (pinctrl_configure_pins) @00000000077ab8c0
   Function flags: body
   Called by: 
   Calls: pinctrl_configure_pin/30 
-pinctrl_configure_pin/30 (pinctrl_configure_pin) @00000000077ab7a8
+pinctrl_configure_pin/30 (pinctrl_configure_pin) @0000000006bac7a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
   References: 
@@ -490,7 +490,7 @@ pinctrl_configure_pin/30 (pinctrl_configure_pin) @00000000077ab7a8
   Function flags: body
   Called by: pinctrl_configure_pins/31 
   Calls: MXC_GPIO_OutClr/34 MXC_GPIO_OutSet/33 MXC_GPIO_Config/32 
-gpios/29 (gpios) @00000000077f7c80
+gpios/29 (gpios) @0000000006bf8c80
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly
   References: 
@@ -502,7 +502,7 @@ Removing variables:
 
 Final Symbol table:
 
-MXC_GPIO_OutClr/34 (MXC_GPIO_OutClr) @00000000077abc08
+MXC_GPIO_OutClr/34 (MXC_GPIO_OutClr) @0000000006bacc08
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -511,7 +511,7 @@ MXC_GPIO_OutClr/34 (MXC_GPIO_OutClr) @00000000077abc08
   Function flags:
   Called by: 
   Calls: 
-MXC_GPIO_OutSet/33 (MXC_GPIO_OutSet) @00000000077abaf0
+MXC_GPIO_OutSet/33 (MXC_GPIO_OutSet) @0000000006bacaf0
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -520,7 +520,7 @@ MXC_GPIO_OutSet/33 (MXC_GPIO_OutSet) @00000000077abaf0
   Function flags:
   Called by: 
   Calls: 
-MXC_GPIO_Config/32 (MXC_GPIO_Config) @00000000077ab9d8
+MXC_GPIO_Config/32 (MXC_GPIO_Config) @0000000006bac9d8
   Type: function
   Visibility: semantic_interposition external public
   References: 
@@ -529,7 +529,7 @@ MXC_GPIO_Config/32 (MXC_GPIO_Config) @00000000077ab9d8
   Function flags:
   Called by: 
   Calls: 
-pinctrl_configure_pins/31 (pinctrl_configure_pins) @00000000077ab8c0
+pinctrl_configure_pins/31 (pinctrl_configure_pins) @0000000006bac8c0
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.pinctrl_configure_pins (implicit_section)
   References: 
@@ -538,7 +538,7 @@ pinctrl_configure_pins/31 (pinctrl_configure_pins) @00000000077ab8c0
   Function flags:
   Called by: 
   Calls: 
-pinctrl_configure_pin/30 (pinctrl_configure_pin) @00000000077ab7a8
+pinctrl_configure_pin/30 (pinctrl_configure_pin) @0000000006bac7a8
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.text.pinctrl_configure_pin (implicit_section)
   References: 
@@ -547,7 +547,7 @@ pinctrl_configure_pin/30 (pinctrl_configure_pin) @00000000077ab7a8
   Function flags:
   Called by: 
   Calls: 
-gpios/29 (gpios) @00000000077f7c80
+gpios/29 (gpios) @0000000006bf8c80
   Type: variable definition analyzed
   Visibility: force_output semantic_interposition no_reorder prevailing_def_ironly asm_written section:.rodata.gpios (implicit_section)
   Aux: @0000000000000001

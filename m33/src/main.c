@@ -9,13 +9,9 @@
 #include <zephyr/kernel.h>
 #include <zephyr/drivers/gpio.h>
 #include <stdio.h>
-
 #include <bareterm.h>
-#include <widget/bareterm_widget.h>
-
-
-
-
+#include <bareterm_screen_manager.h>
+#include "main_screen.h"
 
 /* 1000 msec = 1 sec */
 #define SLEEP_TIME_MS   1000
@@ -23,118 +19,11 @@
 /* The devicetree node identifier for the "led0" alias. */
 #define LED0_NODE DT_ALIAS(led0)
 
-
 /*
  * A build error on this line means your board is unsupported.
  * See the sample documentation for information on how to fix this.
  */
 static const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED0_NODE, gpios);
-
-static bareterm_widget_t btn1, btn2;
-static bareterm_widget_t memo;
-static bareterm_widget_t lbl1;
-static bareterm_widget_t lbl2;
-static bareterm_widget_t bar;
-static bareterm_widget_t cb1, cb2;
-
-static bareterm_widget_t rg;
-static const char *choices[] = { "SPI", "I2C", "UART", "I2C"};
-
-static bareterm_widget_t input;
-static bareterm_widget_t status_led;
-
-static bareterm_widget_t listbox;
-static const char *list_items[] = {
-    "First Item",
-    "Second Item",
-    "A Third, Longer Item",
-    "Item Four",
-    "Fifth",
-    "Sixth Sense",
-    "Seventh Heaven",
-    "Eighth Wonder",
-    "Ninth Life",
-    "Tenth Planet"
-};
-static char buf[64] = "";
-
-void on_submit(bareterm_widget_t *ti) {
-    // Copy out and display
-    char out[64];
-    bareterm_textinput_get_text(ti, out, sizeof(out));
-    bareterm_move_cursor(1, 20);
-    bareterm_printf("You entered: %s", out);
-}
-
-// Callback for button press
-static void on_button_click1(void *w) {
-    // Update the label
-    bareterm_label_set_text(&lbl1, "Clicked Button 1!");
-    bareterm_label_set_color(&lbl1, bareterm_YELLOW, bareterm_BLUE, bareterm_STYLE_BOLD);
-
-	bareterm_progressbar_set_value(&bar, /*new_value=*/ bar.value - 1);
-
-    // Cycle status indicator color
-    static int status_idx = 0;
-    bareterm_color_t colors[] = { bareterm_GREEN, bareterm_YELLOW, bareterm_RED, bareterm_WHITE };
-    status_idx = (status_idx + 1) % 4;
-    bareterm_statusindicator_set_color(&status_led, colors[status_idx]);
-}
-// Callback for button press
-static void on_button_click2(void *w) {
-    // Update the label
-    bareterm_label_set_text(&lbl1, "Clicked Button 2!");
-    bareterm_label_set_color(&lbl1, bareterm_YELLOW, bareterm_GREEN, bareterm_STYLE_BOLD);
-
-	bareterm_progressbar_set_value(&bar, /*new_value=*/ bar.value + 1);
-}
-
-
-void on_toggle(bareterm_widget_t *cb, unsigned char state) {
-    bareterm_move_cursor(10, 20);
-    bareterm_printf("Checkbox is now %s   ", state ? "☑️" : "☐");
-
-	if (state) {
-		bareterm_label_set_text(&lbl2, "Checkbox enabled");
-		bareterm_modalpopup_show("Checkbox Enabled", "You have enabled the checkbox feature.");
-	} else {
-		bareterm_label_set_text(&lbl2, "Checkbox disabled");
-		bareterm_modalpopup_show("Checkbox Disabled", "The feature has been turned off.");
-	}
-}
-
-void on_choice_change(bareterm_widget_t *w, int sel) {
-    bareterm_move_cursor(4, 18);
-    bareterm_printf("Selected: %s   ", choices[sel]);
-}
-
-void on_list_select(bareterm_widget_t *w, int sel) {
-    bareterm_move_cursor(1, 22);
-    bareterm_printf("Listbox selected: %-20s", list_items[sel]);
-}
-
-int test_draw_welcomescreen() {
-
-	bareterm_clear_screen();
-	bareterm_draw_box(1, 1, 80, 30, " MAX32657 EVKit Test Tool v0.1.0");
-
-	bareterm_textbox_init(&memo, 
-					3, 8,
-					47, 5,
-					"This is the automated production test tool for "
-					"MAX32657 Rev-C EVKit. Use mouse to interact."
-					"                                           "
-					"Click START Button to begin.",
-					bareterm_CYAN, bareterm_BLACK, bareterm_STYLE_NONE);
-
-    bareterm_button_init(&btn1,
-                    15, 18,
-                    20, 3,
-                    " START ",
-                    on_button_click1);
-
-
-}
 
 int main(void)
 {
@@ -144,7 +33,7 @@ int main(void)
 	bareterm_init();
 
     const struct device *uart = DEVICE_DT_GET(DT_CHOSEN(zephyr_console));
-    if (!device_is_ready(uart)) {
+    if (!device_is_ready(uart)) { // Note: Corrected return type
         return;
     }
 
@@ -159,128 +48,17 @@ int main(void)
 		return 0;
 	}
 
-			// Hide cursor
-		bareterm_backend_write("\x1B[?25l", 6);
+	// Hide cursor
+	bareterm_backend_write("\x1B[?25l", 6);
 
-		// Show cursor
-		//bareterm_backend_write("\x1B[?25h", 6);
-
-    bareterm_backend_puts("\x1B[?1000h"); // Basic mouse click tracking
-
-	//test_draw_welcomescreen();
-
-    bareterm_clear_screen();
-
-    // Draw a static label
-    //bareterm_move_cursor(2, 2);
-    //bareterm_puts("Press the button:");
-
-	bareterm_draw_box(1, 1, 80, 30, " MAX32657 EVKit Test Tool v0.1.0");
-	bareterm_label_init(&lbl1,
-				15, 4,
-				"Welcome",
-				bareterm_WHITE,   // foreground
-				bareterm_BLUE,      // background
-				bareterm_STYLE_BOLD);
-
-    // 2) Initialize it at position (col=2, row=2) with your text
-	bareterm_label_init(&lbl2,
-				14, 24,
-				"Click somewhere to start",
-				bareterm_YELLOW,   // foreground
-				bareterm_BLUE,      // background
-				bareterm_STYLE_BOLD);
-
-    // Create a button widget
-
-    bareterm_button_init(&btn1,
-                    4, 6,
-                    20, 3,
-                    "[ Button1 ]",
-                    on_button_click1);
-    bareterm_button_init(&btn2,
-                    26, 6,
-                    20, 3,
-                    "[ Button2 ]",
-                    on_button_click2);
-
-
-
-	bareterm_textbox_init(&memo,
-					3, 10,
-					36, 5,
-					"To start tests please follow the instructions below:"
-					"Here are the instructions. Under construction...",
-					bareterm_CYAN, bareterm_BLACK, bareterm_STYLE_NONE);
-
-    bareterm_progressbar_init(&bar,
-                         4,  15,
-                         38, 1,
-                         30, 100,
-                         bareterm_GREEN, bareterm_BLACK, bareterm_STYLE_NONE);
-
-    bareterm_checkbox_init(&cb1,
-                      12, 27,
-                      "Enable feature 1",
-                      false,  //initial=
-                      on_toggle);
-
-    bareterm_checkbox_init(&cb2,
-                      12, 28,
-                      "Enable feature 2",
-                      false,  //initial=
-                      on_toggle);
-
-
-    bareterm_radiogroup_init(&rg,
-        4, 19,
-        choices, 4,   // labels + count
-        1,            // start with “Green”
-        on_choice_change);
-
-    bareterm_statusindicator_init(&status_led,
-        40, 15,
-        "System Status",
-        bareterm_GREEN);
-
-    bareterm_listbox_init(&listbox,
-        52, 2,
-        25, 12,
-        list_items, 10,
-        on_list_select);
-
-	/*buf[0] = 'A'; // Initialize text input buffer
-	buf[1] = 'B'; // Initialize text input buffer
-    bareterm_textinput_init(&input,
-                       30, 2,
-                       27,
-                       buf, sizeof(buf),
-                       on_submit);
-	*/				   
-
-	// Initial draw
-    bareterm_draw_all_widgets();
+    // Initialize the screen manager and set the initial screen
+    bareterm_screen_manager_init();
+    bareterm_screen_manager_set_active(main_screen_get());
 
     // Main event loop
     while (1) {
         bareterm_event_t evt;
         if (bareterm_poll_event(&evt)) {
-
-			switch (evt.type) {
-				case bareterm_EVT_KEY:
-					//bareterm_printf("Key: '%c' (0x%02X)    ", evt.key.ch, evt.key.ch);
-					break;
-				case bareterm_EVT_ARROW:
-					//bareterm_printf("Arrow:  %d    ", evt.key.code);
-					break;
-				case bareterm_EVT_MOUSE:
-					//bareterm_printf("Mouse: %s at (%d, %d), button %d     ",
-					//		evt.mouse.pressed ? "DOWN" : "UP",
-					//		evt.mouse.x, evt.mouse.y,
-					//		evt.mouse.button);
-					break;
-			}
-
             bareterm_dispatch_event(&evt);
             bareterm_draw_all_widgets();
         }

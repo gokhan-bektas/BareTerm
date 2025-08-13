@@ -30,7 +30,9 @@
       "stdbool.h": "c",
       "kernel.h": "c",
       "string.h": "c",
-      "stdio.h": "c"
+      "stdio.h": "c",
+      "bareterm_screen_manager.h": "c",
+      "bareterm.h": "c"
     },
     "cfs.project.board": "EvKit_V1"
   }

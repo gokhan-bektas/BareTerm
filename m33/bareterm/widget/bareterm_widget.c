@@ -22,6 +22,14 @@ void bareterm_widget_register(bareterm_widget_t *w) {
     }
 }
 
+// Unregister all widgets and reset focus
+void bareterm_widget_unregister_all(void) {
+    // This doesn't free the widget memory itself, just clears the list.
+    // The widgets are typically statically or stack allocated in the screen's on_enter.
+    widget_list = NULL;
+    focused_widget = NULL;
+}
+
 // Draw all widgets in the order registered
 void bareterm_draw_all_widgets(void) {
     for (bareterm_widget_t *w = widget_list; w; w = w->next_sibling) {
@@ -119,7 +127,3 @@ void bareterm_button_init(bareterm_widget_t *btn,
     // Register in widget system
     bareterm_widget_register(btn);
 }
-
-
-
-

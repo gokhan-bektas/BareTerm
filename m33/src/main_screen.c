@@ -68,7 +68,7 @@ void on_choice_change(bareterm_widget_t *w, int sel) {
 }
 
 void on_list_select(bareterm_widget_t *w, int sel) {
-    bareterm_move_cursor(1, 22);
+    bareterm_move_cursor(18, 22);
     bareterm_printf("Listbox selected: %-20s", list_items[sel]);
 }
 

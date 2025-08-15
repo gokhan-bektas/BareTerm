@@ -41,54 +41,56 @@
  *   30  /reserved-memory/partition@30000000
  *   31  /soc/timer@e000e010
  *   32  /soc/peripheral@50000000/dma@35000
- *   33  /soc/peripheral@50000000/pin-controller@8000/i3c_scl_p0_0
- *   34  /soc/peripheral@50000000/pin-controller@8000/i3c_sda_p0_1
- *   35  /soc/peripheral@50000000/i3c@18000
- *   36  /soc/peripheral@50000000/rtc_counter@6000
- *   37  /soc/peripheral@50000000/pin-controller@8000/uart0_rx_p0_5
- *   38  /soc/peripheral@50000000/pin-controller@8000/uart0_tx_p0_9
- *   39  /soc/peripheral@50000000/serial@42000
- *   40  /soc/peripheral@50000000/trng@4d000
- *   41  /soc/peripheral@50000000/watchdog@3000
- *   42  /soc/peripheral@50000000/flash_controller@29000
- *   43  /soc/peripheral@50000000/flash_controller@29000/flash@1000000
- *   44  /soc/peripheral@50000000/flash_controller@29000/flash@1000000/partitions
- *   45  /soc/peripheral@50000000/flash_controller@29000/flash@1000000/partitions/partition@0
- *   46  /soc/peripheral@50000000/flash_controller@29000/flash@1000000/partitions/partition@f0000
- *   47  /soc/peripheral@50000000/pin-controller@8000/spi0_miso_p0_4
- *   48  /soc/peripheral@50000000/pin-controller@8000/spi0_mosi_p0_2
- *   49  /soc/peripheral@50000000/pin-controller@8000/spi0_sck_p0_6
- *   50  /soc/peripheral@50000000/pin-controller@8000/spi0_ss0_p0_3
- *   51  /soc/peripheral@50000000/spi@46000
- *   52  /soc/peripheral@50000000/spi@46000/max30123@0
- *   53  /soc/peripheral@50000000/timer@10000
- *   54  /soc/peripheral@50000000/timer@10000/counter
- *   55  /soc/peripheral@50000000/timer@10000/pwm
- *   56  /soc/peripheral@50000000/timer@11000
- *   57  /soc/peripheral@50000000/timer@11000/counter
- *   58  /soc/peripheral@50000000/timer@11000/pwm
- *   59  /soc/peripheral@50000000/timer@12000
- *   60  /soc/peripheral@50000000/timer@12000/counter
- *   61  /soc/peripheral@50000000/timer@12000/pwm
- *   62  /soc/peripheral@50000000/timer@13000
- *   63  /soc/peripheral@50000000/timer@13000/counter
- *   64  /soc/peripheral@50000000/timer@13000/pwm
- *   65  /soc/peripheral@50000000/timer@14000
- *   66  /soc/peripheral@50000000/timer@14000/counter
- *   67  /soc/peripheral@50000000/timer@14000/pwm
- *   68  /soc/peripheral@50000000/timer@15000
- *   69  /soc/peripheral@50000000/timer@15000/counter
- *   70  /soc/peripheral@50000000/timer@15000/pwm
- *   71  /soc/peripheral@50000000/timer@6400
- *   72  /soc/peripheral@50000000/timer@6400/counter
- *   73  /soc/peripheral@50000000/timer@6600
- *   74  /soc/peripheral@50000000/timer@6600/counter
- *   75  /soc/sram@30000000
- *   76  /soc/sram@30000000/memory@0
- *   77  /soc/sram@30000000/memory@8000
- *   78  /soc/sram@30000000/memory@10000
- *   79  /soc/sram@30000000/memory@20000
- *   80  /soc/sram@30000000/memory@30000
+ *   33  /soc/peripheral@50000000/rtc_counter@6000
+ *   34  /soc/peripheral@50000000/pin-controller@8000/uart0_rx_p0_5
+ *   35  /soc/peripheral@50000000/pin-controller@8000/uart0_tx_p0_9
+ *   36  /soc/peripheral@50000000/serial@42000
+ *   37  /soc/peripheral@50000000/trng@4d000
+ *   38  /soc/peripheral@50000000/watchdog@3000
+ *   39  /soc/peripheral@50000000/flash_controller@29000
+ *   40  /soc/peripheral@50000000/flash_controller@29000/flash@1000000
+ *   41  /soc/peripheral@50000000/flash_controller@29000/flash@1000000/partitions
+ *   42  /soc/peripheral@50000000/flash_controller@29000/flash@1000000/partitions/partition@0
+ *   43  /soc/peripheral@50000000/flash_controller@29000/flash@1000000/partitions/partition@f0000
+ *   44  /soc/peripheral@50000000/pin-controller@8000/i3c_pur_p0_8
+ *   45  /soc/peripheral@50000000/pin-controller@8000/i3c_scl_p0_0
+ *   46  /soc/peripheral@50000000/pin-controller@8000/i3c_sda_p0_1
+ *   47  /soc/peripheral@50000000/i3c@18000
+ *   48  /soc/peripheral@50000000/i3c@18000/adxl367@530000000000000000
+ *   49  /soc/peripheral@50000000/pin-controller@8000/spi0_miso_p0_4
+ *   50  /soc/peripheral@50000000/pin-controller@8000/spi0_mosi_p0_2
+ *   51  /soc/peripheral@50000000/pin-controller@8000/spi0_sck_p0_6
+ *   52  /soc/peripheral@50000000/pin-controller@8000/spi0_ss0_p0_3
+ *   53  /soc/peripheral@50000000/spi@46000
+ *   54  /soc/peripheral@50000000/spi@46000/max30123@0
+ *   55  /soc/peripheral@50000000/timer@10000
+ *   56  /soc/peripheral@50000000/timer@10000/counter
+ *   57  /soc/peripheral@50000000/timer@10000/pwm
+ *   58  /soc/peripheral@50000000/timer@11000
+ *   59  /soc/peripheral@50000000/timer@11000/counter
+ *   60  /soc/peripheral@50000000/timer@11000/pwm
+ *   61  /soc/peripheral@50000000/timer@12000
+ *   62  /soc/peripheral@50000000/timer@12000/counter
+ *   63  /soc/peripheral@50000000/timer@12000/pwm
+ *   64  /soc/peripheral@50000000/timer@13000
+ *   65  /soc/peripheral@50000000/timer@13000/counter
+ *   66  /soc/peripheral@50000000/timer@13000/pwm
+ *   67  /soc/peripheral@50000000/timer@14000
+ *   68  /soc/peripheral@50000000/timer@14000/counter
+ *   69  /soc/peripheral@50000000/timer@14000/pwm
+ *   70  /soc/peripheral@50000000/timer@15000
+ *   71  /soc/peripheral@50000000/timer@15000/counter
+ *   72  /soc/peripheral@50000000/timer@15000/pwm
+ *   73  /soc/peripheral@50000000/timer@6400
+ *   74  /soc/peripheral@50000000/timer@6400/counter
+ *   75  /soc/peripheral@50000000/timer@6600
+ *   76  /soc/peripheral@50000000/timer@6600/counter
+ *   77  /soc/sram@30000000
+ *   78  /soc/sram@30000000/memory@0
+ *   79  /soc/sram@30000000/memory@8000
+ *   80  /soc/sram@30000000/memory@10000
+ *   81  /soc/sram@30000000/memory@20000
+ *   82  /soc/sram@30000000/memory@30000
  *
  * Definitions derived from these nodes in dependency order are next,
  * followed by /chosen nodes.
@@ -903,7 +905,7 @@
 	9, /* /soc/interrupt-controller@e000e100 */ \
 	12, /* /soc/peripheral@50000000 */ \
 	31, /* /soc/timer@e000e010 */ \
-	75, /* /soc/sram@30000000 */
+	77, /* /soc/sram@30000000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_EXISTS 1
@@ -996,19 +998,19 @@
 #define DT_N_S_soc_S_interrupt_controller_e000e100_SUPPORTS_ORDS \
 	15, /* /soc/peripheral@50000000/pin-controller@8000/gpio@8000 */ \
 	32, /* /soc/peripheral@50000000/dma@35000 */ \
-	35, /* /soc/peripheral@50000000/i3c@18000 */ \
-	36, /* /soc/peripheral@50000000/rtc_counter@6000 */ \
-	39, /* /soc/peripheral@50000000/serial@42000 */ \
-	41, /* /soc/peripheral@50000000/watchdog@3000 */ \
-	51, /* /soc/peripheral@50000000/spi@46000 */ \
-	53, /* /soc/peripheral@50000000/timer@10000 */ \
-	56, /* /soc/peripheral@50000000/timer@11000 */ \
-	59, /* /soc/peripheral@50000000/timer@12000 */ \
-	62, /* /soc/peripheral@50000000/timer@13000 */ \
-	65, /* /soc/peripheral@50000000/timer@14000 */ \
-	68, /* /soc/peripheral@50000000/timer@15000 */ \
-	71, /* /soc/peripheral@50000000/timer@6400 */ \
-	73, /* /soc/peripheral@50000000/timer@6600 */
+	33, /* /soc/peripheral@50000000/rtc_counter@6000 */ \
+	36, /* /soc/peripheral@50000000/serial@42000 */ \
+	38, /* /soc/peripheral@50000000/watchdog@3000 */ \
+	47, /* /soc/peripheral@50000000/i3c@18000 */ \
+	53, /* /soc/peripheral@50000000/spi@46000 */ \
+	55, /* /soc/peripheral@50000000/timer@10000 */ \
+	58, /* /soc/peripheral@50000000/timer@11000 */ \
+	61, /* /soc/peripheral@50000000/timer@12000 */ \
+	64, /* /soc/peripheral@50000000/timer@13000 */ \
+	67, /* /soc/peripheral@50000000/timer@14000 */ \
+	70, /* /soc/peripheral@50000000/timer@15000 */ \
+	73, /* /soc/peripheral@50000000/timer@6400 */ \
+	75, /* /soc/peripheral@50000000/timer@6600 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_interrupt_controller_e000e100_EXISTS 1
@@ -1280,15 +1282,15 @@
 
 /* Helper macros for child nodes of this node. */
 #define DT_N_S_soc_S_peripheral_50000000_CHILD_NUM 18
-#define DT_N_S_soc_S_peripheral_50000000_CHILD_NUM_STATUS_OKAY 4
+#define DT_N_S_soc_S_peripheral_50000000_CHILD_NUM_STATUS_OKAY 7
 #define DT_N_S_soc_S_peripheral_50000000_FOREACH_CHILD(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000) fn(DT_N_S_soc_S_peripheral_50000000_S_dma_35000) fn(DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000) fn(DT_N_S_soc_S_peripheral_50000000_S_serial_42000) fn(DT_N_S_soc_S_peripheral_50000000_S_watchdog_3000) fn(DT_N_S_soc_S_peripheral_50000000_S_trng_4d000) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_10000) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_11000) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_12000) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_13000) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_14000) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_15000) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6400) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6600) fn(DT_N_S_soc_S_peripheral_50000000_S_rtc_counter_6000) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000)
 #define DT_N_S_soc_S_peripheral_50000000_FOREACH_CHILD_SEP(fn, sep) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_dma_35000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_serial_42000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_watchdog_3000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_trng_4d000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_timer_10000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_timer_11000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_timer_12000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_timer_13000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_timer_14000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_timer_15000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6400) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6600) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_rtc_counter_6000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000)
 #define DT_N_S_soc_S_peripheral_50000000_FOREACH_CHILD_VARGS(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_dma_35000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_serial_42000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_watchdog_3000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_trng_4d000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_10000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_11000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_12000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_13000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_14000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_15000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6400, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6600, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_rtc_counter_6000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000, __VA_ARGS__)
 #define DT_N_S_soc_S_peripheral_50000000_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_dma_35000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_serial_42000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_watchdog_3000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_trng_4d000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_timer_10000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_timer_11000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_timer_12000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_timer_13000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_timer_14000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_timer_15000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6400, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6600, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_rtc_counter_6000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000, __VA_ARGS__)
-#define DT_N_S_soc_S_peripheral_50000000_FOREACH_CHILD_STATUS_OKAY(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000) fn(DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0) fn(DT_N_S_soc_S_peripheral_50000000_S_serial_42000)
-#define DT_N_S_soc_S_peripheral_50000000_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_serial_42000)
-#define DT_N_S_soc_S_peripheral_50000000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_serial_42000, __VA_ARGS__)
-#define DT_N_S_soc_S_peripheral_50000000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_serial_42000, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_FOREACH_CHILD_STATUS_OKAY(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000) fn(DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000) fn(DT_N_S_soc_S_peripheral_50000000_S_serial_42000) fn(DT_N_S_soc_S_peripheral_50000000_S_trng_4d000) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000)
+#define DT_N_S_soc_S_peripheral_50000000_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_serial_42000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_trng_4d000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000)
+#define DT_N_S_soc_S_peripheral_50000000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_serial_42000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_trng_4d000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_serial_42000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_trng_4d000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000, __VA_ARGS__)
 
 /* Node's hash: */
 #define DT_N_S_soc_S_peripheral_50000000_HASH 28fD_igmPBtYluaI3Ha3G4XzJzLZsrJj3_t8aasSMhQ
@@ -1306,21 +1308,21 @@
 	13, /* /soc/peripheral@50000000/clock-controller@0 */ \
 	14, /* /soc/peripheral@50000000/pin-controller@8000 */ \
 	32, /* /soc/peripheral@50000000/dma@35000 */ \
-	35, /* /soc/peripheral@50000000/i3c@18000 */ \
-	36, /* /soc/peripheral@50000000/rtc_counter@6000 */ \
-	39, /* /soc/peripheral@50000000/serial@42000 */ \
-	40, /* /soc/peripheral@50000000/trng@4d000 */ \
-	41, /* /soc/peripheral@50000000/watchdog@3000 */ \
-	42, /* /soc/peripheral@50000000/flash_controller@29000 */ \
-	51, /* /soc/peripheral@50000000/spi@46000 */ \
-	53, /* /soc/peripheral@50000000/timer@10000 */ \
-	56, /* /soc/peripheral@50000000/timer@11000 */ \
-	59, /* /soc/peripheral@50000000/timer@12000 */ \
-	62, /* /soc/peripheral@50000000/timer@13000 */ \
-	65, /* /soc/peripheral@50000000/timer@14000 */ \
-	68, /* /soc/peripheral@50000000/timer@15000 */ \
-	71, /* /soc/peripheral@50000000/timer@6400 */ \
-	73, /* /soc/peripheral@50000000/timer@6600 */
+	33, /* /soc/peripheral@50000000/rtc_counter@6000 */ \
+	36, /* /soc/peripheral@50000000/serial@42000 */ \
+	37, /* /soc/peripheral@50000000/trng@4d000 */ \
+	38, /* /soc/peripheral@50000000/watchdog@3000 */ \
+	39, /* /soc/peripheral@50000000/flash_controller@29000 */ \
+	47, /* /soc/peripheral@50000000/i3c@18000 */ \
+	53, /* /soc/peripheral@50000000/spi@46000 */ \
+	55, /* /soc/peripheral@50000000/timer@10000 */ \
+	58, /* /soc/peripheral@50000000/timer@11000 */ \
+	61, /* /soc/peripheral@50000000/timer@12000 */ \
+	64, /* /soc/peripheral@50000000/timer@13000 */ \
+	67, /* /soc/peripheral@50000000/timer@14000 */ \
+	70, /* /soc/peripheral@50000000/timer@15000 */ \
+	73, /* /soc/peripheral@50000000/timer@6400 */ \
+	75, /* /soc/peripheral@50000000/timer@6600 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_peripheral_50000000_EXISTS 1
@@ -1405,17 +1407,17 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0_SUPPORTS_ORDS \
 	15, /* /soc/peripheral@50000000/pin-controller@8000/gpio@8000 */ \
 	32, /* /soc/peripheral@50000000/dma@35000 */ \
-	35, /* /soc/peripheral@50000000/i3c@18000 */ \
-	39, /* /soc/peripheral@50000000/serial@42000 */ \
-	40, /* /soc/peripheral@50000000/trng@4d000 */ \
-	41, /* /soc/peripheral@50000000/watchdog@3000 */ \
-	51, /* /soc/peripheral@50000000/spi@46000 */ \
-	53, /* /soc/peripheral@50000000/timer@10000 */ \
-	56, /* /soc/peripheral@50000000/timer@11000 */ \
-	59, /* /soc/peripheral@50000000/timer@12000 */ \
-	62, /* /soc/peripheral@50000000/timer@13000 */ \
-	65, /* /soc/peripheral@50000000/timer@14000 */ \
-	68, /* /soc/peripheral@50000000/timer@15000 */
+	36, /* /soc/peripheral@50000000/serial@42000 */ \
+	37, /* /soc/peripheral@50000000/trng@4d000 */ \
+	38, /* /soc/peripheral@50000000/watchdog@3000 */ \
+	47, /* /soc/peripheral@50000000/i3c@18000 */ \
+	53, /* /soc/peripheral@50000000/spi@46000 */ \
+	55, /* /soc/peripheral@50000000/timer@10000 */ \
+	58, /* /soc/peripheral@50000000/timer@11000 */ \
+	61, /* /soc/peripheral@50000000/timer@12000 */ \
+	64, /* /soc/peripheral@50000000/timer@13000 */ \
+	67, /* /soc/peripheral@50000000/timer@14000 */ \
+	70, /* /soc/peripheral@50000000/timer@15000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0_EXISTS 1
@@ -1528,16 +1530,16 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_FOREACH_ANCESTOR(fn) fn(DT_N_S_soc_S_peripheral_50000000) fn(DT_N_S_soc) fn(DT_N)
 
 /* Helper macros for child nodes of this node. */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_CHILD_NUM 9
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_CHILD_NUM_STATUS_OKAY 9
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_FOREACH_CHILD(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9)
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_FOREACH_CHILD_SEP(fn, sep) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9)
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_FOREACH_CHILD_VARGS(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9, __VA_ARGS__)
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9, __VA_ARGS__)
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_FOREACH_CHILD_STATUS_OKAY(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9)
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9)
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9, __VA_ARGS__)
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_CHILD_NUM 10
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_CHILD_NUM_STATUS_OKAY 10
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_FOREACH_CHILD(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8)
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_FOREACH_CHILD_SEP(fn, sep) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8)
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_FOREACH_CHILD_VARGS(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_FOREACH_CHILD_STATUS_OKAY(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8)
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8)
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8, __VA_ARGS__)
 
 /* Node's hash: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_HASH gZm670ZnOMU_7j7antCAI90ZPs5uwQOYrkBV_yLTXrA
@@ -1553,14 +1555,15 @@
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_SUPPORTS_ORDS \
 	15, /* /soc/peripheral@50000000/pin-controller@8000/gpio@8000 */ \
-	33, /* /soc/peripheral@50000000/pin-controller@8000/i3c_scl_p0_0 */ \
-	34, /* /soc/peripheral@50000000/pin-controller@8000/i3c_sda_p0_1 */ \
-	37, /* /soc/peripheral@50000000/pin-controller@8000/uart0_rx_p0_5 */ \
-	38, /* /soc/peripheral@50000000/pin-controller@8000/uart0_tx_p0_9 */ \
-	47, /* /soc/peripheral@50000000/pin-controller@8000/spi0_miso_p0_4 */ \
-	48, /* /soc/peripheral@50000000/pin-controller@8000/spi0_mosi_p0_2 */ \
-	49, /* /soc/peripheral@50000000/pin-controller@8000/spi0_sck_p0_6 */ \
-	50, /* /soc/peripheral@50000000/pin-controller@8000/spi0_ss0_p0_3 */
+	34, /* /soc/peripheral@50000000/pin-controller@8000/uart0_rx_p0_5 */ \
+	35, /* /soc/peripheral@50000000/pin-controller@8000/uart0_tx_p0_9 */ \
+	44, /* /soc/peripheral@50000000/pin-controller@8000/i3c_pur_p0_8 */ \
+	45, /* /soc/peripheral@50000000/pin-controller@8000/i3c_scl_p0_0 */ \
+	46, /* /soc/peripheral@50000000/pin-controller@8000/i3c_sda_p0_1 */ \
+	49, /* /soc/peripheral@50000000/pin-controller@8000/spi0_miso_p0_4 */ \
+	50, /* /soc/peripheral@50000000/pin-controller@8000/spi0_mosi_p0_2 */ \
+	51, /* /soc/peripheral@50000000/pin-controller@8000/spi0_sck_p0_6 */ \
+	52, /* /soc/peripheral@50000000/pin-controller@8000/spi0_ss0_p0_3 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_EXISTS 1
@@ -1683,6 +1686,7 @@
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000_EXISTS 1
+#define DT_N_ALIAS_gpio0           DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000
 #define DT_N_INST_0_adi_max32_gpio DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000
 #define DT_N_NODELABEL_gpio0       DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000
 
@@ -3623,393 +3627,6 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_dma_35000_P_zephyr_pm_device_runtime_auto_EXISTS 1
 
 /*
- * Devicetree node: /soc/peripheral@50000000/pin-controller@8000/i3c_scl_p0_0
- *
- * Node identifier: DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0
- *
- * (Descriptions have moved to the Devicetree Bindings Index
- * in the documentation.)
- */
-
-/* Node's full path: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_PATH "/soc/peripheral@50000000/pin-controller@8000/i3c_scl_p0_0"
-
-/* Node's name with unit-address: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FULL_NAME "i3c_scl_p0_0"
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FULL_NAME_UNQUOTED i3c_scl_p0_0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FULL_NAME_TOKEN i3c_scl_p0_0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FULL_NAME_UPPER_TOKEN I3C_SCL_P0_0
-
-/* Node parent (/soc/peripheral@50000000/pin-controller@8000) identifier: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_PARENT DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000
-
-/* Node's index in its parent's list of children: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_CHILD_IDX 1
-
-/* Helpers for dealing with node labels: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_NODELABEL_NUM 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_NODELABEL(fn) fn(i3c_scl_p0_0)
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_NODELABEL_VARGS(fn, ...) fn(i3c_scl_p0_0, __VA_ARGS__)
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_ANCESTOR(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000) fn(DT_N_S_soc_S_peripheral_50000000) fn(DT_N_S_soc) fn(DT_N)
-
-/* Helper macros for child nodes of this node. */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_CHILD_NUM 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_CHILD_NUM_STATUS_OKAY 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_CHILD(fn) 
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_CHILD_SEP(fn, sep) 
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_CHILD_VARGS(fn, ...) 
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_CHILD_STATUS_OKAY(fn) 
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
-
-/* Node's hash: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_HASH slXfJsZllbnKR2yPTOpm950O0P_ma_T_URrKxY_bOxg
-
-/* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_ORD 33
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_ORD_STR_SORTABLE 00033
-
-/* Ordinals for what this node depends on directly: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_REQUIRES_ORDS \
-	14, /* /soc/peripheral@50000000/pin-controller@8000 */
-
-/* Ordinals for what depends directly on this node: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_SUPPORTS_ORDS \
-	35, /* /soc/peripheral@50000000/i3c@18000 */
-
-/* Existence and alternate IDs: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_EXISTS 1
-#define DT_N_NODELABEL_i3c_scl_p0_0 DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0
-
-/* Macros for properties that are special in the specification: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_REG_NUM 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_RANGES_NUM 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_RANGE(fn) 
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_IRQ_NUM 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_IRQ_LEVEL 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_STATUS_okay 1
-
-/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_PINCTRL_NUM 0
-
-/* Generic property macros: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_pinmux 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_pinmux_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_drive_strength 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_drive_strength_IDX_0_ENUM_IDX 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_drive_strength_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_drive_strength_IDX_0_ENUM_VAL_0_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_drive_strength_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_bias_disable 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_bias_disable_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_bias_pull_up 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_bias_pull_up_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_bias_pull_down 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_bias_pull_down_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_input_enable 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_input_enable_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_low_power_enable 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_low_power_enable_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_output_enable 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_output_enable_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_output_low 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_output_low_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_output_high 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_output_high_EXISTS 1
-
-/*
- * Devicetree node: /soc/peripheral@50000000/pin-controller@8000/i3c_sda_p0_1
- *
- * Node identifier: DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1
- *
- * (Descriptions have moved to the Devicetree Bindings Index
- * in the documentation.)
- */
-
-/* Node's full path: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_PATH "/soc/peripheral@50000000/pin-controller@8000/i3c_sda_p0_1"
-
-/* Node's name with unit-address: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FULL_NAME "i3c_sda_p0_1"
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FULL_NAME_UNQUOTED i3c_sda_p0_1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FULL_NAME_TOKEN i3c_sda_p0_1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FULL_NAME_UPPER_TOKEN I3C_SDA_P0_1
-
-/* Node parent (/soc/peripheral@50000000/pin-controller@8000) identifier: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_PARENT DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000
-
-/* Node's index in its parent's list of children: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_CHILD_IDX 2
-
-/* Helpers for dealing with node labels: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_NODELABEL_NUM 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_NODELABEL(fn) fn(i3c_sda_p0_1)
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_NODELABEL_VARGS(fn, ...) fn(i3c_sda_p0_1, __VA_ARGS__)
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_ANCESTOR(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000) fn(DT_N_S_soc_S_peripheral_50000000) fn(DT_N_S_soc) fn(DT_N)
-
-/* Helper macros for child nodes of this node. */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_CHILD_NUM 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_CHILD_NUM_STATUS_OKAY 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_CHILD(fn) 
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_CHILD_SEP(fn, sep) 
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_CHILD_VARGS(fn, ...) 
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_CHILD_STATUS_OKAY(fn) 
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
-
-/* Node's hash: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_HASH ldGQ6FTlh9T2Px_JQZqu66g0hwfSy6YFpXIjI8U4pUA
-
-/* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_ORD 34
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_ORD_STR_SORTABLE 00034
-
-/* Ordinals for what this node depends on directly: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_REQUIRES_ORDS \
-	14, /* /soc/peripheral@50000000/pin-controller@8000 */
-
-/* Ordinals for what depends directly on this node: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_SUPPORTS_ORDS \
-	35, /* /soc/peripheral@50000000/i3c@18000 */
-
-/* Existence and alternate IDs: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_EXISTS 1
-#define DT_N_NODELABEL_i3c_sda_p0_1 DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1
-
-/* Macros for properties that are special in the specification: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_REG_NUM 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_RANGES_NUM 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_RANGE(fn) 
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_IRQ_NUM 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_IRQ_LEVEL 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_STATUS_okay 1
-
-/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_PINCTRL_NUM 0
-
-/* Generic property macros: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_pinmux 257
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_pinmux_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_drive_strength 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_drive_strength_IDX_0_ENUM_IDX 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_drive_strength_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_drive_strength_IDX_0_ENUM_VAL_0_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_drive_strength_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_bias_disable 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_bias_disable_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_bias_pull_up 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_bias_pull_up_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_bias_pull_down 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_bias_pull_down_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_input_enable 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_input_enable_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_low_power_enable 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_low_power_enable_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_output_enable 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_output_enable_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_output_low 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_output_low_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_output_high 0
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_output_high_EXISTS 1
-
-/*
- * Devicetree node: /soc/peripheral@50000000/i3c@18000
- *
- * Node identifier: DT_N_S_soc_S_peripheral_50000000_S_i3c_18000
- *
- * Binding (compatible = adi,max32-i3c):
- *   $ZEPHYR_BASE\dts\bindings\i3c\adi,max32-i3c.yaml
- *
- * (Descriptions have moved to the Devicetree Bindings Index
- * in the documentation.)
- */
-
-/* Node's full path: */
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_PATH "/soc/peripheral@50000000/i3c@18000"
-
-/* Node's name with unit-address: */
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FULL_NAME "i3c@18000"
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FULL_NAME_UNQUOTED i3c@18000
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FULL_NAME_TOKEN i3c_18000
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FULL_NAME_UPPER_TOKEN I3C_18000
-
-/* Node parent (/soc/peripheral@50000000) identifier: */
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_PARENT DT_N_S_soc_S_peripheral_50000000
-
-/* Node's index in its parent's list of children: */
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_CHILD_IDX 4
-
-/* Helpers for dealing with node labels: */
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_NODELABEL_NUM 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_NODELABEL(fn) fn(i3c0)
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_NODELABEL_VARGS(fn, ...) fn(i3c0, __VA_ARGS__)
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_ANCESTOR(fn) fn(DT_N_S_soc_S_peripheral_50000000) fn(DT_N_S_soc) fn(DT_N)
-
-/* Helper macros for child nodes of this node. */
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_CHILD_NUM 0
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_CHILD_NUM_STATUS_OKAY 0
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_CHILD(fn) 
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_CHILD_SEP(fn, sep) 
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_CHILD_VARGS(fn, ...) 
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_CHILD_STATUS_OKAY(fn) 
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
-
-/* Node's hash: */
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_HASH KDACJdZkXmZFURKs5CrnaSFaxPk2KR2NbTBS2l1swks
-
-/* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_ORD 35
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_ORD_STR_SORTABLE 00035
-
-/* Ordinals for what this node depends on directly: */
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_REQUIRES_ORDS \
-	9, /* /soc/interrupt-controller@e000e100 */ \
-	12, /* /soc/peripheral@50000000 */ \
-	13, /* /soc/peripheral@50000000/clock-controller@0 */ \
-	33, /* /soc/peripheral@50000000/pin-controller@8000/i3c_scl_p0_0 */ \
-	34, /* /soc/peripheral@50000000/pin-controller@8000/i3c_sda_p0_1 */
-
-/* Ordinals for what depends directly on this node: */
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_SUPPORTS_ORDS /* nothing */
-
-/* Existence and alternate IDs: */
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_EXISTS 1
-#define DT_N_INST_0_adi_max32_i3c DT_N_S_soc_S_peripheral_50000000_S_i3c_18000
-#define DT_N_NODELABEL_i3c0       DT_N_S_soc_S_peripheral_50000000_S_i3c_18000
-
-/* Macros for properties that are special in the specification: */
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_REG_NUM 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_REG_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_REG_IDX_0_VAL_ADDRESS 1342275584 /* 0x50018000 */
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_REG_IDX_0_VAL_SIZE 4096 /* 0x1000 */
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_RANGES_NUM 0
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_RANGE(fn) 
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_IRQ_NUM 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_IRQ_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_IRQ_IDX_0_VAL_irq 10
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_IRQ_IDX_0_VAL_irq_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_IRQ_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_IRQ_IDX_0_VAL_priority 0
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_IRQ_IDX_0_VAL_priority_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_IRQ_IDX_0_CONTROLLER DT_N_S_soc_S_interrupt_controller_e000e100
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_IRQ_LEVEL 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_COMPAT_MATCHES_adi_max32_i3c 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_COMPAT_VENDOR_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_COMPAT_VENDOR_IDX_0 "Analog Devices, Inc."
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_COMPAT_MODEL_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_COMPAT_MODEL_IDX_0 "max32-i3c"
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_STATUS_disabled 1
-
-/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_PINCTRL_NUM 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_PINCTRL_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_PINCTRL_IDX_0_TOKEN default
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_PINCTRL_IDX_0_UPPER_TOKEN DEFAULT
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_PINCTRL_NAME_default_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_PINCTRL_NAME_default_IDX 0
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_PINCTRL_NAME_default_IDX_0_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_PINCTRL_NAME_default_IDX_1_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1
-
-/* Generic property macros: */
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_reg {98304 /* 0x18000 */, 4096 /* 0x1000 */}
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_reg_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_reg_IDX_0 98304
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_reg_IDX_1_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_reg_IDX_1 4096
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_reg_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_interrupts {10 /* 0xa */, 0 /* 0x0 */}
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_interrupts_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_interrupts_IDX_0 10
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_interrupts_IDX_1_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_interrupts_IDX_1 0
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_interrupts_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_i3c_od_scl_hz 400000
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_i3c_od_scl_hz_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_i3c_scl_hz 800000
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_i3c_scl_hz_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_i2c_scl_hz 200000
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_i2c_scl_hz_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status "disabled"
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_STRING_UNQUOTED disabled
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_STRING_TOKEN disabled
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_STRING_UPPER_TOKEN DISABLED
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_IDX_0 "disabled"
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_IDX_0_ENUM_IDX 2
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_IDX_0_ENUM_VAL_disabled_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, status, 0)
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, status, 0)
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, status, 0, __VA_ARGS__)
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, status, 0, __VA_ARGS__)
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_LEN 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible {"adi,max32-i3c"}
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible_IDX_0 "adi,max32-i3c"
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible_IDX_0_STRING_UNQUOTED adi,max32-i3c
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible_IDX_0_STRING_TOKEN adi_max32_i3c
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible_IDX_0_STRING_UPPER_TOKEN ADI_MAX32_I3C
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, compatible, 0)
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, compatible, 0)
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, compatible, 0, __VA_ARGS__)
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, compatible, 0, __VA_ARGS__)
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible_LEN 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_IDX_0_PH DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_IDX_0_VAL_offset 0
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_IDX_0_VAL_offset_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_IDX_0_VAL_bit 13
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_IDX_0_VAL_bit_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, clocks, 0)
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, clocks, 0)
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, clocks, 0, __VA_ARGS__)
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, clocks, 0, __VA_ARGS__)
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_LEN 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_zephyr_deferred_init 0
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_zephyr_deferred_init_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_wakeup_source 0
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_wakeup_source_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_zephyr_pm_device_runtime_auto 0
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_zephyr_pm_device_runtime_auto_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_IDX_0 DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_IDX_0_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_IDX_1 DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_IDX_1_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_IDX_1_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_0, 0) \
-	fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_0, 1)
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_0, 0) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_0, 1)
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_0, 0, __VA_ARGS__) \
-	fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_0, 1, __VA_ARGS__)
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_0, 0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
-	fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_0, 1, __VA_ARGS__)
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_LEN 2
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names {"default"}
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names_IDX_0 "default"
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names_IDX_0_STRING_UNQUOTED default
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names_IDX_0_STRING_TOKEN default
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names_IDX_0_STRING_UPPER_TOKEN DEFAULT
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_names, 0)
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_names, 0)
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_names, 0, __VA_ARGS__)
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_names, 0, __VA_ARGS__)
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names_LEN 1
-#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names_EXISTS 1
-
-/*
  * Devicetree node: /soc/peripheral@50000000/rtc_counter@6000
  *
  * Node identifier: DT_N_S_soc_S_peripheral_50000000_S_rtc_counter_6000
@@ -4058,8 +3675,8 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_rtc_counter_6000_HASH la5IHD4oJII2euAX4TOKli59jE1BhMeCAMlQ3yd6eDc
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_rtc_counter_6000_ORD 36
-#define DT_N_S_soc_S_peripheral_50000000_S_rtc_counter_6000_ORD_STR_SORTABLE 00036
+#define DT_N_S_soc_S_peripheral_50000000_S_rtc_counter_6000_ORD 33
+#define DT_N_S_soc_S_peripheral_50000000_S_rtc_counter_6000_ORD_STR_SORTABLE 00033
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_rtc_counter_6000_REQUIRES_ORDS \
@@ -4197,8 +3814,8 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5_HASH Wk8bHRo8N35CkJ_Q2wt__VBFKk62UhmqRHZMkb9zP7E
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5_ORD 37
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5_ORD_STR_SORTABLE 00037
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5_ORD 34
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5_ORD_STR_SORTABLE 00034
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5_REQUIRES_ORDS \
@@ -4206,7 +3823,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5_SUPPORTS_ORDS \
-	39, /* /soc/peripheral@50000000/serial@42000 */
+	36, /* /soc/peripheral@50000000/serial@42000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5_EXISTS 1
@@ -4299,8 +3916,8 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9_HASH fKGTshbmSPZ4A3ZOsq7_Xe5ClFQRYUSwF_HqJrkvEjQ
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9_ORD 38
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9_ORD_STR_SORTABLE 00038
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9_ORD 35
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9_ORD_STR_SORTABLE 00035
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9_REQUIRES_ORDS \
@@ -4308,7 +3925,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9_SUPPORTS_ORDS \
-	39, /* /soc/peripheral@50000000/serial@42000 */
+	36, /* /soc/peripheral@50000000/serial@42000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9_EXISTS 1
@@ -4404,16 +4021,16 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_serial_42000_HASH U7XqksLtujiQlCZ6UmHTsHELRKyz_fD27eFLbYE8skI
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_serial_42000_ORD 39
-#define DT_N_S_soc_S_peripheral_50000000_S_serial_42000_ORD_STR_SORTABLE 00039
+#define DT_N_S_soc_S_peripheral_50000000_S_serial_42000_ORD 36
+#define DT_N_S_soc_S_peripheral_50000000_S_serial_42000_ORD_STR_SORTABLE 00036
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_serial_42000_REQUIRES_ORDS \
 	9, /* /soc/interrupt-controller@e000e100 */ \
 	12, /* /soc/peripheral@50000000 */ \
 	13, /* /soc/peripheral@50000000/clock-controller@0 */ \
-	37, /* /soc/peripheral@50000000/pin-controller@8000/uart0_rx_p0_5 */ \
-	38, /* /soc/peripheral@50000000/pin-controller@8000/uart0_tx_p0_9 */
+	34, /* /soc/peripheral@50000000/pin-controller@8000/uart0_rx_p0_5 */ \
+	35, /* /soc/peripheral@50000000/pin-controller@8000/uart0_tx_p0_9 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_serial_42000_SUPPORTS_ORDS /* nothing */
@@ -4633,8 +4250,8 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_HASH _PVUlb2pKQcnCqxadF68IHpL8xxRBhvAf2DOHsHRa7k
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_ORD 40
-#define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_ORD_STR_SORTABLE 00040
+#define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_ORD 37
+#define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_ORD_STR_SORTABLE 00037
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_REQUIRES_ORDS \
@@ -4663,7 +4280,7 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_COMPAT_VENDOR_IDX_0 "Analog Devices, Inc."
 #define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_COMPAT_MODEL_IDX_0_EXISTS 1
 #define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_COMPAT_MODEL_IDX_0 "max32-trng"
-#define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_STATUS_disabled 1
+#define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_STATUS_okay 1
 
 /* Pin control (pinctrl-<i>, pinctrl-names) properties: */
 #define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_PINCTRL_NUM 0
@@ -4681,14 +4298,14 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_P_clocks_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_trng_4d000, clocks, 0, __VA_ARGS__)
 #define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_P_clocks_LEN 1
 #define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_P_clocks_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_P_status "disabled"
-#define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_P_status_STRING_UNQUOTED disabled
-#define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_P_status_STRING_TOKEN disabled
-#define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_P_status_STRING_UPPER_TOKEN DISABLED
-#define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_P_status_IDX_0 "disabled"
+#define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_P_status "okay"
+#define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_P_status_STRING_UNQUOTED okay
+#define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_P_status_STRING_TOKEN okay
+#define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_P_status_STRING_UPPER_TOKEN OKAY
+#define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_P_status_IDX_0 "okay"
 #define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_P_status_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_P_status_IDX_0_ENUM_IDX 2
-#define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_P_status_IDX_0_ENUM_VAL_disabled_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_P_status_IDX_0_ENUM_IDX 1
+#define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_P_status_IDX_0_ENUM_VAL_okay_EXISTS 1
 #define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_P_status_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_trng_4d000, status, 0)
 #define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_P_status_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_soc_S_peripheral_50000000_S_trng_4d000, status, 0)
 #define DT_N_S_soc_S_peripheral_50000000_S_trng_4d000_P_status_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_trng_4d000, status, 0, __VA_ARGS__)
@@ -4769,8 +4386,8 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_watchdog_3000_HASH RJZ96AQUgw4ddAmz4RVdPeTPP5talauLaygjXesbezI
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_watchdog_3000_ORD 41
-#define DT_N_S_soc_S_peripheral_50000000_S_watchdog_3000_ORD_STR_SORTABLE 00041
+#define DT_N_S_soc_S_peripheral_50000000_S_watchdog_3000_ORD 38
+#define DT_N_S_soc_S_peripheral_50000000_S_watchdog_3000_ORD_STR_SORTABLE 00038
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_watchdog_3000_REQUIRES_ORDS \
@@ -4925,8 +4542,8 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_HASH HO7LuogFzrH2cdEIo1snAQrzV_kXugLNxXGhpgg_04M
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_ORD 42
-#define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_ORD_STR_SORTABLE 00042
+#define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_ORD 39
+#define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_ORD_STR_SORTABLE 00039
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_REQUIRES_ORDS \
@@ -4934,7 +4551,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_SUPPORTS_ORDS \
-	43, /* /soc/peripheral@50000000/flash_controller@29000/flash@1000000 */
+	40, /* /soc/peripheral@50000000/flash_controller@29000/flash@1000000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_EXISTS 1
@@ -5049,16 +4666,16 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_HASH aEVgu74qU26FjhDXGtSI7gMgh9zNQwCFoPToyK4oV3I
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_ORD 43
-#define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_ORD_STR_SORTABLE 00043
+#define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_ORD 40
+#define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_ORD_STR_SORTABLE 00040
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_REQUIRES_ORDS \
-	42, /* /soc/peripheral@50000000/flash_controller@29000 */
+	39, /* /soc/peripheral@50000000/flash_controller@29000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_SUPPORTS_ORDS \
-	44, /* /soc/peripheral@50000000/flash_controller@29000/flash@1000000/partitions */
+	41, /* /soc/peripheral@50000000/flash_controller@29000/flash@1000000/partitions */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_EXISTS 1
@@ -5159,17 +4776,17 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_HASH 0TfXzOqssbpku3Rc3Lq0swEFLbLVFqCasq5XkllUl2I
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_ORD 44
-#define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_ORD_STR_SORTABLE 00044
+#define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_ORD 41
+#define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_ORD_STR_SORTABLE 00041
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_REQUIRES_ORDS \
-	43, /* /soc/peripheral@50000000/flash_controller@29000/flash@1000000 */
+	40, /* /soc/peripheral@50000000/flash_controller@29000/flash@1000000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_SUPPORTS_ORDS \
-	45, /* /soc/peripheral@50000000/flash_controller@29000/flash@1000000/partitions/partition@0 */ \
-	46, /* /soc/peripheral@50000000/flash_controller@29000/flash@1000000/partitions/partition@f0000 */
+	42, /* /soc/peripheral@50000000/flash_controller@29000/flash@1000000/partitions/partition@0 */ \
+	43, /* /soc/peripheral@50000000/flash_controller@29000/flash@1000000/partitions/partition@f0000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_EXISTS 1
@@ -5235,12 +4852,12 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_0_HASH w297WDozpVcTaz3W7iqfIPlbvuocPPKs1E_7WWlB7LQ
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_0_ORD 45
-#define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_0_ORD_STR_SORTABLE 00045
+#define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_0_ORD 42
+#define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_0_ORD_STR_SORTABLE 00042
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_0_REQUIRES_ORDS \
-	44, /* /soc/peripheral@50000000/flash_controller@29000/flash@1000000/partitions */
+	41, /* /soc/peripheral@50000000/flash_controller@29000/flash@1000000/partitions */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_0_SUPPORTS_ORDS /* nothing */
@@ -5334,12 +4951,12 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_f0000_HASH IVIjO6mew7g3MQ2XZI4IiK8fFkKPF5BQ6LUJBtGOnI4
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_f0000_ORD 46
-#define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_f0000_ORD_STR_SORTABLE 00046
+#define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_f0000_ORD 43
+#define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_f0000_ORD_STR_SORTABLE 00043
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_f0000_REQUIRES_ORDS \
-	44, /* /soc/peripheral@50000000/flash_controller@29000/flash@1000000/partitions */
+	41, /* /soc/peripheral@50000000/flash_controller@29000/flash@1000000/partitions */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_f0000_SUPPORTS_ORDS /* nothing */
@@ -5388,6 +5005,649 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_f0000_P_reg_EXISTS 1
 
 /*
+ * Devicetree node: /soc/peripheral@50000000/pin-controller@8000/i3c_pur_p0_8
+ *
+ * Node identifier: DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8
+ *
+ * (Descriptions have moved to the Devicetree Bindings Index
+ * in the documentation.)
+ */
+
+/* Node's full path: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_PATH "/soc/peripheral@50000000/pin-controller@8000/i3c_pur_p0_8"
+
+/* Node's name with unit-address: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_FULL_NAME "i3c_pur_p0_8"
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_FULL_NAME_UNQUOTED i3c_pur_p0_8
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_FULL_NAME_TOKEN i3c_pur_p0_8
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_FULL_NAME_UPPER_TOKEN I3C_PUR_P0_8
+
+/* Node parent (/soc/peripheral@50000000/pin-controller@8000) identifier: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_PARENT DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000
+
+/* Node's index in its parent's list of children: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_CHILD_IDX 9
+
+/* Helpers for dealing with node labels: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_NODELABEL_NUM 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_FOREACH_NODELABEL(fn) fn(i3c_pur_p0_8)
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_FOREACH_NODELABEL_VARGS(fn, ...) fn(i3c_pur_p0_8, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_FOREACH_ANCESTOR(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000) fn(DT_N_S_soc_S_peripheral_50000000) fn(DT_N_S_soc) fn(DT_N)
+
+/* Helper macros for child nodes of this node. */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_CHILD_NUM 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_CHILD_NUM_STATUS_OKAY 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_FOREACH_CHILD(fn) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_FOREACH_CHILD_SEP(fn, sep) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_FOREACH_CHILD_VARGS(fn, ...) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_FOREACH_CHILD_STATUS_OKAY(fn) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
+
+/* Node's hash: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_HASH Q4aYPYRFfvYba5tA7sqeg_TBRJvcEZViCJww12JstGs
+
+/* Node's dependency ordinal: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_ORD 44
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_ORD_STR_SORTABLE 00044
+
+/* Ordinals for what this node depends on directly: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_REQUIRES_ORDS \
+	14, /* /soc/peripheral@50000000/pin-controller@8000 */
+
+/* Ordinals for what depends directly on this node: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_SUPPORTS_ORDS \
+	47, /* /soc/peripheral@50000000/i3c@18000 */
+
+/* Existence and alternate IDs: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_EXISTS 1
+#define DT_N_NODELABEL_i3c_pur_p0_8 DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8
+
+/* Macros for properties that are special in the specification: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_REG_NUM 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_RANGES_NUM 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_FOREACH_RANGE(fn) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_IRQ_NUM 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_IRQ_LEVEL 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_STATUS_okay 1
+
+/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_PINCTRL_NUM 0
+
+/* Generic property macros: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_pinmux 2050
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_pinmux_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_power_source 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_power_source_IDX_0_ENUM_IDX 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_power_source_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_power_source_IDX_0_ENUM_VAL_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_power_source_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_drive_strength 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_drive_strength_IDX_0_ENUM_IDX 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_drive_strength_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_drive_strength_IDX_0_ENUM_VAL_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_drive_strength_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_bias_disable 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_bias_disable_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_bias_pull_up 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_bias_pull_up_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_bias_pull_down 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_bias_pull_down_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_input_enable 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_input_enable_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_low_power_enable 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_low_power_enable_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_output_enable 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_output_enable_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_output_low 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_output_low_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_output_high 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8_P_output_high_EXISTS 1
+
+/*
+ * Devicetree node: /soc/peripheral@50000000/pin-controller@8000/i3c_scl_p0_0
+ *
+ * Node identifier: DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0
+ *
+ * (Descriptions have moved to the Devicetree Bindings Index
+ * in the documentation.)
+ */
+
+/* Node's full path: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_PATH "/soc/peripheral@50000000/pin-controller@8000/i3c_scl_p0_0"
+
+/* Node's name with unit-address: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FULL_NAME "i3c_scl_p0_0"
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FULL_NAME_UNQUOTED i3c_scl_p0_0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FULL_NAME_TOKEN i3c_scl_p0_0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FULL_NAME_UPPER_TOKEN I3C_SCL_P0_0
+
+/* Node parent (/soc/peripheral@50000000/pin-controller@8000) identifier: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_PARENT DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000
+
+/* Node's index in its parent's list of children: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_CHILD_IDX 1
+
+/* Helpers for dealing with node labels: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_NODELABEL_NUM 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_NODELABEL(fn) fn(i3c_scl_p0_0)
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_NODELABEL_VARGS(fn, ...) fn(i3c_scl_p0_0, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_ANCESTOR(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000) fn(DT_N_S_soc_S_peripheral_50000000) fn(DT_N_S_soc) fn(DT_N)
+
+/* Helper macros for child nodes of this node. */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_CHILD_NUM 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_CHILD_NUM_STATUS_OKAY 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_CHILD(fn) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_CHILD_SEP(fn, sep) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_CHILD_VARGS(fn, ...) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_CHILD_STATUS_OKAY(fn) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
+
+/* Node's hash: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_HASH slXfJsZllbnKR2yPTOpm950O0P_ma_T_URrKxY_bOxg
+
+/* Node's dependency ordinal: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_ORD 45
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_ORD_STR_SORTABLE 00045
+
+/* Ordinals for what this node depends on directly: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_REQUIRES_ORDS \
+	14, /* /soc/peripheral@50000000/pin-controller@8000 */
+
+/* Ordinals for what depends directly on this node: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_SUPPORTS_ORDS \
+	47, /* /soc/peripheral@50000000/i3c@18000 */
+
+/* Existence and alternate IDs: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_EXISTS 1
+#define DT_N_NODELABEL_i3c_scl_p0_0 DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0
+
+/* Macros for properties that are special in the specification: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_REG_NUM 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_RANGES_NUM 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_FOREACH_RANGE(fn) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_IRQ_NUM 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_IRQ_LEVEL 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_STATUS_okay 1
+
+/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_PINCTRL_NUM 0
+
+/* Generic property macros: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_pinmux 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_pinmux_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_power_source 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_power_source_IDX_0_ENUM_IDX 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_power_source_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_power_source_IDX_0_ENUM_VAL_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_power_source_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_drive_strength 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_drive_strength_IDX_0_ENUM_IDX 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_drive_strength_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_drive_strength_IDX_0_ENUM_VAL_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_drive_strength_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_bias_disable 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_bias_disable_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_bias_pull_up 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_bias_pull_up_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_bias_pull_down 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_bias_pull_down_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_input_enable 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_input_enable_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_low_power_enable 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_low_power_enable_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_output_enable 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_output_enable_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_output_low 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_output_low_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_output_high 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0_P_output_high_EXISTS 1
+
+/*
+ * Devicetree node: /soc/peripheral@50000000/pin-controller@8000/i3c_sda_p0_1
+ *
+ * Node identifier: DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1
+ *
+ * (Descriptions have moved to the Devicetree Bindings Index
+ * in the documentation.)
+ */
+
+/* Node's full path: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_PATH "/soc/peripheral@50000000/pin-controller@8000/i3c_sda_p0_1"
+
+/* Node's name with unit-address: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FULL_NAME "i3c_sda_p0_1"
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FULL_NAME_UNQUOTED i3c_sda_p0_1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FULL_NAME_TOKEN i3c_sda_p0_1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FULL_NAME_UPPER_TOKEN I3C_SDA_P0_1
+
+/* Node parent (/soc/peripheral@50000000/pin-controller@8000) identifier: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_PARENT DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000
+
+/* Node's index in its parent's list of children: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_CHILD_IDX 2
+
+/* Helpers for dealing with node labels: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_NODELABEL_NUM 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_NODELABEL(fn) fn(i3c_sda_p0_1)
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_NODELABEL_VARGS(fn, ...) fn(i3c_sda_p0_1, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_ANCESTOR(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000) fn(DT_N_S_soc_S_peripheral_50000000) fn(DT_N_S_soc) fn(DT_N)
+
+/* Helper macros for child nodes of this node. */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_CHILD_NUM 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_CHILD_NUM_STATUS_OKAY 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_CHILD(fn) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_CHILD_SEP(fn, sep) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_CHILD_VARGS(fn, ...) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_CHILD_STATUS_OKAY(fn) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
+
+/* Node's hash: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_HASH ldGQ6FTlh9T2Px_JQZqu66g0hwfSy6YFpXIjI8U4pUA
+
+/* Node's dependency ordinal: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_ORD 46
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_ORD_STR_SORTABLE 00046
+
+/* Ordinals for what this node depends on directly: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_REQUIRES_ORDS \
+	14, /* /soc/peripheral@50000000/pin-controller@8000 */
+
+/* Ordinals for what depends directly on this node: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_SUPPORTS_ORDS \
+	47, /* /soc/peripheral@50000000/i3c@18000 */
+
+/* Existence and alternate IDs: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_EXISTS 1
+#define DT_N_NODELABEL_i3c_sda_p0_1 DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1
+
+/* Macros for properties that are special in the specification: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_REG_NUM 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_RANGES_NUM 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_FOREACH_RANGE(fn) 
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_IRQ_NUM 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_IRQ_LEVEL 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_STATUS_okay 1
+
+/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_PINCTRL_NUM 0
+
+/* Generic property macros: */
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_pinmux 257
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_pinmux_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_power_source 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_power_source_IDX_0_ENUM_IDX 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_power_source_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_power_source_IDX_0_ENUM_VAL_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_power_source_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_drive_strength 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_drive_strength_IDX_0_ENUM_IDX 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_drive_strength_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_drive_strength_IDX_0_ENUM_VAL_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_drive_strength_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_bias_disable 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_bias_disable_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_bias_pull_up 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_bias_pull_up_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_bias_pull_down 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_bias_pull_down_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_input_enable 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_input_enable_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_low_power_enable 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_low_power_enable_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_output_enable 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_output_enable_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_output_low 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_output_low_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_output_high 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1_P_output_high_EXISTS 1
+
+/*
+ * Devicetree node: /soc/peripheral@50000000/i3c@18000
+ *
+ * Node identifier: DT_N_S_soc_S_peripheral_50000000_S_i3c_18000
+ *
+ * Binding (compatible = adi,max32-i3c):
+ *   $ZEPHYR_BASE\dts\bindings\i3c\adi,max32-i3c.yaml
+ *
+ * (Descriptions have moved to the Devicetree Bindings Index
+ * in the documentation.)
+ */
+
+/* Node's full path: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_PATH "/soc/peripheral@50000000/i3c@18000"
+
+/* Node's name with unit-address: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FULL_NAME "i3c@18000"
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FULL_NAME_UNQUOTED i3c@18000
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FULL_NAME_TOKEN i3c_18000
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FULL_NAME_UPPER_TOKEN I3C_18000
+
+/* Node parent (/soc/peripheral@50000000) identifier: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_PARENT DT_N_S_soc_S_peripheral_50000000
+
+/* Node's index in its parent's list of children: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_CHILD_IDX 4
+
+/* Helpers for dealing with node labels: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_NODELABEL_NUM 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_NODELABEL(fn) fn(i3c0)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_NODELABEL_VARGS(fn, ...) fn(i3c0, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_ANCESTOR(fn) fn(DT_N_S_soc_S_peripheral_50000000) fn(DT_N_S_soc) fn(DT_N)
+
+/* Helper macros for child nodes of this node. */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_CHILD_NUM 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_CHILD_NUM_STATUS_OKAY 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_CHILD(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_CHILD_SEP(fn, sep) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_CHILD_VARGS(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_CHILD_STATUS_OKAY(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000, __VA_ARGS__)
+
+/* Node's hash: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_HASH KDACJdZkXmZFURKs5CrnaSFaxPk2KR2NbTBS2l1swks
+
+/* Node's dependency ordinal: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_ORD 47
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_ORD_STR_SORTABLE 00047
+
+/* Ordinals for what this node depends on directly: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_REQUIRES_ORDS \
+	9, /* /soc/interrupt-controller@e000e100 */ \
+	12, /* /soc/peripheral@50000000 */ \
+	13, /* /soc/peripheral@50000000/clock-controller@0 */ \
+	44, /* /soc/peripheral@50000000/pin-controller@8000/i3c_pur_p0_8 */ \
+	45, /* /soc/peripheral@50000000/pin-controller@8000/i3c_scl_p0_0 */ \
+	46, /* /soc/peripheral@50000000/pin-controller@8000/i3c_sda_p0_1 */
+
+/* Ordinals for what depends directly on this node: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_SUPPORTS_ORDS \
+	48, /* /soc/peripheral@50000000/i3c@18000/adxl367@530000000000000000 */
+
+/* Existence and alternate IDs: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_EXISTS 1
+#define DT_N_INST_0_adi_max32_i3c DT_N_S_soc_S_peripheral_50000000_S_i3c_18000
+#define DT_N_NODELABEL_i3c0       DT_N_S_soc_S_peripheral_50000000_S_i3c_18000
+
+/* Macros for properties that are special in the specification: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_REG_NUM 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_REG_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_REG_IDX_0_VAL_ADDRESS 1342275584 /* 0x50018000 */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_REG_IDX_0_VAL_SIZE 4096 /* 0x1000 */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_RANGES_NUM 0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_FOREACH_RANGE(fn) 
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_IRQ_NUM 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_IRQ_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_IRQ_IDX_0_VAL_irq 10
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_IRQ_IDX_0_VAL_irq_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_IRQ_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_IRQ_IDX_0_VAL_priority 0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_IRQ_IDX_0_VAL_priority_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_IRQ_IDX_0_CONTROLLER DT_N_S_soc_S_interrupt_controller_e000e100
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_IRQ_LEVEL 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_COMPAT_MATCHES_adi_max32_i3c 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_COMPAT_VENDOR_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_COMPAT_VENDOR_IDX_0 "Analog Devices, Inc."
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_COMPAT_MODEL_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_COMPAT_MODEL_IDX_0 "max32-i3c"
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_STATUS_okay 1
+
+/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_PINCTRL_NUM 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_PINCTRL_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_PINCTRL_IDX_0_TOKEN default
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_PINCTRL_IDX_0_UPPER_TOKEN DEFAULT
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_PINCTRL_NAME_default_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_PINCTRL_NAME_default_IDX 0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_PINCTRL_NAME_default_IDX_0_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_PINCTRL_NAME_default_IDX_1_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_PINCTRL_NAME_default_IDX_2_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8
+
+/* Generic property macros: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_reg {98304 /* 0x18000 */, 4096 /* 0x1000 */}
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_reg_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_reg_IDX_0 98304
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_reg_IDX_1_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_reg_IDX_1 4096
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_reg_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_interrupts {10 /* 0xa */, 0 /* 0x0 */}
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_interrupts_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_interrupts_IDX_0 10
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_interrupts_IDX_1_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_interrupts_IDX_1 0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_interrupts_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_i3c_od_scl_hz 400000
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_i3c_od_scl_hz_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_i3c_scl_hz 800000
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_i3c_scl_hz_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_i2c_scl_hz 200000
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_i2c_scl_hz_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status "okay"
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_STRING_UNQUOTED okay
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_STRING_TOKEN okay
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_STRING_UPPER_TOKEN OKAY
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_IDX_0 "okay"
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_IDX_0_ENUM_IDX 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_IDX_0_ENUM_VAL_okay_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, status, 0)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, status, 0)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, status, 0, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, status, 0, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_LEN 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_status_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible {"adi,max32-i3c"}
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible_IDX_0 "adi,max32-i3c"
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible_IDX_0_STRING_UNQUOTED adi,max32-i3c
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible_IDX_0_STRING_TOKEN adi_max32_i3c
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible_IDX_0_STRING_UPPER_TOKEN ADI_MAX32_I3C
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, compatible, 0)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, compatible, 0)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, compatible, 0, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, compatible, 0, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible_LEN 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_compatible_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_IDX_0_PH DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_IDX_0_VAL_offset 0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_IDX_0_VAL_offset_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_IDX_0_VAL_bit 13
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_IDX_0_VAL_bit_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, clocks, 0)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, clocks, 0)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, clocks, 0, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, clocks, 0, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_LEN 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_clocks_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_zephyr_deferred_init 0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_zephyr_deferred_init_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_wakeup_source 0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_wakeup_source_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_zephyr_pm_device_runtime_auto 0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_zephyr_pm_device_runtime_auto_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_IDX_0 DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_IDX_0_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_IDX_1 DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_IDX_1_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_IDX_1_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_IDX_2 DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_IDX_2_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_IDX_2_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_0, 0) \
+	fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_0, 1) \
+	fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_0, 2)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_0, 0) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_0, 1) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_0, 2)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_0, 0, __VA_ARGS__) \
+	fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_0, 1, __VA_ARGS__) \
+	fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_0, 2, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_0, 0, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_0, 1, __VA_ARGS__) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_0, 2, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_LEN 3
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names {"default"}
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names_IDX_0 "default"
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names_IDX_0_STRING_UNQUOTED default
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names_IDX_0_STRING_TOKEN default
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names_IDX_0_STRING_UPPER_TOKEN DEFAULT
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_names, 0)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_names, 0)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_names, 0, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, pinctrl_names, 0, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names_LEN 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_P_pinctrl_names_EXISTS 1
+
+/*
+ * Devicetree node: /soc/peripheral@50000000/i3c@18000/adxl367@530000000000000000
+ *
+ * Node identifier: DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000
+ *
+ * Binding (compatible = adi,adxl367):
+ *   $ZEPHYR_BASE\dts\bindings\sensor\adi,adxl367-i2c.yaml
+ *
+ * (Descriptions have moved to the Devicetree Bindings Index
+ * in the documentation.)
+ */
+
+/* Node's full path: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_PATH "/soc/peripheral@50000000/i3c@18000/adxl367@530000000000000000"
+
+/* Node's name with unit-address: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_FULL_NAME "adxl367@530000000000000000"
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_FULL_NAME_UNQUOTED adxl367@530000000000000000
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_FULL_NAME_TOKEN adxl367_530000000000000000
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_FULL_NAME_UPPER_TOKEN ADXL367_530000000000000000
+
+/* Node parent (/soc/peripheral@50000000/i3c@18000) identifier: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_PARENT DT_N_S_soc_S_peripheral_50000000_S_i3c_18000
+
+/* Node's index in its parent's list of children: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_CHILD_IDX 0
+
+/* Helpers for dealing with node labels: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_NODELABEL_NUM 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_FOREACH_NODELABEL(fn) fn(adxl367)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_FOREACH_NODELABEL_VARGS(fn, ...) fn(adxl367, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_FOREACH_ANCESTOR(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000) fn(DT_N_S_soc_S_peripheral_50000000) fn(DT_N_S_soc) fn(DT_N)
+
+/* Helper macros for child nodes of this node. */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_CHILD_NUM 0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_CHILD_NUM_STATUS_OKAY 0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_FOREACH_CHILD(fn) 
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_FOREACH_CHILD_SEP(fn, sep) 
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_FOREACH_CHILD_VARGS(fn, ...) 
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_FOREACH_CHILD_SEP_VARGS(fn, sep, ...) 
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_FOREACH_CHILD_STATUS_OKAY(fn) 
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) 
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_FOREACH_CHILD_STATUS_OKAY_SEP_VARGS(fn, sep, ...) 
+
+/* Node's hash: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_HASH B6GPT9gKuvxtk503m49tBX0REgD_Ze7bF5R5ESYPHVY
+
+/* Node's dependency ordinal: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_ORD 48
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_ORD_STR_SORTABLE 00048
+
+/* Ordinals for what this node depends on directly: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_REQUIRES_ORDS \
+	47, /* /soc/peripheral@50000000/i3c@18000 */
+
+/* Ordinals for what depends directly on this node: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_SUPPORTS_ORDS /* nothing */
+
+/* Existence and alternate IDs: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_EXISTS 1
+#define DT_N_INST_0_adi_adxl367 DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000
+#define DT_N_NODELABEL_adxl367  DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000
+
+/* Bus info (controller: '/soc/peripheral@50000000/i3c@18000', type: '['i3c', 'i2c']') */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_BUS_i3c 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_BUS_i2c 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_BUS DT_N_S_soc_S_peripheral_50000000_S_i3c_18000
+
+/* Macros for properties that are special in the specification: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_REG_NUM 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_REG_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_REG_IDX_0_VAL_ADDRESS 1531079758117892784128 /* 0x530000000000000000 */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_RANGES_NUM 0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_FOREACH_RANGE(fn) 
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_IRQ_NUM 0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_IRQ_LEVEL 0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_COMPAT_MATCHES_adi_adxl367 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_COMPAT_VENDOR_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_COMPAT_VENDOR_IDX_0 "Analog Devices, Inc."
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_COMPAT_MODEL_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_COMPAT_MODEL_IDX_0 "adxl367"
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_STATUS_okay 1
+
+/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_PINCTRL_NUM 0
+
+/* Generic property macros: */
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_reg {83 /* 0x53 */, 0 /* 0x0 */, 0 /* 0x0 */}
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_reg_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_reg_IDX_0 83
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_reg_IDX_1_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_reg_IDX_1 0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_reg_IDX_2_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_reg_IDX_2 0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_reg_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_status "okay"
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_status_STRING_UNQUOTED okay
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_status_STRING_TOKEN okay
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_status_STRING_UPPER_TOKEN OKAY
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_status_IDX_0 "okay"
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_status_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_status_IDX_0_ENUM_IDX 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_status_IDX_0_ENUM_VAL_okay_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_status_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000, status, 0)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_status_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000, status, 0)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_status_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000, status, 0, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_status_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000, status, 0, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_status_LEN 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_status_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_compatible {"adi,adxl367"}
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_compatible_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_compatible_IDX_0 "adi,adxl367"
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_compatible_IDX_0_STRING_UNQUOTED adi,adxl367
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_compatible_IDX_0_STRING_TOKEN adi_adxl367
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_compatible_IDX_0_STRING_UPPER_TOKEN ADI_ADXL367
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_compatible_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000, compatible, 0)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_compatible_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000, compatible, 0)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_compatible_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000, compatible, 0, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_compatible_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000, compatible, 0, __VA_ARGS__)
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_compatible_LEN 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_compatible_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_zephyr_deferred_init 0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_zephyr_deferred_init_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_wakeup_source 0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_wakeup_source_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_zephyr_pm_device_runtime_auto 0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_zephyr_pm_device_runtime_auto_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_odr 0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_odr_IDX_0_ENUM_IDX 0
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_odr_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_odr_IDX_0_ENUM_VAL_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000_P_odr_EXISTS 1
+
+/*
  * Devicetree node: /soc/peripheral@50000000/pin-controller@8000/spi0_miso_p0_4
  *
  * Node identifier: DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4
@@ -5433,8 +5693,8 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4_HASH Nnc3B69s6vUEcQuRn3xiBg_NAqk_sjhATpvLk7rw7Q4
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4_ORD 47
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4_ORD_STR_SORTABLE 00047
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4_ORD 49
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4_ORD_STR_SORTABLE 00049
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4_REQUIRES_ORDS \
@@ -5442,7 +5702,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4_SUPPORTS_ORDS \
-	51, /* /soc/peripheral@50000000/spi@46000 */
+	53, /* /soc/peripheral@50000000/spi@46000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4_EXISTS 1
@@ -5462,6 +5722,11 @@
 /* Generic property macros: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4_P_pinmux 1025
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4_P_pinmux_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4_P_power_source 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4_P_power_source_IDX_0_ENUM_IDX 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4_P_power_source_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4_P_power_source_IDX_0_ENUM_VAL_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4_P_power_source_EXISTS 1
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4_P_drive_strength 0
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4_P_drive_strength_IDX_0_ENUM_IDX 0
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4_P_drive_strength_IDX_0_EXISTS 1
@@ -5530,8 +5795,8 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2_HASH u5srbnD6rtH3gpxikxLimPs3I0qmzoapn3T87bs_yDU
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2_ORD 48
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2_ORD_STR_SORTABLE 00048
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2_ORD 50
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2_ORD_STR_SORTABLE 00050
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2_REQUIRES_ORDS \
@@ -5539,7 +5804,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2_SUPPORTS_ORDS \
-	51, /* /soc/peripheral@50000000/spi@46000 */
+	53, /* /soc/peripheral@50000000/spi@46000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2_EXISTS 1
@@ -5559,6 +5824,11 @@
 /* Generic property macros: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2_P_pinmux 513
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2_P_pinmux_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2_P_power_source 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2_P_power_source_IDX_0_ENUM_IDX 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2_P_power_source_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2_P_power_source_IDX_0_ENUM_VAL_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2_P_power_source_EXISTS 1
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2_P_drive_strength 0
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2_P_drive_strength_IDX_0_ENUM_IDX 0
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2_P_drive_strength_IDX_0_EXISTS 1
@@ -5627,8 +5897,8 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6_HASH 0GqVM2InSXxm9cUKp9nve5_0Ar3RK7_ivKc_qOlqBzQ
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6_ORD 49
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6_ORD_STR_SORTABLE 00049
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6_ORD 51
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6_ORD_STR_SORTABLE 00051
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6_REQUIRES_ORDS \
@@ -5636,7 +5906,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6_SUPPORTS_ORDS \
-	51, /* /soc/peripheral@50000000/spi@46000 */
+	53, /* /soc/peripheral@50000000/spi@46000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6_EXISTS 1
@@ -5656,6 +5926,11 @@
 /* Generic property macros: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6_P_pinmux 1537
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6_P_pinmux_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6_P_power_source 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6_P_power_source_IDX_0_ENUM_IDX 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6_P_power_source_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6_P_power_source_IDX_0_ENUM_VAL_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6_P_power_source_EXISTS 1
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6_P_drive_strength 0
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6_P_drive_strength_IDX_0_ENUM_IDX 0
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6_P_drive_strength_IDX_0_EXISTS 1
@@ -5724,8 +5999,8 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3_HASH 2cdOkPzJ5TWvMFU94Z7R7HzzLcTvRFdK_aWP3IIjqG8
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3_ORD 50
-#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3_ORD_STR_SORTABLE 00050
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3_ORD 52
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3_ORD_STR_SORTABLE 00052
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3_REQUIRES_ORDS \
@@ -5733,7 +6008,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3_SUPPORTS_ORDS \
-	51, /* /soc/peripheral@50000000/spi@46000 */
+	53, /* /soc/peripheral@50000000/spi@46000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3_EXISTS 1
@@ -5753,6 +6028,11 @@
 /* Generic property macros: */
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3_P_pinmux 769
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3_P_pinmux_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3_P_power_source 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3_P_power_source_IDX_0_ENUM_IDX 0
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3_P_power_source_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3_P_power_source_IDX_0_ENUM_VAL_0_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3_P_power_source_EXISTS 1
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3_P_drive_strength 0
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3_P_drive_strength_IDX_0_ENUM_IDX 0
 #define DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3_P_drive_strength_IDX_0_EXISTS 1
@@ -5824,22 +6104,22 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_HASH sYf4btjxpzO_MPKMkLXHT0rS1Wz4oOgmBKM26E_Ee_I
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_ORD 51
-#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_ORD_STR_SORTABLE 00051
+#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_ORD 53
+#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_ORD_STR_SORTABLE 00053
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_REQUIRES_ORDS \
 	9, /* /soc/interrupt-controller@e000e100 */ \
 	12, /* /soc/peripheral@50000000 */ \
 	13, /* /soc/peripheral@50000000/clock-controller@0 */ \
-	47, /* /soc/peripheral@50000000/pin-controller@8000/spi0_miso_p0_4 */ \
-	48, /* /soc/peripheral@50000000/pin-controller@8000/spi0_mosi_p0_2 */ \
-	49, /* /soc/peripheral@50000000/pin-controller@8000/spi0_sck_p0_6 */ \
-	50, /* /soc/peripheral@50000000/pin-controller@8000/spi0_ss0_p0_3 */
+	49, /* /soc/peripheral@50000000/pin-controller@8000/spi0_miso_p0_4 */ \
+	50, /* /soc/peripheral@50000000/pin-controller@8000/spi0_mosi_p0_2 */ \
+	51, /* /soc/peripheral@50000000/pin-controller@8000/spi0_sck_p0_6 */ \
+	52, /* /soc/peripheral@50000000/pin-controller@8000/spi0_ss0_p0_3 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_SUPPORTS_ORDS \
-	52, /* /soc/peripheral@50000000/spi@46000/max30123@0 */
+	54, /* /soc/peripheral@50000000/spi@46000/max30123@0 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_EXISTS 1
@@ -5867,7 +6147,7 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_COMPAT_VENDOR_IDX_0 "Analog Devices, Inc."
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_COMPAT_MODEL_IDX_0_EXISTS 1
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_COMPAT_MODEL_IDX_0 "max32-spi"
-#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_STATUS_disabled 1
+#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_STATUS_okay 1
 
 /* Pin control (pinctrl-<i>, pinctrl-names) properties: */
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_PINCTRL_NUM 1
@@ -5877,9 +6157,9 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_PINCTRL_NAME_default_EXISTS 1
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_PINCTRL_NAME_default_IDX 0
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_PINCTRL_NAME_default_IDX_0_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2
-#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_PINCTRL_NAME_default_IDX_1_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4
-#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_PINCTRL_NAME_default_IDX_2_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6
-#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_PINCTRL_NAME_default_IDX_3_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3
+#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_PINCTRL_NAME_default_IDX_1_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3
+#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_PINCTRL_NAME_default_IDX_2_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4
+#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_PINCTRL_NAME_default_IDX_3_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6
 
 /* Generic property macros: */
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_reg {286720 /* 0x46000 */, 4096 /* 0x1000 */}
@@ -5897,14 +6177,14 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_pinctrl_0_IDX_0 DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_pinctrl_0_IDX_0_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_pinctrl_0_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_pinctrl_0_IDX_1 DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4
-#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_pinctrl_0_IDX_1_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4
+#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_pinctrl_0_IDX_1 DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3
+#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_pinctrl_0_IDX_1_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_pinctrl_0_IDX_1_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_pinctrl_0_IDX_2 DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6
-#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_pinctrl_0_IDX_2_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6
+#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_pinctrl_0_IDX_2 DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4
+#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_pinctrl_0_IDX_2_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_pinctrl_0_IDX_2_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_pinctrl_0_IDX_3 DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3
-#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_pinctrl_0_IDX_3_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3
+#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_pinctrl_0_IDX_3 DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6
+#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_pinctrl_0_IDX_3_PH DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_pinctrl_0_IDX_3_EXISTS 1
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_pinctrl_0_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000, pinctrl_0, 0) \
 	fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000, pinctrl_0, 1) \
@@ -5924,14 +6204,16 @@
 	fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000, pinctrl_0, 3, __VA_ARGS__)
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_pinctrl_0_LEN 4
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_pinctrl_0_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_status "disabled"
-#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_status_STRING_UNQUOTED disabled
-#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_status_STRING_TOKEN disabled
-#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_status_STRING_UPPER_TOKEN DISABLED
-#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_status_IDX_0 "disabled"
+#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_clock_frequency 25000000
+#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_clock_frequency_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_status "okay"
+#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_status_STRING_UNQUOTED okay
+#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_status_STRING_TOKEN okay
+#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_status_STRING_UPPER_TOKEN OKAY
+#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_status_IDX_0 "okay"
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_status_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_status_IDX_0_ENUM_IDX 2
-#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_status_IDX_0_ENUM_VAL_disabled_EXISTS 1
+#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_status_IDX_0_ENUM_IDX 1
+#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_status_IDX_0_ENUM_VAL_okay_EXISTS 1
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_status_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000, status, 0)
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_status_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000, status, 0)
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_P_status_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000, status, 0, __VA_ARGS__)
@@ -6030,12 +6312,12 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_S_max30123_0_HASH RhJg7aDe1Un1i5ozMAEzLGJD01HhV7I_FfT1cg93JyY
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_S_max30123_0_ORD 52
-#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_S_max30123_0_ORD_STR_SORTABLE 00052
+#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_S_max30123_0_ORD 54
+#define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_S_max30123_0_ORD_STR_SORTABLE 00054
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_S_max30123_0_REQUIRES_ORDS \
-	51, /* /soc/peripheral@50000000/spi@46000 */
+	53, /* /soc/peripheral@50000000/spi@46000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_spi_46000_S_max30123_0_SUPPORTS_ORDS /* nothing */
@@ -6462,8 +6744,8 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_10000_HASH IHln8gKvky_jTgGVf4SQYuTwBeromBGoROkDLHPZvIk
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_10000_ORD 53
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_10000_ORD_STR_SORTABLE 00053
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_10000_ORD 55
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_10000_ORD_STR_SORTABLE 00055
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_10000_REQUIRES_ORDS \
@@ -6473,8 +6755,8 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_10000_SUPPORTS_ORDS \
-	54, /* /soc/peripheral@50000000/timer@10000/counter */ \
-	55, /* /soc/peripheral@50000000/timer@10000/pwm */
+	56, /* /soc/peripheral@50000000/timer@10000/counter */ \
+	57, /* /soc/peripheral@50000000/timer@10000/pwm */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_10000_EXISTS 1
@@ -6624,12 +6906,12 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_10000_S_counter_HASH sfCQPeN9ydEN7I20gKQMZZOl2uV0or1Me1RGfBnKG40
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_10000_S_counter_ORD 54
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_10000_S_counter_ORD_STR_SORTABLE 00054
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_10000_S_counter_ORD 56
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_10000_S_counter_ORD_STR_SORTABLE 00056
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_10000_S_counter_REQUIRES_ORDS \
-	53, /* /soc/peripheral@50000000/timer@10000 */
+	55, /* /soc/peripheral@50000000/timer@10000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_10000_S_counter_SUPPORTS_ORDS /* nothing */
@@ -6737,12 +7019,12 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_10000_S_pwm_HASH _4uKrte1D_KUBGLp_G7RZFGPgoLSi5IOPPBTsFhC4ao
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_10000_S_pwm_ORD 55
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_10000_S_pwm_ORD_STR_SORTABLE 00055
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_10000_S_pwm_ORD 57
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_10000_S_pwm_ORD_STR_SORTABLE 00057
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_10000_S_pwm_REQUIRES_ORDS \
-	53, /* /soc/peripheral@50000000/timer@10000 */
+	55, /* /soc/peripheral@50000000/timer@10000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_10000_S_pwm_SUPPORTS_ORDS /* nothing */
@@ -6850,8 +7132,8 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_11000_HASH RKStvb0Z44KB0pgIGyZ8l_vEtKQrwFLPDYIsA_TKnE8
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_11000_ORD 56
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_11000_ORD_STR_SORTABLE 00056
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_11000_ORD 58
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_11000_ORD_STR_SORTABLE 00058
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_11000_REQUIRES_ORDS \
@@ -6861,8 +7143,8 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_11000_SUPPORTS_ORDS \
-	57, /* /soc/peripheral@50000000/timer@11000/counter */ \
-	58, /* /soc/peripheral@50000000/timer@11000/pwm */
+	59, /* /soc/peripheral@50000000/timer@11000/counter */ \
+	60, /* /soc/peripheral@50000000/timer@11000/pwm */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_11000_EXISTS 1
@@ -7012,12 +7294,12 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_11000_S_counter_HASH PxGsEFGuRnQC46iURiFDiGVjXd75DzqzhubW6nHS9x0
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_11000_S_counter_ORD 57
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_11000_S_counter_ORD_STR_SORTABLE 00057
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_11000_S_counter_ORD 59
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_11000_S_counter_ORD_STR_SORTABLE 00059
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_11000_S_counter_REQUIRES_ORDS \
-	56, /* /soc/peripheral@50000000/timer@11000 */
+	58, /* /soc/peripheral@50000000/timer@11000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_11000_S_counter_SUPPORTS_ORDS /* nothing */
@@ -7125,12 +7407,12 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_11000_S_pwm_HASH jNad2t0zCuiYcUz5q_NaKqm2pKG_NGE6s_PA78_OplQ
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_11000_S_pwm_ORD 58
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_11000_S_pwm_ORD_STR_SORTABLE 00058
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_11000_S_pwm_ORD 60
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_11000_S_pwm_ORD_STR_SORTABLE 00060
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_11000_S_pwm_REQUIRES_ORDS \
-	56, /* /soc/peripheral@50000000/timer@11000 */
+	58, /* /soc/peripheral@50000000/timer@11000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_11000_S_pwm_SUPPORTS_ORDS /* nothing */
@@ -7238,8 +7520,8 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_12000_HASH GicHc5uNJvviEsyDv2zJ5HIpXaeM5Ai0LkgP31gA3PQ
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_12000_ORD 59
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_12000_ORD_STR_SORTABLE 00059
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_12000_ORD 61
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_12000_ORD_STR_SORTABLE 00061
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_12000_REQUIRES_ORDS \
@@ -7249,8 +7531,8 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_12000_SUPPORTS_ORDS \
-	60, /* /soc/peripheral@50000000/timer@12000/counter */ \
-	61, /* /soc/peripheral@50000000/timer@12000/pwm */
+	62, /* /soc/peripheral@50000000/timer@12000/counter */ \
+	63, /* /soc/peripheral@50000000/timer@12000/pwm */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_12000_EXISTS 1
@@ -7400,12 +7682,12 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_12000_S_counter_HASH idkaG0KmJiSaexWbg_3ytuksQ2ipt8JDL40MrkBh0m4
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_12000_S_counter_ORD 60
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_12000_S_counter_ORD_STR_SORTABLE 00060
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_12000_S_counter_ORD 62
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_12000_S_counter_ORD_STR_SORTABLE 00062
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_12000_S_counter_REQUIRES_ORDS \
-	59, /* /soc/peripheral@50000000/timer@12000 */
+	61, /* /soc/peripheral@50000000/timer@12000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_12000_S_counter_SUPPORTS_ORDS /* nothing */
@@ -7513,12 +7795,12 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_12000_S_pwm_HASH YgLuZ0BOH4P4Mo7vqGd_mheuGdBaDgVyz2XSGGmT3Wg
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_12000_S_pwm_ORD 61
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_12000_S_pwm_ORD_STR_SORTABLE 00061
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_12000_S_pwm_ORD 63
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_12000_S_pwm_ORD_STR_SORTABLE 00063
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_12000_S_pwm_REQUIRES_ORDS \
-	59, /* /soc/peripheral@50000000/timer@12000 */
+	61, /* /soc/peripheral@50000000/timer@12000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_12000_S_pwm_SUPPORTS_ORDS /* nothing */
@@ -7626,8 +7908,8 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_13000_HASH SiT_rSlv12Qzo72vn4UBb1sjiVNTaEO9ZrkqeverC14
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_13000_ORD 62
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_13000_ORD_STR_SORTABLE 00062
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_13000_ORD 64
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_13000_ORD_STR_SORTABLE 00064
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_13000_REQUIRES_ORDS \
@@ -7637,8 +7919,8 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_13000_SUPPORTS_ORDS \
-	63, /* /soc/peripheral@50000000/timer@13000/counter */ \
-	64, /* /soc/peripheral@50000000/timer@13000/pwm */
+	65, /* /soc/peripheral@50000000/timer@13000/counter */ \
+	66, /* /soc/peripheral@50000000/timer@13000/pwm */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_13000_EXISTS 1
@@ -7788,12 +8070,12 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_13000_S_counter_HASH s4C_3azOG_FYC3JDa0fZUvt79_u72evYT9ISUB2AnYQ
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_13000_S_counter_ORD 63
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_13000_S_counter_ORD_STR_SORTABLE 00063
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_13000_S_counter_ORD 65
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_13000_S_counter_ORD_STR_SORTABLE 00065
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_13000_S_counter_REQUIRES_ORDS \
-	62, /* /soc/peripheral@50000000/timer@13000 */
+	64, /* /soc/peripheral@50000000/timer@13000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_13000_S_counter_SUPPORTS_ORDS /* nothing */
@@ -7901,12 +8183,12 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_13000_S_pwm_HASH ToPdlpbghFzG8ufob3WnULPnLzdnMERXGnZA00GsdvY
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_13000_S_pwm_ORD 64
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_13000_S_pwm_ORD_STR_SORTABLE 00064
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_13000_S_pwm_ORD 66
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_13000_S_pwm_ORD_STR_SORTABLE 00066
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_13000_S_pwm_REQUIRES_ORDS \
-	62, /* /soc/peripheral@50000000/timer@13000 */
+	64, /* /soc/peripheral@50000000/timer@13000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_13000_S_pwm_SUPPORTS_ORDS /* nothing */
@@ -8014,8 +8296,8 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_14000_HASH _Dn_H73_jAEexas5tF8cBhFtNGY647TXygYTnyTJ8r0
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_14000_ORD 65
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_14000_ORD_STR_SORTABLE 00065
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_14000_ORD 67
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_14000_ORD_STR_SORTABLE 00067
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_14000_REQUIRES_ORDS \
@@ -8025,8 +8307,8 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_14000_SUPPORTS_ORDS \
-	66, /* /soc/peripheral@50000000/timer@14000/counter */ \
-	67, /* /soc/peripheral@50000000/timer@14000/pwm */
+	68, /* /soc/peripheral@50000000/timer@14000/counter */ \
+	69, /* /soc/peripheral@50000000/timer@14000/pwm */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_14000_EXISTS 1
@@ -8176,12 +8458,12 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_14000_S_counter_HASH Tldx_TC6NRWksp1_tkYCjisTvJwEnYfIZZLDiYxUfTw
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_14000_S_counter_ORD 66
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_14000_S_counter_ORD_STR_SORTABLE 00066
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_14000_S_counter_ORD 68
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_14000_S_counter_ORD_STR_SORTABLE 00068
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_14000_S_counter_REQUIRES_ORDS \
-	65, /* /soc/peripheral@50000000/timer@14000 */
+	67, /* /soc/peripheral@50000000/timer@14000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_14000_S_counter_SUPPORTS_ORDS /* nothing */
@@ -8289,12 +8571,12 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_14000_S_pwm_HASH oAgkQ11iOiqaQqpvyvno0jFwKl6qF0L3Z_5SduyP4ts
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_14000_S_pwm_ORD 67
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_14000_S_pwm_ORD_STR_SORTABLE 00067
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_14000_S_pwm_ORD 69
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_14000_S_pwm_ORD_STR_SORTABLE 00069
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_14000_S_pwm_REQUIRES_ORDS \
-	65, /* /soc/peripheral@50000000/timer@14000 */
+	67, /* /soc/peripheral@50000000/timer@14000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_14000_S_pwm_SUPPORTS_ORDS /* nothing */
@@ -8402,8 +8684,8 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_15000_HASH 9yBZ80kJrAA3_mthTnVqtjDPYQ7PjmNYWeLRRpW4SNc
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_15000_ORD 68
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_15000_ORD_STR_SORTABLE 00068
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_15000_ORD 70
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_15000_ORD_STR_SORTABLE 00070
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_15000_REQUIRES_ORDS \
@@ -8413,8 +8695,8 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_15000_SUPPORTS_ORDS \
-	69, /* /soc/peripheral@50000000/timer@15000/counter */ \
-	70, /* /soc/peripheral@50000000/timer@15000/pwm */
+	71, /* /soc/peripheral@50000000/timer@15000/counter */ \
+	72, /* /soc/peripheral@50000000/timer@15000/pwm */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_15000_EXISTS 1
@@ -8564,12 +8846,12 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_15000_S_counter_HASH wD8Cz89abnMQhcApGsWtJUpA5JOrEhgTa4aW_v7Hs78
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_15000_S_counter_ORD 69
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_15000_S_counter_ORD_STR_SORTABLE 00069
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_15000_S_counter_ORD 71
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_15000_S_counter_ORD_STR_SORTABLE 00071
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_15000_S_counter_REQUIRES_ORDS \
-	68, /* /soc/peripheral@50000000/timer@15000 */
+	70, /* /soc/peripheral@50000000/timer@15000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_15000_S_counter_SUPPORTS_ORDS /* nothing */
@@ -8677,12 +8959,12 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_15000_S_pwm_HASH os_vhgy6kl3gJun2us9qfEJG9nIJgQN6ZBNArvuZsqc
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_15000_S_pwm_ORD 70
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_15000_S_pwm_ORD_STR_SORTABLE 00070
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_15000_S_pwm_ORD 72
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_15000_S_pwm_ORD_STR_SORTABLE 00072
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_15000_S_pwm_REQUIRES_ORDS \
-	68, /* /soc/peripheral@50000000/timer@15000 */
+	70, /* /soc/peripheral@50000000/timer@15000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_15000_S_pwm_SUPPORTS_ORDS /* nothing */
@@ -8790,8 +9072,8 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_6400_HASH E_xm6GUHGIg_hkjVfXb8preBXd7DyQZ88v472D20nJU
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_6400_ORD 71
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_6400_ORD_STR_SORTABLE 00071
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_6400_ORD 73
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_6400_ORD_STR_SORTABLE 00073
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_6400_REQUIRES_ORDS \
@@ -8800,7 +9082,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_6400_SUPPORTS_ORDS \
-	72, /* /soc/peripheral@50000000/timer@6400/counter */
+	74, /* /soc/peripheral@50000000/timer@6400/counter */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_6400_EXISTS 1
@@ -8938,12 +9220,12 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_6400_S_counter_HASH NmxO7jvDRXwgxxR6WxefFp2xZhGxgHFRv39HtGofslA
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_6400_S_counter_ORD 72
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_6400_S_counter_ORD_STR_SORTABLE 00072
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_6400_S_counter_ORD 74
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_6400_S_counter_ORD_STR_SORTABLE 00074
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_6400_S_counter_REQUIRES_ORDS \
-	71, /* /soc/peripheral@50000000/timer@6400 */
+	73, /* /soc/peripheral@50000000/timer@6400 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_6400_S_counter_SUPPORTS_ORDS /* nothing */
@@ -9051,8 +9333,8 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_6600_HASH FSvdKDIURZ4YvqIfyl7mUMR9N70Jw6p8QgqZl8ep8Zw
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_6600_ORD 73
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_6600_ORD_STR_SORTABLE 00073
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_6600_ORD 75
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_6600_ORD_STR_SORTABLE 00075
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_6600_REQUIRES_ORDS \
@@ -9061,7 +9343,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_6600_SUPPORTS_ORDS \
-	74, /* /soc/peripheral@50000000/timer@6600/counter */
+	76, /* /soc/peripheral@50000000/timer@6600/counter */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_6600_EXISTS 1
@@ -9199,12 +9481,12 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_6600_S_counter_HASH 7IXSSLOF85SSLeZ4LE9OFYAiY5IJfd_uAniYVA2fbFE
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_6600_S_counter_ORD 74
-#define DT_N_S_soc_S_peripheral_50000000_S_timer_6600_S_counter_ORD_STR_SORTABLE 00074
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_6600_S_counter_ORD 76
+#define DT_N_S_soc_S_peripheral_50000000_S_timer_6600_S_counter_ORD_STR_SORTABLE 00076
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_6600_S_counter_REQUIRES_ORDS \
-	73, /* /soc/peripheral@50000000/timer@6600 */
+	75, /* /soc/peripheral@50000000/timer@6600 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_peripheral_50000000_S_timer_6600_S_counter_SUPPORTS_ORDS /* nothing */
@@ -9307,8 +9589,8 @@
 #define DT_N_S_soc_S_sram_30000000_HASH nZIEQYdE8CrAT6pJvEvRLrLmaxzL86DUuunWWH78RZ8
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_sram_30000000_ORD 75
-#define DT_N_S_soc_S_sram_30000000_ORD_STR_SORTABLE 00075
+#define DT_N_S_soc_S_sram_30000000_ORD 77
+#define DT_N_S_soc_S_sram_30000000_ORD_STR_SORTABLE 00077
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_sram_30000000_REQUIRES_ORDS \
@@ -9316,11 +9598,11 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_sram_30000000_SUPPORTS_ORDS \
-	76, /* /soc/sram@30000000/memory@0 */ \
-	77, /* /soc/sram@30000000/memory@8000 */ \
-	78, /* /soc/sram@30000000/memory@10000 */ \
-	79, /* /soc/sram@30000000/memory@20000 */ \
-	80, /* /soc/sram@30000000/memory@30000 */
+	78, /* /soc/sram@30000000/memory@0 */ \
+	79, /* /soc/sram@30000000/memory@8000 */ \
+	80, /* /soc/sram@30000000/memory@10000 */ \
+	81, /* /soc/sram@30000000/memory@20000 */ \
+	82, /* /soc/sram@30000000/memory@30000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_sram_30000000_EXISTS 1
@@ -9393,12 +9675,12 @@
 #define DT_N_S_soc_S_sram_30000000_S_memory_0_HASH OtErZcKZEddn8eM_rMjGpOq1znpwr7E_uPC7ojrDS4M
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_sram_30000000_S_memory_0_ORD 76
-#define DT_N_S_soc_S_sram_30000000_S_memory_0_ORD_STR_SORTABLE 00076
+#define DT_N_S_soc_S_sram_30000000_S_memory_0_ORD 78
+#define DT_N_S_soc_S_sram_30000000_S_memory_0_ORD_STR_SORTABLE 00078
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_sram_30000000_S_memory_0_REQUIRES_ORDS \
-	75, /* /soc/sram@30000000 */
+	77, /* /soc/sram@30000000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_sram_30000000_S_memory_0_SUPPORTS_ORDS /* nothing */
@@ -9515,12 +9797,12 @@
 #define DT_N_S_soc_S_sram_30000000_S_memory_8000_HASH hPdV0rxxJf0sAcfJzcGeokeldxLBKgME_HZaTPGfn84
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_sram_30000000_S_memory_8000_ORD 77
-#define DT_N_S_soc_S_sram_30000000_S_memory_8000_ORD_STR_SORTABLE 00077
+#define DT_N_S_soc_S_sram_30000000_S_memory_8000_ORD 79
+#define DT_N_S_soc_S_sram_30000000_S_memory_8000_ORD_STR_SORTABLE 00079
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_sram_30000000_S_memory_8000_REQUIRES_ORDS \
-	75, /* /soc/sram@30000000 */
+	77, /* /soc/sram@30000000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_sram_30000000_S_memory_8000_SUPPORTS_ORDS /* nothing */
@@ -9637,12 +9919,12 @@
 #define DT_N_S_soc_S_sram_30000000_S_memory_10000_HASH hpPcjfKsuFCQ6O9LEUy2BDnYiHngeZ2_UMou_gS38TE
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_sram_30000000_S_memory_10000_ORD 78
-#define DT_N_S_soc_S_sram_30000000_S_memory_10000_ORD_STR_SORTABLE 00078
+#define DT_N_S_soc_S_sram_30000000_S_memory_10000_ORD 80
+#define DT_N_S_soc_S_sram_30000000_S_memory_10000_ORD_STR_SORTABLE 00080
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_sram_30000000_S_memory_10000_REQUIRES_ORDS \
-	75, /* /soc/sram@30000000 */
+	77, /* /soc/sram@30000000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_sram_30000000_S_memory_10000_SUPPORTS_ORDS /* nothing */
@@ -9759,12 +10041,12 @@
 #define DT_N_S_soc_S_sram_30000000_S_memory_20000_HASH qDBmkMq376yUCsm0xuPAnIs_UKMz2_C2nkKxJQ_8d1c
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_sram_30000000_S_memory_20000_ORD 79
-#define DT_N_S_soc_S_sram_30000000_S_memory_20000_ORD_STR_SORTABLE 00079
+#define DT_N_S_soc_S_sram_30000000_S_memory_20000_ORD 81
+#define DT_N_S_soc_S_sram_30000000_S_memory_20000_ORD_STR_SORTABLE 00081
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_sram_30000000_S_memory_20000_REQUIRES_ORDS \
-	75, /* /soc/sram@30000000 */
+	77, /* /soc/sram@30000000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_sram_30000000_S_memory_20000_SUPPORTS_ORDS /* nothing */
@@ -9881,12 +10163,12 @@
 #define DT_N_S_soc_S_sram_30000000_S_memory_30000_HASH sCp6Uk34GGLqnhbl2LMjwMlOlO6uHnTmuMVIwwiwUIM
 
 /* Node's dependency ordinal: */
-#define DT_N_S_soc_S_sram_30000000_S_memory_30000_ORD 80
-#define DT_N_S_soc_S_sram_30000000_S_memory_30000_ORD_STR_SORTABLE 00080
+#define DT_N_S_soc_S_sram_30000000_S_memory_30000_ORD 82
+#define DT_N_S_soc_S_sram_30000000_S_memory_30000_ORD_STR_SORTABLE 00082
 
 /* Ordinals for what this node depends on directly: */
 #define DT_N_S_soc_S_sram_30000000_S_memory_30000_REQUIRES_ORDS \
-	75, /* /soc/sram@30000000 */
+	77, /* /soc/sram@30000000 */
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_sram_30000000_S_memory_30000_SUPPORTS_ORDS /* nothing */
@@ -9979,10 +10261,10 @@
 #define DT_CHOSEN_zephyr_code_partition_EXISTS      1
 
 /* Macros for iterating over all nodes and enabled nodes */
-#define DT_FOREACH_HELPER(fn) fn(DT_N) fn(DT_N_S_chosen) fn(DT_N_S_aliases) fn(DT_N_S_soc) fn(DT_N_S_soc_S_interrupt_controller_e000e100) fn(DT_N_S_soc_S_timer_e000e010) fn(DT_N_S_soc_S_sram_30000000) fn(DT_N_S_soc_S_sram_30000000_S_memory_0) fn(DT_N_S_soc_S_sram_30000000_S_memory_8000) fn(DT_N_S_soc_S_sram_30000000_S_memory_10000) fn(DT_N_S_soc_S_sram_30000000_S_memory_20000) fn(DT_N_S_soc_S_sram_30000000_S_memory_30000) fn(DT_N_S_soc_S_peripheral_50000000) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_0) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_f0000) fn(DT_N_S_soc_S_peripheral_50000000_S_dma_35000) fn(DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000) fn(DT_N_S_soc_S_peripheral_50000000_S_serial_42000) fn(DT_N_S_soc_S_peripheral_50000000_S_watchdog_3000) fn(DT_N_S_soc_S_peripheral_50000000_S_trng_4d000) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_10000) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_10000_S_pwm) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_10000_S_counter) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_11000) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_11000_S_pwm) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_11000_S_counter) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_12000) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_12000_S_pwm) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_12000_S_counter) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_13000) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_13000_S_pwm) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_13000_S_counter) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_14000) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_14000_S_pwm) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_14000_S_counter) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_15000) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_15000_S_pwm) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_15000_S_counter) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6400) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6400_S_counter) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6600) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6600_S_counter) fn(DT_N_S_soc_S_peripheral_50000000_S_rtc_counter_6000) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000_S_max30123_0) fn(DT_N_S_null_ptr_detect_0) fn(DT_N_S_cpus) fn(DT_N_S_cpus_S_cpu_0) fn(DT_N_S_cpus_S_cpu_0_S_mpu_e000ed90) fn(DT_N_S_cpus_S_power_states) fn(DT_N_S_cpus_S_power_states_S_idle) fn(DT_N_S_cpus_S_power_states_S_standby) fn(DT_N_S_cpus_S_power_states_S_backup) fn(DT_N_S_cpus_S_power_states_S_powerdown) fn(DT_N_S_clocks) fn(DT_N_S_clocks_S_clk_ipo) fn(DT_N_S_clocks_S_clk_inro) fn(DT_N_S_clocks_S_clk_ibro) fn(DT_N_S_clocks_S_clk_ertco) fn(DT_N_S_clocks_S_clk_erfo) fn(DT_N_S_bt_hci_max32) fn(DT_N_S_leds) fn(DT_N_S_leds_S_led_1) fn(DT_N_S_buttons) fn(DT_N_S_buttons_S_pb1) fn(DT_N_S_reserved_memory) fn(DT_N_S_reserved_memory_S_partition_30000000)
-#define DT_FOREACH_OKAY_HELPER(fn) fn(DT_N) fn(DT_N_S_chosen) fn(DT_N_S_aliases) fn(DT_N_S_soc) fn(DT_N_S_soc_S_interrupt_controller_e000e100) fn(DT_N_S_soc_S_timer_e000e010) fn(DT_N_S_soc_S_sram_30000000) fn(DT_N_S_soc_S_sram_30000000_S_memory_0) fn(DT_N_S_soc_S_sram_30000000_S_memory_8000) fn(DT_N_S_soc_S_sram_30000000_S_memory_10000) fn(DT_N_S_soc_S_sram_30000000_S_memory_20000) fn(DT_N_S_soc_S_sram_30000000_S_memory_30000) fn(DT_N_S_soc_S_peripheral_50000000) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_0) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_f0000) fn(DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0) fn(DT_N_S_soc_S_peripheral_50000000_S_serial_42000) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6600_S_counter) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000_S_max30123_0) fn(DT_N_S_null_ptr_detect_0) fn(DT_N_S_cpus) fn(DT_N_S_cpus_S_cpu_0) fn(DT_N_S_cpus_S_cpu_0_S_mpu_e000ed90) fn(DT_N_S_cpus_S_power_states) fn(DT_N_S_cpus_S_power_states_S_idle) fn(DT_N_S_cpus_S_power_states_S_standby) fn(DT_N_S_cpus_S_power_states_S_backup) fn(DT_N_S_clocks) fn(DT_N_S_clocks_S_clk_ipo) fn(DT_N_S_bt_hci_max32) fn(DT_N_S_leds) fn(DT_N_S_leds_S_led_1) fn(DT_N_S_buttons) fn(DT_N_S_buttons_S_pb1) fn(DT_N_S_reserved_memory) fn(DT_N_S_reserved_memory_S_partition_30000000)
-#define DT_FOREACH_VARGS_HELPER(fn, ...) fn(DT_N, __VA_ARGS__) fn(DT_N_S_chosen, __VA_ARGS__) fn(DT_N_S_aliases, __VA_ARGS__) fn(DT_N_S_soc, __VA_ARGS__) fn(DT_N_S_soc_S_interrupt_controller_e000e100, __VA_ARGS__) fn(DT_N_S_soc_S_timer_e000e010, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000_S_memory_0, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000_S_memory_8000, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000_S_memory_10000, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000_S_memory_20000, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000_S_memory_30000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_0, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_f0000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_dma_35000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_serial_42000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_watchdog_3000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_trng_4d000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_10000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_10000_S_pwm, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_10000_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_11000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_11000_S_pwm, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_11000_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_12000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_12000_S_pwm, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_12000_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_13000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_13000_S_pwm, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_13000_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_14000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_14000_S_pwm, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_14000_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_15000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_15000_S_pwm, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_15000_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6400, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6400_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6600, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6600_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_rtc_counter_6000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000_S_max30123_0, __VA_ARGS__) fn(DT_N_S_null_ptr_detect_0, __VA_ARGS__) fn(DT_N_S_cpus, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_0, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_0_S_mpu_e000ed90, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states_S_idle, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states_S_standby, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states_S_backup, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states_S_powerdown, __VA_ARGS__) fn(DT_N_S_clocks, __VA_ARGS__) fn(DT_N_S_clocks_S_clk_ipo, __VA_ARGS__) fn(DT_N_S_clocks_S_clk_inro, __VA_ARGS__) fn(DT_N_S_clocks_S_clk_ibro, __VA_ARGS__) fn(DT_N_S_clocks_S_clk_ertco, __VA_ARGS__) fn(DT_N_S_clocks_S_clk_erfo, __VA_ARGS__) fn(DT_N_S_bt_hci_max32, __VA_ARGS__) fn(DT_N_S_leds, __VA_ARGS__) fn(DT_N_S_leds_S_led_1, __VA_ARGS__) fn(DT_N_S_buttons, __VA_ARGS__) fn(DT_N_S_buttons_S_pb1, __VA_ARGS__) fn(DT_N_S_reserved_memory, __VA_ARGS__) fn(DT_N_S_reserved_memory_S_partition_30000000, __VA_ARGS__)
-#define DT_FOREACH_OKAY_VARGS_HELPER(fn, ...) fn(DT_N, __VA_ARGS__) fn(DT_N_S_chosen, __VA_ARGS__) fn(DT_N_S_aliases, __VA_ARGS__) fn(DT_N_S_soc, __VA_ARGS__) fn(DT_N_S_soc_S_interrupt_controller_e000e100, __VA_ARGS__) fn(DT_N_S_soc_S_timer_e000e010, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000_S_memory_0, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000_S_memory_8000, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000_S_memory_10000, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000_S_memory_20000, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000_S_memory_30000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_0, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_f0000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_serial_42000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6600_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000_S_max30123_0, __VA_ARGS__) fn(DT_N_S_null_ptr_detect_0, __VA_ARGS__) fn(DT_N_S_cpus, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_0, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_0_S_mpu_e000ed90, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states_S_idle, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states_S_standby, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states_S_backup, __VA_ARGS__) fn(DT_N_S_clocks, __VA_ARGS__) fn(DT_N_S_clocks_S_clk_ipo, __VA_ARGS__) fn(DT_N_S_bt_hci_max32, __VA_ARGS__) fn(DT_N_S_leds, __VA_ARGS__) fn(DT_N_S_leds_S_led_1, __VA_ARGS__) fn(DT_N_S_buttons, __VA_ARGS__) fn(DT_N_S_buttons_S_pb1, __VA_ARGS__) fn(DT_N_S_reserved_memory, __VA_ARGS__) fn(DT_N_S_reserved_memory_S_partition_30000000, __VA_ARGS__)
+#define DT_FOREACH_HELPER(fn) fn(DT_N) fn(DT_N_S_chosen) fn(DT_N_S_aliases) fn(DT_N_S_soc) fn(DT_N_S_soc_S_interrupt_controller_e000e100) fn(DT_N_S_soc_S_timer_e000e010) fn(DT_N_S_soc_S_sram_30000000) fn(DT_N_S_soc_S_sram_30000000_S_memory_0) fn(DT_N_S_soc_S_sram_30000000_S_memory_8000) fn(DT_N_S_soc_S_sram_30000000_S_memory_10000) fn(DT_N_S_soc_S_sram_30000000_S_memory_20000) fn(DT_N_S_soc_S_sram_30000000_S_memory_30000) fn(DT_N_S_soc_S_peripheral_50000000) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_0) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_f0000) fn(DT_N_S_soc_S_peripheral_50000000_S_dma_35000) fn(DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000) fn(DT_N_S_soc_S_peripheral_50000000_S_serial_42000) fn(DT_N_S_soc_S_peripheral_50000000_S_watchdog_3000) fn(DT_N_S_soc_S_peripheral_50000000_S_trng_4d000) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_10000) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_10000_S_pwm) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_10000_S_counter) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_11000) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_11000_S_pwm) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_11000_S_counter) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_12000) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_12000_S_pwm) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_12000_S_counter) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_13000) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_13000_S_pwm) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_13000_S_counter) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_14000) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_14000_S_pwm) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_14000_S_counter) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_15000) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_15000_S_pwm) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_15000_S_counter) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6400) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6400_S_counter) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6600) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6600_S_counter) fn(DT_N_S_soc_S_peripheral_50000000_S_rtc_counter_6000) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000_S_max30123_0) fn(DT_N_S_null_ptr_detect_0) fn(DT_N_S_cpus) fn(DT_N_S_cpus_S_cpu_0) fn(DT_N_S_cpus_S_cpu_0_S_mpu_e000ed90) fn(DT_N_S_cpus_S_power_states) fn(DT_N_S_cpus_S_power_states_S_idle) fn(DT_N_S_cpus_S_power_states_S_standby) fn(DT_N_S_cpus_S_power_states_S_backup) fn(DT_N_S_cpus_S_power_states_S_powerdown) fn(DT_N_S_clocks) fn(DT_N_S_clocks_S_clk_ipo) fn(DT_N_S_clocks_S_clk_inro) fn(DT_N_S_clocks_S_clk_ibro) fn(DT_N_S_clocks_S_clk_ertco) fn(DT_N_S_clocks_S_clk_erfo) fn(DT_N_S_bt_hci_max32) fn(DT_N_S_leds) fn(DT_N_S_leds_S_led_1) fn(DT_N_S_buttons) fn(DT_N_S_buttons_S_pb1) fn(DT_N_S_reserved_memory) fn(DT_N_S_reserved_memory_S_partition_30000000)
+#define DT_FOREACH_OKAY_HELPER(fn) fn(DT_N) fn(DT_N_S_chosen) fn(DT_N_S_aliases) fn(DT_N_S_soc) fn(DT_N_S_soc_S_interrupt_controller_e000e100) fn(DT_N_S_soc_S_timer_e000e010) fn(DT_N_S_soc_S_sram_30000000) fn(DT_N_S_soc_S_sram_30000000_S_memory_0) fn(DT_N_S_soc_S_sram_30000000_S_memory_8000) fn(DT_N_S_soc_S_sram_30000000_S_memory_10000) fn(DT_N_S_soc_S_sram_30000000_S_memory_20000) fn(DT_N_S_soc_S_sram_30000000_S_memory_30000) fn(DT_N_S_soc_S_peripheral_50000000) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_0) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_f0000) fn(DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000) fn(DT_N_S_soc_S_peripheral_50000000_S_serial_42000) fn(DT_N_S_soc_S_peripheral_50000000_S_trng_4d000) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6600_S_counter) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000_S_max30123_0) fn(DT_N_S_null_ptr_detect_0) fn(DT_N_S_cpus) fn(DT_N_S_cpus_S_cpu_0) fn(DT_N_S_cpus_S_cpu_0_S_mpu_e000ed90) fn(DT_N_S_cpus_S_power_states) fn(DT_N_S_cpus_S_power_states_S_idle) fn(DT_N_S_cpus_S_power_states_S_standby) fn(DT_N_S_cpus_S_power_states_S_backup) fn(DT_N_S_clocks) fn(DT_N_S_clocks_S_clk_ipo) fn(DT_N_S_bt_hci_max32) fn(DT_N_S_leds) fn(DT_N_S_leds_S_led_1) fn(DT_N_S_buttons) fn(DT_N_S_buttons_S_pb1) fn(DT_N_S_reserved_memory) fn(DT_N_S_reserved_memory_S_partition_30000000)
+#define DT_FOREACH_VARGS_HELPER(fn, ...) fn(DT_N, __VA_ARGS__) fn(DT_N_S_chosen, __VA_ARGS__) fn(DT_N_S_aliases, __VA_ARGS__) fn(DT_N_S_soc, __VA_ARGS__) fn(DT_N_S_soc_S_interrupt_controller_e000e100, __VA_ARGS__) fn(DT_N_S_soc_S_timer_e000e010, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000_S_memory_0, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000_S_memory_8000, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000_S_memory_10000, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000_S_memory_20000, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000_S_memory_30000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_0, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_f0000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_dma_35000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_serial_42000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_watchdog_3000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_trng_4d000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_10000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_10000_S_pwm, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_10000_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_11000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_11000_S_pwm, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_11000_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_12000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_12000_S_pwm, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_12000_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_13000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_13000_S_pwm, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_13000_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_14000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_14000_S_pwm, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_14000_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_15000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_15000_S_pwm, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_15000_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6400, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6400_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6600, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6600_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_rtc_counter_6000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000_S_max30123_0, __VA_ARGS__) fn(DT_N_S_null_ptr_detect_0, __VA_ARGS__) fn(DT_N_S_cpus, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_0, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_0_S_mpu_e000ed90, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states_S_idle, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states_S_standby, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states_S_backup, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states_S_powerdown, __VA_ARGS__) fn(DT_N_S_clocks, __VA_ARGS__) fn(DT_N_S_clocks_S_clk_ipo, __VA_ARGS__) fn(DT_N_S_clocks_S_clk_inro, __VA_ARGS__) fn(DT_N_S_clocks_S_clk_ibro, __VA_ARGS__) fn(DT_N_S_clocks_S_clk_ertco, __VA_ARGS__) fn(DT_N_S_clocks_S_clk_erfo, __VA_ARGS__) fn(DT_N_S_bt_hci_max32, __VA_ARGS__) fn(DT_N_S_leds, __VA_ARGS__) fn(DT_N_S_leds_S_led_1, __VA_ARGS__) fn(DT_N_S_buttons, __VA_ARGS__) fn(DT_N_S_buttons_S_pb1, __VA_ARGS__) fn(DT_N_S_reserved_memory, __VA_ARGS__) fn(DT_N_S_reserved_memory_S_partition_30000000, __VA_ARGS__)
+#define DT_FOREACH_OKAY_VARGS_HELPER(fn, ...) fn(DT_N, __VA_ARGS__) fn(DT_N_S_chosen, __VA_ARGS__) fn(DT_N_S_aliases, __VA_ARGS__) fn(DT_N_S_soc, __VA_ARGS__) fn(DT_N_S_soc_S_interrupt_controller_e000e100, __VA_ARGS__) fn(DT_N_S_soc_S_timer_e000e010, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000_S_memory_0, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000_S_memory_8000, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000_S_memory_10000, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000_S_memory_20000, __VA_ARGS__) fn(DT_N_S_soc_S_sram_30000000_S_memory_30000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_gpio_8000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_scl_p0_0, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_sda_p0_1, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_mosi_p0_2, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_ss0_p0_3, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_miso_p0_4, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_rx_p0_5, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_spi0_sck_p0_6, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_uart0_tx_p0_9, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_pin_controller_8000_S_i3c_pur_p0_8, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_0, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_f0000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_serial_42000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_trng_4d000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6600_S_counter, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000, __VA_ARGS__) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000_S_max30123_0, __VA_ARGS__) fn(DT_N_S_null_ptr_detect_0, __VA_ARGS__) fn(DT_N_S_cpus, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_0, __VA_ARGS__) fn(DT_N_S_cpus_S_cpu_0_S_mpu_e000ed90, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states_S_idle, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states_S_standby, __VA_ARGS__) fn(DT_N_S_cpus_S_power_states_S_backup, __VA_ARGS__) fn(DT_N_S_clocks, __VA_ARGS__) fn(DT_N_S_clocks_S_clk_ipo, __VA_ARGS__) fn(DT_N_S_bt_hci_max32, __VA_ARGS__) fn(DT_N_S_leds, __VA_ARGS__) fn(DT_N_S_leds_S_led_1, __VA_ARGS__) fn(DT_N_S_buttons, __VA_ARGS__) fn(DT_N_S_buttons_S_pb1, __VA_ARGS__) fn(DT_N_S_reserved_memory, __VA_ARGS__) fn(DT_N_S_reserved_memory_S_partition_30000000, __VA_ARGS__)
 #define DT_COMPAT_fixed_partitions_LABEL_image_0 DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_0
 #define DT_COMPAT_fixed_partitions_LABEL_image_0_EXISTS 1
 #define DT_COMPAT_fixed_partitions_LABEL_storage DT_N_S_soc_S_peripheral_50000000_S_flash_controller_29000_S_flash_1000000_S_partitions_S_partition_f0000
@@ -10003,8 +10285,12 @@
 #define DT_COMPAT_HAS_OKAY_soc_nv_flash 1
 #define DT_COMPAT_HAS_OKAY_fixed_partitions 1
 #define DT_COMPAT_HAS_OKAY_adi_max32_gcr 1
+#define DT_COMPAT_HAS_OKAY_adi_max32_i3c 1
+#define DT_COMPAT_HAS_OKAY_adi_adxl367 1
 #define DT_COMPAT_HAS_OKAY_adi_max32_uart 1
+#define DT_COMPAT_HAS_OKAY_adi_max32_trng 1
 #define DT_COMPAT_HAS_OKAY_adi_max32_wut 1
+#define DT_COMPAT_HAS_OKAY_adi_max32_spi 1
 #define DT_COMPAT_HAS_OKAY_adi_max30123 1
 #define DT_COMPAT_HAS_OKAY_zephyr_memory_region 1
 #define DT_COMPAT_HAS_OKAY_arm_cortex_m33 1
@@ -10030,8 +10316,12 @@
 #define DT_N_INST_soc_nv_flash_NUM_OKAY 1
 #define DT_N_INST_fixed_partitions_NUM_OKAY 1
 #define DT_N_INST_adi_max32_gcr_NUM_OKAY 1
+#define DT_N_INST_adi_max32_i3c_NUM_OKAY 1
+#define DT_N_INST_adi_adxl367_NUM_OKAY 1
 #define DT_N_INST_adi_max32_uart_NUM_OKAY 1
+#define DT_N_INST_adi_max32_trng_NUM_OKAY 1
 #define DT_N_INST_adi_max32_wut_NUM_OKAY 1
+#define DT_N_INST_adi_max32_spi_NUM_OKAY 1
 #define DT_N_INST_adi_max30123_NUM_OKAY 1
 #define DT_N_INST_zephyr_memory_region_NUM_OKAY 1
 #define DT_N_INST_arm_cortex_m33_NUM_OKAY 1
@@ -10089,14 +10379,30 @@
 #define DT_FOREACH_OKAY_VARGS_adi_max32_gcr(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_clock_controller_0, __VA_ARGS__)
 #define DT_FOREACH_OKAY_INST_adi_max32_gcr(fn) fn(0)
 #define DT_FOREACH_OKAY_INST_VARGS_adi_max32_gcr(fn, ...) fn(0, __VA_ARGS__)
+#define DT_FOREACH_OKAY_adi_max32_i3c(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000)
+#define DT_FOREACH_OKAY_VARGS_adi_max32_i3c(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000, __VA_ARGS__)
+#define DT_FOREACH_OKAY_INST_adi_max32_i3c(fn) fn(0)
+#define DT_FOREACH_OKAY_INST_VARGS_adi_max32_i3c(fn, ...) fn(0, __VA_ARGS__)
+#define DT_FOREACH_OKAY_adi_adxl367(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000)
+#define DT_FOREACH_OKAY_VARGS_adi_adxl367(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_i3c_18000_S_adxl367_530000000000000000, __VA_ARGS__)
+#define DT_FOREACH_OKAY_INST_adi_adxl367(fn) fn(0)
+#define DT_FOREACH_OKAY_INST_VARGS_adi_adxl367(fn, ...) fn(0, __VA_ARGS__)
 #define DT_FOREACH_OKAY_adi_max32_uart(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_serial_42000)
 #define DT_FOREACH_OKAY_VARGS_adi_max32_uart(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_serial_42000, __VA_ARGS__)
 #define DT_FOREACH_OKAY_INST_adi_max32_uart(fn) fn(0)
 #define DT_FOREACH_OKAY_INST_VARGS_adi_max32_uart(fn, ...) fn(0, __VA_ARGS__)
+#define DT_FOREACH_OKAY_adi_max32_trng(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_trng_4d000)
+#define DT_FOREACH_OKAY_VARGS_adi_max32_trng(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_trng_4d000, __VA_ARGS__)
+#define DT_FOREACH_OKAY_INST_adi_max32_trng(fn) fn(0)
+#define DT_FOREACH_OKAY_INST_VARGS_adi_max32_trng(fn, ...) fn(0, __VA_ARGS__)
 #define DT_FOREACH_OKAY_adi_max32_wut(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6600_S_counter)
 #define DT_FOREACH_OKAY_VARGS_adi_max32_wut(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_timer_6600_S_counter, __VA_ARGS__)
 #define DT_FOREACH_OKAY_INST_adi_max32_wut(fn) fn(0)
 #define DT_FOREACH_OKAY_INST_VARGS_adi_max32_wut(fn, ...) fn(0, __VA_ARGS__)
+#define DT_FOREACH_OKAY_adi_max32_spi(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000)
+#define DT_FOREACH_OKAY_VARGS_adi_max32_spi(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000, __VA_ARGS__)
+#define DT_FOREACH_OKAY_INST_adi_max32_spi(fn) fn(0)
+#define DT_FOREACH_OKAY_INST_VARGS_adi_max32_spi(fn, ...) fn(0, __VA_ARGS__)
 #define DT_FOREACH_OKAY_adi_max30123(fn) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000_S_max30123_0)
 #define DT_FOREACH_OKAY_VARGS_adi_max30123(fn, ...) fn(DT_N_S_soc_S_peripheral_50000000_S_spi_46000_S_max30123_0, __VA_ARGS__)
 #define DT_FOREACH_OKAY_INST_adi_max30123(fn) fn(0)
@@ -10137,4 +10443,6 @@
 /*
  * Bus information for status "okay" nodes of each compatible
  */
+#define DT_COMPAT_adi_adxl367_BUS_i3c 1
+#define DT_COMPAT_adi_adxl367_BUS_i2c 1
 #define DT_COMPAT_adi_max30123_BUS_spi 1

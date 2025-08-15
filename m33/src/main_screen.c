@@ -7,6 +7,14 @@
 #include "settings_screen.h"
 #include "main_screen.h"
 
+#include <zephyr/bluetooth/bluetooth.h>
+#include <zephyr/bluetooth/hci.h>
+#include <zephyr/bluetooth/gap.h>
+#include <zephyr/bluetooth/uuid.h>
+#include <zephyr/bluetooth/gatt.h>
+#include <zephyr/bluetooth/conn.h>
+#include <zephyr/bluetooth/services/cgms.h>
+
 // --- All the static widget variables from main.c go here ---
 static bareterm_widget_t btn1, btn2;
 static bareterm_widget_t memo;
@@ -25,6 +33,22 @@ static const char *list_items[] = {
 };
 static bareterm_widget_t input;
 static char buf[64] = "";
+
+
+
+/* Bluetooth declarations */
+#define FIXED_PASSKEY 555555
+static bt_addr_le_t stored_bond;
+static struct bt_conn *active_conn;
+
+static const struct bt_data ad[] = {
+	BT_DATA_BYTES(BT_DATA_FLAGS, (BT_LE_AD_GENERAL | BT_LE_AD_NO_BREDR)),
+	BT_DATA_BYTES(BT_DATA_UUID16_ALL, BT_UUID_16_ENCODE(BT_UUID_CGMS_VAL),
+		      BT_UUID_16_ENCODE(BT_UUID_DIS_VAL))};
+
+static const struct bt_data sd[] = {
+	BT_DATA(BT_DATA_NAME_COMPLETE, CONFIG_BT_DEVICE_NAME, sizeof(CONFIG_BT_DEVICE_NAME) - 1),
+};
 
 // --- All the callback functions from main.c go here ---
 void on_submit(bareterm_widget_t *ti) {
@@ -50,7 +74,90 @@ static void on_button_click2(void *w) {
     bareterm_screen_manager_set_active(settings_screen_get());
 }
 
+//LOG_MODULE_REGISTER(test_rf, LOG_LEVEL_DBG);
+
+static struct bt_conn *default_conn;
+
+/* Bluetooth bağlantı callback fonksiyonları */
+
+K_SEM_DEFINE(bt_connected_sem, 0, 1); // Başlangıçta 0, maksimum 1
+
+static void connected(struct bt_conn *conn, uint8_t err)
+{
+    if (err) {
+        //LOG_ERR("Connection failed (err %u)", err);
+        //report_result("BLE_TEST", false);
+        //return;
+        printk("connection failed\n");
+    }
+
+    default_conn = bt_conn_ref(conn);
+    //LOG_INF("Connection established");
+    k_sem_give(&bt_connected_sem); // Semaforu serbest bırak
+}
+
+static void disconnected(struct bt_conn *conn, uint8_t reason)
+{
+    //LOG_INF("Disconnected (reason %u)", reason);
+    printk("disconnected\n");
+    if (default_conn) {
+        bt_conn_unref(default_conn);
+        default_conn = NULL;
+    }
+}
+
+/* Bluetooth bağlantı callback yapısını tanımla */
+static struct bt_conn_cb conn_callbacks = {
+    .connected = connected,
+    .disconnected = disconnected,
+};
+
+
+
 static void on_toggle(bareterm_widget_t *cb, unsigned char state) {
+
+    //init_bt();
+    
+    int err;
+    /* Bluetooth'u başlat */
+    err = bt_enable(NULL);
+    if (err) {
+        //LOG_ERR("Bluetooth init failed (err %d)", err);
+        printk("Bluetooth init failed\n");
+        //report_result("BLE_TEST", false);
+        return;
+    }
+
+    //LOG_INF("Bluetooth initialized");
+    printk("Bluetooth initialized\n");
+
+    /* Bağlantı callback'lerini kaydet */
+    bt_conn_cb_register(&conn_callbacks);
+
+    /* Bluetooth reklamını başlat */
+    const struct bt_data ad[] = {
+        BT_DATA_BYTES(BT_DATA_FLAGS, (BT_LE_AD_GENERAL | BT_LE_AD_NO_BREDR)),
+        BT_DATA(BT_DATA_NAME_COMPLETE, "BLE TEST", 8),
+    };
+
+    err = bt_le_adv_start(BT_LE_ADV_CONN, ad, ARRAY_SIZE(ad), NULL, 0);
+    if (err) {
+        //LOG_ERR("Advertising failed to start (err %d)", err);
+        printk("Advertising failed to start\n");
+        //report_result("BLE_TEST", false);
+        //return;
+    }
+
+    //LOG_INF("Advertising started");
+    printk("Advertising started. Waiting for connection named BLE TEST...\n");
+
+    /* Bağlantının tamamlanmasını bekle */
+    k_sem_take(&bt_connected_sem, K_FOREVER);
+    //LOG_INF("Connection established. Waiting for user to press Enter...");
+    printk("Connection established. \n");
+    //report_result("BLE_TEST", true);
+
+
     bareterm_move_cursor(10, 20);
     bareterm_printf("Checkbox is now %s   ", state ? "☑️" : "☐");
 	if (state) {

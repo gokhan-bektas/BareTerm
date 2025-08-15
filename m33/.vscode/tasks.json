@@ -1,23 +1,52 @@
 {
   "version": "2.0.0",
   "tasks": [
-  {
-    "label": "CFS: flash (CMSIS-DAP)",
-    "type": "shell",
-    "command": "C:/analog/cfs/1.1.0/Tools/openocd/bin/openocd.exe",
-    "args": [
-      "-s", "C:/analog/cfs/1.1.0/Tools/openocd/scripts",
-      "-f", "interface/cmsis-dap.cfg",
-      "-f", "target/max32657_setup.cfg", 
-      "-c", "set ALLOW_LOW_PWR_DBG 1",
-      "-c", "program build/zephyr/zephyr.elf verify reset exit"
-    ],
-    "options": {
-      "cwd": "${workspaceFolder}"
+    {
+      "label": "CFS: flash (CMSIS-DAP)",
+      "type": "shell",
+      "command": "C:/analog/cfs/1.1.0/Tools/openocd/bin/openocd.exe",
+      "args": [
+        "-s",
+        "C:/analog/cfs/1.1.0/Tools/openocd/scripts",
+        "-f",
+        "interface/cmsis-dap.cfg",
+        "-f",
+        "target/max32657_setup.cfg",
+        "-c",
+        "set ALLOW_LOW_PWR_DBG 1",
+        "-c",
+        "program build/zephyr/zephyr.elf verify reset exit"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "group": "build"
     },
-    "problemMatcher": [],
-    "group": "build"
-  }
-
+    {
+      "type": "shell",
+      "command": "${config:cfs.zephyr.workspace.path}/zephyr-env.cmd && west flash",
+      "options": {
+        "cwd": "c:\\Workdir\\PBU\\cfs_workspace\\cfs_workspace_blinky1\\m33",
+        "env": {
+          "PATH": "C:/analog/cfs/1.1.0/Utils/cfsutil/bin;C:/analog/cfs/1.1.0/Tools/cmake/bin;C:/analog/cfs/1.1.0/Tools/dtc/bin;C:/analog/cfs/1.1.0/Tools/gcc/arm-none-eabi/bin;C:/analog/cfs/1.1.0/Tools/gcc/riscv-none-elf/bin;C:/analog/cfs/1.1.0/Tools/git/cmd;C:/analog/cfs/1.1.0/Tools/git/bin;C:/analog/cfs/1.1.0/Tools/git/usr/bin;C:/analog/cfs/1.1.0/Tools/openocd/bin;C:/analog/cfs/1.1.0/Tools/python;C:/analog/cfs/1.1.0/Tools/python/bin;C:/analog/cfs/1.1.0/Tools/python/Scripts;C:/analog/cfs/1.1.0/Tools/zephyr-sdk/arm-zephyr-eabi/bin;C:/analog/cfs/1.1.0;c:/Program Files/SEGGER/JLink_V852;C:\\Program Files\\Python310\\Scripts\\;C:\\Program Files\\Python310\\;C:\\Program Files\\Python312\\Scripts\\;C:\\Program Files\\Python312\\;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Cadence\\SPB_17.4\\tools\\bin;C:\\Cadence\\SPB_17.4\\tools\\libutil\\bin;C:\\Cadence\\SPB_17.4\\tools\\PSpice;C:\\Cadence\\SPB_17.4\\tools\\PSpice\\Library;C:\\Cadence\\SPB_17.4\\tools\\Capture;C:\\Cadence\\SPB_17.4\\tools\\specctra\\bin;C:\\Cadence\\SPB_17.4\\OpenAccess\\bin\\win32\\opt;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\PuTTY\\;c:\\Program Files\\Python310;c:\\Program Files\\Python310\\Scripts;C:\\Users\\gbektas\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\;C:\\Users\\gbektas\\AppData\\Local\\Programs\\Python\\Python313\\;C:\\Users\\gbektas\\AppData\\Local\\Microsoft\\WindowsApps;c:\\Program Files\\Android\\Android Studio\\jbr\\bin;C:\\Users\\gbektas\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem;c:\\flutter\\src\\bin;C:\\Users\\gbektas\\AppData\\Roaming\\npm;C:\\Users\\gbektas\\AppData\\Local\\Pub\\Cache\\bin;C:\\Users\\gbektas\\AppData\\Local\\Google\\Cloud SDK\\google-cloud-sdk\\bin",
+          "MAXIM_PATH": "C:\\analog\\cfs\\1.1.0\\SDK\\MAX",
+          "PYTHON_CMD": "none",
+          "CMAKE_PREFIX_PATH": "C:\\analog\\cfs\\1.1.0\\Tools\\zephyr-sdk",
+          "GIT_EXEC_PATH": "",
+          "ZEPHYR_BASE": "${config:cfs.sdk.path}/SDK/zephyr/zephyr",
+          "PYTHONHOME": "C:\\analog\\cfs\\1.1.0\\Tools\\python",
+          "PYTHONPATH": ""
+        },
+        "shell": {
+          "args": [
+            "/c"
+          ],
+          "executable": "${env:windir}\\System32\\cmd.exe"
+        }
+      },
+      "group": "build",
+      "label": "CFS: flash (OpenOCD)"
+    }
   ]
 }

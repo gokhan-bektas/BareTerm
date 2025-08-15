@@ -69,6 +69,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/lib/net_buf/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/lib/os/cmake_install.cmake")
 endif()
 

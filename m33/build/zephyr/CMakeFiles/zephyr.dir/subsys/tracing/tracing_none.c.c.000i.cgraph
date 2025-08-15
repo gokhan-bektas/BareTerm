@@ -3,7 +3,7 @@ Trivially needed symbols: sys_trace_idle/3 sys_trace_isr_exit_to_scheduler/2 sys
 
 Initial Symbol table:
 
-sys_trace_idle/3 (sys_trace_idle) @0000000006d95460
+sys_trace_idle/3 (sys_trace_idle) @0000000006256460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   Aux: @0000000001d89da0
@@ -12,28 +12,28 @@ sys_trace_idle/3 (sys_trace_idle) @0000000006d95460
   Function flags: body
   Called by: 
   Calls: 
-sys_trace_isr_exit_to_scheduler/2 (sys_trace_isr_exit_to_scheduler) @0000000006d95348
+sys_trace_isr_exit_to_scheduler/2 (sys_trace_isr_exit_to_scheduler) @0000000006256348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006d95460
+  Aux: @0000000006256460
   References: 
   Referring: 
   Function flags: body
   Called by: 
   Calls: 
-sys_trace_isr_exit/1 (sys_trace_isr_exit) @0000000006d95230
+sys_trace_isr_exit/1 (sys_trace_isr_exit) @0000000006256230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006d95348
+  Aux: @0000000006256348
   References: 
   Referring: 
   Function flags: body
   Called by: 
   Calls: 
-sys_trace_isr_enter/0 (sys_trace_isr_enter) @0000000006d95118
+sys_trace_isr_enter/0 (sys_trace_isr_enter) @0000000006256118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
-  Aux: @0000000006d95230
+  Aux: @0000000006256230
   References: 
   Referring: 
   Function flags: body
@@ -44,7 +44,7 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-sys_trace_idle/3 (sys_trace_idle) @0000000006d95460
+sys_trace_idle/3 (sys_trace_idle) @0000000006256460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -52,7 +52,7 @@ sys_trace_idle/3 (sys_trace_idle) @0000000006d95460
   Function flags: body
   Called by: 
   Calls: 
-sys_trace_isr_exit_to_scheduler/2 (sys_trace_isr_exit_to_scheduler) @0000000006d95348
+sys_trace_isr_exit_to_scheduler/2 (sys_trace_isr_exit_to_scheduler) @0000000006256348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -60,7 +60,7 @@ sys_trace_isr_exit_to_scheduler/2 (sys_trace_isr_exit_to_scheduler) @0000000006d
   Function flags: body
   Called by: 
   Calls: 
-sys_trace_isr_exit/1 (sys_trace_isr_exit) @0000000006d95230
+sys_trace_isr_exit/1 (sys_trace_isr_exit) @0000000006256230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -68,7 +68,7 @@ sys_trace_isr_exit/1 (sys_trace_isr_exit) @0000000006d95230
   Function flags: body
   Called by: 
   Calls: 
-sys_trace_isr_enter/0 (sys_trace_isr_enter) @0000000006d95118
+sys_trace_isr_enter/0 (sys_trace_isr_enter) @0000000006256118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -80,7 +80,7 @@ sys_trace_isr_enter/0 (sys_trace_isr_enter) @0000000006d95118
 
 Initial Symbol table:
 
-sys_trace_idle/3 (sys_trace_idle) @0000000006d95460
+sys_trace_idle/3 (sys_trace_idle) @0000000006256460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -88,7 +88,7 @@ sys_trace_idle/3 (sys_trace_idle) @0000000006d95460
   Function flags: body
   Called by: 
   Calls: 
-sys_trace_isr_exit_to_scheduler/2 (sys_trace_isr_exit_to_scheduler) @0000000006d95348
+sys_trace_isr_exit_to_scheduler/2 (sys_trace_isr_exit_to_scheduler) @0000000006256348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -96,7 +96,7 @@ sys_trace_isr_exit_to_scheduler/2 (sys_trace_isr_exit_to_scheduler) @0000000006d
   Function flags: body
   Called by: 
   Calls: 
-sys_trace_isr_exit/1 (sys_trace_isr_exit) @0000000006d95230
+sys_trace_isr_exit/1 (sys_trace_isr_exit) @0000000006256230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -104,7 +104,7 @@ sys_trace_isr_exit/1 (sys_trace_isr_exit) @0000000006d95230
   Function flags: body
   Called by: 
   Calls: 
-sys_trace_isr_enter/0 (sys_trace_isr_enter) @0000000006d95118
+sys_trace_isr_enter/0 (sys_trace_isr_enter) @0000000006256118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -117,7 +117,7 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-sys_trace_idle/3 (sys_trace_idle) @0000000006d95460
+sys_trace_idle/3 (sys_trace_idle) @0000000006256460
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -125,7 +125,7 @@ sys_trace_idle/3 (sys_trace_idle) @0000000006d95460
   Function flags: body
   Called by: 
   Calls: 
-sys_trace_isr_exit_to_scheduler/2 (sys_trace_isr_exit_to_scheduler) @0000000006d95348
+sys_trace_isr_exit_to_scheduler/2 (sys_trace_isr_exit_to_scheduler) @0000000006256348
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -133,7 +133,7 @@ sys_trace_isr_exit_to_scheduler/2 (sys_trace_isr_exit_to_scheduler) @0000000006d
   Function flags: body
   Called by: 
   Calls: 
-sys_trace_isr_exit/1 (sys_trace_isr_exit) @0000000006d95230
+sys_trace_isr_exit/1 (sys_trace_isr_exit) @0000000006256230
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -141,7 +141,7 @@ sys_trace_isr_exit/1 (sys_trace_isr_exit) @0000000006d95230
   Function flags: body
   Called by: 
   Calls: 
-sys_trace_isr_enter/0 (sys_trace_isr_enter) @0000000006d95118
+sys_trace_isr_enter/0 (sys_trace_isr_enter) @0000000006256118
   Type: function definition analyzed
   Visibility: force_output semantic_interposition no_reorder public
   References: 
@@ -155,7 +155,7 @@ Reclaiming variables:
 Clearing address taken flags:
 Optimized Symbol table:
 
-sys_trace_idle/3 (sys_trace_idle) @0000000006d95460
+sys_trace_idle/3 (sys_trace_idle) @0000000006256460
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -164,7 +164,7 @@ sys_trace_idle/3 (sys_trace_idle) @0000000006d95460
   Function flags: body
   Called by: 
   Calls: 
-sys_trace_isr_exit_to_scheduler/2 (sys_trace_isr_exit_to_scheduler) @0000000006d95348
+sys_trace_isr_exit_to_scheduler/2 (sys_trace_isr_exit_to_scheduler) @0000000006256348
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -173,7 +173,7 @@ sys_trace_isr_exit_to_scheduler/2 (sys_trace_isr_exit_to_scheduler) @0000000006d
   Function flags: body
   Called by: 
   Calls: 
-sys_trace_isr_exit/1 (sys_trace_isr_exit) @0000000006d95230
+sys_trace_isr_exit/1 (sys_trace_isr_exit) @0000000006256230
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -182,7 +182,7 @@ sys_trace_isr_exit/1 (sys_trace_isr_exit) @0000000006d95230
   Function flags: body
   Called by: 
   Calls: 
-sys_trace_isr_enter/0 (sys_trace_isr_enter) @0000000006d95118
+sys_trace_isr_enter/0 (sys_trace_isr_enter) @0000000006256118
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder public
   References: 
@@ -196,7 +196,7 @@ Removing variables:
 
 Final Symbol table:
 
-sys_trace_idle/3 (sys_trace_idle) @0000000006d95460
+sys_trace_idle/3 (sys_trace_idle) @0000000006256460
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.sys_trace_idle (implicit_section)
   References: 
@@ -205,7 +205,7 @@ sys_trace_idle/3 (sys_trace_idle) @0000000006d95460
   Function flags:
   Called by: 
   Calls: 
-sys_trace_isr_exit_to_scheduler/2 (sys_trace_isr_exit_to_scheduler) @0000000006d95348
+sys_trace_isr_exit_to_scheduler/2 (sys_trace_isr_exit_to_scheduler) @0000000006256348
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.sys_trace_isr_exit_to_scheduler (implicit_section)
   References: 
@@ -214,7 +214,7 @@ sys_trace_isr_exit_to_scheduler/2 (sys_trace_isr_exit_to_scheduler) @0000000006d
   Function flags:
   Called by: 
   Calls: 
-sys_trace_isr_exit/1 (sys_trace_isr_exit) @0000000006d95230
+sys_trace_isr_exit/1 (sys_trace_isr_exit) @0000000006256230
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.sys_trace_isr_exit (implicit_section)
   References: 
@@ -223,7 +223,7 @@ sys_trace_isr_exit/1 (sys_trace_isr_exit) @0000000006d95230
   Function flags:
   Called by: 
   Calls: 
-sys_trace_isr_enter/0 (sys_trace_isr_enter) @0000000006d95118
+sys_trace_isr_enter/0 (sys_trace_isr_enter) @0000000006256118
   Type: function definition analyzed
   Visibility: force_output externally_visible semantic_interposition no_reorder asm_written public section:.text.sys_trace_isr_enter (implicit_section)
   References: 

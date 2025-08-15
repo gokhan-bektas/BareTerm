@@ -1,3 +1,4 @@
 {
-    "cfs.configureWorkspace": "Yes"
+    "cfs.configureWorkspace": "Yes",
+    "cfs.activeContext": "Workspace"
 }

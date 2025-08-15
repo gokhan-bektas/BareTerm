@@ -1,2 +1,2 @@
-C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/fpu.c:17:6:z_arm_save_fp_context	16	static
-C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/fpu.c:45:6:z_arm_restore_fp_context	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/fpu.c:17:6:z_arm_save_fp_context	32	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/fpu.c:45:6:z_arm_restore_fp_context	32	static

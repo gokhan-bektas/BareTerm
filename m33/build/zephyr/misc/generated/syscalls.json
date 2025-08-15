@@ -121,6 +121,150 @@
     ],
     [
         [
+            "void sys_rand_get",
+            "void *dst, size_t len"
+        ],
+        "random.h",
+        true
+    ],
+    [
+        [
+            "int sys_csrand_get",
+            "void *dst, size_t len"
+        ],
+        "random.h",
+        true
+    ],
+    [
+        [
+            "int entropy_get_entropy",
+            "const struct device *dev,\n\t\t\t\t  uint8_t *buffer,\n\t\t\t\t  uint16_t length"
+        ],
+        "entropy.h",
+        true
+    ],
+    [
+        [
+            "int flash_read",
+            "const struct device *dev, off_t offset, void *data,\n\t\t\t size_t len"
+        ],
+        "flash.h",
+        true
+    ],
+    [
+        [
+            "int flash_write",
+            "const struct device *dev, off_t offset,\n\t\t\t  const void *data,\n\t\t\t  size_t len"
+        ],
+        "flash.h",
+        true
+    ],
+    [
+        [
+            "int flash_erase",
+            "const struct device *dev, off_t offset, size_t size"
+        ],
+        "flash.h",
+        true
+    ],
+    [
+        [
+            "int flash_get_size",
+            "const struct device *dev, uint64_t *size"
+        ],
+        "flash.h",
+        true
+    ],
+    [
+        [
+            "int flash_fill",
+            "const struct device *dev, uint8_t val, off_t offset, size_t size"
+        ],
+        "flash.h",
+        true
+    ],
+    [
+        [
+            "int flash_flatten",
+            "const struct device *dev, off_t offset, size_t size"
+        ],
+        "flash.h",
+        true
+    ],
+    [
+        [
+            "int flash_get_page_info_by_offs",
+            "const struct device *dev,\n\t\t\t\t\t  off_t offset,\n\t\t\t\t\t  struct flash_pages_info *info"
+        ],
+        "flash.h",
+        true
+    ],
+    [
+        [
+            "int flash_get_page_info_by_idx",
+            "const struct device *dev,\n\t\t\t\t\t uint32_t page_index,\n\t\t\t\t\t struct flash_pages_info *info"
+        ],
+        "flash.h",
+        true
+    ],
+    [
+        [
+            "size_t flash_get_page_count",
+            "const struct device *dev"
+        ],
+        "flash.h",
+        true
+    ],
+    [
+        [
+            "int flash_sfdp_read",
+            "const struct device *dev, off_t offset,\n\t\t\t      void *data, size_t len"
+        ],
+        "flash.h",
+        true
+    ],
+    [
+        [
+            "int flash_read_jedec_id",
+            "const struct device *dev, uint8_t *id"
+        ],
+        "flash.h",
+        true
+    ],
+    [
+        [
+            "size_t flash_get_write_block_size",
+            "const struct device *dev"
+        ],
+        "flash.h",
+        true
+    ],
+    [
+        [
+            "const struct flash_parameters *flash_get_parameters",
+            "const struct device *dev"
+        ],
+        "flash.h",
+        true
+    ],
+    [
+        [
+            "int flash_ex_op",
+            "const struct device *dev, uint16_t code,\n\t\t\t  const uintptr_t in, void *out"
+        ],
+        "flash.h",
+        true
+    ],
+    [
+        [
+            "int flash_copy",
+            "const struct device *src_dev, off_t src_offset,\n\t\t\t const struct device *dst_dev, off_t dst_offset, off_t size, uint8_t *buf,\n\t\t\t size_t buf_size"
+        ],
+        "flash.h",
+        true
+    ],
+    [
+        [
             "int gpio_pin_interrupt_configure",
             "const struct device *port,\n\t\t\t\t\t   gpio_pin_t pin,\n\t\t\t\t\t   gpio_flags_t flags"
         ],
@@ -197,6 +341,126 @@
             "const struct device *dev"
         ],
         "gpio.h",
+        true
+    ],
+    [
+        [
+            "int i2c_configure",
+            "const struct device *dev, uint32_t dev_config"
+        ],
+        "i2c.h",
+        true
+    ],
+    [
+        [
+            "int i2c_get_config",
+            "const struct device *dev, uint32_t *dev_config"
+        ],
+        "i2c.h",
+        true
+    ],
+    [
+        [
+            "int i2c_transfer",
+            "const struct device *dev,\n\t\t\t   struct i2c_msg *msgs, uint8_t num_msgs,\n\t\t\t   uint16_t addr"
+        ],
+        "i2c.h",
+        true
+    ],
+    [
+        [
+            "int i2c_recover_bus",
+            "const struct device *dev"
+        ],
+        "i2c.h",
+        true
+    ],
+    [
+        [
+            "int i2c_target_driver_register",
+            "const struct device *dev"
+        ],
+        "i2c.h",
+        true
+    ],
+    [
+        [
+            "int i2c_target_driver_unregister",
+            "const struct device *dev"
+        ],
+        "i2c.h",
+        true
+    ],
+    [
+        [
+            "int i3c_do_ccc",
+            "const struct device *dev,\n\t\t\t struct i3c_ccc_payload *payload"
+        ],
+        "i3c.h",
+        true
+    ],
+    [
+        [
+            "int i3c_transfer",
+            "struct i3c_device_desc *target,\n\t\t\t   struct i3c_msg *msgs, uint8_t num_msgs"
+        ],
+        "i3c.h",
+        true
+    ],
+    [
+        [
+            "int sensor_attr_set",
+            "const struct device *dev,\n\t\t\t      enum sensor_channel chan,\n\t\t\t      enum sensor_attribute attr,\n\t\t\t      const struct sensor_value *val"
+        ],
+        "sensor.h",
+        true
+    ],
+    [
+        [
+            "int sensor_attr_get",
+            "const struct device *dev,\n\t\t\t      enum sensor_channel chan,\n\t\t\t      enum sensor_attribute attr,\n\t\t\t      struct sensor_value *val"
+        ],
+        "sensor.h",
+        true
+    ],
+    [
+        [
+            "int sensor_sample_fetch",
+            "const struct device *dev"
+        ],
+        "sensor.h",
+        true
+    ],
+    [
+        [
+            "int sensor_sample_fetch_chan",
+            "const struct device *dev,\n\t\t\t\t       enum sensor_channel type"
+        ],
+        "sensor.h",
+        true
+    ],
+    [
+        [
+            "int sensor_channel_get",
+            "const struct device *dev,\n\t\t\t\t enum sensor_channel chan,\n\t\t\t\t struct sensor_value *val"
+        ],
+        "sensor.h",
+        true
+    ],
+    [
+        [
+            "int sensor_get_decoder",
+            "const struct device *dev,\n\t\t\t\t const struct sensor_decoder_api **decoder"
+        ],
+        "sensor.h",
+        true
+    ],
+    [
+        [
+            "int sensor_reconfigure_read_iodev",
+            "struct rtio_iodev *iodev, const struct device *sensor,\n\t\t\t\t\t    const struct sensor_chan_spec *channels,\n\t\t\t\t\t    size_t num_channels"
+        ],
+        "sensor.h",
         true
     ],
     [
@@ -389,6 +653,22 @@
             "const struct device *dev, uint32_t cmd, uint32_t p"
         ],
         "uart.h",
+        true
+    ],
+    [
+        [
+            "int spi_transceive",
+            "const struct device *dev,\n\t\t\t     const struct spi_config *config,\n\t\t\t     const struct spi_buf_set *tx_bufs,\n\t\t\t     const struct spi_buf_set *rx_bufs"
+        ],
+        "spi.h",
+        true
+    ],
+    [
+        [
+            "int spi_release",
+            "const struct device *dev,\n\t\t\t  const struct spi_config *config"
+        ],
+        "spi.h",
         true
     ],
     [
@@ -2049,14 +2329,6 @@
     ],
     [
         [
-            "int entropy_get_entropy",
-            "const struct device *dev,\n\t\t\t\t  uint8_t *buffer,\n\t\t\t\t  uint16_t length"
-        ],
-        "entropy.h",
-        false
-    ],
-    [
-        [
             "int espi_config",
             "const struct device *dev, struct espi_cfg *cfg"
         ],
@@ -2221,126 +2493,6 @@
             "const struct device *dev,\n\t\t\t\t       struct espi_saf_packet *pckt"
         ],
         "espi_saf.h",
-        false
-    ],
-    [
-        [
-            "int flash_read",
-            "const struct device *dev, off_t offset, void *data,\n\t\t\t size_t len"
-        ],
-        "flash.h",
-        false
-    ],
-    [
-        [
-            "int flash_write",
-            "const struct device *dev, off_t offset,\n\t\t\t  const void *data,\n\t\t\t  size_t len"
-        ],
-        "flash.h",
-        false
-    ],
-    [
-        [
-            "int flash_erase",
-            "const struct device *dev, off_t offset, size_t size"
-        ],
-        "flash.h",
-        false
-    ],
-    [
-        [
-            "int flash_get_size",
-            "const struct device *dev, uint64_t *size"
-        ],
-        "flash.h",
-        false
-    ],
-    [
-        [
-            "int flash_fill",
-            "const struct device *dev, uint8_t val, off_t offset, size_t size"
-        ],
-        "flash.h",
-        false
-    ],
-    [
-        [
-            "int flash_flatten",
-            "const struct device *dev, off_t offset, size_t size"
-        ],
-        "flash.h",
-        false
-    ],
-    [
-        [
-            "int flash_get_page_info_by_offs",
-            "const struct device *dev,\n\t\t\t\t\t  off_t offset,\n\t\t\t\t\t  struct flash_pages_info *info"
-        ],
-        "flash.h",
-        false
-    ],
-    [
-        [
-            "int flash_get_page_info_by_idx",
-            "const struct device *dev,\n\t\t\t\t\t uint32_t page_index,\n\t\t\t\t\t struct flash_pages_info *info"
-        ],
-        "flash.h",
-        false
-    ],
-    [
-        [
-            "size_t flash_get_page_count",
-            "const struct device *dev"
-        ],
-        "flash.h",
-        false
-    ],
-    [
-        [
-            "int flash_sfdp_read",
-            "const struct device *dev, off_t offset,\n\t\t\t      void *data, size_t len"
-        ],
-        "flash.h",
-        false
-    ],
-    [
-        [
-            "int flash_read_jedec_id",
-            "const struct device *dev, uint8_t *id"
-        ],
-        "flash.h",
-        false
-    ],
-    [
-        [
-            "size_t flash_get_write_block_size",
-            "const struct device *dev"
-        ],
-        "flash.h",
-        false
-    ],
-    [
-        [
-            "const struct flash_parameters *flash_get_parameters",
-            "const struct device *dev"
-        ],
-        "flash.h",
-        false
-    ],
-    [
-        [
-            "int flash_ex_op",
-            "const struct device *dev, uint16_t code,\n\t\t\t  const uintptr_t in, void *out"
-        ],
-        "flash.h",
-        false
-    ],
-    [
-        [
-            "int flash_copy",
-            "const struct device *src_dev, off_t src_offset,\n\t\t\t const struct device *dst_dev, off_t dst_offset, off_t size, uint8_t *buf,\n\t\t\t size_t buf_size"
-        ],
-        "flash.h",
         false
     ],
     [
@@ -2545,54 +2697,6 @@
     ],
     [
         [
-            "int i2c_configure",
-            "const struct device *dev, uint32_t dev_config"
-        ],
-        "i2c.h",
-        false
-    ],
-    [
-        [
-            "int i2c_get_config",
-            "const struct device *dev, uint32_t *dev_config"
-        ],
-        "i2c.h",
-        false
-    ],
-    [
-        [
-            "int i2c_transfer",
-            "const struct device *dev,\n\t\t\t   struct i2c_msg *msgs, uint8_t num_msgs,\n\t\t\t   uint16_t addr"
-        ],
-        "i2c.h",
-        false
-    ],
-    [
-        [
-            "int i2c_recover_bus",
-            "const struct device *dev"
-        ],
-        "i2c.h",
-        false
-    ],
-    [
-        [
-            "int i2c_target_driver_register",
-            "const struct device *dev"
-        ],
-        "i2c.h",
-        false
-    ],
-    [
-        [
-            "int i2c_target_driver_unregister",
-            "const struct device *dev"
-        ],
-        "i2c.h",
-        false
-    ],
-    [
-        [
             "int i2s_configure",
             "const struct device *dev, enum i2s_dir dir,\n\t\t\t    const struct i2s_config *cfg"
         ],
@@ -2621,22 +2725,6 @@
             "const struct device *dev, enum i2s_dir dir,\n\t\t\t  enum i2s_trigger_cmd cmd"
         ],
         "i2s.h",
-        false
-    ],
-    [
-        [
-            "int i3c_do_ccc",
-            "const struct device *dev,\n\t\t\t struct i3c_ccc_payload *payload"
-        ],
-        "i3c.h",
-        false
-    ],
-    [
-        [
-            "int i3c_transfer",
-            "struct i3c_device_desc *target,\n\t\t\t   struct i3c_msg *msgs, uint8_t num_msgs"
-        ],
-        "i3c.h",
         false
     ],
     [
@@ -3241,62 +3329,6 @@
     ],
     [
         [
-            "int sensor_attr_set",
-            "const struct device *dev,\n\t\t\t      enum sensor_channel chan,\n\t\t\t      enum sensor_attribute attr,\n\t\t\t      const struct sensor_value *val"
-        ],
-        "sensor.h",
-        false
-    ],
-    [
-        [
-            "int sensor_attr_get",
-            "const struct device *dev,\n\t\t\t      enum sensor_channel chan,\n\t\t\t      enum sensor_attribute attr,\n\t\t\t      struct sensor_value *val"
-        ],
-        "sensor.h",
-        false
-    ],
-    [
-        [
-            "int sensor_sample_fetch",
-            "const struct device *dev"
-        ],
-        "sensor.h",
-        false
-    ],
-    [
-        [
-            "int sensor_sample_fetch_chan",
-            "const struct device *dev,\n\t\t\t\t       enum sensor_channel type"
-        ],
-        "sensor.h",
-        false
-    ],
-    [
-        [
-            "int sensor_channel_get",
-            "const struct device *dev,\n\t\t\t\t enum sensor_channel chan,\n\t\t\t\t struct sensor_value *val"
-        ],
-        "sensor.h",
-        false
-    ],
-    [
-        [
-            "int sensor_get_decoder",
-            "const struct device *dev,\n\t\t\t\t const struct sensor_decoder_api **decoder"
-        ],
-        "sensor.h",
-        false
-    ],
-    [
-        [
-            "int sensor_reconfigure_read_iodev",
-            "struct rtio_iodev *iodev, const struct device *sensor,\n\t\t\t\t\t    const struct sensor_chan_spec *channels,\n\t\t\t\t\t    size_t num_channels"
-        ],
-        "sensor.h",
-        false
-    ],
-    [
-        [
             "int smbus_configure",
             "const struct device *dev, uint32_t dev_config"
         ],
@@ -3413,22 +3445,6 @@
             "const struct device *dev,\n\t\t\t\tuint16_t addr, uint8_t cmd,\n\t\t\t\tuint8_t snd_count, uint8_t *snd_buf,\n\t\t\t\tuint8_t *rcv_count, uint8_t *rcv_buf"
         ],
         "smbus.h",
-        false
-    ],
-    [
-        [
-            "int spi_transceive",
-            "const struct device *dev,\n\t\t\t     const struct spi_config *config,\n\t\t\t     const struct spi_buf_set *tx_bufs,\n\t\t\t     const struct spi_buf_set *rx_bufs"
-        ],
-        "spi.h",
-        false
-    ],
-    [
-        [
-            "int spi_release",
-            "const struct device *dev,\n\t\t\t  const struct spi_config *config"
-        ],
-        "spi.h",
         false
     ],
     [
@@ -4405,22 +4421,6 @@
             "const struct net_socket_service_desc *service,\n\t\t\t\t\t  struct zsock_pollfd *fds, int len, void *user_data"
         ],
         "socket_service.h",
-        false
-    ],
-    [
-        [
-            "void sys_rand_get",
-            "void *dst, size_t len"
-        ],
-        "random.h",
-        false
-    ],
-    [
-        [
-            "int sys_csrand_get",
-            "void *dst, size_t len"
-        ],
-        "random.h",
         false
     ],
     [

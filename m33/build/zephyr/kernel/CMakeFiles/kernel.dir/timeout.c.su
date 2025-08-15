@@ -13,7 +13,7 @@ C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/timeout.c:50:25:next	24	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/timeout.c:57:13:remove_timeout	32	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/timeout.c:66:16:elapsed	8	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/timeout.c:87:16:next_timeout	56	static
-C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/timeout.c:103:6:z_add_timeout	160	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/timeout.c:103:6:z_add_timeout	168	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/timeout.c:148:5:z_abort_timeout	80	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/timeout.c:168:18:timeout_rem	40	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/timeout.c:182:11:z_timeout_remaining	104	static

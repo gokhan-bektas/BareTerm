@@ -137,6 +137,11 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/subsys/usb/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/subsys/bluetooth/cmake_install.cmake")
+endif()
+
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)

@@ -1,3 +1,4 @@
+C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/include/generated/zephyr/syscalls/device.h:49:20:device_is_ready	16	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/arch/arm/misc.h:24:24:arch_k_cycle_get_32	8	static
 C:/analog/cfs/1.1.0/SDK/zephyr/modules/hal/cmsis/CMSIS/Core/Include/core_cm33.h:2587:22:__NVIC_SetPriority	16	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/kernel/thread_stack.h:286:21:K_KERNEL_STACK_BUFFER	16	static
@@ -8,6 +9,7 @@ C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/include/timeout_q.h:47:20:z_add_thr
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/include/kthread.h:46:20:thread_schedule_new	24	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/include/kthread.h:168:20:z_mark_thread_as_not_sleeping	16	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/include/kthread.h:187:20:z_thread_essential_clear	16	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/drivers/entropy.h:106:19:entropy_get_entropy_isr	40	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/debug/gcov.h:15:20:gcov_static_init	4	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/pm/device_runtime.h:174:19:pm_device_runtime_auto_enable	16	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/init.c:64:13:z_init_static_threads	80	static
@@ -22,5 +24,5 @@ C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/init.c:578:13:init_idle_thread	56	s
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/init.c:608:6:z_init_cpu	16	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/init.c:653:14:prepare_multithreading	40	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/init.c:687:27:switch_to_main_thread	16	static
-C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/init.c:705:13:z_early_rand_get	56	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/init.c:705:13:z_early_rand_get	64	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/init.c:749:20:z_cstart	16	static

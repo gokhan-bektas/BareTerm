@@ -11,5 +11,5 @@ C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/fault.c:766:13:rese
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/fault.c:775:17:fault_handle	32	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/fault.c:829:13:secure_stack_dump	24	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/fault.c:882:32:get_esf	48	static
-C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/fault.c:1022:6:z_arm_fault	88	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/fault.c:1022:6:z_arm_fault	160	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/arch/arm/core/cortex_m/fault.c:1090:6:z_arm_fault_init	4	static

@@ -74,6 +74,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/drivers/bluetooth/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/drivers/clock_control/cmake_install.cmake")
 endif()
 
@@ -84,7 +89,27 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/drivers/entropy/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/drivers/flash/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/drivers/gpio/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/drivers/i2c/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/drivers/i3c/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
@@ -94,7 +119,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/drivers/sensor/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/drivers/serial/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Workdir/PBU/cfs_workspace/cfs_workspace_blinky1/m33/build/zephyr/drivers/spi/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

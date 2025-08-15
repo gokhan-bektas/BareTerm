@@ -4,20 +4,19 @@
  * This file was generated using Analog Devices CodeFusion Studio.
  * https://github.com/analogdevicesinc/codefusion-studio
  *
- * Generated at: 2025-07-25T10:26:33.720Z 
+ * Modified for production test on: 2025-06-24
  *
  * SPDX-License-Identifier: Apache-2.0
- * Copyright (c) 2025 Analog Devices, Inc.
  */
 
-/* Memory Configuration
-*/
-
-/ {
+ / {
 	chosen {
 		zephyr,code-partition = &slot0_partition;
 		zephyr,flash = &flash0;
 		zephyr,sram = &secure_ram;
+		zephyr,console = &uart0;
+		zephyr,shell-uart = &uart0;
+		zephyr,bt-c2h-uart = &uart0;
 	};
 
 	reserved-memory {
@@ -26,13 +25,19 @@
  		ranges;
 
 		secure_ram: partition@30000000 {
-			/* This partition is chosen for sram. */
 			label = "secure-memory";
 			reg = <0x30000000 DT_SIZE_K(256)>;
 		};
 	};
+
+	aliases {
+		led0 = &led1;
+		gpio0 = &gpio0;
+		sw0 = &pb1;
+	};
 };
 
+/* Flash partitions */
 &flash0 {
 	partitions {
 		compatible = "fixed-partitions";
@@ -40,23 +45,22 @@
 		#size-cells = <1>;
 
 		slot0_partition: partition@0 {
-			/* This partition is chosen for code-partition. */
 			label = "image-0";
 			reg = <0x0 DT_SIZE_K(690)>;
 		};
 		storage_partition: partition@f0000 {
-			/* This partition is not chosen. */
 			label = "storage";
 			reg = <0xf0000 DT_SIZE_K(64)>;
 		};
 	};
 };
 
+/* GPIO configuration */
+&gpio0 {
+	status = "okay";
+};
 
-/* GPIO Configuration
-*/
-
-/ {
+ / {
 	buttons {
 		pb1: pb1 {
 			gpios = <&gpio0 12 (GPIO_ACTIVE_LOW | MAX32_GPIO_VSEL_VDDIO | GPIO_PULL_UP)>;
@@ -66,78 +70,42 @@
 
 	leds {
 		led1: led_1 {
-			/* This pin is used for Blink LED. */
 			gpios = <&gpio0 13 (GPIO_ACTIVE_HIGH | MAX32_GPIO_VSEL_VDDIO | MAX32_GPIO_DRV_STRENGTH_0)>;
 		};
 	};
-
-	aliases {
-		led0 = &led1;
-	};
 };
 
-/* Peripheral Configuration
-*/
-
-/ {
-	chosen {
-		zephyr,console = &uart0;
-		zephyr,shell-uart = &uart0;
-		zephyr,bt-c2h-uart = &uart0;
-	};
+/* SPI Configuration for MAX30123 (CS: GPIO0_3, SCK: GPIO0_6, MOSI: GPIO0_2, MISO: GPIO0_4) */
+&spi0_mosi_p0_2 {
+	power-source = <MAX32_VSEL_VDDIO>;
 };
 
-&dma1 {
-	status = "disabled";
+&spi0_ss0_p0_3 {
+	power-source = <MAX32_VSEL_VDDIO>;
 };
 
-&i3c0 {
-	status = "disabled";
+&spi0_miso_p0_4 {
+	power-source = <MAX32_VSEL_VDDIO>;
 };
 
-&rtc_counter {
-	status = "disabled";
+&spi0_sck_p0_6 {
+	power-source = <MAX32_VSEL_VDDIO>;
 };
 
 &spi0 {
-	status = "disabled";
+	pinctrl-0 = <&spi0_mosi_p0_2 &spi0_ss0_p0_3 &spi0_miso_p0_4 &spi0_sck_p0_6>;
+	pinctrl-names = "default";
+	clock-frequency = <DT_FREQ_M(25)>;
+	status = "okay";
 };
 
-&timer0 {
-	status = "disabled";
-};
-
-&timer1 {
-	status = "disabled";
-};
-
-&timer2 {
-	status = "disabled";
-};
-
-&timer3 {
-	status = "disabled";
-};
-
-&timer4 {
-	status = "disabled";
-};
-
-&timer5 {
-	status = "disabled";
-};
-
-&trng {
-	status = "disabled";
-};
-
+/* UART0 Pin Configuration (already present) */
 &uart0_tx_p0_9 {
 	power-source = <MAX32_VSEL_VDDIO>;
 };
 
 &uart0_rx_p0_5 {
 	power-source = <MAX32_VSEL_VDDIO>;
-	/* Weak pull-up is not supported here in Zephyr. Using strong pull-up instead. */
 	bias-pull-up;
 };
 
@@ -151,22 +119,56 @@
 	status = "okay";
 };
 
-&wdt0 {
-	status = "disabled";
+&i3c_scl_p0_0 {
+	power-source = <MAX32_VSEL_VDDIO>;
 };
 
-&wut0 {
-	status = "disabled";
+&i3c_sda_p0_1 {
+	power-source = <MAX32_VSEL_VDDIO>;
 };
 
-&wut1 {
-	status = "disabled";
+&i3c_pur_p0_8 {
+	power-source = <MAX32_VSEL_VDDIO>;
+	drive-strength = <0>;
 };
 
-/* Clock Configuration and Initialization
-*/
+&i3c0 {
+	pinctrl-0 = <&i3c_scl_p0_0 &i3c_sda_p0_1 &i3c_pur_p0_8>;
+	pinctrl-names = "default";
+	//i3c-scl-hz = <400000>;
+	//i2c-scl-hz = <DT_FREQ_K(400)>;
+	//i2c-scl-hz 
+	status = "okay";
+};
 
-/* System clock configuration */
+&i3c0 {
+	adxl367: adxl367@530000000000000000 {
+			compatible = "adi,adxl367";
+			reg = <0x53 0x00 0x00>;
+			status = "okay";
+	};
+};
+
+&trng {
+	status = "okay";
+};
+
+/* Disable unused peripherals (korundu) */
+&dma1 { status = "disabled"; };
+//&i3c0 { status = "disabled"; };
+&rtc_counter { status = "disabled"; };
+&timer0 { status = "disabled"; };
+&timer1 { status = "disabled"; };
+&timer2 { status = "disabled"; };
+&timer3 { status = "disabled"; };
+&timer4 { status = "disabled"; };
+&timer5 { status = "disabled"; };
+//&trng { status = "disabled"; };
+&wdt0 { status = "disabled"; };
+&wut0 { status = "disabled"; };
+&wut1 { status = "disabled"; };
+
+/* Clock Configuration */
 &gcr {
 	clocks = <&clk_ipo>;
 	sysclk-prescaler = <1>;
@@ -175,4 +177,3 @@
 &clk_ipo {
 	status = "okay";
 };
-

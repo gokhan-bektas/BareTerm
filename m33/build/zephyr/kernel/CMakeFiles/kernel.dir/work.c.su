@@ -59,7 +59,7 @@ C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/work.c:534:13:cancel_sync_locked	24
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/work.c:550:5:k_work_cancel	72	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/work.c:567:6:k_work_cancel_sync	80	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/work.c:606:13:work_queue_main	168	static
-C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/work.c:714:6:k_work_queue_init	240	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/work.c:714:6:k_work_queue_init	312	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/work.c:725:6:k_work_queue_start	64	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/work.c:769:5:k_work_queue_drain	88	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/work.c:801:5:k_work_queue_unplug	72	static

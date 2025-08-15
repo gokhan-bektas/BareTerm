@@ -30,6 +30,7 @@ int main(void)
 	int ret;
 	bool led_state = true;
 
+
 	bareterm_init();
 
     const struct device *uart = DEVICE_DT_GET(DT_CHOSEN(zephyr_console));

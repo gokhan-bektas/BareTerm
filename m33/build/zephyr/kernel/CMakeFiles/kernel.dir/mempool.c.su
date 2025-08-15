@@ -1,4 +1,10 @@
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/sys/math_extras_impl.h:47:20:size_add_overflow	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/include/zephyr/sys/math_extras_impl.h:105:20:size_mul_overflow	32	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/mempool.c:12:14:z_heap_aligned_alloc	48	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/mempool.c:43:6:k_free	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/mempool.c:65:7:k_aligned_alloc	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/mempool.c:83:7:k_malloc	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/mempool.c:94:7:k_calloc	24	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/mempool.c:117:7:k_realloc	40	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/mempool.c:152:6:k_thread_system_pool_assign	16	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/kernel/mempool.c:160:7:z_thread_aligned_alloc	24	static

@@ -21,6 +21,7 @@
 		led0 = &led1;
 		sw0 = &pb1;
 		watchdog0 = &wdt0;
+		gpio0 = &gpio0;
 	};
 	soc {
 		#address-cells = < 0x1 >;
@@ -84,41 +85,53 @@
 					clocks = < &gcr 0x0 0x0 >;
 					interrupts = < 0xe 0x0 >;
 					status = "okay";
-					phandle = < 0xf >;
+					phandle = < 0x10 >;
 				};
 				i3c_scl_p0_0: i3c_scl_p0_0 {
 					pinmux = < 0x1 >;
+					power-source = < 0x0 >;
 					phandle = < 0x4 >;
 				};
 				i3c_sda_p0_1: i3c_sda_p0_1 {
 					pinmux = < 0x101 >;
+					power-source = < 0x0 >;
 					phandle = < 0x5 >;
 				};
 				spi0_mosi_p0_2: spi0_mosi_p0_2 {
 					pinmux = < 0x201 >;
-					phandle = < 0x8 >;
+					power-source = < 0x0 >;
+					phandle = < 0x9 >;
 				};
 				spi0_ss0_p0_3: spi0_ss0_p0_3 {
 					pinmux = < 0x301 >;
-					phandle = < 0xb >;
+					power-source = < 0x0 >;
+					phandle = < 0xa >;
 				};
 				spi0_miso_p0_4: spi0_miso_p0_4 {
 					pinmux = < 0x401 >;
-					phandle = < 0x9 >;
+					power-source = < 0x0 >;
+					phandle = < 0xb >;
 				};
 				uart0_rx_p0_5: uart0_rx_p0_5 {
 					pinmux = < 0x501 >;
 					power-source = < 0x0 >;
 					bias-pull-up;
-					phandle = < 0x7 >;
+					phandle = < 0x8 >;
 				};
 				spi0_sck_p0_6: spi0_sck_p0_6 {
 					pinmux = < 0x601 >;
-					phandle = < 0xa >;
+					power-source = < 0x0 >;
+					phandle = < 0xc >;
 				};
 				uart0_tx_p0_9: uart0_tx_p0_9 {
 					pinmux = < 0x901 >;
 					power-source = < 0x0 >;
+					phandle = < 0x7 >;
+				};
+				i3c_pur_p0_8: i3c_pur_p0_8 {
+					pinmux = < 0x802 >;
+					power-source = < 0x0 >;
+					drive-strength = < 0x0 >;
 					phandle = < 0x6 >;
 				};
 			};
@@ -174,12 +187,17 @@
 				#size-cells = < 0x0 >;
 				clocks = < &gcr 0x0 0xd >;
 				interrupts = < 0xa 0x0 >;
-				status = "disabled";
-				pinctrl-0 = < &i3c_scl_p0_0 &i3c_sda_p0_1 >;
+				status = "okay";
+				pinctrl-0 = < &i3c_scl_p0_0 &i3c_sda_p0_1 &i3c_pur_p0_8 >;
 				pinctrl-names = "default";
 				i2c-scl-hz = < 0x30d40 >;
 				i3c-scl-hz = < 0xc3500 >;
 				i3c-od-scl-hz = < 0x61a80 >;
+				adxl367: adxl367@530000000000000000 {
+					compatible = "adi,adxl367";
+					reg = < 0x53 0x0 0x0 >;
+					status = "okay";
+				};
 			};
 			uart0: serial@42000 {
 				compatible = "adi,max32-uart";
@@ -207,7 +225,7 @@
 				compatible = "adi,max32-trng";
 				reg = < 0x4d000 0x1000 >;
 				clocks = < &gcr 0x1 0x2 >;
-				status = "disabled";
+				status = "okay";
 			};
 			timer0: timer@10000 {
 				compatible = "adi,max32-timer";
@@ -356,9 +374,10 @@
 				#size-cells = < 0x0 >;
 				clocks = < &gcr 0x0 0x6 >;
 				interrupts = < 0xc 0x0 >;
-				status = "disabled";
-				pinctrl-0 = < &spi0_mosi_p0_2 &spi0_miso_p0_4 &spi0_sck_p0_6 &spi0_ss0_p0_3 >;
+				status = "okay";
+				pinctrl-0 = < &spi0_mosi_p0_2 &spi0_ss0_p0_3 &spi0_miso_p0_4 &spi0_sck_p0_6 >;
 				pinctrl-names = "default";
+				clock-frequency = < 0x17d7840 >;
 				max30123: max30123@0 {
 					compatible = "adi,max30123";
 					reg = < 0x0 >;
@@ -413,14 +432,14 @@
 				power-state-name = "runtime-idle";
 				min-residency-us = < 0x32 >;
 				exit-latency-us = < 0x5 >;
-				phandle = < 0xc >;
+				phandle = < 0xd >;
 			};
 			standby: standby {
 				compatible = "zephyr,power-state";
 				power-state-name = "standby";
 				min-residency-us = < 0x3e8 >;
 				exit-latency-us = < 0x14 >;
-				phandle = < 0xd >;
+				phandle = < 0xe >;
 			};
 			backup: backup {
 				compatible = "zephyr,power-state";
@@ -434,7 +453,7 @@
 				min-residency-us = < 0x7fffffff >;
 				exit-latency-us = < 0x0 >;
 				status = "disabled";
-				phandle = < 0xe >;
+				phandle = < 0xf >;
 			};
 		};
 	};

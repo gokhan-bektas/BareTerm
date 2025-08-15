@@ -2,8 +2,8 @@ C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/utils/timeutil.c:31:16:time_days_from_
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/utils/timeutil.c:45:9:timeutil_timegm64	160	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/utils/timeutil.c:59:8:timeutil_timegm	32	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/utils/timeutil.c:75:5:timeutil_sync_state_update	40	static
-C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/utils/timeutil.c:97:5:timeutil_sync_state_set_skew	56	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/utils/timeutil.c:97:5:timeutil_sync_state_set_skew	48	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/utils/timeutil.c:114:7:timeutil_sync_estimate_skew	56	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/utils/timeutil.c:130:5:timeutil_sync_ref_from_local	104	static
-C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/utils/timeutil.c:158:5:timeutil_sync_local_from_ref	104	static
+C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/utils/timeutil.c:158:5:timeutil_sync_local_from_ref	112	static
 C:/analog/cfs/1.1.0/SDK/zephyr/zephyr/lib/utils/timeutil.c:184:9:timeutil_sync_skew_to_ppb	40	static

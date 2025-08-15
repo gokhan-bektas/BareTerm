@@ -47,6 +47,6 @@ cmake:
     zephyr-base: C:/analog/cfs/1.1.0/SDK/zephyr/zephyr
 version: 0.1.0
 west:
-  command: C:\analog\cfs\1.1.0\Tools\python\Scripts\west build -b max32657evkit/max32657
+  command: C:\analog\cfs\1.1.0\Tools\python\Scripts\west build -b max32657evkit/max32657 --pristine=always
   topdir: C:\analog\cfs\1.1.0\SDK\zephyr
   version: 1.3.0

@@ -17,6 +17,7 @@ add_subdirectory(bareterm)
 target_sources(app PRIVATE
   src/main.c
   src/main_screen.c
+  src/test_screen.c
   src/settings_screen.c
   src/test_unit.c
 )

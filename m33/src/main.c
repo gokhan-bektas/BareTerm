@@ -12,6 +12,7 @@
 #include <bareterm.h>
 #include <bareterm_screen_manager.h>
 #include "main_screen.h"
+#include "test_screen.h"
 
 /* 1000 msec = 1 sec */
 #define SLEEP_TIME_MS   1000
@@ -54,8 +55,8 @@ int main(void)
 
     // Initialize the screen manager and set the initial screen
     bareterm_screen_manager_init();
-    bareterm_screen_manager_set_active(main_screen_get());
-
+    //bareterm_screen_manager_set_active(main_screen_get());
+    bareterm_screen_manager_set_active(test_screen_get());
     // Main event loop
     while (1) {
         bareterm_event_t evt;

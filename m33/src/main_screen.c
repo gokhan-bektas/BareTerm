@@ -34,20 +34,42 @@ static const char *list_items[] = {
 static bareterm_widget_t input;
 static char buf[64] = "";
 
+/* === Define a GATT service globally === */
+/* Battery Service Declaration */
+BT_GATT_SERVICE_DEFINE(bas_svc,
+    BT_GATT_PRIMARY_SERVICE(BT_UUID_BAS),
+    BT_GATT_CHARACTERISTIC(BT_UUID_BAS_BATTERY_LEVEL, BT_GATT_CHRC_READ,
+                           BT_GATT_PERM_READ, NULL, NULL, NULL),
+);
 
+/* Device Information Service Declaration */
+BT_GATT_SERVICE_DEFINE(dis_svc,
+    BT_GATT_PRIMARY_SERVICE(BT_UUID_DIS),
+    BT_GATT_CHARACTERISTIC(BT_UUID_DIS_MANUFACTURER_NAME, BT_GATT_CHRC_READ,
+                           BT_GATT_PERM_READ, NULL, NULL, "Analog Devices Inc."),
+    BT_GATT_CHARACTERISTIC(BT_UUID_DIS_MODEL_NUMBER, BT_GATT_CHRC_READ,
+                           BT_GATT_PERM_READ, NULL, NULL, "MAX32657-EVKIT-Test"),
+);
 
 /* Bluetooth declarations */
 #define FIXED_PASSKEY 555555
 static bt_addr_le_t stored_bond;
 static struct bt_conn *active_conn;
-
 static const struct bt_data ad[] = {
-	BT_DATA_BYTES(BT_DATA_FLAGS, (BT_LE_AD_GENERAL | BT_LE_AD_NO_BREDR)),
-	BT_DATA_BYTES(BT_DATA_UUID16_ALL, BT_UUID_16_ENCODE(BT_UUID_CGMS_VAL),
-		      BT_UUID_16_ENCODE(BT_UUID_DIS_VAL))};
+    /* Flags: general discoverable, no BR/EDR */
+    BT_DATA_BYTES(BT_DATA_FLAGS, (BT_LE_AD_GENERAL | BT_LE_AD_NO_BREDR)),
+    /* Set appearance to Generic Computer, little-endian 0x0080 */
+    BT_DATA_BYTES(BT_DATA_GAP_APPEARANCE, 0x80, 0x00),
+    /* Advertise two services: Device Information and Battery Service */
+    BT_DATA_BYTES(BT_DATA_UUID16_ALL,
+                  BT_UUID_16_ENCODE(BT_UUID_DIS_VAL),
+                  BT_UUID_16_ENCODE(BT_UUID_BAS_VAL)),
+};
 
+/* Put the full name in the SCAN RESPONSE to save ADV space */
 static const struct bt_data sd[] = {
-	BT_DATA(BT_DATA_NAME_COMPLETE, CONFIG_BT_DEVICE_NAME, sizeof(CONFIG_BT_DEVICE_NAME) - 1),
+    BT_DATA(BT_DATA_NAME_COMPLETE, CONFIG_BT_DEVICE_NAME,
+            sizeof(CONFIG_BT_DEVICE_NAME) - 1),
 };
 
 // --- All the callback functions from main.c go here ---
@@ -134,18 +156,18 @@ static void on_toggle(bareterm_widget_t *cb, unsigned char state) {
     /* Bağlantı callback'lerini kaydet */
     bt_conn_cb_register(&conn_callbacks);
 
-    /* Bluetooth reklamını başlat */
-    const struct bt_data ad[] = {
-        BT_DATA_BYTES(BT_DATA_FLAGS, (BT_LE_AD_GENERAL | BT_LE_AD_NO_BREDR)),
-        BT_DATA(BT_DATA_NAME_COMPLETE, "BLE TEST", 8),
-    };
+    const struct bt_le_adv_param *param =
+        BT_LE_ADV_PARAM(BT_LE_ADV_OPT_CONNECTABLE |
+                        BT_LE_ADV_OPT_USE_IDENTITY, 
+                        BT_GAP_ADV_FAST_INT_MIN_2,  
+                        BT_GAP_ADV_FAST_INT_MAX_2,  
+                        NULL);                      
 
-    err = bt_le_adv_start(BT_LE_ADV_CONN, ad, ARRAY_SIZE(ad), NULL, 0);
+    
+    err = bt_le_adv_start(param, ad, ARRAY_SIZE(ad), sd, ARRAY_SIZE(sd));
     if (err) {
-        //LOG_ERR("Advertising failed to start (err %d)", err);
-        printk("Advertising failed to start\n");
-        //report_result("BLE_TEST", false);
-        //return;
+        printk("Advertising failed to start (err %d)\n", err);
+        return;
     }
 
     //LOG_INF("Advertising started");
